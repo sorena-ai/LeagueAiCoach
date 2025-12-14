@@ -1,6 +1,18 @@
-# Sensei API (League of Legends Coach)
+# Sensii API - AI-Powered League of Legends Coach
+
+## 🎥 Demo
+
+[![Watch Sensii in Action](https://img.youtube.com/vi/jBRvdGTnado/maxresdefault.jpg)](https://youtu.be/jBRvdGTnado)
+
+**[Watch the full demo on YouTube](https://youtu.be/jBRvdGTnado)**
+
+---
+
+## About
 
 FastAPI service that ingests an in-game screenshot plus a voice question, runs the coach model, and replies with audio advice. Uses LangChain wrappers with **flexible coach provider** (Gemini or Grok, configurable via `COACH_PROVIDER` and `COACH_MODEL` env vars) for analysis, OpenAI Whisper for transcription, and OpenAI TTS for speech generation.
+
+**Visit us at [sensii.gg](https://sensii.gg)**
 
 ## Project layout
 - `app/routes`: FastAPI endpoints (`assistant.py`)
