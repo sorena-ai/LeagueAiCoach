@@ -137,3 +137,6 @@ downloads/
 *.wav
 *.mp3
 *.mp4
+
+# Data directory
+data/
