@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="karma" scrapedAt="Wed Nov 26 2025 22:40:18 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To quickly burst an enemy R Q instantly then mid animation Flash and quickly cast W. AA then E followed by more AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When quickly looking to CC an enemy E then cast W once in range and instantly Flash followed by some AA's until the root lands. Once your target is rooted, R Q instantly and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in someone when in close range W and instantly E, move forward then AA. Once the root lands R Q instantly followed by an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to survive R W instantly followed by E Q as quickly as you can as you retreat.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To all in an enemy R Q instantly then quickly move forward to cast W and E followed by using AAs as you maintain the tether.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade with someone E and move forward then AA followed by Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For teamfights R E an ally quickly, then Q W the nearest target followed by AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

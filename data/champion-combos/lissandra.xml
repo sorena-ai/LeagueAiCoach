@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="lissandra" scrapedAt="Wed Nov 26 2025 22:43:20 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>When engaging for a teamfight E towards your targets then reactivate it once the claw is at max range. Instantly F W and R yourself as quickly as you can, then follow it up by using Q once you are free.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To fakeout your enemy E Q at your target instantly then Flash to the side. Reactivate E once the claw is on top of your opponent and instantly W AA followed by R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When you are being dove W then instantly E Q AA followed by using R right as the root ends.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick burst with ult R and instantly E towards your target, then Q followed by an AA. Reactivate E right after it deals damage, then use W right before your R stun ends followed by more AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>A close range Flash combo starting with Flash then instantly R E Q W as quickly as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If you have R and want to all in; W Q instantly followed by AA and E towards your target. Reactivate E after the damage lands, then AA R AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To engage E towards your target then reactivate it when reach your R range. Instantly cast R Q then AA and use W right as the stun wears off.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To combo from further away E towards your target then reactivate it once you are on top of them. Instantly W AA followed by Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>You can also quickly trade with W then instantly using E Q followed by an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For your full combo without R, Q and E towards your target instantly. Then AA, reactivate E and instantly W AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For quick close trade W then instantly AA followed by Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

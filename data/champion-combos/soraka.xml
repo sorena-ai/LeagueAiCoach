@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="soraka" scrapedAt="Wed Nov 26 2025 22:53:28 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>To suprise your enemies with an engage Flash then instantly Q E followed by some AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To save a teammate R then instantly Flash W. E Q the enemy as quickly as possible then W again once you have the Rejuvenation buff.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For an aggressive engage E and instantly Flash then Q AA AA as quickly as possible.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick trade E Q instantly then AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For effective healing Q then R and use W right as you receive your Rejuvenation buff from Q landing.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>This trade can be used to engage or disengage. Q then AA and instantly E afterwards.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

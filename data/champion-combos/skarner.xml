@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="skarner" scrapedAt="Wed Nov 26 2025 22:53:04 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Flash then R and W!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash then E your enemy before using your R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press Q then E in, AA and Q again. Then AA, R, W, AA and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press Q then Q again, then E, AA, W, AA and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press Q then AA, W, AA and AA again!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="xinzhao" scrapedAt="Wed Nov 26 2025 23:27:59 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Knock an enemy back into your team by using R and quickly Flashing behind them. E to gap close, then Q and AA three times before using W and AAing again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To isolate a target E onto them, AA then use R and AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For your standard full combo E to your target, then AA and use Q. AA some more before using W, then AA R AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When already in melee range, AA then Q and AA some more. Use E to follow your target, then AA W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>You can extend your W range by quickly Flashing after casting.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For max damage on objectives use E followed by AA W AA. Q and then AA some more.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade pre-6 E onto your target, then Q. AA three times, then W and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

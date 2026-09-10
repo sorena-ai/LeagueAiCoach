@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kayn" scrapedAt="Wed Nov 26 2025 22:41:18 GMT+0100 (Central European Standard Time)">
+  <combos count="13">
+    <combo>
+      <description>To poke in Shadow form, E through a wall then W and instantly Q away back into the wall.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>In shadow form, E through a wall and W from max range. Flash Q quickly followed by an instant R and R reactivation.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Engage at max range by using Q towards your target, then instantly use W and R as soon as it lands, then Q back onto your target.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When dueling someone in melee range AA Q AA then double tap R to stay on your target. AA W for the slow followed by another AA Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Gank with your ultimate by using E through a wall, use Q in melee range then AA W for the slow to stay in range for more AA's. Use R to gap close right before your Q is back up, then you can execute them with instant R reacitvation into Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To kill in Darkin form, E into melee range then AA Q. AA W right after to stay on your target then AA R and wait for your next Q cooldown to close the gap once more.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash then instantly Q and R. As soon as the animation is done AA W and walk into Q range.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To stick to slippery targets in Darkin form, E through terrain into Q range then AA and R your target. W as soon as you get out then walk into range to land both portions of your Q damage.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>In darkin form, Flash then W for the knockup to engage. Walk in to use Q and AA R, wait for your Q cooldown then AA Q again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Before choosing your form to kill someone E through a wall into melee range then AA Q AA. Use W to slow your target to stay in R range then R - wait out the duration then AA Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>In Shadow form, E through a wall then W and Q instantly. When in range then AA R and recast R as soon as possible to exit your target with the kill.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your most standard gank will use E through a wall then W into Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To commit for a bigger gank E through a wall then Q in melee range and AA, followed by using W to staying in range for more AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

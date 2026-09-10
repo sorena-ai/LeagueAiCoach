@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="zeri" scrapedAt="Wed Nov 26 2025 23:01:08 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Use your E over a wall and then as you're traveling press your W and your R! Then use your Q, Q, Q and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W over a wall and E and R over to your target. Then Q, AA, Q, Q, Q and a final AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your R then Q, AA, E and AA. Now Q, Q, and Q before another AA and finish with your W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then E and R. Then Q, Q, Q, AA and Q again to Finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then AA. E into the wall then Q and AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E and W over a wall then Q, Q, Q and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then AA, W, AA Q and AA again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q and AA, then E, W and Q before another AA and finish with your Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

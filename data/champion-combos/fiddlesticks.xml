@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="fiddlesticks" scrapedAt="Wed Nov 26 2025 22:35:41 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>To get on top of a target R then Flash after the channel completes, then instantly Q E W one after another.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If unseen Q then instantly Flash behind your target and W, Use E after the W channel completes and AA if needed.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>While pretending to be an Effigy cast E, then instantly R. After landing cast Q W quickly.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick combo Q then instantly E W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When out of your target's vision, E then instantly Q W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a full burst combo R and once you land instantly Q W. E AA after the W channel ends.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

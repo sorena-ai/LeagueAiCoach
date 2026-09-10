@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="warwick" scrapedAt="Wed Nov 26 2025 22:58:54 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Start with your W, then E, Flash, Q, E AA and finish with your R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press your W and E, then AA, AA, AA, E again, AA, Q, AA and R to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W, then Flash, R, E, AA, Q, E and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W, then E and R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Press your E, then your R, AA, Q and another AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then AA, Q, AA, E, AA and finish with another AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

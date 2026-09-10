@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="briar" scrapedAt="Wed Nov 26 2025 23:23:23 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Use your R then Q, then W to reposition before using your E!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash and W onto your enemy, then Q and E!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with W then Q, W, charge your E then hit that R!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q to an ally, then W, W, E and a few AA's to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Pop your R then W, Q, W and E!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Pop your W, then W again, Q and then E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with Q then charge your E, then W, and W again!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Charge up your E, then Q, AA, W, W, and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="blitzcrank" scrapedAt="Wed Nov 26 2025 22:32:28 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Reduce an opponent's ability to react by using W into Q range then Q and use R while they are still in mid air, followed by using E and AA'ing them as soon as they land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>All in with W to get into Flash AA range then R and instantly Flash, into AA E followed by using Q before they land.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To use abilities more for damage land Q then instantly W to gain attack speed, follow it up with AA E AA and finish off the kill with your ult.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To stop someone Flashing away R then instantly Q, prep your E then AA as soon as they are in range.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To catch opponents Flash then instantly Q, follow up with AA E once they are in range.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To engage when close range use W to get into range to E knockup then Q them mid air.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To chain your crowd control Q and instantly activate E, then AA once they arrive.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

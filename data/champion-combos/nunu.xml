@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="nunu" scrapedAt="Wed Nov 26 2025 22:46:59 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Start with W and release it early. Right as you confirm it will land and you are in E range hit W a second time, instantly E then AA E Q as quickly as you can. Follow up with your last E and some AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly engage E then instantly Flash and AA Q. E again and AA W, E a third time then AA R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>E your target then right before your root goes off Flash on top of your target and instantly R. Once it finishes its channel, Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>E then instantly AA Q, E again then AA W. R, cancelling the channel right as the root ends.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To engage with your snowball W then roll into your opponent and E right after it hits. Quickly use Q E, AA then E again followed by one more AA and your R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Approach with E, then E again right before you AA Q. Use your last E charge and continue to AA, then use W right as the root ends.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

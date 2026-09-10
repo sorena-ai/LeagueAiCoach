@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="akshan" scrapedAt="Wed Nov 26 2025 22:30:14 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Start with an AA and AA before your Q. Then AA and AA before your R and then E out to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA and AA your enemy. Q them and then Flash to hit them with the return boomerang too!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press your W, then AA, AA and Q. AA, AA then press your R and use your Flash to bypass obstacles between you and your enemy. Then E to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA and AA your enemy followed by your Q, then AA, AA and E and then a few more AA's to take them down and use your E to escape again afterwards.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA, AA and Q your enemy, then AA and AA again before using your E to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA, AA and Q your enemy.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

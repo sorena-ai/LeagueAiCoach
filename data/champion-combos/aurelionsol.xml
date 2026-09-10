@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="aurelionsol" scrapedAt="Wed Nov 26 2025 23:22:59 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Lead with your E and R then W, Flash to reposition and finally Q to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W then Q, then E, R and Q again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your W then E, R and Q to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Simply press your E and then your empowered R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Fire up your E first and then follow that with your Q</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then R instantly before finishing off with your Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

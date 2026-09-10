@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="nami" scrapedAt="Wed Nov 26 2025 22:45:35 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>For a reliable all in combo W and E yourself instantly, then AA Q followed by AA R AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to be extra aggressive Flash then instantly Q W E and finish up with AA R AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Engage from further away by using R from fog of war. Q to chain the CC, use an AA then E yourself while the AA is mid air followed by an instant W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When you hit a Q on your target use R to all in. E yourself instantly after R and AA W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To apply some quick burst damage Q your target and use W on them. Use E on yourself before your W lands and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Trade for some easy damage by using E on yourself, then W yourself or your target and AAing.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade E yourself then AA. Wait for the slow then Q W instantly and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

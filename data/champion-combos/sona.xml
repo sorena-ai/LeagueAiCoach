@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="sona" scrapedAt="Wed Nov 26 2025 22:53:16 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>For the optimal crowd control combo R then instantly Q AA. Afterwards W AA and instantly E eAA followed by more AAs.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Surprise and lock down your target by using E to get in range then instantly F R Q eAA as quickly as you can and finish up with W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>At two stacks of your power chord passive AA then instantly Q AA for some quick damage.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To engage a fight R then instantly Q eAA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to setup a pick or gank opportunity E then instantly AA Q followed by an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To get some solid burst damage off E to get in range then instantly Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

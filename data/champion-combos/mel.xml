@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="mel" scrapedAt="Wed Nov 26 2025 23:24:59 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Lead with E, then AA, Q, AA, W, AA, AA, AA, Q and R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use E and Flash, then Q and R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press E then Flash, then AA, Q, AA, W, AA, AA, Q and R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use E, then Q and R to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Press Q then AA, W, AA, E, AA, AA, AA, then Q and R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

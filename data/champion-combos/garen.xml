@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="garen" scrapedAt="Wed Nov 26 2025 22:36:41 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To All In activate Q then Flash once in AA range, follow up with E and execute your target with R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly burst by activating Q then Flash once in AA range and instantly R after your AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>You can R then instantly Flash during the animation to reposition.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your most simple trade is to Q instantly after your first AA then E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When close to an opponent E then Q R instantly after your AA finishes.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To fight normally activate Q to gain movespeed then AA E, once E finishes AA again and execute with R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Make sure to use Q as an Auto Attack Reset. AA instantly into Q and another AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

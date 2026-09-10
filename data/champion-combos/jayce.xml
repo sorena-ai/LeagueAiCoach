@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="jayce" scrapedAt="Wed Nov 26 2025 22:39:18 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>When close but in ranged form, W and AA, then R. Quickly AA, E and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To set up an all in on a target, start in melee form and Q onto them. AA, then quickly Flash behind the enemy and E them towards your team.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Trade using all your abilities by quickly using Q E in ranged form. AA, then W and R. Q onto the enemy, then W and AA before using E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>In ranged form, quickly Q E your target and then R. Q onto them, then AA and E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick melee trade Q onto your target, AA and then E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Leave little room for your opponent to trade back. In ranged form AA and Q, then R and Q onto your target. AA then E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

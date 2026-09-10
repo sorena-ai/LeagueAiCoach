@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="karthus" scrapedAt="Wed Nov 26 2025 22:40:30 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>To engage Q W E as fast as you can and instantly Flash forward, followed by hitting Q as many times as you can.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When at mid range Q W instantly followed by using E on your target. AA and right after use two Q's for every AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If you happen to die Q W instantly followed by two Q's. Use R quickly then one last Q as soon as the R channel finishes.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If you're looking to deal damage as you retreat Q W instantly then R and F near the beginning of the cast animation.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When at long range W Q your target instantly then walk forward and E right before you are in range, then continue to use Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When at close range E AA instantly followed by Q and using AA's in between every Q cast.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="yunara" scrapedAt="Wed Nov 26 2025 23:28:11 GMT+0100 (Central European Standard Time)">
+  <combos count="4">
+    <combo>
+      <description>Press W, then E, then AA, Pop your R, then E again, auto attack your enemy and throw out another W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Press W then Flash, then E, AA, R, AA, E, AA, AA and W again to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA to charge your Q then auto attack your enemy. Then Use your W, E and chase with more autos!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W, then E then AA to charge up your Q, then AA with your Q active!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

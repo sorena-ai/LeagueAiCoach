@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ahri" scrapedAt="Wed Nov 26 2025 22:29:50 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>To surprise your opponent E then instantly Flash and Q, then R right after Q finishes casting. Use W mid air and AA once you land.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Hide your Charm even better with E Flash mid animation and immediately R and W mid air. Q once you land then AA R, using R to make sure your returning Q lands.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>With a clear line to the target instantly E Q R one after another, then use W mid air and AA once you land.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Hide your Charm animation by using E then instantly R, use W mid air and Q once you land.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To All-In at level 6, R to get an angle for your E Q then R W to reposition to land the second portion of Q and finish up with AA R AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly burst use Q then instantly R, W mid air then E once you land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When chasing an opponent, R into Q Range then AA W to lock on. R AA to get closer and use your final R to reposition to make E as easy to land as possible.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly trade with AA to make sure W locks on, instantly W and Q as quickly as possible.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>This Level 3 All in combo uses E then instantly Q, followed by using W and an AA at the same time.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic trade will be Q then instantly W AA at the same time.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

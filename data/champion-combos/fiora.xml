@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="fiora" scrapedAt="Wed Nov 26 2025 22:35:53 GMT+0100 (Central European Standard Time)">
+  <combos count="9">
+    <combo>
+      <description>R and AA the first vital then instantly E F for a side vital. Quickly Q for the third vital, but put yourself close to the last vital so that you need to move a minimal amount for the last AA on the fourth vital.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>R W instantly and AA the second vital then E instantly. Mid E animation Flash for the third vital and Q for the last one. This should all be done extremely quickly.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly turn around fights Q R W as quickly as possible then AA the second vital. E the third vital and AA final vital. AA Q AA to finish the kill.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>All in with AA E eAA one after another then R W instantly, AA the second vital, use Q to hit the third (ideally the hardest remaining one to get to) then AA the last vital.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To proc R faster, R then Q in between two vitals. AA the second vital, walk to the other side and AA the third vital then E the final vital with an AA to finish up.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>AA and instantly E after it lands. Then Q W as quickly as possible to slide the animations together and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly trade making use of your E Auto Attack reset. AA and instantly Q. E after it lands then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>You can also trade by using W earlier in the combo. Q and instantly AA W, followed by an AA E with an AA as a finisher.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your normal trade will be using Q to proc a vital and instantly AA E followed by a W, with an AA after it finishes.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

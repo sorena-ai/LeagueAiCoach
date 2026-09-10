@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="renata" scrapedAt="Wed Nov 26 2025 23:26:35 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Start with R, instantly flash, Q twice, AA, E then finish with an AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Q twice then R then finish with E</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press your R, then E, then Q twice then an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E, then Q twice then finish with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with an AA then W then AA then E, AA, Q twice then finish with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, then Q then E and finish with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

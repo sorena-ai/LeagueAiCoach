@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="sion" scrapedAt="Wed Nov 26 2025 22:52:40 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Start with your R then W, then E, Q, W, AA and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>W first then E, Flash, Q and finish with AA and W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>W first, then Q, E, W, AA, then R and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then R, W, Q, W, AA and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then Q, W, AA, AA and W again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then Q, W, then R, AA, AA, and W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

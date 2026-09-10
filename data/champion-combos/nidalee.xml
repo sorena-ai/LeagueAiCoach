@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="nidalee" scrapedAt="Wed Nov 26 2025 22:46:23 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>When looking to start a fight in cougar form W and once you land AA E Q one after another. Follow up with R E Q followed by some AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To get a quick cougar form combo off, AA E then instantly Q. As soon as the Q animation starts hit W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>You can get off some quick damage in cougar form  by using AA E then instantly using Q. As soon as the Q animation starts hit W, but click away from your target right before.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a fast swap out of cougar form use W then quickly R. Q AA as soon as you land.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When in melee range in cougar form, E and instantly W away from your target. R mid air and Q as soon as you land and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>If you land a long range Q in human form, instantly R W. Once you land E Q AA quickly one after another.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When you have  the opportunity to hit a quick spear in human form Q AA instantly, then E AA as quickly as possible. Use R and W instantly, then AA E Q as fast as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To get a quick burst of damage off in cougar form W and Q mid air, then AA E instantly. As you land follow up with an AA if needed.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

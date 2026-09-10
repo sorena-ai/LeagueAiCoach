@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="malphite" scrapedAt="Wed Nov 26 2025 22:44:09 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To surprise the enemy Flash then instantly R once you arrive. Q E W as quickly as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When you need to all in quickly Q R instantly and upon landing W E as quickly as you can, followed by an AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your regular all in is Q then E quickly once in range followed by an AA. Hit W R as quickly as you can then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To chase and burst a target Q then E and instantly Flash W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For your basic engage use R. Upon landing instantly E Q then AA W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To maximise your CC Use R. Upon landing instantly AA W followed by quickly using Q E then an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic combo against abilty based champs is to Q then walk forward, AA once in range and instantly W once it completes to reset the AA. Follow up with an instant E then an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Combos against Auto Attack based champs are slightly different, AA then E Q instantly followed by AA W AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

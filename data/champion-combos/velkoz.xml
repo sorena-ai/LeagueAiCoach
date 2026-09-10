@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="velkoz" scrapedAt="Wed Nov 26 2025 23:27:47 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>All in a target, opening with Q W AA, then quickly E them and W R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Begin an all in by knocking a target up with E, then quickly W Q R. When the ult channel ends, W and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Execute a low health target by hitting them with Q and R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When you hit an E pre-6, follow up with W Q, then A W AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Proc your passive twice by using Q W quickly, then E W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Short trade by using E and then quickly W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

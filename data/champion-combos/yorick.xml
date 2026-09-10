@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="yorick" scrapedAt="Wed Nov 26 2025 23:00:20 GMT+0100 (Central European Standard Time)">
+  <combos count="4">
+    <combo>
+      <description>Flash onto your enemy and use your W! Then AA, E, AA and Q them to finish!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your E then W your enemy. Follow that up with an AA, Q and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Whilst farming minions use your AA, Q and E to hit your enemy off guard.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your E, then AA, Q, W and finish with a final AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

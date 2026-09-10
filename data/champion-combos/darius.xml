@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="darius" scrapedAt="Wed Nov 26 2025 22:34:04 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To teamfight open with E then AA W once they arrive and instantly Q after, AA for max stacks of your passive then R. Mid animation on the way down Flash towards your next target and AA R them.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly execute targets with Q then mid animation F to land the sweet spot, walk into melee range and AA W then finish off with R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>You can hide your W animation by using AA then W and Q as quickly as possible.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>In melee range all in with AA W then instantly Q AA again and pull them back with your E to keep them in range for your final AA into R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>The easiest way to all in is to E then AA W once they arrive and instantly Q after, AA for max stacks of your passive then R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Set up your Q easily with E then W AA once they reach you followed by stepping back to land your Q sweet spot.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic trade is Q then AA W once you reach your target.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

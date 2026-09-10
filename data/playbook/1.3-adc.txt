@@ -1,0 +1,11 @@
+The AD Carry (ADC) role relies heavily on items to deal damage, making farming and survivability their core focus. Their general win condition is to farm safely throughout the match to hit their item spikes by mid-to-late game.
+A. Gold and Farming Mastery (CSing)
+1. Item Reliance: The ADC is one of the most item-reliant roles. Without items, they cannot deal damage, so getting gold and a high Creep Score (CS) quickly is essential.
+2. Farming Under Turret: When waves are pushed under the ADC's turret, they must master last-hitting. Melee minions require the turret to hit them twice before a champion auto-attack finishes them off.
+3. Wave Management for Safety: ADC mains should avoid constantly pushing the wave, as this opens them up to ganks from the enemy Jungler. In an even game, the minion wave should ideally be kept closer to their side of the map or in the middle. If they are losing, they must keep the wave close to the tower to avoid being denied farm and XP by the enemy.
+4. Synergy in Duo Lane: The ADC must consider synergy with their Support. If the Support is passive (e.g., Soraka), an aggressive ADC (e.g., Draven) may struggle to get kills, and they could easily die against an aggressive enemy duo.
+B. Micro Mechanics and Team Fight Positioning
+1. Team Fight Role: The ADC's job is to DPS in team fights. Survivability equals DPS. They must focus on being the team's engine, maximizing the time they spend firing damage.
+2. Front-to-Back Rule: In team fights, the ADC should adhere to the Front-to-Back Rule, meaning they should always auto the closest safe target (usually the enemy frontline tank or bruiser) rather than chasing squishy carries.
+3. Kiting and Spacing: ADCs must constantly practice kiting—creating small amounts of distance after every auto-attack to avoid dives and skillshots. They should utilize their tanks and bruisers as shields or buffers.
+4. Map Awareness: ADCs need good map awareness to survive, as they rely on their movement and position to avoid ganks. They should check the minimap every time they last hit a minion to empower their map awareness. ADCs should use their Stealth Ward defensively.

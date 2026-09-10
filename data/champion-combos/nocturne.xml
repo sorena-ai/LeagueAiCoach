@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="nocturne" scrapedAt="Wed Nov 26 2025 22:46:47 GMT+0100 (Central European Standard Time)">
+  <combos count="9">
+    <combo>
+      <description>You can Q mid air by using R twice then Q and E mid air followed by some AA's</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q Flashing does not extend the range but can put you in range faster. Q then Flash mid animation and instantly E and then AA' away.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q E instantly then quickly AA until your fear is about to proc, then Flash behind your target to fear backwards and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Leading with R Q instantly will help mitigate the lockout period before using R again. E as soon as you can and follow up with some AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly burst with Q R instantly then AA and R right after followed by another AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q then E and quickly AA. Press R and AA then hit R again right as the fear will proc, then follow up with some AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If you're already in melee range E AA instantly then Q right after and continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When medium range use Q then instantly E once in range and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To guarantee your damage quickly R twice then E as soon as you can. AA while you maintain the tether, Q as soon as the fear goes off then continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kaisa" scrapedAt="Wed Nov 26 2025 22:39:54 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>When your target already has a plasma stack, use E then W R together. Q as soon as you land and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>E forward then AA Q quickly. Once at 3 or 4 plasma stacks use W R together, then continue to AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Flash W can secure kills much easier. E forward then AA twice. During the back end of the third AA use Q W quickly. Flash right as you start the W animation and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Engage with W then once it lands R to your target. Quickly AA Q, use your E to reposition then continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When your target already has a plasma stack on them, use R. Start your W cast mid flight then AA Q and continue your AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To chase opponents down E forward then AA Q and mid animation use R. Continue to AA then execute with W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To trade normally try to AA and Q at the same time then AA W AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>If you can guarantee your W then use it early. AA then instantly W and Q during its animation then AA twice.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

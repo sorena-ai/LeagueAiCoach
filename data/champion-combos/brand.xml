@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="brand" scrapedAt="Wed Nov 26 2025 22:32:40 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>When outside normal range Q and Flash mid animation, then E before it lands followed by a W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To get off a stun your target won't see coming use R Q instantly one after another then E before the Q lands. Use W while your target is stunned.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>While being engaged on E then instantly R. Flash during the animation and instantly Q W right after.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For your basic post 6 combo E Q instantly then W R instantly and step forward so your R bounces to you then AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a mid range stun combo W then Q E. Instantly use R right after and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To surprise stun a target Q and quickly E before the Q hits. Then W R as quickly as you can and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To deal a bunch of AoE damage E W then instantly R Q and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When being engaged on, E and instantly Flash to create some distance between you and your target. Q then W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To perform your bread and butter combo instantly E Q your target then W after or as the stun lands.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To do some short range damage W your target and instantly E Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

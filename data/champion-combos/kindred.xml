@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kindred" scrapedAt="Wed Nov 26 2025 22:41:54 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To execute someone after you ult R AA then E, followed by exactly two AA's. As your R ends Q AA to execute.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To ensure people can't escape after you hard engage W then E Flash instantly to AA Q. Continue to AA until your Q is up, then AA again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly engage Flash then instantly Q W E AA as quickly as you can. Follow up with two more AAs and Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When saving an ally who is far away Q, then right at the end of your jump Flash and instantly R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When you want to combo quicker W then E Q instantly followed by three AA's. Q AA to finish up.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard melee range Gank Combo W AA instantly then Q AA E. Follow with two AAs and Q AA right afterwards to execute.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly proc your E lead with E AA instantly then W Q AA. Follow up with two AAs and Q AA right after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your mid range Standard Gank Combo  is W Q E AA one after another as quickly as you can, followed by some AAs until your Q is up again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

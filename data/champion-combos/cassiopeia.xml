@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="cassiopeia" scrapedAt="Wed Nov 26 2025 22:33:28 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Press your R then instantly Flash to hit your Ultimate. Then use your W followed by your E and then Q and E some more to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with a Q then E and E again. Use your W then E then hit them with your R before another E Q and E again to finish them off.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your R into your W then E &amp; E. Use your Q then E some more to finish the job!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your Q, then E and E again before using your W. Now you can E some more before another Q and E to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Land your Q, then E as many times as you can before your Q comes back up before using it again!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

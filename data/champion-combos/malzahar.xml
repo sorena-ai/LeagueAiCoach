@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="malzahar" scrapedAt="Wed Nov 26 2025 22:44:21 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To lock a champion down during a burst, Q W quickly then instantly Flash and E R as fast as you can.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For prolonged fights AA then E W instantly, AA again followed by Q AA and use R right after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For full combos with no swarm stacks Flash then instantly E R. After your R channel ends instantly Q W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To make the most out of your abilites against a tanky target Q then instantly W E followed by two AAs. Cast R and Q straight after the channel, followed by AA W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For your full ult combo Q then W then instantly E R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When trading without swarm stacks E then Q W instantly and quickly AA right after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>A quick combo with swarm stacks starts with E then as quickly as you can W Q R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Immediately lock down your target by Flashing then instantly using R for the outplay.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

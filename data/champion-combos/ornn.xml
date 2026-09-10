@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ornn" scrapedAt="Wed Nov 26 2025 22:47:35 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To all in your opponent Q your target then R. W, AA then R to knock the elemental into enemies, then AA and E.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When your target is next to your Q or a wall, use R and then E them. R again to knock the enemy up, then AA,</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For an easier all in, use R and then Q your target, then R again. AA then W and AA again. E to knock the enemy up, then AA to finish up.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When in melee range, AA then Q. AA again, then E and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly trade by using AA, W and AAing once more.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>You can also trade by using Q, then W and an AA. E your target, then AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade with your opponent, Q them. When the pillar erupts E and AA, then follow up with W and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard trade is to Q your target, then W and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

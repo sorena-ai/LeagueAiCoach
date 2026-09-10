@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="twistedfate" scrapedAt="Wed Nov 26 2025 23:27:23 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To escape from being flanked W R instantly then W again once it's a Gold Card. AA R as quickly as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your ultimate to get a pick by using R then R2 and instantly casting W. W again on a Gold Card then instantly AA Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To bait your opponent  W then time your AA with the exact time you W a Gold Card, After that use Q and finally your AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To deal damage on your opponent from long range W and lock in a Gold Card then Q. Use F mid animation followed by an instant AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To trade nicely with your Gold Card AA then instantly W, AA again then lock in a Gold Card. Quickly instantly AA Q followed by one more AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For your bread and butter combo W and lock in a Gold Card then instantly AA Q followed by one more AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To poke with your blue card AA then W. AA again, lock in a Blue Card and instantly AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>W and lock in a Red Card then AA a nearby unit and Q your main target.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

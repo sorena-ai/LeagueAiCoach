@@ -1,0 +1,8 @@
+The ADC's primary win condition is to farm safely to scale. The ADC is one of the most item-reliant roles in the game, making maximizing CSing crucial.
+Laning Mechanics (CSing and Leveling):
+• Farming Under Turret: To secure melee minions under the tower, let the tower hit them twice, then auto-attack. To secure ranged minions under the tower, auto-attack them once, let the tower hit them once, and then auto-attack again.
+• Level 2 Spike: The Level 2 power spike is highly important in Bot Lane. Since XP is shared, the duo lane must kill the first minion wave followed by three melee minions on the second wave to hit Level 2 first. Hitting this spike provides immediate lane pressure.
+Wave Management and Synergy:
+• In an even game, the ADC should generally try to keep the minion wave closer to their side of the map or in the middle. Avoiding constant pushing reduces exposure to ganks.
+• If the ADC is paired with an all-in Support, they should avoid constantly pushing the wave, as the enemy's tower will protect them from engages.
+• The ADC must choose a champion that synergizes well with their Support. If the Support is passive (e.g., Soraka), picking an aggressive ADC (e.g., Draven) may result in difficulty securing kills.

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="braum" scrapedAt="Wed Nov 26 2025 22:32:52 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To engage from a long range W to an allied unit then Q and Flash mid animation. Once you confirm Q will land use R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Another way to proc your stun is to Q the enemy then instantly W to an allied unit near your target. AA three times to proc your passive.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly engage on a target R Q and W to an allied unit as fast as you can then AA three times.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick way to save your ally Flash and instantly W to them, then Q as soon as you land. Follow up with AA R and then AA twice to proc your passive.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To save an ally in danger W to an ally then E Q R instantly</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>A common way to stun your opponent is to W to an allied unit then AA Q and AA twice more for your passive to proc.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard level 6 combo is to Q AA then instantly R. AA twice more to proc your passive.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

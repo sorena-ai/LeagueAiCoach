@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="xerath" scrapedAt="Wed Nov 26 2025 22:59:31 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To extend your E range E and mid animation Flash, then instantly W Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a more reliable ult combo Q then release and instantly W. Quickly E after the slow lands then instantly R and continue to cast R until you run out of charges.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To extend your Q range hold Q then Flash and instantly release Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For max damage at a long range Q then release and instantly E W R. Continue to cast R until you run out of charges.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard stun combo is E then W Q as soon as you confirm the stun will land.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to poke W then instantly Q, but release it after the slow has landed.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For perfect burst timing W E Q as quickly as you can.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

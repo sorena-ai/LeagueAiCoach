@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="leblanc" scrapedAt="Wed Nov 26 2025 22:42:31 GMT+0100 (Central European Standard Time)">
+  <combos count="15">
+    <combo>
+      <description>To kill at level 6 start with your R (Mimic W) to get into range for Q W E combo.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To juke opponents W into melee range then R E Q as quickly as possible then W back. Watch your opponent and use your second R cast back if you need to keep the tether from breaking.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For huge AoE damage Flash and instantly W R on your target. W out then wait for it to be safe to R back and finish off the kill with Q E</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To hide your chain with Flash cast E, then quickly Flash and W. Make sure to land Q before the tether finishes, then W AA after.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>W into melee range then instantly E, W back then R for your second chain and Q. Continue to AA while they are CC'd if needed.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>The most common way to kill an ADC is to use W to gap close then instantly R and use Q E W as quickly as possible.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When facechecked E then instantly Q R and W on your target, then W back to safety.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To double distortion burst W into melee range then R E and recast W. Right before your E tether ends R back and Q for the final burst of damage.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>R (Mimic W) to gap close, then quickly E W on your target to hide the animation. Q when you land and then W to safety.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To poke Q and then W on your target, using E as soon as you land. AA them down until you want to go back with W</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>With your ultimate you can set up ganks even better by using W towards your target, then quickly E. AA while they are rooted then R for a second chain, Q and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To set up ganks W towards your target, then instantly E Q followed by AA's while they are rooted.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>W forward then instantly Q R E to quickly burst down opponents.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When further away trade by using W into melee range, AA Q instantly then W out.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>The classic Leblanc trade is Q then W on your enemy, AA and W out at the end of the AA animation.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

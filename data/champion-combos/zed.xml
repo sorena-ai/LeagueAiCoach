@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="zed" scrapedAt="Wed Nov 26 2025 23:00:56 GMT+0100 (Central European Standard Time)">
+  <combos count="16">
+    <combo>
+      <description>Kite targets with W to the side or behind you then R and instantly recast W once you come out of the animation. E Q your target. You can then recast R to finish off the kill.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Finish your target with Flash after hitting a triple shuriken. W to the side or behind you then R, instantly W once you come out of the R animation and E Q. Wait for your E cooldown then R F E AA your target right before your ult pops.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>The famous Faker vs Ryu combo. R then E AA as soon as your come out, walk a bit then R back and Q AA your target, Flash as soon as your AA connects then W away from your target and finish the kill paving the road to becoming a world champion down the line.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>When in melee range, R then W W away quickly. E Q quickly followed by recasting R to go back in for your passive AA, then Flash away.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Getting triple shuriken damage is extremely important. Use R AA then W next to the target. Q E instantly followed by W AA then R again as soon as your AA connects.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>If you're worried about missing Q then you can W Q W instantly then R and E AA as soon as you come out.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To teamfight R the frontline target then W to the backline target. Q W instantly followed by E AA, and recast R to return to safety.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To tower dive W E R quickly then Q as you land, AA and instantly R out.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Trade and escape by using W behind yourself. Go into melee range and E AA at the same time, then Q and W away.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Delay your all in with W and E Q instantly. Walk back a bit and wait for your E cooldown, then recast W and instantly R E AA to finish off the kill.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>The standard kill combo for Zed will be using W twice as quickly as possible then instantly R E AA into Q and R back.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When using R to dodge, W then E Q instantly. Recast W and AA until your E is almost back up, then R AA E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use W then E Q instantly followed by recasting W into an AA to commit to a fight in lane.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For surprise kills Q and mid animation Flash, then quickly E AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To trade in melee range E and AA at the same time then instantly Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>The most basic trade will be W then instantly E Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

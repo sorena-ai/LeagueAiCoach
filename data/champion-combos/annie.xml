@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="annie" scrapedAt="Wed Nov 26 2025 22:31:02 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>A harder level 6 all in to pull off, at three or four passive stacks E then W. Instantly Flash mid animation, then R Q as fast as you can before AAing.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Surprise trade on your opponent. With three stacks of your passive Q then E right before it lands followed by W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a great teamfight engage with your passive up Flash and instantly R W Q as fast as you can, then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>At two stacks of your passive Q then instantly W E and AA after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in at level 6 use Q while your passive is up. As soon as the stun lands R W instantly then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To get some poke damage on your opponent AA then quickly Q W and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Trade onto your target by using E to get into range then instantly W Q and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

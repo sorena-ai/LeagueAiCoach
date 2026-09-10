@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="aurora" scrapedAt="Wed Nov 26 2025 23:23:11 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Press R, then use the edges of the zone to TP, then Q, E, TP again, W, TP one more and then finish with a final Q!</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W, then R, Q, E, AA and Q again to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Press W then Q, E and instantly Flash before finishing with another Q.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Press Q then E, W and Q again to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Press Q, then AA, E and Q again to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

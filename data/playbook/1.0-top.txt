@@ -1,0 +1,48 @@
+The Top Lane is known as the "true solo lane", characterized by the constant 1-on-1 duel and the potential to create map-wide pressure through strategic isolation.
+I. Laning Phase Fundamentals: Winning the 1v1
+The primary win condition for the Top Laner is to win the 1v1 by taking the enemy turret and subsequently protecting the top turret.
+A. Gold and Experience (XP) Control
+The Top Laner is a solo laner, meaning their gold and XP are primarily derived from lane minions and fighting the enemy.
+1. Level 2 Power Spike: In a solo lane (Top or Mid), this is achieved by killing the entire first minion wave followed by just one melee minion on the second wave. This often provides a window for aggression or an advantageous trade.
+2. Farming Under Turret: When minion waves are pushed into your tower, mastering last-hitting is essential for income.
+    ◦ Melee Minions require the turret to hit them twice, and then they are finished off by one champion auto-attack.
+3. Maximizing Income: Since Top Lane is a main gold source, players should spend time practicing last-hitting in custom games to improve mastery.
+B. Trading and Lane Control
+Effective trading minimizes damage taken while maximizing damage dealt to the enemy laner.
+1. Minion Aggro: In the very early game, avoid unnecessary trading when there is a large enemy minion wave present, as minion damage stacks up quickly and can easily favor the enemy.
+2. Playing Around Cooldowns: The ideal time to trade is immediately after the enemy champion uses a key ability (e.g., their main damage source or crowd control tool) on the minion wave or on you without success. By fighting when their ability is down, you gain an advantage.
+3. Using Abilities Efficiently: If you use an ability to clear minions, try to aim it so that it also hits the enemy champion at the same time to gain dual value (push and poke).
+4. Wave Management Strategy:
+    ◦ If you are a champion that is weak early (like Camille early), you want to keep the minion wave closer to your side of the map to allow you to farm safely and avoid being zoned or killed.
+    ◦ If you are a champion that is strong early, you can keep the wave even or slightly closer to your side to enable all-ins when the enemy walks up to farm.
+II. Strategic Awareness: Jungle and Teleport Use
+The Top Lane is often geographically isolated, making map awareness and tracking the enemy Jungler vital for survival and strategic rotation.
+A. Tracking the Enemy Jungler
+You should always be aware of the enemy Jungler's general location to decide when it is safe to push or fight the enemy Top Laner.
+1. Anticipating Ganks: Top Lane often receives Jungler attention, so you should be aware of common jungle routes, such as a Level 3 gank on the Top Lane.
+2. Objective Tracking Clues: If major objectives like the Dragon are spawning, you can often assume the enemy Jungler is positioned Bot side, suggesting a safer window for aggressive plays in the Top Lane.
+3. Power Spike Awareness: Knowing if the enemy Jungler is a champion that is weak early on (like Fiddlesticks or Malphite) and needs their Ultimate to come online (Level 6) lets you safely assume they will not be ganking early, allowing you to play aggressively.
+B. Teleport (TP) Usage
+If Teleport is taken, it must be maximized. Teleport usage is critical for rotations and saving teammates.
+1. Joining Fights: The primary late-game use of Teleport is being ready to Teleport to a ward or minion to join a fight quickly when your teammates need you.
+2. Dual Objective Pressure: Use Teleport defensively if the enemy is collapsing on your split-push, or offensively by joining a fight after applying pressure elsewhere.
+3. Communication: If the enemy engages on your team while your Teleport is available and you choose not to use it, you may be held responsible for the team fight loss.
+III. Macro Strategy: Split Pushing Execution
+Top Laners are the champions most associated with split pushing.
+A. When to Split Push
+Split pushing should be done with purpose, not mindlessly.
+1. Dual Objective Pressure: A successful split push requires that you are applying pressure to one side lane (Top or Bot) while your team is pressuring another objective (e.g., Dragon, Baron, or an Inner Turret).
+2. Example Timing: If your team is positioned to take Dragon, you should split push the Top Lane to force the enemy to make a decision: either defend you (freeing the Dragon for your team) or ignore you (allowing you to take the Top Turret).
+B. Split Push Safety
+Safety is paramount, as a collapse on a split pusher can throw a game.
+1. Vision is Mandatory: Place deep wards in the enemy jungle entrances to ensure you are not collapsed upon. If you see multiple enemies heading your way, you must retreat.
+2. Wave Setup: While traditional split pushers can rely on simple pushes, setting up a slow push by clearing only the back caster minions allows a large wave to stack and crash into the enemy turret, which can be useful before rotating to apply pressure elsewhere.
+IV. Team Fighting Role
+When grouping for team fights, the Top Laner's positioning and objective are defined by their champion type.
+1. Tanks (Frontliners):
+    ◦ Tanks like Malphite must be at the front of the team to anchor the fight and soak up damage.
+    ◦ Their job is to engage the enemy or peel off enemy divers who try to kill your backline carries.
+2. Fighters/Bruisers:
+    ◦ Fighters like Kled or Darius should position towards the front of the team but prioritize taking down the closest safe target.
+    ◦ They must determine whether they are strong enough to destroy the enemy backline on their own, or if they need to focus the frontline and protect their own carries.
+3. General Positioning: All frontliners must shape the fight for the team. You must evaluate the situation: if your carries are being dove, you peel; if the enemy is clumped and immobile, you engage.

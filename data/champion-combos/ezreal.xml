@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ezreal" scrapedAt="Wed Nov 26 2025 22:35:29 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>To chase players down E forward then instantly Flash towards your target and AA. Cast Q W quickly with a final AA right after.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To juke opponents R then Flash mid animation, Q instantly when you land then AA and E to reposition. Follow up with AA W, and AA until your Q is off cooldown.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Begin your Q animation then instantly Flash to catch them off guard. Follow up with W and E to reposition.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>While locked in your R animation you can Flash to create distance. E forward then instantly Q W and quickly AA and cast R but mid animation Flash away.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>At the max range of W, R then use your W. Quickly E and Flash towards your target, then Q AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When in close range, AA Q then instantly W. E away from your target and cast R to create distance.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To snipe from distance, E towards your target then quickly Q W R right after one another</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To fully burst someone R then quickly E forward, W and AA Q AA right after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When slightly further away E forward then instantly Q AA. During the AA downtime W and continue to AA until your Q is back up.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly trade with W then instantly E foward, Q and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>If you land a Q and want to all in. Q then E forward and AA. During the AA downtime use W so that your next AA procs it</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

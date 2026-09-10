@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="evelynn" scrapedAt="Wed Nov 26 2025 22:35:16 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To burst a priority target W them, and as soon as it's about to complete Flash E Q instantly. AA R quickly after your Q animation.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To finish off an enemy quickly Q then instantly Flash. E, then R as soon as your E animation ends.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a basic trade Q then W before it lands, use Q twice more as you approach. E as soon as you are in range then AA and use Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To get up close and combo quickly W then R backwards to get into range to hit your Q, Use Q again as you approach and E as soon as you are in range, then continue to AA as you use Q more.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If need to burst a target without W, Q then Q again as you run into E range. Use E and use Q right before you R, which should be almost instantly after your E finishes.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For your full damage combo W your target and Q from max range as it completes. Move towards your target and use Q, then E once in range and Q, then AA and use Q right before your R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When slightly further away W your target then Q right as it completes. E as soon as you are in range then Q three more times as quickly as you can and AA while doing so.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When close to your opponent W your target, walk into E range then instantly E Q once the W completes. Q as quickly as possible while you continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

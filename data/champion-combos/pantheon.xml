@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="pantheon" scrapedAt="Wed Nov 26 2025 22:47:47 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>You can also full combo by using R towards your target, then using Q and AA. W onto them, then AA E AA. Finish up with another Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When initiating a fight R to your target, then W and AA. Follow up with Q, then AA and E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When you don't need to gapclose, Q your target then AA. Use W and AA, then E and AA again. Q again once it's off cooldown.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>At 5 passive stacks W onto your target, then AA. Use Q, then AA and E to chase or disengage.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Trade with your opponent by using W onto your target, then Q and AA before using E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic lane trading combo is to W onto your target, then AA, and use Q and E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

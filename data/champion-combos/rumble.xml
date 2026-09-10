@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="rumble" scrapedAt="Wed Nov 26 2025 22:50:28 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Start with your R, then E, Flash in and Q, then W, AA, E, then finish with an AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your R, then W, Q, Flash in and AA, E, AA, E and finish with AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E, Q then W, then three AAs while Overheated</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Q, then W, then R, AA then weave an E, AA, E then finish with an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start off with your R then E, Q, W then AA then E, then finish with an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your E, then Q, , AA, E then finish off with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your Q, then W then an AA then E, AA, E, then finish off with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

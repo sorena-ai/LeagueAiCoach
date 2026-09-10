@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="missfortune" scrapedAt="Wed Nov 26 2025 23:25:23 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>E your target then W right before you AA Q. and right as you Q quickly R. Cancel it by moving towards your target as they are walking out of range for the last AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When dueling use W then AA twice and use E Q instantly, Flash away from your target at the start of your Q animation to safely R from range.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To all in after Level 6, W then instantly AA Q AA and finish up with E and R together.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>The most basic way to maximise your R damage is to E on your target, then instantly R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To normally trade E on your target, then W right before you AA and instantly Q AA after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use W then Q AA for an extremely quick trade.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

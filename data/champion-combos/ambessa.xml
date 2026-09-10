@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ambessa" scrapedAt="Wed Nov 26 2025 23:22:47 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Lead with Q then E Flash onto your enemy, then AA, Q, R and AA again to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W and dash then instantly Flash, then AA, Q, AA, E, AA and Q again to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Press R, then Q, then W, AA, Q, AA, E and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Press E, then AA, Q, R, AA, Q, and AA again to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use Q then Flash and dash onto your enemy. Then AA, E, AA, R and Q again to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Press your Q, then AA, E, AA, Q again, then W to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+  </combos>
+</champion>

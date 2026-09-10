@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="chogath" scrapedAt="Wed Nov 26 2025 22:33:40 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>For a combo that gives a low chance of escape W and instantly Flash, then quickly Q E eAA followed by R to execute.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly burst a low target Q. Once you confirm it will land use W and Flash instantly, then R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When trying to engage on your target post level 6 Q and walk into E range to AA then W AA, execute with R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>If you're trying to all in a target with mobility or movement spells up W Q instantly then AA E and use R to execute.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a decent melee trade W then quickly AA and instantly E after it completes to reset your AA. Q after your E slow connects then AA twice more.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade with your opponent at short range Q then instantly AA E. W as soon as your E connects then AA twice.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

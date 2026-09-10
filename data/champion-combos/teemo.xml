@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="teemo" scrapedAt="Wed Nov 26 2025 22:55:04 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Cast R twice then AA then Q then AA then W followed by 3 AAs</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash in then AA and finish with Q</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W then R then Q and finish with AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with AA then R then W then AA twice then Q followed by 2 AAs</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with AA then W then AA the Q then 2 AAs</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

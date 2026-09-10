@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="samira" scrapedAt="Wed Nov 26 2025 22:50:52 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>AA, then W, E, Q and AA to ready your R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>AA then Q, E, and AA. Press W then AA, R, AA, Q and another AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA your enemy then W, E and AA. Use your Q and AA and Finish with your R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA, Q and AA. E onto your enemy and use your W, then AA, AA, Q and AA again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash then E, Q and W your enemy. AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+  </combos>
+</champion>

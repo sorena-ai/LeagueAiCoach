@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="seraphine" scrapedAt="Wed Nov 26 2025 22:51:28 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Start with R then instantly flash then E, Q then W, then finally finish off with AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start then R, then E then Q then finally finish off with a W</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your R then E, then Q, follow up with your W and finish with an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E, follow up with R then Q, then W then finish with AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W, then E then Q then finish with an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your Q then E, follow up with an AA then W, then two AAs then Q and finally finish off with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

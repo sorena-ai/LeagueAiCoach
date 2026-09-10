@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="anivia" scrapedAt="Wed Nov 26 2025 22:30:50 GMT+0100 (Central European Standard Time)">
+  <combos count="9">
+    <combo>
+      <description>For a long trade Q towards your opponent then Q again. W behind your target, E and R underneath them, then AA. Finish with E AA R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Force your enemy to move by using R and then W behind them. Q AA Q, then E AA R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Engage on your target by using Q, then R AA Q. E then W behind them, AA and R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Make it easier to land your stun by using R under your target then AA E. Q Q, then W behind your target and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When in melee range quickly Q Q, then E, R and W to separate you and your target.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Trade post-6 by using Q then R AA. Reactivate Q, then E, AA and cancel your R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Fast trade using Q, then E and quickly Q again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Chunk your opponent by using R under them, then AA, E. R again and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick trade Q then AA Q. E AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

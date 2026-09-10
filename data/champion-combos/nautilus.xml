@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="nautilus" scrapedAt="Wed Nov 26 2025 22:45:59 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To engage from a very long distance away F then instantly Q and AA. Immediately start your R, then AA W and E after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use R on your main target then instantly F to redirect Depth Charge through other enemies. Q your target during the knockup, then AA E W AA as quickly as possible.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use E then instantly Flash. AA W and quickly cast R, AA after then Q as they hit the ground.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When actually trying to burst an enemy Q then mid air hit E and instantly AA R once you arrive. During the R knock up use AA W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA your target then Q to a wall, using your E to hit your target before you escape to the wall.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Before level 6 all in leading with Q and AA after you land, then quickly W E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When in melee range AA then instantly E. Q right as the root is about to finish, then AA W as soon as you can.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>After level 6 use R and wait for the knockup to land. Q to the target and AA W instantly when you land, then E AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

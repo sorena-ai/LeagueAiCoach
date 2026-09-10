@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="draven" scrapedAt="Wed Nov 26 2025 22:34:28 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>For a nice snipe Q then AA AA. Use E and R, then Flash so the axes hit a low health enemy on the way back to you. AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When you have 2 spinning axes use AA W Q, then AA AA. Follow up with W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Surprise your target by using R then W. Quickly E and instantly Flash mid animation, then Q AA and W AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic trade is to E then Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Hide a spinning axe with an AA and immediate Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Combo fast with Q R AA, then knock aside your target with E and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Trade in lane by using W then AA E. AA, then W again and AA some more.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

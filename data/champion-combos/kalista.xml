@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kalista" scrapedAt="Wed Nov 26 2025 22:40:06 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Use your Auto attacks on nearby enemies to jump over certain walls in the game. Don't forget to finish with that Q and E combo for some extra burst.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Line up as many AA's on a target as you can, then Q them and E your next target to take them out.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Auto attacks to get closer to your intended target, then Q and E them for some burst!</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Q your enemy, AA them and E as you leave the fight.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA your enemy, then Q, then AA and E them for a quick burst trading combo.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+  </combos>
+</champion>

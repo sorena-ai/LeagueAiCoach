@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="vex" scrapedAt="Wed Nov 26 2025 22:57:42 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Start with R then flash in then R then W then AA then E then Q then finish with AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E then Q then use R twice then finish with W</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash in then W then E the R the Q then R then AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with R then R again then W then E then Q then finish with AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E then R then Q then AA then R then AA then W then finish with AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with AA then E then AA then Q then AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with AA then W then Q then E then finish with AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

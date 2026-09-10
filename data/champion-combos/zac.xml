@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="zac" scrapedAt="Wed Nov 26 2025 23:00:44 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Q an enemy that is not your main CC target then Flash and AA your actual target as quickly as possible. Follow up with an E on your target, then W and use R right as they are about to land. W again when it's off cooldown.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When E is out of range you can E towards your target then Q them. Flash to AA something nearby followed up by using W R, once again using W as soon as it's up.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Insec your target by using E and as soon as you land R instantly Flash behind your target. When on top of them, use W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Sometimes you can gank down a lane. Q an enemy then E towards your main target. Quickly AA them and use R and W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If you want to think more about damage Q your target then AA a nearby enemy and R right as the cc is about to end. Use W mid R then once it's done use your E to gap close and finish with another W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>While in melee range Q your target then AA a nearby enemy. Instantly E and use W while they are knocked up.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your normal gank will start using E onto your target and Q them upon landing. AA a nearby enemy followed by using AA W AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When E lands on your target, W right as you land on them. Q your target then AA a nearby enemy then R and W whenever you're on top of them.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

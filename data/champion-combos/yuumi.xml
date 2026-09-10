@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="yuumi" scrapedAt="Wed Nov 26 2025 23:00:32 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Press your E then W onto an ally then R and W around your teammates!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Pop your E then W and R as many targets as you can!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Bind to your ally with your W then use E and R. Finish with your Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Hit your enemies with a few basic attack, then W, E and Q your enemies to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Latch onto your ally with W, shield them with your E and poke your enemies with your Q</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

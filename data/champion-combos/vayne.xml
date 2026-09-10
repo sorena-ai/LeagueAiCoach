@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="vayne" scrapedAt="Wed Nov 26 2025 22:57:05 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Use E then mid animation Flash to the other side of your opponent so that they get pushed into a wall, then AA Q AA AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When going all in R then instantly Q. Open with an AA then quickly E your target into a wall, then continue to AA in between your Q cooldown time.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Condemn can also be used to escape. AA then quickly Q AA. E and then Flash immediately right after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When going aggressive AA, E your target into a wall, Q towards your target and then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Stun your target by using E into a wall then AA. Q away from them and continue to AA as you retreat.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To poke trade AA then instantly Q AA and E your target away.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Trade normally with AA then quickly Q, AA and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA then instantly Q into a wall and AA as quickly as possible.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

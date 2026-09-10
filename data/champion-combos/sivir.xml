@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="sivir" scrapedAt="Wed Nov 26 2025 22:52:52 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>R then Q your target at max range so you double hit the damage. Flash right before the Q lands and instantly AA W, then continue auto attacking.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>AA then instantly W Q, AA and Flash to reposition so the Q hits your target on the way back. Continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>In longer trades AA then instantly W, AA again then Q instantly followed by more AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a quicker trade AA then instantly W to reset your AA and Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>The most common trading tactic is to AA then Q as soon as the animation finishes, then AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade from further away Q then AA, use W as quickly as you can after the AA finishes then continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

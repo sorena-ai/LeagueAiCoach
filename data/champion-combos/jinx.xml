@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="jinx" scrapedAt="Wed Nov 26 2025 22:39:42 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>To quickly burst E your target then instantly AA W and R as soon as the animation ends. Follow it up with some AAs.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To make your E W easier you land you can hide some of the animations with R. Continue to AA after that for the kill.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>A normal trade will start off with Pow-Pow and AA W, then AA twice more and use E. Q to AA more with Fishbones.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>W to slow your target then E. Swap to Fishbones with Q and AA your target while they are crowd controlled.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E and W together to make it easier to trap. AA while your opponent is crowd controlled.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Make the most of the time an enemy is crowd controlled by using E on your target then AA three times with Pow-Pow. Then use W and instantly Q for more AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

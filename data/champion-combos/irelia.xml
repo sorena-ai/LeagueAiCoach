@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="irelia" scrapedAt="Wed Nov 26 2025 22:38:17 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Press your E behind you then R and instantly Flash. Then Q onto your enemy, pop the second part of your E to stun them then AA, Q and AA again. Finish the combo with your W and then a final Q.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Press your R and then flash instantly towards your enemy. Then Q, AA, E and E again to stun them before another AA. Then, Q and Q again before finishing off with your W.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Use your R and then Q ont your enemy. AA, then E and E again to stun them, then AA, Q, AA, Q and AA again to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Press your E behind you then R and Q onto your enemy. AA them then stun them with your E2 then Q, Q and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Press your E twice to stun your enemy. Dive in with your Q, AA then use your R! Then AA, Q, AA Q and AA again to take them down.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Land your stun by pressing E twice on your target. Then Q in, AA, Q again and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+  </combos>
+</champion>

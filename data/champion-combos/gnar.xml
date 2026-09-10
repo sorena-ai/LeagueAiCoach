@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="gnar" scrapedAt="Wed Nov 26 2025 22:36:53 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Use your E and Flash before your R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then AA, R, AA, W, then AA, Q and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E and R, then AA, Q and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>As you transform, use your E and R instantly.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, E, AA, W and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA, then E, Q and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

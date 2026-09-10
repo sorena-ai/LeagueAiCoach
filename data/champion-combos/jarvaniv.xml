@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="jarvaniv" scrapedAt="Wed Nov 26 2025 23:23:59 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>To knock up a distant enemy E Q instantly and before you complete it Flash onto your target.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a close range burst Q and instantly Flash, then E R as quickly as you can followed by an AA.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To escape or trap an enemy R and E Q out once you land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>From long range, E Q instantly then right before you hit your flag Flash and R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To get on top of an enemy Flash then instantly R. AA once you land then instantly E Q followed by more AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To trap an enemy whilst you are low E Q instantly then W R as soon as you are in range. Flash out instantly after R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When out of range for R, E Q to get into range and R while still mid air. Follow up with an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to gank before 6 E Q instantly then AA once you arrive. Use W right as or after they land then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to gank after 6 E Q instantly then AA followed by R AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick combo Q E R one after another as quickly as you can, then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

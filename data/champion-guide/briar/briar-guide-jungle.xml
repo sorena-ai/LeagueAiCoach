@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guide>
+  <champion>briar</champion>
+  <position>jungle</position>
+  <strengths><![CDATA[Lots of sustain in fights, especially if the enemy doesn’t get healing reduction. You have a lot of built-in CC which is great on a Jungler. Post 6, you can use your Ultimate (R) to gank your allies from afar.]]></strengths>
+  <weaknesses><![CDATA[Needs her team to follow up in team fights or else she will get blown up. The interaction between her (E) and (W) is a bit annoying. If she doesn’t fight in the jungle or near walls, she is missing out on extra CC.]]></weaknesses>
+  <gamePlan>
+    <earlyGame><![CDATA[Average Make sure that you get to level 3 really fast in this game. It will allow you to execute ganks easily and get a quick lead over the enemy. Once you get your Ultimate (R) , you should look for picks all around the map. After getting your first item, you need to look for more fights with the enemy Jungler or laners to abuse your early strength.]]></earlyGame>
+    <midGame><![CDATA[Average During the mid-game, all you need to do is look for picks all around the map. This is the time for lane swaps so it should be easy for you to get kills. Target immobile carries as much as you can. They can't do much to save themselves and you will be able to escape using your Ultimate (R) . Look for flanks on the enemy team and see if you can catch them off-guard by using the fog of war. This will make team fights really unfair for the enemy team.]]></midGame>
+    <lateGame><![CDATA[Average In the late game, look for picks on immobile or mispositioned enemies. Taking someone down in the late game can give you enough time to force a fight, siege an objective or take the Baron or Elder Dragon. If the enemy is grouping, look to group with your team too. In team fights, continue to focus on the squishiest and easiest to kill high-priority targets in the backline. Flank in team fights to make getting on the enemy backline easily. Ensure you’re in range to press (R) . JUNGLE PATHING Red Side Blue Side Early Game]]></lateGame>
+  </gamePlan>
+  <powerSpikes>
+    <earlyGame><![CDATA[When you’ve got your first component item, your damage output will be quite high and you’ll be deadly in skirmishes. At level 3, you can technically start ganking as you’ll unlock all 3 of your basic abilities. At level 6, you’ll have your Ultimate (R) . You need to be proactive and look to gank whenever your Ultimate (R) is up.]]></earlyGame>
+    <midGame><![CDATA[When you hit level 11, you’ll put an additional point in your Ultimate. You will be a more effective ganker and a bigger threat at this stage of the game. Of course, you’ll max your first ability at level 9. Briar is a pretty good champion in the mid-game. It is important that you abuse your strenght during this stage of the game to get yourself ahead.]]></midGame>
+    <lateGame><![CDATA[As teams tend to group, you will find it a bit harder to get picks and make plays in the late game. You’re at a bigger threat of dying a tthis stage of the game. At level 13, you’ll max your second ability. When you’re level 16, you’ll put the third and final point in your Ultimate (R) . Your Ultimate (R) will deal a lot of damage in the late game.]]></lateGame>
+  </powerSpikes>
+</guide>

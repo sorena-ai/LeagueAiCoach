@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="fizz" scrapedAt="Wed Nov 26 2025 22:36:05 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>To hide your Shark, Q then mid dash R followed by a quick double tap of E to get into range for AA W damage.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use E towards your opponent. When you start to fall down Flash on your target before you hit the ground, then AA W and instantly Q.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Guarantee your ultimate by Q then mid dash R and mid animation Flash onto your target.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To trade and retreat without damage E behind your target then activate W before Q back through them.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Another way to poke is to double tap E to engage then AA W instantly. Get behind your opponent to be able to Q back to safety.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly burst with R and hit E to engage. Once you land, AA W Q as quickly as possible.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>From close range R and walk up to AA W, time E with the knockup then AA Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>All In after level 6 by using R then walk into Q range, instantly AA W and then quickly double tap E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To All In from range E onto your target, then when you land AA W. Continue to AA and use Q to stay in range.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To All In early Q then AA W instantly and use E right after for damage.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>The most common poke trade is to Q then AA W instantly and use E twice to quickly get out.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ekko" scrapedAt="Wed Nov 26 2025 22:34:52 GMT+0100 (Central European Standard Time)">
+  <combos count="14">
+    <combo>
+      <description>To very quickly burst someone face checking you use E Q instantly, then R and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>From long range, W your target and right before it lands E forward. Cancel the very end of the roll with Flash then AA to get in range for the stun, followed by Q AA AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Going through your W with R will still stun the target. W at your target then take 1 step into the where the circle will be, then leave before your opponent sees your W. As soon as your W lands R, then E towards your target so you can eAA Q AA.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Your E roll animation can be cancelled with Flash. AA then instantly Q E. Cancel the roll with Flash and instantly AA.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>If being chased E away, using W during its animation. Q back at your target upon finishing the roll, then right as your W is about to land R back and instantly AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To execute from far away E then quickly Q and Flash right as you start the animation, then AA to dash and AA once more.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To burst and hide your R animation, Q then walk away and as it's about to hit its return damage E and cast R mid animation then AA instantly</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>You can slightly hide your W animation with E. E forward, use W on your target then AA and Q on arrival. Continue to AA if the stun lands.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Cancel your Q E animations by using Q on your target, then instantly E forward and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in an opponent before level 6, W your target and wait until it's about to proc. E forward and Q AA to gap close and trigger the stun.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your most basic trade will be to use E then AA as soon as you're done rolling, then quickly Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>If someone facechecks you  lead with W then Q AA. E away from your target then AA to dash back to land the stun.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>While in melee range, trade with AA then instantly Q. Quickly use E away from your target only to go back in.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Q and if both portions land E in and AA to proc the passive and retreat.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

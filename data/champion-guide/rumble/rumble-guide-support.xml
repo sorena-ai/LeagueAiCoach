@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guide>
+  <champion>rumble</champion>
+  <position>support</position>
+  <strengths><![CDATA[Can do a lot of damage to enemy units with his Passive empowered (Q) and (E) who are close to him. This makes it easy for him to act as a disruptor during team fights. His (E) combined with his (W) can allow him to run down a single enemy target easily. The (W) shield allows him to mitigate a good amount of poke as well. His Ultimate makes him a menace during team fights. The enemy team can’t afford to fight in closed spaces or they will definitely get chunked out by his Ultimate]]></strengths>
+  <weaknesses><![CDATA[He is very immobile so make sure you only over-extend when you have wards placed, and you back off if the enemy looks to be playing aggressively. Rumble needs to get a head, and win lane to be useful. He isn’t that good when behind. He can have little laning power when he is playing in a countered matchup. In these cases, its best to avoid picking Rumble.]]></weaknesses>
+  <gamePlan>
+    <earlyGame><![CDATA[Average Poke and harass the enemy as much as possible with your (E) to get them low. Play around your Ultimate cooldown and constantly look to make plays with it. Avoid taking too much damage. Focus on harassing the enemy after they’ve used an ability to reduce their trading potential with you.]]></earlyGame>
+    <midGame><![CDATA[Average Stick with your team during the mid-game and continue to make plays with your Ultimate on enemies who are over-extended or alone. Make sure you invest in a magic pen during this stage of the game. Teams will be grouping, and you’ll need it to help with their defensive stats. Make the call for major objectives like the Dragon after getting picks with your Ultimate.]]></midGame>
+    <lateGame><![CDATA[Average Play around your low Ultimate cooldown to make pick people off. Stick with your team and avoid going to ward alone. Peel and protect your carries. Focus the same target they are to take them down quickly.]]></lateGame>
+  </gamePlan>
+  <powerSpikes>
+    <earlyGame><![CDATA[His first power spike is when he gets his first component item as this increases the damage output from his (Q) and E. Once you hit level 6, Rumble will unlock his Ultimate. This ability allows him to deal extra damage and adds kill pressure. He isn’t the strongest champion at levels 1 and 2, but he can start to trade more successfully post-level 3.]]></earlyGame>
+    <midGame><![CDATA[At level 9, he will max his first ability. His trading power will intensify once he hits this level. Similarly, Rumble will unlock his Ultimate at level 11. This will allow him to go for more trades and its damage output will be a little higher. Teams tend to start grouping during the mid-game. This is good for Rumble, as his Ultimate makes him a good team-fighting champion.]]></midGame>
+    <lateGame><![CDATA[In the late game, Rumble would have lots of damage and magic pen. His abilities are really going to hurt the enemy. At level 16, he will put the final point in his Ultimate. His Ultimate will be deadly in a team fight if used correctly. Rumble is a great team-fighting champion, and due to his low cooldown Ultimate, he can look for picks and force fights on enemies who are over-extended or caught out of positon.]]></lateGame>
+  </powerSpikes>
+</guide>

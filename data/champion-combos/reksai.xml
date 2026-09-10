@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="reksai" scrapedAt="Wed Nov 26 2025 23:26:11 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Surprise your enemy by using E to tunnel then Flash W, AA Q AA E AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use an existing tunnel then Q E W, AA Q AA E AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To get to a distant enemy, Q while burrowed then R, followed by AA Q AA E AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a long combo use E to tunnel then Q W, AA Q AA AA E AA then R to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic trade pattern is AA Q AA AA then E to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic full combo is Q W, AA Q AA AA E R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Utilize your abilites early by using Q in burrowed form then W. AA Q AA AA, then E AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

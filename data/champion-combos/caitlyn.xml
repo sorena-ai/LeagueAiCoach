@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="caitlyn" scrapedAt="Wed Nov 26 2025 22:33:04 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>W Q instantly then E W quickly,followed by three AA's - one for each headshot proc.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a longer trade and triple headshot W Q instantly then AA and quickly attack move command. Follow up instantly with E, using W while in mid air. AA R AA as quickly as possible after that.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>You can trade quickly in a 1v1 situation by using E, Flashing as soon as your 90 caliber net comes out and AA'ing. Make sure the first AA lands right before the E then attack move command next to your target for the headshot proc.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To bait your opponent closer to you, R then mid animation Flash. E Q your target instantly and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Outside of normal range, Q then mid animation Flash. E W instantly and AA twice.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly Auto Attack twice faster than normal E Q your first target then AA a second target. Instantly using your attack move command next to your first target (not on top of your target).</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a neat trade E your target and instantly use W mid air, then AA Q AA upon landing.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To snipe out a target E to the side and instantly Q R your target</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>An alternative all in at level 6, use W under your target and AA once the trap lands, then instantly E Q quickly one after another. R right after the Q then AA instantly after R completes.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in at level 6 quickly one after another W under your target, E and Q them. AA twice and R to finish up.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic short trade is to E your target and Q quickly, then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

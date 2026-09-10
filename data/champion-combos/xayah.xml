@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="xayah" scrapedAt="Wed Nov 26 2025 22:59:19 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To lock down a kill use your R and Flash towards your target while in the air. E to root them, then W and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To root an unsuspecting enemy use Q AA and E, then quickly activate Galeforce while the feathers are flying through the air.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>You can use your ult for damage by casting R then E W. AA three times, then Q and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Kill a low mobility target quickly. Use W Q and then Flash mid animation, then AA and R. When you land AA E and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a fast root quickly Q AA and E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard trade is to W then AA Q AA, followed by E to root.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Catch enemies out by using R E, then Flashing to root your targets.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kennen" scrapedAt="Wed Nov 26 2025 22:41:30 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>When looking to engage or flank a teamfight E then R and instantly F W. Quickly Q then recast E to continue to AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To kill someone in an extended fight when your W passive up, E into melee range then instantly W E AA once it connects. Quickly Q then AA R and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in when someone is close R then AA W as quickly as you can then instantly Q followed by an AA. Quickly E, then recast it once it lands followed by more AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To burst someone E forward then cast R once in range and instantly W, once your E connects recast it and instantly Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>A trade used when minions are around have your W passive up then E forward. Once your E connects instantly recast it and AA W, then quickly Q while they are stunned and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly trade from afar when your W passive is up Q and instantly AA W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your ideal ranged trading pattern when one stack away from W your passive is to, AA Q followed by AA W and conitnue to AA if needed.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>A trade used when there aren't minions blocking, E forward then Q. After you connect with E use W then recast E so you can AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

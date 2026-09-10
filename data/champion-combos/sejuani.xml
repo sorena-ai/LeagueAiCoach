@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="sejuani" scrapedAt="Wed Nov 26 2025 22:51:04 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>When in melee range already you can chain your crowd control properly. AA W AA one after another then instantly Q E followed by AA R AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>You can hide your R by using Q then quickly R mid dash. Right as Q connects and R is about to finish casting instantly W followed by an AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To remove the time to react use R then instantly F Q W followed by some AA's.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Engage from much further away by using Q and R mid air then Flash mid R animation. Instantly W right after followed by some AA's</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To burst opponents R then instantly W Q and AA once you land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If your enemy already has stacks use E to stun and Q instantly. AA R AA, use W instantly after and continue to AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Engage fights quickly using Q then hit R while still dashing and AA W AA as soon as you land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q and while the animation is still going hit Flash, instantly AA followed by W AA, use E as quickly as you can and finish up with AA R AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To reposition your W you can Flash during the animation. Auto and immediately Q afterwards followed by AA E AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>This is your standard Q W combo. Use both together then AA twice, E as soon as you can then AA R AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To engage normally use Q then AA and use W as soon as the animation finishes, AA again then E and AA once more</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

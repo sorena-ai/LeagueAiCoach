@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="zyra" scrapedAt="Wed Nov 26 2025 23:01:57 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>R then Flash in followed by E, W, Q, W</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Flash in then use E, W twice, Q, R then finish with an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then W twice, Q, R and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Ultimate and then Q then follow with W twice.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use Q then W then E then R</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your R then E then W twice then finish with Q</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then your W then E</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then W then Q to finish</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

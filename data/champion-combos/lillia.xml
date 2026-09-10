@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="lillia" scrapedAt="Wed Nov 26 2025 22:43:08 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>E into your enemies then use your Q and Flash before sending them all to sleep with your R. Then just as they wake up, hit them with your W and Q combo to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Q Flash into an enemy team and then press R and Zhonya's Hourglass.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your E then R your enemy. Then use your Q and Flash to get onto your enemy, AA them and finish them off with your W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Hit your target from range with your E and then press your R. Then W onto your enemy and Q them to burst them down.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with an AA, Q and AA. Then W, AA, E, AA, AA and Q again to finish the combo.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your E then W onto your enemy and finish off with a fadeaway Q!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

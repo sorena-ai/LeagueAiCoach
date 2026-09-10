@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="olaf" scrapedAt="Wed Nov 26 2025 22:47:11 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Q then mid animation instantly Flash to extend the range and R. Use your W right before you AA, then E AA and use Q followed by more AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Keep 2 Axes available by using Q on your target then wait until your next Q is up. Q a second time and quickly pick up your first axe. AA until you can cast Q again then pick up the axe that is already on the ground, AA twice then Q and pick up both axes to instantly Q again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>If you're unsure about whether to all in Q then as soon as it lands hit R. Once in range instantly use W E AA, pick your axe up then Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in R and run at your target like you're unstoppable, use Q then E once you're in range. Activate W right before you AA, then kite towards your axe as you AA, then follow up with a Q once you have your axe.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When ganking up close Q E instantly then AA as you kite to your axe, pick it up and Q again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>In a normal fight E then instantly AA. Q as soon as your AA finishes, then AA while you kite towards your axe to pick it up and Q again once you do.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When ganking from further away Q from max range then walk up to use E, instantly AA after, then pick up the axe and quickly Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

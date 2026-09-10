@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="shen" scrapedAt="Wed Nov 26 2025 22:52:04 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To engage on a target from outside normal taunt range E then mid animation Flash. Q once you get behind your target and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a nice extended trade Q through your opponent, wait around 4 or 5 seconds then E them. After three AA's your Q should be back up then AA three times again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To hit a multi-person taunt in a teamfight E through your initial target then Flash at the end of the animation to extend the range to hit the others.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To finish off a kill when the spirit blade is away from you Q, then right before it arrives Flash past your target to make it pass through and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick trade and retreat Q then instantly AA and cancel the backup of your AA animation with E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic taunt combo uses E through your target then Q mid air followed by some AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To get some poke damage on your target Q then instantly AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

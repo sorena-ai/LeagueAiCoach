@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="volibear" scrapedAt="Wed Nov 26 2025 22:58:42 GMT+0100 (Central European Standard Time)">
+  <combos count="9">
+    <combo>
+      <description>To burst down opponents Q then E your target and AA once in melee range. R instantly and AA W once you land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Catch opponents off guard by using Q then E your target and instantly Flash eAA once in range. Quickly W R and then AA when you land.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use E on your target then instantly W Q and AA during the stun to partially cancel the animation of W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>You can hide your E animation when used this way. Q then AA and then quickly E W and AA after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To gank and maximize crowd control E your target, R on top of them and quickly AA Q then AA W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Gank before level 6 using E on your target, then instantly Q. Run into melee range AA then AA W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For more damage use Q then E your target once in range. AA once you are in melee range then quickly W followed by AA R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>After level 6 use your ultimate to engage. Q and E instantly then R to get into range and quickly AA W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When someone face checks you E then instantly AA W your target. Follow with AA Q AA as quickly as you can.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

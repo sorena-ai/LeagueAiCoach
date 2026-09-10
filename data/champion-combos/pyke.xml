@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="pyke" scrapedAt="Wed Nov 26 2025 22:48:11 GMT+0100 (Central European Standard Time)">
+  <combos count="12">
+    <combo>
+      <description>Use E to engage then before it ends, R your target to stun them. Then instantly tap Q and AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>E W towards your target, then instantly then tap Q and mid animation Flash to extend the range of both Q and the stun. Quickly R once your E lands.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Stun multiple people in fights by using E through your first two targets then R behind your fourth target. While in the air Flash to cause your E stun to hit a third target right as your E moves through your second target.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>For longer range engages hold Q then quickly Flash and let go of your Q. Follow up with an instant E, then R once they are stunned.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>E then quickly hit your R max distance before the stun reaches you. Follow it up with an instant Flash to the other side of your opponent to land the stun.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>E towards your target, then right before the stun reaches you Flash behind them to make the stun connect. Instantly tap Q followed by an R once they are in execute range.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a normal all in hold Q then E away as soon as you let go, R after the stun lands and W away.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Hold Q then after you let go instantly R the location your target will be dragged to, then E W to escape.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use E and W for a burst of speed to land the stun. Get behind your target then AA, tap Q, followed by AA's until they are in execute range then R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If you cannot hook tap Q to slow then instantly AA E and continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your most basic combo will hold Q, then as soon as you let go instantly E toward your target and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When hunting an enemy W to get closer then E through your target. Quickly tap Q when you land followed by some AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

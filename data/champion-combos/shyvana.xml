@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="shyvana" scrapedAt="Wed Nov 26 2025 22:52:16 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>R then E as soon as you land. Flash instantly as you start the animation to extend the range and quickly Q eAA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>W then E and while mid E animation, Flash to extend the range. Follow up with Q eAA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When close range W AA instantly, E Q AA as quickly as you can right after then continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard combo will be E then instantly W AA, Q as soon as the AA completes to reset your AA animation then continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>If you're already close to your opponent W right before using R then E Q eAA as quickly as you can after landing.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>After level 6 R forward then E once you land, use W to get close then instantly AA Q once in melee range, followed by more AAs.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

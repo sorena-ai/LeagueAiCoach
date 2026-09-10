@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="zoe" scrapedAt="Wed Nov 26 2025 23:01:45 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Use your R and then Flash before your E. Then Q, and Q again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, Q again and then R and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q first, then Q again and then Flash towards your enemy.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then AA, Q again and finish with another AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your R to a nearby wall, then use your E</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E, then AA, R, then Q and Q again and finish with another AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

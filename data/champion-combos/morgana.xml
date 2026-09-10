@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="morgana" scrapedAt="Wed Nov 26 2025 22:45:23 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>From longer range Q W then E yourself and instantly Flash and R. Maintain the tether while you AA and immediately use your W once it's back up.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When already in range R and instantly F Q W followed by AA's.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>The typical Flash then instantly Q and use W as soon as you confirm Q will land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Burst enemies with R then quickly Q W followed by AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with Q then W once you confirm it will land. Walk forward and E yourself then R once in range, then AA while maintaining the R tether. Use W as soon as it comes up and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When close to an enemy R and maintain the tether then W AA right as it stuns. Use Q any time before the stun expires and continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

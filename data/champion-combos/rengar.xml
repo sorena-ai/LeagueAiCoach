@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="rengar" scrapedAt="Wed Nov 26 2025 22:50:04 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Press your R, then prepare your Q, AA your target to leap towards them, use your E, W, and AA, then Q, AA, AA and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your R, then AA, E, W, and Q your enemy to get max stacks of your passive. Flash into the Brush and then AA, E and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Leap to your enemy with an AA. Then Flash back into a brush and E, W, Q and AA and E again to root your enemy.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your R, then Q, E, W, AA. E again, then AA and Q to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>As you leap to your target with an A, use your E then Q, AA, W, E again and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Leap with an AA and quickly E, W and Q, then Q again and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with an AA to leap to your target, use your Q, then E and W, AA, Q and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E AA and Q, then W, AA, W again, and finish with a final AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,15 @@
+Jungle Pathing Fundamentals: Jungle pathing is the strategic plan used in the early stages of the game, giving the Jungler tempo (arriving before the enemy), efficiency (wasting no time), pressure, and control over early objectives. Optimal clears maximize gold and experience income, allowing the Jungler to start ganking earlier.
+Pathing Based on Champion Identity:
+• Farmers (e.g., Lillia, Karthus) thrive on full clears to maximize EXP and gold, usually aiming to hit Level 4, contest Scuttle, or reset around 3:15–3:30.
+• Gankers (e.g., Jarvan IV, Lee Sin) should route for 3-camp spikes to gain early lane impact, often sacrificing the full clear for pressure.
+• Duelists (e.g., Xin Zhao, Udyr) should path to meet the enemy Jungler and fight, prioritizing jungle control.
+Common Clear Routes:
+• Full Clear Path (Blue Side Example): Blue → Gromp → Wolves → Raptors → Red → Krugs.
+• 3 Camp into Gank Example: Red → Raptors → Gank Mid. A 3-camp gank requires a setup lane (CC, slow, or high burst).
+• Cheese Routes: Taking Red → Gank Mid/Top, or Blue → Gank Bot to punish greedy early laners.
+• Vertical Jungling: Invading the enemy's opposite side (e.g., taking their Red and Top side camps) used against weak early duelists like Fiddlesticks or Shyvana. This requires pushing lanes and deep ward coverage.
+Pre-Game Preparation: Before minions spawn, analyze the draft to determine:
+1. Which lanes are carries? This dictates where the Jungler should path toward.
+2. Can I beat the enemy Jungler 1v1? If not, avoid mirrored clears.
+3. Who has early priority? Lanes with priority allow for freedom to invade or contest Scuttle Crab.
+• A late Bot Lane show can often clue you in that the enemy is leashing on Red Buff.

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="lulu" scrapedAt="Wed Nov 26 2025 22:43:44 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To engage W yourself then Flash into melee range and instantly R yourself. Quickly use AA E and use Q.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To save an ally lead with R E together then Q towards your opponents and use W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>W yourself to get into Q range then continue to AA until your Q is within 4 seconds of being off cooldown. Use E on your opponent, continue to AA then Q as soon as it's up.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q then mid animation Flash and AA E together.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Especially for mid lane Flash then instantly E your target, AA and Q once Pix is close enough to guarantee it lands.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Go more aggressive by using E on your target then instantly Q. AA followed by a W on your opponent and another AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly trade with Q then instantly E on your target and AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade E yourself then AA and Q in between your AA timer.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

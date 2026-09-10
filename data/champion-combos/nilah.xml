@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="nilah" scrapedAt="Wed Nov 26 2025 22:46:35 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Use your Q and then Flash instantly to hit your target. AA them and then E and R onto your enemy. Follow this with some AA's a Q, AA and E to finish..</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W and then E through your ally or any nearby target. Then instantly R and Flash onto your enemies!</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E through your enemies and R them! Then press your W and dash back through to safety with your E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W whilst your near your ally and then E through them to get closer to your opponents. Use your E and R combo onto your enemies and follow that with your Q and some auto attacks.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your W and then E and Q onto your target and AA them before using your R. Then AA a few more times, Q, AA and E to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E through a target, then AA and E and Q your intended target and then hit them with your R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start the fight with your E Q combo, then AA, W, AA, AA, AA and then finish off with your E Q back out again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your W, then E and Q your target followed by some auto attacks.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

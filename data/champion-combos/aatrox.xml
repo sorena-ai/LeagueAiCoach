@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="aatrox" scrapedAt="Wed Nov 26 2025 22:29:38 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Flash can be used to secure your Q3 damage. W E Q instantly one after another then AA Q2 followed by AA Q3 and using Flash mid air to guarantee the sweet spot landing.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>With more Ability Haste and Flash you can chase opponents much easier. W E Q instantly one after another then AA Q2 followed by AA Q3 and using E and Flash mid air to guarantee the sweet spot landing.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>With more Ability Haste you can combo smoother and use E again. W E Q instantly one after another then AA Q2 followed by AA Q3 and using E mid air to guarantee the sweet spot landing.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>After level 6 R to get into Q range then instantly Q W E AA, Q2 to keep them in your W then AA Q3 for an easy dunk.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>All in at level 3 with W and instantly E Q to help keep them in place, follow it up with AA Q2 into AA Q3.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Extend your trade by using Q three times then E to land your third Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Trade normally with Q then E mid animation to line up your sweet spot.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

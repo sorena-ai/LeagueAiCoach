@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="galio" scrapedAt="Wed Nov 26 2025 22:36:17 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>When right next to the enemy, AA and instantly E backwards into Q, AA then W and recast once it's max damage and AA twice.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>A quick way to start a fight is to Flash followed by an instant W and recast, then E backwards and Q AA instantly.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>If in close quarters, W and recast once it's maximum damage then instantly Q AA. Use E backwards right after the AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When close to an enemy, begin with Q then AA and instantly E backwards. Quickly cast W and recast right before they hit the ground, then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly engage on an enemy, Flash over or next to wall, use E but make sure your back is up against the wall. Upon landing use W then recast right before they hit the ground and instantly Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To surprise kill your enemy Q then mid animation Flash and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>While at a short range, E backwards to hit your target then instantly Q AA. Cast W and wait to recast until after it's fully charged then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For quick burst damage, E your target then instantly Q as you arrive. Quickly cast and recast W, then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When ganking or helping an ally, R to a teammate then upon landing cast W. Recast W whenever you like and instantly Q E AA as quickly as you can on your main target.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To engage E your target then cast W as soon as you land. Recast right before they hit the ground and instantly Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="viktor" scrapedAt="Wed Nov 26 2025 22:58:18 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Start with W then flash in and R, Q, E then finish off with three AAs</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use Q on a minion then flash in, AA, use E then R then finish with two AAs</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W then R then Q, AA, E then finish off with three AAs</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA then Q then AA then E, R then finish off with three AAs</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Q then AA then finish with E</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

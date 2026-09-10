@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kayle" scrapedAt="Wed Nov 26 2025 22:41:06 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To burst someone down quickly Q and instantly Flash. AA E as quickly as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When you want to get on top of an enemy to burst them R and right before the damage hits the ground F and instantly Q E eAA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To execute someone quickly Flash then instantly Q E eAA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in Q and instantly AA E followed by an AA. W right before using R, then AA as quickly as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If you want to trade back damage as you retreat AA then instantly E Q and use W to escape.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When quickly trading Q and instantly E eAA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When trading Q then instantly AA twice, quickly using E as the second AA finishes.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

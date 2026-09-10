@@ -1,0 +1,10 @@
+The late-game ADC is the engine of the team fight, maximizing the time spent dealing damage.
+Micro Mechanics (Kiting and Spacing):
+• Kiting involves inputting movement commands between auto-attacks to maintain distance while dealing damage. This is achieved by canceling the wind-down animation of the auto-attack with a movement command.
+• The Attack Move command (often bound to 'A') allows the player to attack the nearest target by clicking the ground, preventing accidental movement toward the enemy if they misclick.
+• The Target Champions Only command (bound to ∼ by default) can be used to ensure the ADC exclusively auto-attacks enemy champions, avoiding accidental targeting of minions, jungle camps, or turrets.
+Team Fight Priority and Positioning:
+• The ADC must adhere to the Front-to-Back Rule, prioritizing auto-attacking the closest safe target (usually the enemy frontline tank or bruiser).
+• ADCs should avoid chasing enemy carries over walls or through the frontline.
+• If the ADC is ahead, they should consider building defensively (e.g., Guardian Angel) to preserve their lead and avoid being shut down instantly by burst damage. Guardian Angel is optimal for AD champions against AD-heavy teams or teams with high burst damage.
+

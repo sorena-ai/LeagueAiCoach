@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kassadin" scrapedAt="Wed Nov 26 2025 22:40:42 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>R then mid animation Flash, and use W AA and E Q instantly to finish up.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use E and Flash together to catch people off guard. Q then instantly activate E, then Flash into melee range for AA W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>R into melee range and instantly AA W, then AA E to stay in AA range followed by using Q. By this time your R should be back up to continue the chase.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Melee trade using E to get into melee range to AA W then use your Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When trying to burst R into melee range and instantly AA W then use E Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Feel out a trade first with E Q then instantly R in to be able to AA W if you think you can finish your opponent.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To assassinate your target Q then instantly E, activate W right before using R then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use R to harass by moving forward into melee range. E and use the slow to follow up with AA W with and instantly Q right after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To trade simply E and instantly Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To harass after level 6 R into max E range then E Q instantly.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>While in tower range, Q E then instantly R out.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

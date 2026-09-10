@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="syndra" scrapedAt="Wed Nov 26 2025 22:54:04 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>Use your Q then E Flash to stun your enemy, then W, W and R to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then W and W again before using your E, the Flash and R your target!</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Sneak in a quick Q before using your R and then scatter those spheres with your E!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your Q then AA, W and W again. Then E AA, R, AA, AA and Q again to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your Q and E combo, then W, W and R to take them down.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with a Q, then W, W again and then E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q and E quickly before following up with a W, W and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, then W, W again and finish with your E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, then AA, W, AA and W again before using your E. Then, fire off a few more auto atacks before a final Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To poke in lane Q then E and W to pick up an orb or minion then instantly W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

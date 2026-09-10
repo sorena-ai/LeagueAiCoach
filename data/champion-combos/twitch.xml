@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="twitch" scrapedAt="Wed Nov 26 2025 22:56:17 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>For a neat return to base trick, Q then B anytime before you actually go into stealth.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Turn a fight in your favor by using Q then W and Flashing away from your target. Wait to get into stealth and turn back, hit R then continue to AA and E at max passive stacks.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To get involved in a fight from long range W R Q as quickly as you can then continue to AA. Instantly E on max stacks of your passive and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To open up from stealth during a teamfight use Q, then once in stealth W your target and instantly R and AA, using E at max passive stacks.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For an early all in AA then instantly W Q followed by more AA's until you have max Deadly Venom stacks, then E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For your bread and butter stealth opener  use Q, then once in stealth walk up to AA W. Follow up with more AA's until you want to deal burst damage with E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic trade is to W and AA until you have max Deadly Venom stacks then E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When you want to save your ult for a chase down Q and once in stealth W your target then AA. Once they get out of range R and continue to AA with E as a final burst of damage.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

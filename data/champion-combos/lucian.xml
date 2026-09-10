@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="lucian" scrapedAt="Wed Nov 26 2025 22:43:32 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>For a seemingly never ending combo when you have high ability haste W and instantly AA followed by using E before the first AA lands. Use AA E AA followed by Q AA E AA, making sure to use each ability after the first shot.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>When you have high ability haste and need to dodge a bunch of skillshots W and instantly AA followed by using E before the first AA lands. AA Q AA followed by E AA E AA making sure to use each ability after the first shot.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Surprise your opponent when outside normal range by using W then instantly Flashing and using AA. E after first shot then AA, Q after first shot and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To ensure you get maximum dps W R instantly then Flash to reposition. Right before your R finishes E back into AA range followed by AA Q AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a post level 6 all in E and AA, then W Q quickly followed by AA R AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To get a quick ult combo off cast W and instantly E then R as soon as you're done dashing. Get into AA range before your R ends then AA Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Another basic trade is to Q then AA and instantly E after the first shot. Follow up by an AA then W after the first shot and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a basic trade you can also E then AA Q, followed by AA W AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To get a movement speed buff early in your combo W then AA and instantly E to reposition after the first shot, followed by an AA. Q after the first shot and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For the basic concept of how to optimise your passive with Lucian Q then instantly AA. After the first bullet connects quickly E to reposition and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

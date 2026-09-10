@@ -1,0 +1,11 @@
+The late game shifts focus to the ultimate objectives: Baron Nashor and Elder Dragon.
+Objective Execution:
+• Baron Nashor spawns at 25 minutes. Slaying Baron grants the Hand of Baron buff, which greatly increases the power of nearby minions for sieging.
+• Once a Dragon Soul has been claimed by either team, the Elder Dragon spawns. Elder Dragon grants a powerful temporary buff that executes low-health enemies, making it game-deciding.
+• The Jungler is responsible for securing these objectives with Smite.
+Team Fight Role: In team fights, the Jungler (especially if tanky or a bruiser) is considered a Frontliner.
+• Frontliners must anchor the fight and shape the fight for the rest of the team.
+• The crucial decision is Peel vs. Engage: if allied carries are being dove, the Jungler peels; if the enemy is immobile and clumped, the Jungler engages.
+Buff Distribution:
+• In the late game, the Red Buff should generally be given to the ADC.
+• The Blue Buff provides mana regeneration and ability haste; Mid Laners (AP champions) often want this buff late game.

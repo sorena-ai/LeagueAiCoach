@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="amumu" scrapedAt="Wed Nov 26 2025 22:30:38 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>Extend the range of your R by using it, then mid animation Flash and instantly W Q followed by E AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a tricky engage W Q at the same time towards your first target, then mid air quickly R Flash to hit your other targets. E AA your first target.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To engage on an entire team Q your first target and hit W mid air. As your reach your first target hit R and instantly F to hit as many people as possible.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When at short range Q E instantly then W AA once you land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a long range full engage Q then Flash mid animation. Quickly W R once you land and AA E AA afterwards.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When outside melee range W E together then instantly Flash Q followed by an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To gank Q your target, cast W mid air then AA E AA once you land.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>While in melee range, W AA then instantly E Q followed by an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To catch out the enemy team with an AoE engage, Q then R mid air. Instantly W E once you land.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When you are ganking post-6, Q and cast W mid air. AA E R instantly one after the other once you land followed by some AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

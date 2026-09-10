@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="gangplank" scrapedAt="Wed Nov 26 2025 22:36:29 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Use your E and E again. Then Q your first barrel and Flash before using your E for a third and final time.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E and AA the barrel, then use your E again and AA the first barrel again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E, wait briefly for your barrel to tick down, then Q and E again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press R then E, AA, AA, Q your barrel, AA and another AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E, E again, then wait briefly, then Q your first barrel and then E again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then instantly F and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E and Q your target. Then AA, AA, AA your barrel, AA your target, Q them and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Press your E, then AA, AA, Q your barrel and finish with another AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

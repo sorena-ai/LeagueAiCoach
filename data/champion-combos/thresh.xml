@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="thresh" scrapedAt="Wed Nov 26 2025 22:55:16 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>Flash Q, then W your ally and reactivate Q. E mid air then place your R quickly and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For more style points Q then Flash to get in range to W your ally, reactivate Q then E mid air and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>At level 6 all in with Q then instantly R. Wait for your target to be pulled closer then E them towards you.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Walk forward and right before you get into E range use your W towards an ally. Then E Q instantly followed by your R AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash R instantly then E Q and toss your W to an ally behind, then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash and instantly E your target towards you, Q then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>The other way to all in is by using Q and waiting for your target to get closer. Then E them towards you and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When possible walk up and lead with E then AA Q instantly, hit Q again to AA right after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade normally  AA then instantly E AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To all in your target Q then instantly Q again, E your target towards you mid air, followed by an AA when you land.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

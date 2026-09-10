@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="leona" scrapedAt="Wed Nov 26 2025 22:42:56 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>For the perfect long range cc chain E from max range then instantly R, use W mid air then AA Q AA after you land.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To cc two people at once R your primary target then instantly F Q W your secondary target, then E back towards your primary target.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To perfectly cc chain from melee range Q and instantly eAA W AA then instantly E R and AA again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>An alternative quick engage is to R on your target then instantly Flash E. Use W mid air then AA Q after you land.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To surprise engage from outside range, E on your target then instantly Flash. W Q mid air. Use your R right after you AA for your stun.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a nice cc chain from range E then mid air W and instantly Q when you land. Follow up by quickly using your R and AAing.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>If you're already in melee range full trade on your target with W Q instantly, then quickly cast R. AA twice and then E AA immediately.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When trying to all in at level 6 R then E once the stun lands, W mid air then AA Q instantly once you arrive.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Take out a freshly placed enemy ward on your own by using AA then a quick Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard level 2 all in is to E then instantly AA Q when you land.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

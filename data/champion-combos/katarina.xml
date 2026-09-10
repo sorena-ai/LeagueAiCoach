@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="katarina" scrapedAt="Wed Nov 26 2025 22:40:54 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>Burst more upfront with Q E quickly then W R instantly after landing. Finish off the kill by using E to your Q dagger.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>The Kat Life combo. Q E instantly then W right as you land, pick up the first dagger then E to your target right as you pick up the second dagger. R.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Juke opponents by using Q E instantly then W and Flash out. E back to your W dagger when it's available then cast R.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To clean up kills W for movespeed, then Flash E your target. Follow up with AA Q AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>If you need to delay your ultimate use E then W Q instantly. Continue to AA until they step near your Q dagger then E R to execute them.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>A very simple ultimate combo uses E to your target, then W Q R one after the other. Finish the kill off by using E on your Q dagger.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>W then run away from your target,  E back onto your dagger and instantly cast Q then R on your enemy. Once your R finishes its channel E to the dagger that spawned from your Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Close the gap with E to an allied or enemy unit then quickly W Q then E to the dagger and use R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a much quicker trade E W instantly then AA Q. Catch the first dagger then E to your Q dagger.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in before level 6, Q E instantly then quickly W after landing. AA until you step near your dagger then E to it to continue the chase.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To easily trade Q and instantly E AA, pick up the dagger, AA again then E back to a minion.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

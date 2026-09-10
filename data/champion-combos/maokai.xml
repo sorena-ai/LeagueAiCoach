@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="maokai" scrapedAt="Wed Nov 26 2025 22:44:33 GMT+0100 (Central European Standard Time)">
+  <combos count="9">
+    <combo>
+      <description>To maximise your root duration R then Flash so you can get into range to instantly W. Upon arriving quickly E then Q your target into your R followed by some AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q also has a hitbox behind Maokai. W then take one step forward after arriving. Q away from your main target followed by quickly using R on enemies infront.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q then mid animation Flash. Quickly W followed by an AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To make engaging easier Flash W instantly. Upon arriving quickly E Q, followed by R and some AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>One of the most effective trades starts with using E into a brush then W your target. AA as soon as you arrive then instantly Q your target towards your sapling and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Engage a mid range fight with W then instantly Q R E as quickly as you can followed by some AA's.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To engage from further away R then E right before using W. Continue to AA until the root ends, then Q and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly trade with W then instantly Q once you arrive and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When closer to opponents Q W instantly then AA E once you arrive. Continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

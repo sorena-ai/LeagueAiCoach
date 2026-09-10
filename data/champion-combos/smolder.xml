@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="smolder" scrapedAt="Wed Nov 26 2025 23:26:47 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Pop your Q then W, R, AA, AA, AA, Q again and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your R and then E, W, Q and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your R then W and instantly Flash. Then AA, Q, AA and E to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with Q then AA. Pop your W and R combo, then AA, E, AA, Q and AA again to take them down.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your Q, then AA, W, AA, and E to fly in! THen AA, AA, Q and AA again to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with AA, then W, AA, Q and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

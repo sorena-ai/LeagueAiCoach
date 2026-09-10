@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="naafiri" scrapedAt="Wed Nov 26 2025 23:25:47 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Pop R then W and Flash, then AA, Q, E, AA, Q and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press Q &amp; E, then AA, Q and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press R, then W, AA, Q, AA, then E, AA, Q and AA again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press W, then AA, Q &amp; E, AA, Q and AA again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press Q and Q again, then W, AA, E and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

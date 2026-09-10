@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="riven" scrapedAt="Wed Nov 26 2025 22:50:16 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>Trade without your ult by using E onto your target, then AA and quickly W Q. AA Q, AA Q, and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a burst engage combo quickly E R, then Flash AA W. Q then AA, and finish with R Q.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To engage a fight for your team Q twice. Very quickly, use E R then Flash and Q onto your targets. AA R and W to finish.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>For a nice trade AA Q, AA Q, AA Q. Then AA and instantly E W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For your basic fast combo, AA Q, AA Q, AA Q then AA again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a fast trade use E W and Q in quick succession.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Commit to a fight by quickly using E towards your target, then R Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Chain your dash and stun by using E W instantly.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To ensure your ult damage hits your target, use your R2 and W them instantly.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When already in melee range use your R1 and W quickly to save on cast time.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To hide your ult animation, use E and R instantly.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

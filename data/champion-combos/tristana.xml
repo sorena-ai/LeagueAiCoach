@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="tristana" scrapedAt="Wed Nov 26 2025 22:55:28 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>W, E, R and Flash to InSec your enemy. Then Q, AA, AA, W and AA again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>W towards your target as you E and R them. Then AA your target down to take them out.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then W. Press Q then AA, AA, R and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E, then Q, AA, AA, AA and then R and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>W E your enemy and press your Q, then AA, AA, AA and then W again!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA your target then E. Pop your Q and then AA, AA, AA and AA!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

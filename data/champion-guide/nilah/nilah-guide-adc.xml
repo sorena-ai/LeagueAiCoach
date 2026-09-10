@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guide>
+  <champion>nilah</champion>
+  <position>adc</position>
+  <strengths><![CDATA[Her (W) blocks auto-attacks and enhanced auto-attack abilities. This includes abilities like Twisted Fate’s W. Your Passive helps you gain XP advantages over the enemy laners, which can help you hit power spikes before them. Her (E) gives Nillah 2 dashes. This is good for her as she can quickly get in and out of skirmishes.]]></strengths>
+  <weaknesses><![CDATA[When her (E) is down, she is pretty easy to lock down and neither can she play aggressively. To get the maximum use out of her Ultimate (R) , she needs her team to follow up or go in at the same time as her. Like most champions, Nilah is pretty weak when she is behind. Avoid falling behind if you can.]]></weaknesses>
+  <gamePlan>
+    <earlyGame><![CDATA[Average The early game should be mainly focused on taking short trades against the enemy with your auto-attacks. Do not go for an extended trade unless the enemy's primary ability is on cooldown. However, play safe for the first few levels. You need time to come online and you shouldn’t be fighting until you have some levels under your belt. After destroying the bottom lane tower, rotate to the mid lane and try to take that tower. This will open up the map and give your team a gold lead.]]></earlyGame>
+    <midGame><![CDATA[Strong During the middle game, make sure you are not ADC'ing consistently. Clean up kills when possible but don't get too close to CC heavy champs else, you will definitely get killed. Look for opportunities with your Ultimate to catch enemies out, but don’t go in unless your team is there to help you. Continue picking up farm in the side lanes when no team fights are occurring, but spend as little time away from your team.]]></midGame>
+    <lateGame><![CDATA[Weak Your Ultimate (R) will be on a short cooldown, so ensure that you use it quite frequently. It will definitely help you with chunking out enemies. Continue to kite in team fights and consistently adapt your positioning. Avoid standing still in fights as you’ll be an easy target. Just like in the mid-game, you should stick with your Support throughout the later parts of the game. Do not go around the map alone as you will die easily.]]></lateGame>
+  </gamePlan>
+  <powerSpikes>
+    <earlyGame><![CDATA[Her first power spike is at level 3 when she gains access to all her basic abilities. When she completes her first item, her trading and skirmishing power intensifies. Another early game power spike is level 6, where she unlocks her Ultimate (R) ability.]]></earlyGame>
+    <midGame><![CDATA[Level 11 is a good power spike for Nilah. Nilah will put a second point in her Ultimate (R) at level 11. Teams start grouping in the mid-game. Nilah is good in team fights and will be good during the mid-game. At level 9, Nilah will max out her first ability.]]></midGame>
+    <lateGame><![CDATA[She spikes again at level 16 as she puts the final point in her Ultimate (R) . In the late game, she can dish out a lot of damage as she would’ve completed multiple items at this stage. As previously stated, she is good in team fights, so that she will be strong in late-game team fights.]]></lateGame>
+  </powerSpikes>
+</guide>

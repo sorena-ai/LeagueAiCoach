@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="jax" scrapedAt="Wed Nov 26 2025 22:39:06 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>If you want to stun multiple targets in a fight E then AA your first target twice. Q to your main target and E mid air while in range of them both, followed by AA W AA instantly upon landing.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When you need extra mobility to engage E then use Trinket, Q and E as quickly as you can, then instantly AA W AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To guarantee your stun lands E then after the lockout period Flash and E AA instantly followed by W Q AA as fast as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to hard engage from max range E then after the lockout period Flash and Q instantly. Use E again mid air and instantly AA W AA upon landing.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To deal damage as you retreat E AA instantly then AA W followed by quickly using Q to get out and using E as you leap away.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard hard engage combo is E then Q and E again mid air followed by an instant AA. W right as the AA completes then continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When fighting up close AA W AA then E and continue to AA. Q then mid air E to keep on your target then AA some more.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to quickly fight up close E AA instantly, W Q as quickly as you can and E AA right after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade versus a ranged champion AA the first target then Q to your main target and instantly AA W upon landing.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard defensive engage combo when looking to avoid AA damage is E then Q, instantly AA W followed by a quick E and continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

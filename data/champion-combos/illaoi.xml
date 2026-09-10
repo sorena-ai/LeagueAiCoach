@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="illaoi" scrapedAt="Wed Nov 26 2025 22:38:05 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>If you are far from the target for a full combo E then R and Flash mid animation. Follow up with W AA Q as quickly as you can, and then the AA W sequence.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For an alternative full combo, E your target then AA W the spirit followed by an instant R. Q right after it ends then start the W AA sequence once you are in range.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic full combo is to E then instantly R followed by W with an instant Q. Continue to AA then W until your R runs out or your opponent is dead, whichever comes first!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To grab a spirit when outside normal range, E then mid animation Flash.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a long fight with the spirit W AA and instantly E Q, then AA until your W is back up.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>If you're in a longer fight AA W quickly then instantly Q AA. Follow up with E and AA the spirit until it dies.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For your basic trade without E, W AA then instantly Q AA right after the dash.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When taking a basic trade, E then AA the spirit, reset your AA with W instantly then quickly Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

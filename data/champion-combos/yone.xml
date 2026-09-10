@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="yone" scrapedAt="Wed Nov 26 2025 23:00:08 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Start with your E, Flash and R against multiple targets, then Q, W, AA, AA, Q and E again to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E and Q then AA and W. AA and AA again then Q, E, R and Q again to finish!</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Prep your Q3 then E, R and Q. Then AA, W, AA, AA, Q and E to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>After using your Q twice, use your E, Q and AA. Quickly R then AA, W, AA, Q, AA and E again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q twice then E, Q, AA, W, AA, AA and E again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+  </combos>
+</champion>

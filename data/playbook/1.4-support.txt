@@ -1,0 +1,14 @@
+The Support role is the macro MVP. Supports are expected to dominate lane, command the map, and make game-winning engages. They have an incredibly high kill participation during the earlier parts of the game.
+A. Vision and Objective Control
+1. Vision is Primary Responsibility: Supports are primarily responsible for facilitating vision control—more than the other roles. Wards are one of the most impactful ways a Support can have a presence on the map.
+2. Warding Tools: Supports need to place Stealth Wards (Yellow Trinket) frequently and buy and place Control Wards (Pink Wards) frequently as the game develops. They should prioritize placing Control Wards in objectives like the Dragon or Baron pit before major objectives.
+3. Trinket Swap: Supports should typically swap their Yellow Trinket for an Oracle Lens (Sweeper) around Level 9 to deny enemy vision when roaming. Using the Sweeping Lens to clear commonly placed warding spots is important.
+4. Objective Assistance: Supports have the second most impact in securing objectives as they can leave the lane to help their Jungler. They should be looking to secure Drakes whenever possible. A good time to take Dragon is after killing the enemy bottom lane and then pushing the minion wave while pinging the Jungler.
+B. Micro Play and Lane Control
+1. Positioning: In lane, the Support should try to stand next to and in line with their ADC at all times, toggling between being slightly behind and in front of them. Poor positioning negatively affects the ADC's ability to farm and play aggressively.
+2. Helping the ADC Farm: It is the Support's job to help the ADC farm under the turret when waves are pushed in. The Support should auto-attack ranged minions once so the ADC can secure the last hit after the tower shot.
+3. Support Item Quest: It is crucial for the Support to complete their Support item quest as quickly as possible (ideally by the 10-minute mark) so they can start placing wards from the fully upgraded item. When using stacks to kill minions, they should prioritize Cannon Minions, then melee minions, and avoid using stacks on ranged minions.
+4. Playing Around Spikes: Supports should play around their own power spikes, such as reaching Level 6 (which intensifies kill pressure) or purchasing a certain item.
+C. Roaming and Map Impact
+1. The Roam Strategy: Roaming is one of the best ways to impact the map as a Support, applying pressure to other lanes. Supports can roam straight from base, or when their ADC has recalled at the same time and is safe.
+2. Risk Assessment: When roaming, the Support must ensure they get something out of it (like a kill or assist) and that their ADC will not die while they are gone. Leaving an ADC alone against champions with strong kill potential (e.g., Jhin versus Blitzcrank and Vayne) is strongly advised against.

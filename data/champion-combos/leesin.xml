@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="leesin" scrapedAt="Wed Nov 26 2025 23:24:35 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>Q and Q again to a target, then use your T and W to ward hop and then R Flash to kick them back into your allies.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q and Q again to get nearer your target, then Flash and ward hop before using your R</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q and Flash R Q and E.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Q on your target, then ward hop with T and W, then R, Q again, AA E and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Q then T and W to ward hop to your enemy, then use your R, and Q again followed by an AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Q and Q again to your enemy and then R and Flash to knock them back into your team.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Q Q to your enemy, then use T and W to ward hop behind them and R them into your team.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Self cast your W, then AA, E, AA, E, AA, W, AA then use your R and Q twice to finish them off.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start off with a quick ward hop with T &amp; W, then AA, AA, E, AA, E, AA and finish with a Q, Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E, then AA, E, AA, W, AA, Q, AA, AA and finish with your Q again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

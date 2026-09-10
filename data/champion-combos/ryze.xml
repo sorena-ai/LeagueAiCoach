@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ryze" scrapedAt="Wed Nov 26 2025 22:50:40 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Use a full rotation of spells by starting with Q E Q AA. Quickly W then Q E Q AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Clear a minion wave by using E, then once off cooldown E again and Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Set up a gank by quickly using E W to root a target. AA then Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick trade and exit Q your target, then quickly W E Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Harass your opponent by using Q E and AA. Wait for your cooldowns, then quickly W Q E Q. AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Root your target by using Q W, then AA. Quickly Q E Q, and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a fast trade, Q then instantly E Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

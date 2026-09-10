@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="janna" scrapedAt="Wed Nov 26 2025 22:38:41 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To better guarantee you can knock a target into your team double tap Q instantly then Flash behind your target. Quickly R then W them as quickly as you can while they are still mid air.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a super stylish engage Q, then right as it's about to release Flash R your target into the Q trajectory, then walk up and W them.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To knock a target into your team Flash behind them and instantly R then W as quickly as you can while they are still mid air.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to aggressively engage Flash then instant double cast Q followed by AA W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To trade on a target, use Q in fog of war, then walk up to W and AA. Recast Q and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For an extended trade, walk up to your target, E AA then W AA. Quickly Q twice and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To engage on your opponent W then instantly cast Q twice followed by an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

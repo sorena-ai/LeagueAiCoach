@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="zilean" scrapedAt="Wed Nov 26 2025 23:01:32 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Use E then Q, W, Q and finish with R</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use Q on your enemy, then W, Q on yourself and E to run in range of them!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use Q on self, W then Q on foe then flash in!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA then Q then AA. Then W and Q and finish with a final AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your E and then Q, W, and Q again to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="orianna" scrapedAt="Wed Nov 26 2025 22:47:23 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Use Flash and R together to catch opponents by surprise. Have the ball on top of your head then R and right before the Shockwave goes off Flash onto your target then Q W AA E instantly.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To chase someone down for a kill Flash then instantly Q AA and W as soon as your Q lands.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Surprise Flash kill your opponent by placing your Q down and then walking outside your Q cast range. When your opponent steps up Flash and instantly Q W AA them.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To All In Q in front of your target then instantly R W, line your E up for return damage then instantly AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To maximise your damage you can delay your R. Q W your opponent then ult them once they reach the max range and E AA them until your next Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To sneakily ultimate someone Q towards your target, wait for your next Q cooldown, then right as it comes up ult your target and instantly Q W E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your most basic trade is Q and instantly W before it lands.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a more lengthy trade Q and instantly AA, then W E as soon as it lands.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

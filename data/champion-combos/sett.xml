@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="sett" scrapedAt="Wed Nov 26 2025 22:51:40 GMT+0100 (Central European Standard Time)">
+  <combos count="9">
+    <combo>
+      <description>To Insec your opponent Q to get into range, use E then Flash instantly behind your target and R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Once you have full grit stacks R and E W when you land, then Q AA for added burst damage.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>W and mid animation use Flash to land your ability for true damage.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To iniate teamfights R then E once you land, AA twice, instantly Q then AA twice into W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>After level 6 use E, AA twice, Q instantly, AA twice then instantly R, AA twice then finish off the kill with W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>A normal trade will look like AA twice then Q instantly AA twice again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>After level 3 you can trade by AA twice Q instantly AA twice again E AA twice and finish off with W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When around minions use E, AA twice, Q instantly, AA twice and finish up with W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To catch someone use Q to get in range to E then AA twice into a W for some burst.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

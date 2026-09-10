@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="hecarim" scrapedAt="Wed Nov 26 2025 22:37:41 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To bring the enemy towards your team, E and run at your target, W right as you get in range then AA. R behind your target and Q them mid air then AA as soon as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a close quarters burst W AA then instantly E to reset the AA. As soon as the knockback lands R Q followed by an AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>If you want to burst an enemy E and run at your target, W right as you get in range then AA. Instantly R behind your target after the knockback is about to end, then Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>In a shorter fight with R you should E and run at your target, R then mid air W and AA your target. Quickly Q followed by an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For prolonged fights E and run at your target, then W right as you get in range and AA. Q as soon as it connects then AA and R behind your target followed by an AA right after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To fake-out your enemy when engaging E then run behind your target. When you get in range W and Q but only AA once you are behind your target.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic fight combo is E and run at your target. W right as you get in range then AA, Q as soon as it connects then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="akali" scrapedAt="Wed Nov 26 2025 22:30:02 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>Fast combo your target by using R to them, then E W. E again, then quickly AA Q R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Tower dive by using R to your target, then E. E again, then quickly AA Q and R to safety.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick execute R to your target, then E Q. E again, then immediately AA R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For an extended all in, R to your target then AA Q. W AA E, then E again and quickly AA Q and R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Extend your ult by using R and Flashing before it ends.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Burst a target down by using E, then E again. Follow up with Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>All in at level 6 by using R E AA, then Q and E again. AA, Q and R to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick trade Q then AA and E. E to your target, then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade when starting from range E your target then E again. Use W AA Q, then AA Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic trade is to Q then W and AA. Q AA E, then E to your target and AA Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

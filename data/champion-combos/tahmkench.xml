@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="tahmkench" scrapedAt="Wed Nov 26 2025 23:26:59 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Flash in, use R on your ally then W away to safety!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W, then R, then three AAs, then finish off with Q</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Three AAs, then Q then finish up with W</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Q, then W, three AAs, then R, then three more AAs, then finish with Q</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W, then three AAs, then Q, then AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with three AAs, then a Q, then finish with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

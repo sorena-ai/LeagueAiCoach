@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kogmaw" scrapedAt="Wed Nov 26 2025 23:24:11 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>To get away and combo safely E then instantly Flash and Q. Quickly use W then continue to AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Your full combo is W AA instantly followed by E Q R as quickly as you can. Continue to AA until you can R to execute.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick burst E and instantly Q R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>A common fight opener is to E and instantly Q R. Follow up by quickly using W and then AA'ing.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade Q E instantly, quickly W and then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a longer trade W AA instantly followed by E Q as quickly as you can, then continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guide>
+  <champion>naafiri</champion>
+  <position>mid</position>
+  <strengths><![CDATA[Naafari is really good at executing and taking down squishy champions who are walking alone on the map. You are a very mobile champion which can allow you to engage or escape sticky scenarios. Naafari is a snowball heavy champion. Getting an early kill can enable her to take over the map.]]></strengths>
+  <weaknesses><![CDATA[As suggested, she is a snowball heavy champion, so if you do not get an early lead, it will be hard to carry later on. She suffers against teams that are smart and group together. It makes it riskier for you to go in alone, and you need your allies to go in with you. She can be kited pretty well after she has gone in. It can be hard to handle champions with dashes or escape tools.]]></weaknesses>
+  <gamePlan>
+    <earlyGame><![CDATA[Average Start looking for roams after pushing the wave. You can start roaming after level 6. Play around your Ultimate (W) and look for kills whenever it is up. Don’t forget to keep good objective control! Gank the bottom lane and then rotate to Drake.]]></earlyGame>
+    <midGame><![CDATA[Strong Go in a side lane and start applying pressure to towers while your team does the same. Ensure you’re also using your Ultimate (W) and constantly looking for ganks with it. Supports will start walking around the map alone in the mid-game. Capitalise on this to get yourself free kills.]]></midGame>
+    <lateGame><![CDATA[Average In the late game, flank the enemy and stick near your teammates. You should look to go in with them in late-game team fights. Continue to look for picks on the enemy Support as they go to ward alone in the late game. This is especially true when objectives are about to spawn. Focus on team fighting with your allies, and avoid splitting up too much or else they’ll get collapsed on and you’ll lose the fight.]]></lateGame>
+  </gamePlan>
+  <powerSpikes>
+    <earlyGame><![CDATA[Your first power spike is at level 3 when you unlock all 3 of your basic abilities. You can start looking to fight at level 3 onwards. When you unlock your Ultimate (W) , roaming and all-ins will be easier and you’ll be more of a threat. After you’ve completed your first component item, you’ll be quite strong in 1v1s and have a higher chance of getting kills.]]></earlyGame>
+    <midGame><![CDATA[At level 9, you’ll max your first ability which makes you a lot stronger in skirmishes. You are a good mid-game champion, and you’ll be able to easily take down squishy champions in the mid game. At this stage of the game, you would’ve had multiple items completed, so you will naturally be quite strong.]]></midGame>
+    <lateGame><![CDATA[At level 16, you’ll put the third and final point in your Ultimate (W) . You will be rather strong and your all-in potential will be high. In the late game, you’ll start to fall off a bit as teams will be grouped so you need to play with your team. The enemy grouping together will reduce your chances of getting picks. Naturally, you’ll have many items completed, or are full build at this stage of the game, so you should be able to deal a lot of damage and survive fights.]]></lateGame>
+  </powerSpikes>
+</guide>

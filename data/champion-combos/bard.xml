@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="bard" scrapedAt="Wed Nov 26 2025 22:32:04 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>When ganking R then E towards your target, positioning yourself to Q stun your target once out of stasis.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To catch out opponents, lead with R then throw Q out right before they come out of stasis.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To reposition your Q, cast Q and instantly Flash.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic trade will be Q in between AAs</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When roaming E then go through it and Q your target.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

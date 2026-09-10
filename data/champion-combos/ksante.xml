@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ksante" scrapedAt="Wed Nov 26 2025 23:24:23 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Stack up your Q first, then E, Q Flash onto your enemy to engage. Follow that with an AA and your R. Then, batter your enemy down with AA, W, AA, Q and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then Flash and then R your enemy through terrain! Follow that with a Q, AA, W, AA and Q again to finish if you're aiming for maximum burst!</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Get your Q stacked up then Q Flash onto your enemy and AA them before using your R. then AA, W, AA and E Q to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Stack up your Q then charge up your W to stun your enemy. Then AA, Q again, AA and then use your R. After that, finish the combo with another AA, Q and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Stack up your Q, then E AA and Q to knock them back, then AA again before using your R! Then hit them with another AA, your W and another AA and Q again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Dash towards your enemy with your E and Q them. Then AA a few times before hitting your Q again! then AA, W, AA and Q again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then auto attack until it's back off cooldown, then Q and AA again and finish off with your empowered Q and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

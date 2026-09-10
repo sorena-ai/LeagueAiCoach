@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="renekton" scrapedAt="Wed Nov 26 2025 22:49:52 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Use W AA then quickly R E to cancel the animaton. AA Q AA then E back onto your target.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To surprise kill someone Flash into W AA range then R E Q one after another. AA AA and E to stay on your target.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Chase enemies down with E through minions then E again to your target. Quickly use Q then W AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a bigger trade E onto your target then AA W followed by Q AA. Use your recast of E to leave.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in pre-level 6 use E onto your target then AA W instantly. AA Q AA right after, then use your recast of E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Set up ganks by using E onto your target then instantly W AA. AA Q AA and use E to stay in range to continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your bread and butter animation cancel. AA then instantly W before AAing again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To poke trade E onto your target then AA Q and E out right after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

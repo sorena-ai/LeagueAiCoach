@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="hwei" scrapedAt="Wed Nov 26 2025 23:23:47 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Use your EQ &amp; Flash, then R, WE, QQ and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Buff up with WE, then EQ to fear your enemy, then use your R and finish with your QQ.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Pop your WQ then R, EQ and QQ to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your EW, then buff up with WE, then QW and R to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Buff up with WE, then EQ to fear your enemy, then QQ to end the combo.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Lead with your R, Then use QE, and EE to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+  </combos>
+</champion>

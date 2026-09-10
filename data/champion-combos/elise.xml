@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="elise" scrapedAt="Wed Nov 26 2025 22:35:04 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>In human form W away from yourself then R and use E to close the gap. AA W and use Q for burst damage, then instantly R E for the stun. Use human form Q and AA's to finish off the kill.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>In human form W away from yourself then R E to close the gap. AA W and execute with Q.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To gank from close range in human form AA then use W E Q one after another. Go into spider form with R to execute with Q AA W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To Flash gank start in Human form, Flash then instantly E W Q. Use R Q to gap close for your AA W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start off in human form AA Q then W behind you or to the side. Use E to stun your target before using R to go into spider form, then use your Q to make your original W fly to your target and AA W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic gank will start off in human form then E your target and instantly W Q. Follow this up with an quick R to go spider form, use Q to close the gap and AA W to AA reset to clean up the kill.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start off in spider form then rappel to your target or a minion to gank. Use R to go human form so you can immediately E to stun, then W Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

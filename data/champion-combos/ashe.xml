@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ashe" scrapedAt="Wed Nov 26 2025 22:31:26 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>When you have max stacks of your Q, AA then instantly Q R and follow it up with AA W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>W then mid animation Flash and instantly AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>R then mid animation Flash and instantly AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Make sure to instantly press Q after your fourth AA for a quick burst of damage.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Ult then walk into AA range and use W in between AAs - ideally while they are still stunned until you can proc your Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To easily trade AA then W before your next AA is ready.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

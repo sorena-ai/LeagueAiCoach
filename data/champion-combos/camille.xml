@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="camille" scrapedAt="Wed Nov 26 2025 22:33:16 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Start with your E/W/E Combo, AA, Q, R, then AA, AA and finish with Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your W, then AA, Q, R. Then use your E twice and finish with an AA and Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA your target, Q them, then use your E/W/E combo, followed by an AA, R, AA and Q</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E twice, AA, Q, R, then AA, AA and finish with Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA your target, Q them, use your E twice to stun them and then AA, Q and W to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q on a minion, then use your E twice, AA your target followed by Q &amp; W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then E again and Flash on to your intended target.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ziggs" scrapedAt="Wed Nov 26 2025 23:01:20 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>For a max DPS trade AA and instantly E Q R. AA again, then quickly W W AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>All in a target by using E and W under the enemy. W again, then quickly R Q and AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To create a gap use W underneath yourself and your target, then W again. Finish with E Q and R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For an ideal pre-6 trade, AA and E under your target. Q and W under them, then AA W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use W under yourself then W again to gapclose. Quickly Q and AA your target.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Quick trade by using E then Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For some poke use E on your target, then W Q W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

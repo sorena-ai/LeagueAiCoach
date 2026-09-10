@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="lux" scrapedAt="Wed Nov 26 2025 22:43:57 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To close the distance on a target Q then instantly F E R as quickly as you can. Reactivate E while channeling your R, followed by an AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a harder maximum damage combo Q AA then instantly E R followed by two AA's, reactivating E right before the second AA lands.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When in danger Q E R instantly then Flash mid R animation and reactivate E right after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Another way to trade is to Q then AA and quickly E right after. AA again while making sure to reactivate E before the AA lands.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>A nice and simple trade is to E then AA and reactivate E right before your AA lands.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>If you can catch someone out Q E R as quickly as possible and reactivate E as soon as you can.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a longer trade E then AA and reactivate E right before your AA lands, instantly Q right after then AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,62 @@
+League of Legends (LoL) is a team-based strategy game where two teams of five powerful champions aim to destroy the enemy Nexus. To win, teams must systematically clear defensive structures: turrets and inhibitors. Summoner's Rift, the primary battlefield, is split into three lanes and a central jungle area.
+I. Map Structure and Roles
+The five positions are integral to a balanced team composition on Summoner’s Rift.
+A. Lanes and Roles
+1. Top Lane: Champions here are typically tough solo fighters, often tanks or bruisers, who focus on 1-on-1 duels and protecting their turret. They often look to split push or engage fights.
+2. Mid Lane: Being the center of the map, Mid Laners are often high-burst damage champions or playmakers. They aim to roam to gank side lanes or play a critical role in team fights.
+3. Jungle: The Jungler operates in the Fog of War, roams the map, farms neutral camps, initiates ganks, and is primarily responsible for securing major objectives. The Jungler is considered the engine of macro play.
+4. Bot Lane (AD Carry and Support): This is a duo lane positioned closest to the Dragon Pit.
+    ◦ AD Carry (ADC): This role is highly item-reliant and focuses on farming safely to scale into a powerful damage dealer.
+    ◦ Support: This role facilitates vision control, peeling, or engaging, and is responsible for making plays and having map impact.
+B. Defensive Structures
+The path to the Nexus is guarded by structures in sequence: three turrets (Tier 1, Tier 2, Inhibitor) in each lane, followed by an Inhibitor, and finally, two Nexus Turrets protecting the Nexus.
+II. Champion Progression: Gold, XP, and Power Spikes
+Champions grow stronger throughout the game by acquiring Experience (XP) to level up and Gold to buy powerful items.
+A. Resource Acquisition
+• Experience (XP): XP is gained by killing enemy units, assisting in kills, destroying structures, or simply being near dying minions. XP is split among nearby champions; thus, solo laners gain levels faster than players in the Bot Lane. The objective Atakhan also grants XP.
+• Gold: Gold is primarily acquired by landing the last hit on minions and jungle camps, securing kills, destroying turrets, and breaking turret plates.
+    ◦ Last-Hitting (CSing): This is crucial for item-reliant roles like the ADC. Under a turret, a ranged minion typically requires one auto-attack, one tower shot, and a final auto-attack to secure the last hit.
+    ◦ Turret Plates: Outer (Tier 1) turrets have platings until the 14-minute mark, with each destroyed plating granting 125 gold to nearby allies.
+B. Power Spikes and Itemization
+1. Level Spikes: The Level 2 spike is often the biggest early-game advantage, especially in Bot and Mid lanes, offering playmaking potential upon unlocking a second ability. Level 6 is transformative for champions whose Ultimate is powerful, such as Amumu or Gragas.
+2. Itemization: Players must consult up-to-date builds and adapt purchases based on the match. Adaptations include buying anti-healing items like Executioner's Calling (if AD) or Morellonomicon (if AP) against high-sustain enemies, or defensive items like Zhonya's Hourglass or Guardian Angel against enemy burst.
+3. Recall Timing: Recalling should be timed to purchase major item components or a finished item, allowing the champion to abuse their item power spike sooner. A good rule of thumb is to recall at least 1 to 1.5 minutes before major objectives spawn. Never recall on an incoming cannon minion wave to avoid missing out on significant gold and XP.
+III. Macro Play: Strategic Objectives and Map Control
+Macro play involves the strategic decision-making that guides movements, objective prioritization, and map control.
+A. Objective Control
+Securing neutral and structural objectives is the primary path to victory.
+• Turrets (Structures): Destroying turrets grants gold and opens the map for deeper vision and rotations.
+• Inhibitors (Structures): Destroying one spawns powerful Super Minions in that lane for five minutes, creating constant pressure on the enemy base.
+• Elemental Drakes: Spawn at 5:00 and grant permanent, stacking, team-wide buffs. Collecting four Drakes grants a powerful Dragon Soul.
+• Elder Dragon: Spawns after a Soul is taken and grants a temporary buff that executes low-health enemies, often deciding late-game outcomes.
+• Rift Herald: Spawns at 16:00. The Eye of the Herald can be summoned to charge a turret, dealing massive damage and accelerating a gold lead.
+• Baron Nashor: Spawns at 25:00 and grants the Hand of Baron buff, which massively empowers nearby minions for 180 seconds, making it the ultimate sieging tool.
+• Atakhan: Spawns once at 20:00. Defeating it grants a team-wide buff that collects Blood Roses, providing permanent stacking bonuses to XP gains and Adaptive Force.
+B. Wave Management
+Controlling minion waves is crucial for setting up pressure, creating safety, and timing rotations.
+• Freezing: Holding the minion wave near your own turret to deny the enemy gold and XP and keep yourself safe from ganks.
+• Slow Pushing: Building up a large wave by only killing the caster minions, allowing the stacked wave to crash into the enemy turret, which is useful for setting up a split push or major objective play.
+• Fast Pushing (Shoving): Clearing the wave quickly to force it into the enemy tower, giving you time to roam or safely recall to base.
+• Avoid constantly auto-attacking the wave unless pushing for a specific purpose, as excessive pushing leaves you vulnerable to ganks.
+C. Vision Control
+Vision is the backbone of smart macro decisions, preventing ambushes and securing objectives.
+• Wards: Stealth Wards (Yellow Trinket) provide temporary vision. Control Wards (Pink Wards) are purchased for 75 gold, last indefinitely (unless destroyed), and reveal/disable enemy wards. Players should prioritize buying Control Wards, especially around objectives.
+• Vision Denial: The Sweeping Lens (Red Trinket) is used to clear enemy wards and traps, which is essential before attempting ganks or setting up objectives like Baron.
+• Warding Discipline: Never allow your wards to stack in your inventory (never have 2 Wards available in your trinket slot) as this means missing out on free information.
+D. Rotations and Split Pushing
+• Roaming: Moving from your lane (especially Mid or Support) to assist other lanes or the Jungler, typically after shoving the wave into the enemy tower. Supports should purchase early Boots to increase movement speed, making roaming more effective.
+• Split Pushing: Applying pressure to a side lane (Top or Bot) to force the enemy team to divide their defense. Successful split pushing requires good ward coverage to see enemy collapses. Champions who can win 1v1 duels (like Jax or Fiora) or have Teleport are effective split pushers.
+IV. Micro Play: Combat Mechanics
+Micro play consists of the direct mechanical skills required to win duels or gain advantage.
+A. Positioning
+Proper positioning is key to surviving, as Survivability Equals DPS.
+• Laning: Against champions with linear skillshots (e.g., Blitzcrank, Ezreal), it is vital to stand behind minions to block the incoming ability. Avoid standing in chokepoints near walls, as this limits movement options and makes dodging harder.
+• Team Fighting:
+    ◦ Carries (ADCs/Mages): Must adhere to the Front-to-Back Rule, attacking the closest safe target and maintaining maximum range to survive and deal consistent damage.
+    ◦ Frontliners (Tanks/Bruisers): Anchor the fight, soak damage, and choose whether to engage the enemy backline or peel (protect) their own carries.
+    ◦ Assassins: Should use flank routes and wait for enemy cooldowns before diving, always ensuring an exit strategy.
+B. Kiting and Attack Move
+• Kiting: The technique of inputting movement commands between auto-attacks to maintain distance while still dealing damage. To execute this, cancel the wind-down animation of the auto-attack with a movement command.
+• Attack Move: This command (often bound to 'A') allows a player to click the ground to attack the nearest target, preventing accidental movement toward the enemy if they misclick the opponent.
+C. Dodging Skillshots
+• Purchasing early Boots increases movement speed, making it easier to dodge abilities like Xerath's W.

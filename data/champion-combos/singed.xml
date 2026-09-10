@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="singed" scrapedAt="Wed Nov 26 2025 22:52:28 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Q AA then W behind yourself and instantly E your enemy into your W. Follow up with a mid air AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>R Q then W at your current location. Instantly Flash E them into your W followed by some AAs.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Flash and E Q instantly, then AA as quickly as you can. Use W and run them down for some more AAs.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To engage R then W and Flash instantly, followed by Q E and a quick AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Especially vs ranged Q then W your opponent, run up to them to E then instantly AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Most trades will start with Q and walk up to proc your passive then AA as soon as the poison hits. Use E to flip your target through your poison trail, then run them down to continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>The famous sky combo uses E then instantly Q AA to AA in the air.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

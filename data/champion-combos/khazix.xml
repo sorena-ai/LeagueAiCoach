@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="khazix" scrapedAt="Wed Nov 26 2025 22:41:42 GMT+0100 (Central European Standard Time)">
+  <combos count="10">
+    <combo>
+      <description>R into melee range then W AA Q as quickly as possible. After your Q pretend to walk away then R and turn back around to finish off your kill with AA Q, then using E to leap away.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>While in melee range AA W and as quickly as possible E away from your target and Q instantly while in the air.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To double jump E past your target then Q to kill them mid air. Before you hit the ground, E again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic R combo using the first R into melee range then AA Q quickly. Follow up by using AA W then repositioning/resetting your passive with R until your next Q cooldown. Finish off the kill by using AA Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic assassination combo will be to W and instantly E, then Q your target mid air and AA when you land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When engaging use E then Q your target mid air and land with an AA W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To fully all in an opponent R then E out of stealth and Q mid air. Land then AA W AA and R to reposition, then AA Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>W and instantly Flash onto your target to AA Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When someone facechecks W then instantly Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly burst R into melee range then AA and W Q straight after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

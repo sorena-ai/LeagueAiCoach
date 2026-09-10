@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="viego" scrapedAt="Wed Nov 26 2025 22:58:06 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>For more burst quickly use W and E, then AA. Follow up with Q and R, then AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a longer range trade use W then E while channeling. AA, then Q and AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To trade when in close range E then instantly Q your target, then AA W and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To dish out some quick damage use W and AA, then Q immediately after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To full combo when in close range quickly use Q and E, then AA and W. AA then R and AA again</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a long range execute W, then quickly Q and Flash mid animation.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a nice gank setup channel your W and then Flash.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To execute a low target, Q and then Flash mid animation.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

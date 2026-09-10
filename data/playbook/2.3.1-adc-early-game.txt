@@ -1,0 +1,8 @@
+Itemization and Gold Management:
+• To secure item spikes sooner, the ADC should try to delay their second back until they have enough gold for their first item. Avoid recalling if you are only a few hundred gold short of a major purchase.
+• You should never recall on a cannon minion wave when it is nearly in battle, as this causes a loss of significant gold and XP.
+• Against champions with high sustain or healing, buying an Executioner’s Calling (if AD) early can be highly beneficial to apply healing reduction and increase kill pressure.
+Safety and Vision:
+• ADCs should prioritize buying Control Wards during early recalls to supplement the Support's vision control.
+• The ADC needs to have good map awareness to survive ganks. A basic way to improve map awareness is to check the minimap every time they last hit a minion.
+• ADCs with dash abilities (e.g., Tristana, Zeri) should avoid using their escape tool aggressively unless they have checked the map and confirmed the enemy Jungler is not nearby.

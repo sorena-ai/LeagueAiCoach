@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="corki" scrapedAt="Wed Nov 26 2025 22:33:52 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>After picking up your package use W onto your target. E AA once you land, then Q R W instantly and AA R AA right after</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick burst of damage Q R AA one after another.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly all in before level 6 Q then W forward instantly. E while in mid air then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>E then instantly Q R, AA twice followed by an R and continue this pattern.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in once you're level 6 W to get into range then E. Once you land AA R then AA Q followed by AA R AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a basic trade you can E AA then Q right as it finishes and continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your bread and butter trade opener is to Q E instantly then AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

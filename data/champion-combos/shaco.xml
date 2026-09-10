@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="shaco" scrapedAt="Wed Nov 26 2025 22:51:52 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Juke opponents with R1 then use R2 to send your clone far away out of vision. Q then place your W near your enemy and while still stealthed break the tether with your clone to teleport it back to you, then AA before your stealth runs out. Continue to AA then E to execute.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>R1 then R2 to send your clone away, wait for the clone to be close to expiring then Q at your enemy. Break the tether to make the clone teleport right before it explodes, AA instantly after this happens and AA W, followed by AA E AA to finish up.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Another way to juke opponents is to R1 then use R2 to send your clone out then R2 again to make it attack your enemy. Q then place your W near your enemy then AA, continue to AA and use E to execute.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When possible you can save your Q to chase. E then walk up to AA, R1 then instantly Q and R2 to make the clone attack your enemy. Walk around to place your W and AA, then continue to AA afterwards.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To gank or dodge an enemy skill shot Q and get behind your target to AA, then instantly R followed by more AA's until you want to E to execute.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To gank after level 6 Q and place your W behind your target, instantly R1 then eAA. Continue to AA until you want to E to execute.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard gank combo will lead with Q, place Box behind your target then AA, continue to AA and use E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To burst use E Q AA as quickly as you can.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

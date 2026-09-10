@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="urgot" scrapedAt="Wed Nov 26 2025 22:56:41 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Use your R and then Flash into multiple targets.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then Flash, Q, R, AA and Press your W.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then instantly R, AA and  Press your W</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your E then Q W and R</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then Flash instantly!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+  </combos>
+</champion>

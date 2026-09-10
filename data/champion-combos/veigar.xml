@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="veigar" scrapedAt="Wed Nov 26 2025 22:57:17 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Start with E, then W then Q, AA, R then finish off with a second AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W, then Q, then R and Flash.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Q then instantly Flash and R</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E and follow up with W, Q then R</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W and follow with a Q and AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E, then W followed by a Q and finish with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

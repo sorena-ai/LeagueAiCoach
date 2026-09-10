@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="trundle" scrapedAt="Wed Nov 26 2025 22:55:40 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>For your full combo W then E directly behind your target and instantly R. Follow it up with AA Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in and stick on your target W then R. Flash Q instantly and AA E right after, followed by some more AAs</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To surprise the enemy W then E Flash instantly, followed by AA Q as quickly as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When in close range to a target W then instantly AA Q. Continue to AA then E your target back to you.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When able to easily get into melee range W and run up to AA Q then instantly E behind your target, followed by an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To execute a standard gank W then E directly behind your target. Once in range AA and as soon as it connects Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

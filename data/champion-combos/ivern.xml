@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="ivern" scrapedAt="Wed Nov 26 2025 22:38:29 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>If up close W then R. Once Daisy is out E her then AA until she uses her knockup. Q your target while they are mid air and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To not follow your Q to the target start with W and quickly Q after. Attack move next to your target to Auto Attack which will stop you dashing closer.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a safer combo Q then W. As soon as the Q hits use R,  then once Daisy is out cast E on her then continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>You can safely engage on someone by using R then using E on Daisy as soon as you can and instantly Q your target right after.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To easily engage E yourself then Flash AA right before it detonates. Follow up with Q and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To bring Daisy to a fight R then Q and instantly E yourself followed by an AA once it lands. Continue to AA once you're close.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To engage on an enemy E yourself then Q. Once it lands AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To get on top of an enemy quickly W AA instantly then Q once it lands AA your target.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

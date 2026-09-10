@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guide>
+  <champion>poppy</champion>
+  <position>support</position>
+  <strengths><![CDATA[Very strong all-in potential with her (E) . This when combined with her (Q) slow, can allow her to lock down an enemy for quite some time. Her (W) is the bane of any champion with dashes, especially all the carries who are reliant on their dashes. Her Ultimate (R) can allow her to turn the tide of a fight almost immediately as it can turn a 5 v 5 into a 5 v 2 easily. It also acts as a great source of disengage for her.]]></strengths>
+  <weaknesses><![CDATA[Can easily be kited by ranged carries even without using their dashes. Her Hammer ShockQ can easily be sidestepped as it has a very short range.
+
+Can be killed easily if she overextends with her Heroic ChargeE. She also acts as a frontline so the enemy can flank her teammates before going for her.
+
+Misuse of her Ultimate Keeper's VerdictR can land both her and her team in huge trouble. This is especially true if the enemy team has some sort of heavy engage which can get on her team’s carry.]]></weaknesses>
+  <gamePlan>
+    <earlyGame><![CDATA[]]></earlyGame>
+    <midGame><![CDATA[]]></midGame>
+    <lateGame><![CDATA[]]></lateGame>
+  </gamePlan>
+  <powerSpikes>
+    <earlyGame><![CDATA[]]></earlyGame>
+    <midGame><![CDATA[]]></midGame>
+    <lateGame><![CDATA[]]></lateGame>
+  </powerSpikes>
+</guide>

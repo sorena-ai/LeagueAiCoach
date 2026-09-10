@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="graves" scrapedAt="Wed Nov 26 2025 22:37:17 GMT+0100 (Central European Standard Time)">
+  <combos count="9">
+    <combo>
+      <description>You can combine W and Flash to make it much harder to dodge. AA then Q E together and finish off with AA R AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Very quickly burst your opponent down with everything you have. W your target, Q then quickly R Flash back in. AA E AA as soon as you can.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>From outside normal range, Q and instantly E F. Execute your target with AA R.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly retreat W your target then Q then instantly click away to E. As soon as your E is about to reach its max distance R, then use Flash mid animation.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When ganking W your target, E towards them then AA and Q during the AA downtime, then AA again and execute with your R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly burst enemies leading with W and quickly Q, then AA E AA as quickly as possible followed by R and another AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Seamlessly slide into your target by using Q E together. W your target and AA then quickly Q and E in the same direction. Finish up with two AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When fighting any opponent AA twice then E towards your target, Q instantly and use your final AA right after.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To All In before level 6 W your target, then quickly AA and E to reposition. AA Q and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

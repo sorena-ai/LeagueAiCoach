@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="monkeyking" scrapedAt="Wed Nov 26 2025 23:25:35 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Start with your E, AA, Q, W instantly, then R, AA, Q, R and another AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E, then W, R, Q and R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E, then Flash and R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash E, then Q, R, AA, W, Q and cast R again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your E, then instead W, AA and Q before using R, then AA, Q and R again to Finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q then instantly W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>E onto your enemy, AA, W, AA, Q and finish with another AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>E onto your target, AA, Q, AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="rakan" scrapedAt="Wed Nov 26 2025 22:48:48 GMT+0100 (Central European Standard Time)">
+  <combos count="12">
+    <combo>
+      <description>When you want to guarantee your engage R then as soon as the lockout period ends Flash and W as quickly as you can followed by Q E.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To use R more defensively R then Flash as soon as you can on top of the enemy. Instantly E to your ally, W back to your enemy to Q them and E back.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>R then E through your targets to your ally to charm enemies in between. Then instantly W back onto them and Q E afterwards.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To engage from very far away R then mid cast use E on an ally and W forward as soon as you can. AA then Q while they are knocked up and instantly E.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When close R your target by walking to them then after they are charmed, time your W so they get knocked up as it ends. Afterward quickly Q E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Before level 6 Flash engage with W quickly then AA Q E as fast as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Burst opponents by using Q W instantly then AA. R before they hit the ground and AA once more before retreating to an ally with E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Engage from long range with R then W after the lockout period has ended. Instantly Q followed by an AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Protect an ally with Q then E to your ally. Instantly W your enemy then quickly AA and E to your ally to back out.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade Q then AA and right after W. Follow up with an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Trade normally using W then instantly AA and Q E as quickly as you can.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly save an ally from further away E then instantly W forward, AA then Q E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

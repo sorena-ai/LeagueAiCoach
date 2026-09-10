@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="mordekaiser" scrapedAt="Wed Nov 26 2025 22:45:11 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>All in at Level 6 with E then instantly R them followed by using Q on your target mid air.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q then near the end of the animation Flash to ensure the Q hits.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To escape you can E your target away from yourself, then Flash in the opposite direction.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Q then AA to proc your passive and E your target back into you if they start to run away.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To help guarantee your Q, E at close range then AA and Q them at their travel destination.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade and get your passive AA and Q between AA timers.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To engage use E from max range then Q while they are traveling.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

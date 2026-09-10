@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="heimerdinger" scrapedAt="Wed Nov 26 2025 22:37:53 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>R Q instantly followed by E Q W as quickly as you can. Continue with AA's if needed.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To engage aggressively E and Flash at your target, then instantly Q W AA followed by Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To get yourself out of a sticky situation Q three times then E. R Q instantly followed by AA W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Stack turrets in a brush with Q then when an enemy approaches lead with E then instantly R W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly poke out your target E then W AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To make use of your turret procs E then instantly Q, AA then quickly Q W followed by another AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick burst combo E then instantly Q W followed by an AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Grenade ultimate by using R E instantly then W once it lands. Q AA quickly afterwards.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

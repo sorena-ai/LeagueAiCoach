@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="vladimir" scrapedAt="Wed Nov 26 2025 22:58:30 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Surprise a target by charging E, then Flashing forward to use R. AA Q and W to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in from close range use Q R E and W in quick succession.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>You can pre-6 trade by using E then W. Follow up with a Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Trade while dodging damage by using E then Q, followed by W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For your standard trade, E then Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Oneshot a target lategame by using E then R. Q and AA, then finish off with your W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

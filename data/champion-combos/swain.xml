@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="swain" scrapedAt="Wed Nov 26 2025 22:53:40 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Press your Q and then instantly flash towards your enemy. Then follow with your E, W, R and E combo to lock them down. Finish off with an AA and then the second part of your R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Flash and E your enemy then W and R. Then AA, Q, AA, AA and R again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press your R then E, W and E again to lock your enemy down. Then AA, Q, AA and finally press your R again to end the combo.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Press your W, E R, E and Q to start off a big all in on your opponent. Then auto attack a few times before using the second part of your R, another AA and a Q to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, E, W, E combo to burst and lock down your enemy, then AA a few times before finishing with another Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E, W and E again. Then Q and AA to finish a short and sweet combo.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W then E and E again. Finish with a Q and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

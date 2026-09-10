@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="poppy" scrapedAt="Wed Nov 26 2025 22:47:59 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Q Flash onto your enemy, then AA, E, AA, use your R and finish with another AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Charge up your R then Flash E your priority target. AA, then W, Q and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Press W, then F, R, AA. Use your E, AA, Q and another AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash and E your enemy. Then Q, AA R and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your R then W, E AA, Q and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Press your W then E, Q and R and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA your target, then E, AA, Q and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

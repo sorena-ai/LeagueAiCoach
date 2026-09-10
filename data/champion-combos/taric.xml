@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="taric" scrapedAt="Wed Nov 26 2025 22:54:52 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>Engage on a target by using W R E and then Flashing before the E activates. AA AA, then Q AA AA Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your ally to help engage with W on them, then E AA AA. Q AA AA, then Q AA AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To infinitely club your opponent E AA AA, Q AA AA, then W AA AA Q and repeat.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a defensive escape, use W then E R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Make use of your passive by using W AA AA, Q AA AA and then Q AA AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly trade using E AA AA, then Q AA AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

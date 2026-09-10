@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="senna" scrapedAt="Wed Nov 26 2025 22:51:16 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>When out of range, W and instantly Flash. AA then Q R instantly followed by an AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your trinket then instantly Q to extend the range.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To be a real sniper R then instantly trinket Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use W followed instantly by Q and then R. Flash away mid R animation to create more space.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>The most standard poke trade for lane is Q then AA instantly.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To burst after level 6, Q then AA W instantly. Follow it up with another AA and quickly R.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade from range use W on your target, then walk forward to AA Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

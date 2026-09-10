@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="alistar" scrapedAt="Wed Nov 26 2025 22:30:26 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>To quickly knock up an enemy twice W and once it connects Flash to where they will land. Q E before they hit the ground, AA then AA once it's ready.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To extend your engage range W and right as you reach your target Q F instantly.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To knock an enemy back into your team from outside melee range Q and mid animation Flash, then once behind your target use W</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To surprise your target with an engage F and instantly W Q one after the other.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To knock an enemy back into your team Q them, then walk behind your target and use W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your standard Alistar combo will be to W Q one after another then E once in range. AA then AA once it's up for the stun.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a longer cc chain using a wall Q and instantly E AA. W your opponent into the wall and stun them with your AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To make use of walls on the map W someone into one then AA Q as fast as you can.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

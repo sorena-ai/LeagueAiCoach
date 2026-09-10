@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="masteryi" scrapedAt="Wed Nov 26 2025 23:24:47 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>To engage normally use R then E right before you use Q and AA four times. W instantly after first swing of the eAA lands then AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in with Flash, R then Flash AA. Activate E mid animation then AA 3 times before using Q. AA as soon as you come out then instantly W AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q to animation cancel the double hit. E then instantly AA three times. Use W quickly after the third and AA then instantly Q and AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>AA and E mid-animation, AA twice more then Q. As soon as you can AA and instantly W then AA again.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>A normal fight is as simple as using E before your first AA, AA twice more and Q AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use W to cancel your Auto Attack. AA then instantly W and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

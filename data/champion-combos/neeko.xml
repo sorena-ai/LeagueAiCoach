@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="neeko" scrapedAt="Wed Nov 26 2025 22:46:11 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Start your engage on multiple targets by instantly using W R, after the stun lands line up your E then quickly Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To take the opposition by complete surprise W R instantly, then while still in stealth E F Q AA as quickly as you can. Continue to AA after your R finishes.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Land a long range engage by using E then Flash mid animation, followed by instantly using Q R, then AA W right after you land.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To start a teamfight from outside your typical engage range R then Flash right before you go up in the air to stun, upon landing instantly Q E AA and W afterwards.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When you are at least level 6 E Q then W R instantly. Follow up with an AA after your R finishes.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To use your standard trade W forward then instantly AA E Q followed by a couple of AAs.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a long trade AA then instantly Q followed by AA E AA. Use W to land your final AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a quick burst of damage E Q instantly then quickly AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

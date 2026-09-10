@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="vi" scrapedAt="Wed Nov 26 2025 22:57:54 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Channel your Q and Flash, then AA, E, AA. Use your R then AA, E and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, then AA, E, AA, E again, AA and R to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Charge your Q and Flash and then use your R!</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>R your target then AA, E, AA. Use your Q then AA, E and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q then AA, E, AA. Use your R then AA, E and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA your target then E and AA. R, then AA, E, Q, AA and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>AA then E, AA, Q, AA then E and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your Q, then AA, E, AA and AA to proc your W!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

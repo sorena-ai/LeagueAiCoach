@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="yasuo" scrapedAt="Wed Nov 26 2025 22:59:56 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Get your Q3 ready, then E, Q and Flash instantly onto your target, then AA quickly before using your R</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Hit a Q3, then E, Q and R your enemy.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Charge up your Q3, then E, Q, Flash onto your enemy, then E, Q, R and follow that with an AA, another Q and another AA.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Prep your Q3, then E, Q, AA, R and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Prep your Q3, then W, Q and follow that with your R.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, then Flash instantly.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>E, then AA, Q and E back out again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

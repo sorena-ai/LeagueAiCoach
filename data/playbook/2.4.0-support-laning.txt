@@ -1,0 +1,11 @@
+Laning Positioning and Micro:
+• Support micro involves small actions such as positioning, poking, trading, and managing the wave to win the lane.
+• Positioning is the most impactful thing in the lane. Supports should try to stand next to and in line with their ADC at all times, occasionally toggling between slightly behind and in front of them. Poor positioning negatively affects the ADC's ability to play aggressively and farm.
+• To counter enemy skillshots (e.g., Blitzcrank's Q or Ezreal's Q), the Support should stand behind minions to intercept the ability.
+Farming Assistance and Item Quest:
+• Supports should actively help the ADC farm under the turret when pushed in. To secure ranged minions, the Support must hit them once so the ADC can secure the last hit.
+• It is crucial to complete the Support item quest quickly to unlock wards (ideally by the 10-minute mark).
+• When utilizing item stacks to execute minions, the priority is Cannon Minions, then melee minions. Avoid using stacks on ranged minions as they give little gold and delay the quest completion.
+Level 2 Spike and Mana Management:
+• The Level 2 power spike is the most common and biggest early-game spike in Bot Lane. The duo lane hits Level 2 by killing the first wave followed by three melee minions on the second wave.
+• Supports should contain and maintain a reasonably sized mana pool at all times to avoid being an easy target for the enemy Jungler.

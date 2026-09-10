@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="diana" scrapedAt="Wed Nov 26 2025 22:34:16 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>To engage from further away than expected R and instantly Flash Q W, then AA E followed by AA E AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly use your spell rotation and mop up a kill W and instantly E. While in mid air cast R so that it finishes its cast as you arrive, then quickly Q AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To E three times in one teamfight Q E your first target instantly but make sure your Q hits your second target. AA upon landing, E to your second target and R AA. E your third target instantly before your R damage lands, then AA upon arriving.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>For surprise burst damage on the enemy backline in a teamfight W AA your first target then R AA and instantly E your main target. Cast Q as quickly as you can then AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a long range all in to get onto the carries in a teamfight Q E your first target then R and instantly Flash to your next. Use W once they are pulled together and AA twice then E AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To quickly burst a low HP target W, instantly Flash and E Q as quickly as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To burst your target E then R mid air. Use W Q while they are knocked up then AA three times to proc Diana's passive.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic level 6 all in is to Q E instantly and use W mid air. Upon landing AA R AA then E and AA as the follow up.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a melee range all in W then AA twice, use Q E instantly and AA three times. E again, then AA once more.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>You can sneakily trade with your passive. AA your first target twice then Q E your main target. Instantly AA W upon landing, then E back to safety on a different enemy.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade while hiding your first attack AA and W as soon as the animation starts. Instantly Q followed by more AAs.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

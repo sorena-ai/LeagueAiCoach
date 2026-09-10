@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="belveth" scrapedAt="Wed Nov 26 2025 22:32:16 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>First use your W and then instantly R, then Q, AA, Q, AA, E and AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, AA, Q, AA, then Flash and Q, AA, Q, AA and finish with E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with W then instantly E, then Q, AA, Q, AA, Q, AA, Q, AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E then W, Q, AA, Q, AA, Q, AA, Q, AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, AA, Q, AA then your W, AA, Q AA, Q AA and finish with your E.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, W, AA then Q, AA and finish with another Q, AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q, AA, Q AA, W and then E.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

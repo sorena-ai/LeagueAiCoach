@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="quinn" scrapedAt="Wed Nov 26 2025 22:48:36 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>R then fly forward and AA Q then AA E. Flash on top of your target as soon as your E knockback connects to cancel the animation and stay in place then continue to AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>E then use an attack command while still in flight, then Flash instantly when your knockback hits. Quickly spam two AA's without using any other commands (including movement commands) then Q and continue to AA.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>To escape Flash directly behind your target then instantly E. AA as you land then Q as you run away.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash engage by using R then fly forward and Flash AA E instantly. AA after you land then Q and continue to AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To assassinate someone R then fly forward to E. AA after you land then Q instantly and continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade use E then AA as soon as you land, followed by a Q. Continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When looking to poke and maybe trade more use Q first then AA, E instantly after then continue to AA after you land.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>A full combo will look like R then fly forward to AA E instantly. AA after you land then Q instantly and continue to AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

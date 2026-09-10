@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="aphelios" scrapedAt="Wed Nov 26 2025 22:31:14 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Burst targets with Infernum in main hand and Severum in off hand. R Q W instantly one after another then Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Kite and deal damage from range with Crescendum in main hand and Calibrum in off hand. Q then instantly AA W. Continue to AA and kite until your sentry dies then Q R instantly and AA twice.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To AoE root use Infernum in main hand and Gravitum in off hand. Q then W Q W as quickly as possible followed by an AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Engage teamfights with Gravitum in main hand and Calibrum in off hand. R and Q once it lands, then instantly W Q followed by two AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Quickly stack Chakrums by using Crescendum in main hand and Severum in off hand. R then instantly W Q. Once it's done it's channel, W and AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>With Calibrum in main hand and Gravitum in off hand you can root from very far away. Use Q then instantly W. AA once the Q lands then Q with Gravitum, then use W to swap back for AA's.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To snipe with Calibrum out use Q and R instantly then AA twice.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

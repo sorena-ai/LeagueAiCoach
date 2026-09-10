@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="gragas" scrapedAt="Wed Nov 26 2025 22:37:05 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Use your W, R, and then E Flash and Q, finish with an AA and Q.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E+Q instantly, followed by Flash and R your enemy back into your Q.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q on the floor, use your W, then R your enemy into your barrel, finish with an AA, E and Q.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q on the floor. Use your W, then E &amp; R, AA them and pop your Q to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q on the floor. Use your Ultimate and E then use your Q again to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your E then R instantly and then Flash.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your W then E &amp; Q onto your enemy. Then AA and use your R and pop your Q to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your Q and instantly W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

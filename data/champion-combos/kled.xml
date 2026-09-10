@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="kled" scrapedAt="Wed Nov 26 2025 22:42:06 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>Start with R then E, then Q, AA, then E and then finish with three AAs</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E then Q, flash in, three AAs, then E and finish with an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Q then flash in and AA, E followed by two AAs then E, then finish with an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E then Q then AA, then R, two AAs, E and finish with an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with R then Q, followed by four AAs, then E, AA, E and finally an AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Five AAs, then Q then E and then another two AAs before you E back out again!</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with Q, then E followed by three AAs then E and finish with an AA</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Start with E, then Q, then follow up with four AAs to proc your W.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

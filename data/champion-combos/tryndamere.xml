@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="tryndamere" scrapedAt="Wed Nov 26 2025 22:55:52 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>To execute a low hp target E then mid animation Flash onto your target and instantly AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To surprise your target with a quick engage use E and as soon as you land W then Flash AA instantly.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a style kill AA your target then E away and mid animation Flash back onto your target for an instant AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a full engage W E instantly then AA once you land. Continue to AA until your next E comes up, then AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Quick trade by hitting with an AA then instantly using E away.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When engaging from range E then instantly AA. Continue to AA and use W as soon as they turn away, then AA some more.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>When in melee range AA then W, AA until you need to E to gap close or for the extra burst damage, then AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="gwen" scrapedAt="Wed Nov 26 2025 22:37:29 GMT+0100 (Central European Standard Time)">
+  <combos count="7">
+    <combo>
+      <description>Start with your R and then AA E AA for the reset. Then R, Q and AA. then W, R, Flash quickly to finish.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Start with an AA E AA, then AA, AA and Q, Flash &amp; AA.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your R, then E and AA, then RR and AA and finally RR Flash to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W, then E &amp; Flash.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your R and instantly E to get on your target. AA, AA, R, AA, AA, R and finally Q and AA to finish.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Begin with an AA, then E, W, AA quickly. Then hit two more AA's, Q and AA to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with an AA, then E and AA again, then Q and AA to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

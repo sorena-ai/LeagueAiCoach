@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="azir" scrapedAt="Wed Nov 26 2025 22:31:52 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>For a more advanced Shuffle E Q towards your target. While still moving, R them back towards your team.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When out of range use W, quickly E and Q to reposition, then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To execute the Shurima Shuffle E Q towards your target, Flash behind and then R them quickly.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To move quickly, use W then instantly E Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>All in a target by using E Q towards them and then R them back towards your team. Quickly W then AA them down.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To trade and fight, use W and AA, then E, Q and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Your basic trade is to W then AA, followed by Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To create a gap between you and the enemy, R them away and then W. AA, Q and AA again, then W and AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

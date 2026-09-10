@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="milio" scrapedAt="Wed Nov 26 2025 23:25:11 GMT+0100 (Central European Standard Time)">
+  <combos count="5">
+    <combo>
+      <description>Flash Ult your allies before following up with your Q, E, W and E again to finish.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Flash Q then R, E, E and W to save your teammates.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Start with your E, Q and AA then W, AA, E, AA and AA again to finish the trade.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Buff yourself with your E, then follow up with your R, W and Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>Engage with your Q then use your utility with your E's shield, your W and then your E again to finish.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

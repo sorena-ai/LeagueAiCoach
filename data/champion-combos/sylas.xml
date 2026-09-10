@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="sylas" scrapedAt="Wed Nov 26 2025 22:53:52 GMT+0100 (Central European Standard Time)">
+  <combos count="9">
+    <combo>
+      <description>You can quickly burst trade by using Q and instantly W your target, AA them and as soon as the animation starts E away.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To engage on further targets E then instantly Flash right as you are about to reach it's maximum distance. Instantly E and folllow this up with a basic AA Q AA W</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>E into your max W range, then E again and instantly use W to travel and stun slightly faster.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>You can use abilities to cancel your R animation - R then instantly Q, R then instantly E,  or E then E again and use R quickly while mid air.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When caught, use E towards your target and instantly W once in range, followed by AA E then use AA Q to slow them to stay in range for more AAs.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>For a closer engage Q then instantly E into AA range, followed up with W AA and finally E to keep on your target.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To guarantee the second part of Q damage try to E away from your target then instantly re-engage with Q E followed by AA W.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>The most basic engage using E then E again followed by AA Q to keep your opponent close for your AA W finisher.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To trade in minions E into melee range then AA W AA, use your Q then use the slow to more easily land your stun.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

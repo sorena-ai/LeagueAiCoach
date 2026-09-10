@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="nasus" scrapedAt="Wed Nov 26 2025 22:45:47 GMT+0100 (Central European Standard Time)">
+  <combos count="8">
+    <combo>
+      <description>When done properly you can animation cancel almost all your abilities together. Cast E W right after one another then instantly R Q as quickly as you can.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>E R Q can be chained together to cancel the animations. E and instantly R Q AA, then quickly use W followed by an AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To all in R then W once in range. Walk up and E Q AA instantly, followed by using AA's until your Q is back up to use.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To Flash engage R then W, use E then instantly F into Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>When chasing an opponent use W then instantly Flash and E Q AA as fast as you can.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Cancel your E animation by using an AA instantly after followed by W Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>A normal trade will AA then instantly Q as soon as the damage goes through, then quickly E W and AA again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>E W Q can be chained together to cancel the animations. E and W instantly after followed by Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

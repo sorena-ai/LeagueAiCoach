@@ -1,0 +1,8 @@
+The primary goal of the Top Laner is to win the 1v1 duel by taking the enemy turret and protecting their own. Gold income for this role is mainly derived from last-hitting lane minions.
+Farming Techniques Under Tower: When farming under your own turret, mastery of last-hitting mechanics is crucial for securing income.
+• To secure melee minions under the tower, you must let the tower hit them twice, and then finish them off with one champion auto-attack.
+• To secure ranged minions under the tower, you need to auto-attack them once, allow the tower to hit them once, and then finish them off with a final auto-attack.
+Trading Effectively: Avoid unnecessary trading during the very early game when there is a large enemy minion wave present, as the accumulated minion damage can quickly cause the trade to favor the opponent. The ideal time to trade is immediately after the enemy champion uses a key ability (such as their main source of damage or crowd control) on the minion wave or on you unsuccessfully. By fighting when their key spell is on cooldown, you gain an advantage. If you use an ability to clear minions, try to aim it so it hits the enemy champion at the same time to gain dual value (push and poke).
+Wave Management Principles: Mastering wave management is essential to prevent yourself from falling behind, getting zoned away from farm, or being repeatedly killed.
+• If you are a champion that is weak early on, such as Camille (generally until Level 4 or 5), you should keep the minion wave closer to your side of the map to allow you to farm safely and avoid getting zoned.
+• If you are a champion that is strong early on, you can keep the wave even or slightly closer to your side of the map to enable all-ins when the enemy walks up to farm.

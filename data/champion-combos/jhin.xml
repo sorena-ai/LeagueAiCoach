@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="jhin" scrapedAt="Wed Nov 26 2025 22:39:30 GMT+0100 (Central European Standard Time)">
+  <combos count="6">
+    <combo>
+      <description>To duel opponents AA and instantly E Q W. Mid cast of W Flash backwards and quickly use your R.</description>
+      <difficulty>Severe</difficulty>
+    </combo>
+    <combo>
+      <description>Inputting these commands quickly can cancel the animations. AA and quickly E Q W then AA</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>To finish low health opponents when you have your fourth shot up, Flash then instantly Q AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>To burst targets AA then instantly E W right after one another, AA twice and finish up with a Q fourth shot AA</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Trade normally by AA three times then Q right before using your final shot.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To keep your target locked in range while you trade AA then quickly W, then AA Q and AA twice more for your 4th shot.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

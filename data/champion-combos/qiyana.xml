@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<champion name="qiyana" scrapedAt="Wed Nov 26 2025 22:48:23 GMT+0100 (Central European Standard Time)">
+  <combos count="11">
+    <combo>
+      <description>For a quick engage R then Flash mid animation to send your target into a wall. Quickly Q then W E Q.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>Push enemies back towards your team - use E to gapclose, then Q and W behind. Quickly R and then Q again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When the enemy team is near a wall, E towards a target then Q and W. R the opposition into the wall, then Q again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>When in melee range R your target into a wall, then E AA. Use Q and W, then AA and Q again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>All in by using E to gapclose, then R your target into a wall. AA then Q, before using W and Q again.</description>
+      <difficulty>Hard</difficulty>
+    </combo>
+    <combo>
+      <description>For a long range trade E past minions, then instantly Q W Q.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Oneshot a squishy target by using E to position, then R your enemy into a wall. Quickly Q W Q, then AA.</description>
+      <difficulty>Average</difficulty>
+    </combo>
+    <combo>
+      <description>Use your W to gapclose, then E your target and Q AA.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>To chunk an enemy E towards them, then quickly Q W Q.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a safe trade Q, then W and Q again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+    <combo>
+      <description>For a fast trade pre-6 E towards your target, then Q. Quickly W, then AA and Q again.</description>
+      <difficulty>Easy</difficulty>
+    </combo>
+  </combos>
+</champion>

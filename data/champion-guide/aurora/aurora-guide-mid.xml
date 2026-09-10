@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guide>
+  <champion>aurora</champion>
+  <position>mid</position>
+  <strengths><![CDATA[Good skill expression. She has a lot of good tools in her kit that can be used in a variety of situations. Multiple escape tools. She has her (W) which is an invisibility spell, and her (E) can also be used to get over small walls. Her Ultimate (R) is really good in team fights.]]></strengths>
+  <weaknesses><![CDATA[In the early game, she is vulnerable to all-ins as she lacks damage and is weak vs engage/ all-in champs early. She can be difficult to play due to her Ultimate (R) . So it will take some getting used to if you want to fully abuse this spell. You need allies to go deep with you in team fights. If no one wants to go ham, then you’re going to be 1v5 and focused by the enemy in team fights.]]></weaknesses>
+  <gamePlan>
+    <earlyGame><![CDATA[Average Throughout the laning phase, ensure you aim your (Q) and (E) so they hit both the minion wave and the enemy simultaneously. Hold on to your (W) for as long as possible. It is better to be caught with it than without it. Your Ultimate (R) provides you with a lot of additional kill pressure. If you can’t get kills in your lane, make sure you rotate and roam around the map.]]></earlyGame>
+    <midGame><![CDATA[Average Focus on roaming around the map and taking down targets who are over-extended and isolated and alone. Switch to the side lane after destroying the mid-lane tower, or after your bottom lane has rotated to the mid-lane. In the later-parts of the mid-game, make sure you’re looking for team fights with your team. Be prepared to group as you’re a good teamfighter.]]></midGame>
+    <lateGame><![CDATA[Average In the late game, make sure you stick with your team and group. You need to ensure that you and them are not caught out or else they will take Baron. While grouping is very important, make sure you’re watching what is happening in the side lanes and make sure you keep farming and getting gold and XP. This way you will not be weak in team fights. Look for fights around major objectives like the Baron. Getting picks with your Ultimate (R) can enable your team to take them easily.]]></lateGame>
+  </gamePlan>
+  <powerSpikes>
+    <earlyGame><![CDATA[When laning against melee champions, abuse your range advantage as often as you can. Your first component item will significantly help with your damage output. Start playing more aggressively and push when you have your first component. Once you unlock your Ultimate (R) , your kill pressure intensifies. Try to make plays with your Ultimate (R) post 6.]]></earlyGame>
+    <midGame><![CDATA[Group and look for team fights with your allies during the mid-game. At level 9, you will max your first ability. Your poke and damage output will intensify from there on out. At level 11, you will put a second point in your Ultimate (R) . This will make your Ultimate (R) deal more damage and you’ll be a bigger threat.]]></midGame>
+    <lateGame><![CDATA[At level 16, you will put a third and final point in your Ultimate (R) . You will be able to deal a lot of damage at this stage of the game. Stick with your team during the late game as you’re a strong teamfighting champion. In the late game, and at max build, you will deal considerable damage in fights. When you’re max build, don’t be afraid to fight and pick up those easy kills.]]></lateGame>
+  </powerSpikes>
+</guide>
