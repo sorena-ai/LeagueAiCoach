@@ -127,8 +127,7 @@ async def in_game_coaching(
         )
 
         # Transcribe audio using OpenAI Whisper
-        logging.info("Transcribing audio with Whisper language: %s",
-                    language.value, language or "auto-detect")
+        logging.info("Transcribing audio with Whisper language: %s", language.value)
         
         user_question = transcribe_audio(
             audio_bytes=audio_bytes,
