@@ -6,7 +6,9 @@ Used when the user is not in an active game and wants to ask general questions.
 """
 
 import logging
+import time
 import warnings
+from datetime import datetime
 
 from langchain.agents import create_agent
 from langchain_classic.agents import AgentExecutor
@@ -14,7 +16,8 @@ from google.api_core.exceptions import ResourceExhausted
 
 from app.config import settings
 from app.assistant.knowledge_prompts import build_knowledge_prompt
-from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat
+from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat, usage_fields
+from app.utils.log_context import bind_log_context, elapsed_ms
 
 ensure_llm_config()
 
@@ -72,9 +75,19 @@ def get_knowledge_advice(
     Raises:
         Exception: If API call fails or processing error occurs
     """
-    logger.info("Getting knowledge advice - User ID: %s", session.user_id)
+    bind_log_context(
+        provider=settings.coach_provider,
+        model=settings.coach_model,
+        history_messages=session.message_history.get_message_count(),
+        session_age_s=round((datetime.now() - session.created_at).total_seconds()),
+    )
+
+    logger.info(
+        "Getting knowledge advice - User ID: %s, history: %d messages",
+        session.user_id,
+        session.message_history.get_message_count(),
+    )
     logger.info("User question: %s", user_question)
-    logger.info("Message history count: %d messages", session.message_history.get_message_count())
 
     try:
         logger.info("Running knowledge agent with provider: %s (model: %s)",
@@ -104,17 +117,23 @@ def get_knowledge_advice(
                    len(messages), len(historical_messages))
 
         # Invoke agent with messages format
+        invoke_started = time.perf_counter()
         agent_result = session.agent.invoke({"messages": messages})
+        invoke_ms = elapsed_ms(invoke_started)
 
         # Extract text response from agent result
         response_messages = agent_result.get("messages", [])
         if not response_messages:
             raise ValueError("Agent did not return any messages")
-        
+
         # Get the last message (assistant's response)
         last_message = response_messages[-1]
         advice = extract_message_text(last_message)
 
+        bind_log_context(llm_ms=invoke_ms, advice_chars=len(advice), **usage_fields(last_message))
+        logger.info(
+            "Knowledge agent responded in %.0f ms (%d chars)", invoke_ms, len(advice)
+        )
         logger.info("Knowledge agent response: %s", advice[:200])
 
         # Add user question and assistant response to message history

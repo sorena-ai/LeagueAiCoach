@@ -72,8 +72,9 @@ def transcribe_audio(
         )
 
         logger.info(
-            "Transcription successful - Length: %d characters",
-            len(transcript)
+            "Transcription successful - Length: %d characters, Model: %s",
+            len(transcript),
+            "gpt-4o-transcribe",
         )
         logger.debug("Transcribed text: %s", transcript[:200])
 

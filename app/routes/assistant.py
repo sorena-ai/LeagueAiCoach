@@ -21,7 +21,8 @@ All coaching endpoints require authentication via JWT token (Bearer token).
 
 import json
 import logging
-from typing import Optional
+import time
+from typing import AsyncGenerator, Optional
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 from fastapi.responses import JSONResponse, Response, StreamingResponse
@@ -39,8 +40,53 @@ from app.handlers.audio import validate_and_process_audio
 from app.models.language import SupportedLanguage, get_language_code, get_all_supported_languages
 from app.users.models import User
 from app.models.game_stats import GameStats
+from app.utils.log_context import bind_log_context, elapsed_ms
 
 router = APIRouter(prefix="/api/v1", tags=["assistant"])
+
+logger = logging.getLogger(__name__)
+
+
+async def _stream_coach_audio(text: str, request_started: float) -> AsyncGenerator[bytes, None]:
+    """
+    Stream TTS audio, reporting size and latency once the response completes.
+
+    The body iterator runs after the handler returns, so without this a TTS
+    failure surfaces only as an ASGI exception group with no request context
+    and no indication of how far the response got.
+    """
+    tts_started = time.perf_counter()
+    audio_bytes = 0
+    first_chunk_ms: Optional[float] = None
+
+    try:
+        async for chunk in text_to_speech_stream(text):
+            if first_chunk_ms is None:
+                first_chunk_ms = elapsed_ms(tts_started)
+            audio_bytes += len(chunk)
+            yield chunk
+    except Exception:
+        logger.exception(
+            "TTS streaming failed after %d bytes (%.0f ms into synthesis)",
+            audio_bytes,
+            elapsed_ms(tts_started),
+        )
+        raise
+
+    bind_log_context(
+        tts_ms=elapsed_ms(tts_started),
+        tts_first_chunk_ms=first_chunk_ms,
+        audio_out_bytes=audio_bytes,
+        total_ms=elapsed_ms(request_started),
+    )
+    logger.info(
+        "Coaching audio delivered - %d bytes, first chunk %.0f ms, synthesis %.0f ms, "
+        "request total %.0f ms",
+        audio_bytes,
+        first_chunk_ms or 0,
+        elapsed_ms(tts_started),
+        elapsed_ms(request_started),
+    )
 
 
 # Start session cleanup background task on module import
@@ -117,28 +163,52 @@ async def in_game_coaching(
       -F "language=english"
     ```
     """
+    request_started = time.perf_counter()
+    in_game = bool(game_stats and game_stats.strip())
+    bind_log_context(
+        mode="in_game" if in_game else "knowledge",
+        language=language.value,
+        upload_filename=audio.filename,
+    )
+
     try:
-        logging.info("Coaching request from user %s (game_stats: %s)",
-                    user.id, "provided" if game_stats else "not provided")
+        logger.info(
+            "Coaching request received - mode: %s, language: %s",
+            "in_game" if in_game else "knowledge",
+            language.value,
+        )
 
         # Validate and process uploaded audio file
         audio_bytes, mime_type = await validate_and_process_audio(
             audio, settings.max_file_size_bytes
         )
+        bind_log_context(audio_in_bytes=len(audio_bytes), audio_mime=mime_type)
+        logger.info(
+            "Audio accepted - %d bytes, mime: %s", len(audio_bytes), mime_type
+        )
 
         # Transcribe audio using OpenAI Whisper
-        logging.info("Transcribing audio with Whisper language: %s", language.value)
-        
+        stt_started = time.perf_counter()
         user_question = transcribe_audio(
             audio_bytes=audio_bytes,
             language=language,
         )
-        logging.info("Transcribed user question: %s", user_question)
+        bind_log_context(
+            stt_ms=elapsed_ms(stt_started), question_chars=len(user_question)
+        )
+        logger.info(
+            "Transcribed user question in %.0f ms (%d chars): %s",
+            elapsed_ms(stt_started),
+            len(user_question),
+            user_question,
+        )
+
+        advice_started = time.perf_counter()
 
         # Branch based on whether game_stats is provided
-        if game_stats is None or game_stats.strip() == "":
+        if not in_game:
             # Knowledge mode - no game stats
-            logging.info("Using knowledge mode (no game stats)")
+            logger.info("Using knowledge mode (no game stats)")
 
             # Get or create knowledge session
             session = session_manager.get_or_create_knowledge_session(
@@ -153,7 +223,9 @@ async def in_game_coaching(
             )
         else:
             # In-game mode - with game stats
-            logging.info("Using in-game mode (with game stats)")
+            logger.info(
+                "Using in-game mode (%d bytes of game stats)", len(game_stats)
+            )
 
             # Validate game_stats JSON size using Pydantic model
             try:
@@ -162,6 +234,9 @@ async def in_game_coaching(
                 validated_stats = GameStats(data=game_stats_dict)
                 game_stats_json = validated_stats.to_json_string()
             except json.JSONDecodeError:
+                logger.warning(
+                    "Rejected malformed game_stats JSON (%d bytes)", len(game_stats)
+                )
                 raise HTTPException(
                     status_code=400,
                     detail="Invalid JSON format for game_stats"
@@ -169,10 +244,16 @@ async def in_game_coaching(
             except ValidationError as e:
                 # Check if it's a size validation error
                 if "too large" in str(e).lower():
+                    logger.warning(
+                        "Rejected oversized game_stats (%d bytes): %s",
+                        len(game_stats),
+                        e,
+                    )
                     raise HTTPException(
                         status_code=413,
                         detail=str(e)
                     )
+                logger.warning("Rejected invalid game_stats: %s", e)
                 raise HTTPException(
                     status_code=400,
                     detail=f"Game stats validation error: {str(e)}"
@@ -192,12 +273,29 @@ async def in_game_coaching(
                 language=language.value,
             )
 
-        # Convert text response to speech using OpenAI TTS with streaming
-        audio_stream = text_to_speech_stream(coach_response)
+        bind_log_context(
+            advice_ms=elapsed_ms(advice_started),
+            response_chars=len(coach_response),
+        )
+        logger.info(
+            "Coach advice ready in %.0f ms (%d chars)",
+            elapsed_ms(advice_started),
+            len(coach_response),
+        )
 
+        if not coach_response.strip():
+            # TTS rejects empty input, and the resulting 400 is opaque. Fail
+            # here instead, where the cause is obvious.
+            logger.error("Coach produced an empty response; refusing to synthesize")
+            raise HTTPException(
+                status_code=502,
+                detail="The coach returned an empty response. Please try again.",
+            )
+
+        # Convert text response to speech using OpenAI TTS with streaming
         # Return streaming WAV audio
         return StreamingResponse(
-            audio_stream,
+            _stream_coach_audio(coach_response, request_started),
             media_type="audio/wav",
             headers={
                 "Content-Disposition": "attachment; filename=coach_advice.wav"
@@ -209,10 +307,11 @@ async def in_game_coaching(
         raise
 
     except Exception as e:
-        # Log the full error with traceback for debugging
-        import traceback
-        logging.error(f"Coach advice error: {str(e)}")
-        logging.error(f"Full traceback:\n{traceback.format_exc()}")
+        # exc_info carries the traceback to both stdout and Datadog error
+        # tracking; the request context says who it happened to and how far in.
+        logger.exception(
+            "Coach advice failed after %.0f ms: %s", elapsed_ms(request_started), e
+        )
 
         # Catch any other unexpected errors
         raise HTTPException(
