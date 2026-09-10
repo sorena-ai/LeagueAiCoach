@@ -11,12 +11,14 @@ from app.config import settings
 from app.core.mongodb import close_mongo_client, get_mongo_client
 from app.routes import assistant
 from app.users import routes as user_routes
-from app.utils.datadog_logging import build_datadog_handler
+from app.utils.datadog_logging import LOG_FORMAT, build_datadog_handler, shutdown_datadog_handler
+from app.utils.log_context import ContextFormatter, LogContextFilter
+from app.utils.request_logging import RequestContextMiddleware
 
 # Configure logging
 logging.basicConfig(
     level=getattr(logging, settings.log_level.upper()),
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    format=LOG_FORMAT,
     force=True,  # Override any existing logging configuration
 )
 
@@ -24,22 +26,32 @@ logging.basicConfig(
 root_logger = logging.getLogger()
 root_logger.setLevel(getattr(logging, settings.log_level.upper()))
 
+# Every handler needs the request context attached before it formats or ships a
+# record. On the queue handler this is what captures the context while still on
+# the request's task, before the record crosses to the listener thread.
+context_filter = LogContextFilter()
+
 # Ensure handlers are configured for console output
 if not root_logger.handlers:
     handler = logging.StreamHandler()
     handler.setLevel(getattr(logging, settings.log_level.upper()))
-    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-    handler.setFormatter(formatter)
+    handler.setFormatter(ContextFormatter(LOG_FORMAT))
+    handler.addFilter(context_filter)
     root_logger.addHandler(handler)
+else:
+    for handler in root_logger.handlers:
+        handler.setFormatter(ContextFormatter(LOG_FORMAT))
+        handler.addFilter(context_filter)
 
 # Attach Datadog logging handler when enabled
+datadog_handler = None
 if settings.datadog_logs_enabled:
     try:
         datadog_handler = build_datadog_handler(settings)
         if datadog_handler:
-            datadog_handler.setFormatter(
-                logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-            )
+            # No formatter here: the queue handler would render the line early
+            # and the Datadog handler would prefix it a second time.
+            datadog_handler.addFilter(context_filter)
             root_logger.addHandler(datadog_handler)
 
             # Also attach to uvicorn loggers to capture access logs
@@ -91,6 +103,8 @@ async def lifespan(app: FastAPI):
     # Shutdown
     logger.info("Shutting down Sensei League of Legends Coach API...")
     close_mongo_client()
+    # Drain anything still queued before the process goes away.
+    shutdown_datadog_handler(datadog_handler)
 
 
 # Create FastAPI application
@@ -112,6 +126,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Added last, so it sits outermost: add_middleware inserts at the front of the
+# stack. The request id is then bound before CORS or auth run, and a failure in
+# either is still logged with request context attached.
+app.add_middleware(RequestContextMiddleware)
 
 # Register routers
 app.include_router(auth_routes.public_router)
