@@ -16,7 +16,7 @@ from google.api_core.exceptions import ResourceExhausted
 from app.config import settings
 from app.assistant import prompts
 from app.assistant.prompts import build_gaming_guidance_section, build_game_state_report
-from app.lib.langchain import ensure_llm_config, get_llm_chat
+from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat
 from app.utils.game_stats import GameStateProcessor
 
 ensure_llm_config()
@@ -138,7 +138,7 @@ def get_coach_advice(
         
         # Get the last message (assistant's response)
         last_message = response_messages[-1]
-        advice = last_message.content if hasattr(last_message, 'content') else str(last_message)
+        advice = extract_message_text(last_message)
 
         logger.info("Agent response: %s", advice[:200])
 
