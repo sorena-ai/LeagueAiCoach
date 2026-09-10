@@ -116,11 +116,18 @@ def extract_message_text(message) -> str:
         The message's text content as a plain string
     """
     # langchain-core >= 1.0 exposes ``text`` as a property that joins text blocks.
+    # It returns a TextAccessor: a str subclass that is *also* callable, so the
+    # deprecated ``message.text()`` method form keeps working. Test for str
+    # before callable, otherwise every lookup takes the deprecated path and
+    # emits a LangChainDeprecationWarning (and breaks outright in 2.0).
     text = getattr(message, "text", None)
-    if callable(text):  # langchain-core < 1.0 exposed it as a method
-        text = text()
-    if isinstance(text, str) and text:
-        return text
+    if isinstance(text, str):
+        if text:
+            return str(text)
+    elif callable(text):  # langchain-core < 1.0 exposed ``text`` only as a method
+        called = text()
+        if isinstance(called, str) and called:
+            return str(called)
 
     content = getattr(message, "content", None)
     if isinstance(content, str):
