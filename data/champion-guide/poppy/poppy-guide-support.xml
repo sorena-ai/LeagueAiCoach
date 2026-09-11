@@ -9,13 +9,13 @@ Can be killed easily if she overextends with her Heroic ChargeE. She also acts a
 
 Misuse of her Ultimate Keeper's VerdictR can land both her and her team in huge trouble. This is especially true if the enemy team has some sort of heavy engage which can get on her team’s carry.]]></weaknesses>
   <gamePlan>
-    <earlyGame><![CDATA[]]></earlyGame>
-    <midGame><![CDATA[]]></midGame>
-    <lateGame><![CDATA[]]></lateGame>
+    <earlyGame><![CDATA[Average Play around your ADC and look for (E) stuns into terrain when the enemy walks near a wall. Use (W) to stop dash-heavy Supports and ADCs from all-inning. Keep the wave in a safe spot and do not overextend for a Heroic Charge that leaves your carry alone.]]></earlyGame>
+    <midGame><![CDATA[Average Group around Dragons and Herald and use (R) to knock priority threats out of the pit. Walk with your ADC when rotating so they cannot get picked. Invade with your Jungler when you have (E) and (W) up so dashed champions cannot escape through terrain.]]></midGame>
+    <lateGame><![CDATA[Average Peel for your carries in late game team fights. Stand between them and the first threat that walks in, and save (R) to delete an engage champion or peel a diving assassin. Do not leave your ADC to hunt the backline alone or the fight collapses the moment they die.]]></lateGame>
   </gamePlan>
   <powerSpikes>
-    <earlyGame><![CDATA[]]></earlyGame>
-    <midGame><![CDATA[]]></midGame>
-    <lateGame><![CDATA[]]></lateGame>
+    <earlyGame><![CDATA[Level 2 (E) plus (Q) is her first real all-in in bot lane if the enemy is near a wall. Level 6 lets her turn a 2v2 or Dragon fight by knocking the enemy Jungler or engage Support out of the pit. The first tank component makes her all-in less punishable if she misses (E) .]]></earlyGame>
+    <midGame><![CDATA[Level 9 maxes (Q) and makes her catch-and-slow much harder to walk out of. She is strongest in mid-game skirmishes where she can pin someone to a wall and keep (W) up against dash-heavy comps. Level 11 mainly lowers (R) cooldown so she can use it more than once around objectives.]]></midGame>
+    <lateGame><![CDATA[She does not spike as hard as damage carries at 16, but the lower (R) cooldown and full tank items let her soak engage and keep her ADC alive. In late fights her job is disruption and peel, not finding a solo kill on the backline.]]></lateGame>
   </powerSpikes>
 </guide>

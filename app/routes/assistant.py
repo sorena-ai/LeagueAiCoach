@@ -29,6 +29,12 @@ from fastapi.responses import JSONResponse, Response, StreamingResponse
 from pydantic import ValidationError
 
 from app.assistant.agent import get_coach_advice
+from app.assistant.data import (
+    CHAMPION_BUILDS,
+    CHAMPION_COMBOS,
+    CHAMPION_GUIDES,
+    PLAYBOOK,
+)
 from app.assistant.knowledge_agent import get_knowledge_advice
 from app.assistant.models import CoachResponse
 from app.assistant.session import session_manager
@@ -366,13 +372,13 @@ async def readiness_check() -> JSONResponse:
     {
         "status": "ready",
         "service": "sensei-lol-coach",
-        "champions_loaded": 168
+        "champions_loaded": 172
     }
     ```
 
     ## Checks Performed
-    1. Champions data directory exists
-    2. Champion XML files are present and loaded
+    1. Champion guide, combo, build, and playbook directories exist
+    2. In-memory champion data was loaded
 
     ## Response Codes
     - **200 OK**: Service is ready to serve requests
@@ -384,22 +390,26 @@ async def readiness_check() -> JSONResponse:
     - Service dependency monitoring
 
     ## Error Responses
-    - **503**: Champions data directory not found
-    - **503**: No champion data files found
+    - **503**: Required champion data directory not found
+    - **503**: No champion guide data loaded
     """
-    # Check if required directories exist
-    if not settings.champions_dir.exists():
-        raise HTTPException(
-            status_code=503,
-            detail="League of Legends champions data directory not found",
-        )
+    required_dirs = {
+        "combos": settings.champion_combos_dir,
+        "builds": settings.champion_builds_dir,
+        "guides": settings.champion_guide_dir,
+        "playbook": settings.playbook_dir,
+    }
+    for label, directory in required_dirs.items():
+        if not directory.exists():
+            raise HTTPException(
+                status_code=503,
+                detail=f"Champion {label} data directory not found",
+            )
 
-    # Check if there are champion files in the directory
-    champion_files = list(settings.champions_dir.glob("*.xml"))
-    if not champion_files:
+    if not CHAMPION_GUIDES:
         raise HTTPException(
             status_code=503,
-            detail="No champion data files found in champions directory",
+            detail="No champion guide data loaded",
         )
 
     return JSONResponse(
@@ -407,7 +417,10 @@ async def readiness_check() -> JSONResponse:
         content={
             "status": "ready",
             "service": "sensei-lol-coach",
-            "champions_loaded": len(champion_files),
+            "champions_loaded": len(CHAMPION_GUIDES),
+            "combos_loaded": len(CHAMPION_COMBOS),
+            "builds_loaded": len(CHAMPION_BUILDS),
+            "playbook_files": len(PLAYBOOK),
         },
     )
 
