@@ -80,7 +80,7 @@ async def lifespan(app: FastAPI):
     logger.info("Starting Sensei League of Legends Coach API...")
     logger.info(f"Environment: {settings.environment}")
 
-    # Verify all champion data directories exist with correct structure (172 champions each)
+    # Verify champion data directories exist before serving requests
     try:
         ensure_all_champion_data_exists()
     except FileNotFoundError:

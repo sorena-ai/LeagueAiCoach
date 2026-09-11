@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Dict
 
 from app.config import settings
+from app.assistant.champion_ids import normalize_champion_slug
 from app.assistant.data_models import (
     ChampionBuildsData,
     ChampionCombosData,
@@ -29,10 +30,10 @@ logger = logging.getLogger(__name__)
 
 def ensure_champion_combos_exist() -> None:
     """
-    Validate that champion combos directory exists and contains exactly 172 XML files.
+    Validate that the champion combos directory exists.
 
     Raises:
-        FileNotFoundError: If directory is missing or doesn't have 172 files
+        FileNotFoundError: If the directory is missing
     """
     directory = settings.champion_combos_dir
 
@@ -44,10 +45,10 @@ def ensure_champion_combos_exist() -> None:
 
 def ensure_champion_builds_exist() -> None:
     """
-    Validate that champion builds directory exists and contains exactly 172 subdirectories.
+    Validate that the champion builds directory exists.
 
     Raises:
-        FileNotFoundError: If directory is missing or doesn't have 172 subdirectories
+        FileNotFoundError: If the directory is missing
     """
     directory = settings.champion_builds_dir
 
@@ -59,10 +60,10 @@ def ensure_champion_builds_exist() -> None:
 
 def ensure_champion_guides_exist() -> None:
     """
-    Validate that champion guide directory exists and contains exactly 172 subdirectories.
+    Validate that the champion guide directory exists.
 
     Raises:
-        FileNotFoundError: If directory is missing or doesn't have 172 subdirectories
+        FileNotFoundError: If the directory is missing
     """
     directory = settings.champion_guide_dir
 
@@ -255,6 +256,14 @@ PLAYBOOK: PlaybookData = _load_playbook(
     settings.playbook_dir
 )
 
+logger.info(
+    "Champion data coverage: %d combos, %d build folders, %d guide folders, %d playbook files",
+    len(CHAMPION_COMBOS),
+    len(CHAMPION_BUILDS),
+    len(CHAMPION_GUIDES),
+    len(PLAYBOOK),
+)
+
 
 # ============================================================================
 # Getter Functions
@@ -266,12 +275,12 @@ def get_champion_combo(champion: str) -> str:
     Get champion combo data for a specific champion.
 
     Args:
-        champion: Champion name (case-insensitive)
+        champion: Champion name (display name or slug, case-insensitive)
 
     Returns:
         XML content string, or empty string if not found
     """
-    return CHAMPION_COMBOS.get(champion.lower(), "")
+    return CHAMPION_COMBOS.get(normalize_champion_slug(champion), "")
 
 
 def get_champion_builds(champion: str) -> Dict[str, str]:
@@ -279,12 +288,12 @@ def get_champion_builds(champion: str) -> Dict[str, str]:
     Get all build data for a specific champion.
 
     Args:
-        champion: Champion name (case-insensitive)
+        champion: Champion name (display name or slug, case-insensitive)
 
     Returns:
         Dictionary mapping role -> XML content, or empty dict if not found
     """
-    return CHAMPION_BUILDS.get(champion.lower(), {})
+    return CHAMPION_BUILDS.get(normalize_champion_slug(champion), {})
 
 
 def get_champion_build(champion: str, role: str) -> str:
@@ -307,12 +316,12 @@ def get_champion_guides(champion: str) -> Dict[str, str]:
     Get all guide data for a specific champion.
 
     Args:
-        champion: Champion name (case-insensitive)
+        champion: Champion name (display name or slug, case-insensitive)
 
     Returns:
         Dictionary mapping role -> XML content, or empty dict if not found
     """
-    return CHAMPION_GUIDES.get(champion.lower(), {})
+    return CHAMPION_GUIDES.get(normalize_champion_slug(champion), {})
 
 
 def get_champion_guide(champion: str, role: str) -> str:
