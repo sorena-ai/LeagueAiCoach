@@ -20,5 +20,5 @@ jobs:
           script: |
             set -e
             cd ~/workspace/infra
-            git submodule update --remote sensii
+            git submodule update --remote LeagueAiCoach
             docker compose up -d --build sensei-api
