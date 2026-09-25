@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="yasuo" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.907916">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Shield Bash, Second Wind</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Celestial Opposition, Berserker's Greaves, Kraken Slayer</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>59.09%</win_rate>
+  <matches>225</matches>
+</champion>

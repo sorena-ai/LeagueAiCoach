@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="zeri" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.911498">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Cut Down, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Triple Tonic, Cash Back</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Yun Tal Wildarrows, Gluttonous Greaves, Runaan's Hurricane</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>53.12%</win_rate>
+  <matches>15,690</matches>
+</champion>

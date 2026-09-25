@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="shyvana" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.889496">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Shield Bash, Conditioning, Overgrowth</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Jack Of All Trades, Cash Back</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Kraken Slayer, Plated Steelcaps, Trinity Force</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>62.5%</win_rate>
+  <matches>441</matches>
+</champion>

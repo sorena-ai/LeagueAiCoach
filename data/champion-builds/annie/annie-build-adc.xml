@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="annie" position="adc" scrapedAt="Thu Nov 27 2025 20:27:04 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST ANNIE BUILDS, RUNES AND ITEMS FOR BOT IN EMERALD + Most Popular If you want to use the most popular Annie Bot build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Electrocute as your keystone, followed by Cheap Shot, Grisly Mementos and Relentless Hunter in the primary tree, as well as Absolute Focus and Axiom Arcanist in the secondary tree. For rune shards, you want Adaptive Force in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Malignance as your first item, followed by Sorcerer's Shoes and Stormsurge. For your last 3 items, you should build Shadowflame, Rabadon's Deathcap and finish with Zhonya's Hourglass. For the skill order, you want to stick with Q - W - E. Right now, this build has 59.3% winrate over 59 matches played. Situational Annie Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Annie build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Annie runes page.]]></builds>
+<champion name="annie" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.839102">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Ultimate Hunter, Cheap Shot, Grisly Mementos</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Biscuit Delivery, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Dark Seal, Refillable Potion</starting_items>
+  <core_items>Malignance, Sorcerer's Shoes, Stormsurge</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>71.43%</win_rate>
+  <matches>151</matches>
 </champion>

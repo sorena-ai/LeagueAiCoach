@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="olaf" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.877470">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Cash Back, Approach Velocity</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Shield, Health Potion</starting_items>
+  <core_items>Plated Steelcaps, Stridebreaker, Experimental Hexplate</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>60.98%</win_rate>
+  <matches>248</matches>
+</champion>

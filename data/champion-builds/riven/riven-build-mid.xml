@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="riven" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.885559">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Haste, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Jack Of All Trades, Cash Back</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Axiom Arc, Gluttonous Greaves, Endless Hunger</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>51.4%</win_rate>
+  <matches>1,436</matches>
+</champion>

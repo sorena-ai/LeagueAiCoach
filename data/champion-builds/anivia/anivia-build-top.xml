@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="anivia" position="top" scrapedAt="Thu Nov 27 2025 20:25:49 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST ANIVIA BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Anivia Top build, you should take Flash and Teleport as your Summoner Spells. For runes, you should pick Electrocute as your keystone, followed by Cheap Shot, Grisly Mementos and Relentless Hunter in the primary tree, as well as Coup de Grace and Presence of Mind in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Rod of Ages as your first item, followed by Sorcerer's Shoes and Archangel's Staff. For your last 3 items, you should build Liandry's Torment, Zhonya's Hourglass and finish with Morellonomicon. For the skill order, you want to stick with E - Q - W. Right now, this build has 53.2% winrate over 823 matches played. Alternative If you're looking for alternatives, you can use Flash and Teleport as your Summoner Spells, with runes being Arcane Comet as your keystone, Manaflow Band, Transcendence and Scorch in the primary tree, and Coup de Grace with Presence of Mind in the secondary tree, as well as Adaptive Force, Adaptive Force, and Health Scaling as your rune shards. The items that this build incorporates are Rod of Ages as your first item, then Sorcerer's Shoes as a second item and Archangel's Staff as a third item. You want to finish the build with Liandry's Torment, Rabadon's Deathcap and Morellonomicon. As far as ability max order goes, you want to keep it E - Q - W. This build is currently sitting at a 53.2% win rate across 220 matches played. Off-Meta If you want to try an Off-Meta Anivia Top build in the current patch, try Flash and Teleport as your Summoner Spells, Electrocute, Cheap Shot, Grisly Mementos and Relentless Hunter as your primary rune tree, and Presence of Mind with Coup de Grace as your secondary tree. Use Attack Speed, Adaptive Force and Health Scaling as your shards. For items in this build, you want to complete Malignance as your first item, then finish Sorcerer's Shoes as your second item, and Liandry's Torment as third item. The last 3 options are Zhonya's Hourglass, Rabadon's Deathcap and Void Staff. The ability order for this build is E - Q - W. As of the current patch, this build has a 51.3% win rate over 115 matches played. Situational Anivia Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Anivia build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Anivia runes page.]]></builds>
+<champion name="anivia" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.838586">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Relentless Hunter, Sixth Sense, Taste of Blood</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Manaflow Band, Scorch</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Rod of Ages, Boots of Swiftness, Archangel's Staff</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>78.95%</win_rate>
+  <matches>2,715</matches>
 </champion>

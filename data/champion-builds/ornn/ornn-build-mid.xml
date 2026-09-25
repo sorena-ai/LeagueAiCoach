@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="ornn" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.879025">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Shield Bash, Second Wind, Overgrowth</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Last Stand, Triumph</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Shield, Health Potion</starting_items>
+  <core_items>Hollow Radiance, Mercury's Treads, Unending Despair</core_items>
+  <skill_order>W, E, Q</skill_order>
+  <win_rate>66.67%</win_rate>
+  <matches>312</matches>
+</champion>

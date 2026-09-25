@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="nunu" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.876567">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Relentless Hunter, Cheap Shot, Sixth Sense</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Hextech Flashtraption, Triple Tonic</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Stormsurge, Sorcerer's Shoes, Hextech Rocketbelt</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>57.69%</win_rate>
+  <matches>72</matches>
+</champion>

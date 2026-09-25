@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="ashe" position="top" scrapedAt="Thu Nov 27 2025 20:28:44 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST ASHE BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Ashe Top build, you should take Flash and Ghost as your Summoner Spells. For runes, you should pick Lethal Tempo as your keystone, followed by Presence of Mind, Legend: Alacrity and Cut Down in the primary tree, as well as Approach Velocity and Biscuit Delivery in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health in defense, though it depends on the matchup. Finally, for your items, you should build Kraken Slayer as your first item, followed by Berserker's Greaves and Phantom Dancer. For your last 3 items, you should build Infinity Edge, Mortal Reminder and finish with Runaan's Hurricane. For the skill order, you want to stick with W - Q - E. Right now, this build has 50.7% winrate over 148 matches played. Optional Your second option for Ashe Top build would be to take Flash and Teleport as your Summoner Spells. The runes that this build takes advantage of are Fleet Footwork as your keystone, Triumph, Legend: Bloodline and Cut Down in the primary tree, and Magical Footwear with Approach Velocity in the secondary tree. The shards used in this build are Attack Speed in offense, Move Speed in flex and Tenacity and Slow Resist in defense. The items for the build are Kraken Slayer, which you should build first, followed by Berserker's Greaves as your second item and Blade of The Ruined King as your third item. The rest of the items in order are Mortal Reminder, Guinsoo's Rageblade and Runaan's Hurricane. The skill order for this build is W - Q - E. In the current patch, this build has a 50.0% win rate over 70 matches. Alternative If you're looking for alternatives, you can use Flash and Ghost as your Summoner Spells, with runes being Lethal Tempo as your keystone, Presence of Mind, Legend: Alacrity and Cut Down in the primary tree, and Approach Velocity with Biscuit Delivery in the secondary tree, as well as Attack Speed, Adaptive Force, and Health as your rune shards. The items that this build incorporates are Blade of The Ruined King as your first item, then Berserker's Greaves as a second item and Kraken Slayer as a third item. You want to finish the build with Phantom Dancer, Runaan's Hurricane and Mortal Reminder. As far as ability max order goes, you want to keep it W - Q - E. This build is currently sitting at a 54.4% win rate across 57 matches played. Situational Ashe Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Ashe build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Ashe runes page.]]></builds>
+<champion name="ashe" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.839615">
+  <runes>
+    <keystone>Arcane Comet</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Cheap Shot</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Health Potion x2, Tear of the Goddess</starting_items>
+  <core_items>Berserker's Greaves, Blade of The Ruined King, Phantom Dancer</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>64.29%</win_rate>
+  <matches>276</matches>
 </champion>

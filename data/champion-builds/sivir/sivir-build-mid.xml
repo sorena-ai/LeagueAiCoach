@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="sivir" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.892454">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Presence of Mind, Cut Down, Legend: Alacrity</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Absolute Focus, Gathering Storm</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Berserker's Greaves, Yun Tal Wildarrows, Navori Flickerblade</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>54.55%</win_rate>
+  <matches>106</matches>
+</champion>

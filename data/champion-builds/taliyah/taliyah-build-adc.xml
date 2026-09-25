@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="taliyah" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.896969">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Treasure Hunter, Taste of Blood, Grisly Mementos</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Transcendence, Manaflow Band</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Health Potion x2, Tear of the Goddess</starting_items>
+  <core_items>Blackfire Torch, Ionian Boots of Lucidity, Hextech Rocketbelt</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>53.85%</win_rate>
+  <matches>412</matches>
+</champion>

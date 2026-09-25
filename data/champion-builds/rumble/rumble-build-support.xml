@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="rumble" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.886020">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Absolute Focus, Scorch, Nimbus Cloak</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Unflinching, Bone Plating</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Zaz'Zak's Realmspike, Hextech Rocketbelt, Sorcerer's Shoes</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>46.67%</win_rate>
+  <matches>126</matches>
+</champion>

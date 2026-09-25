@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="twitch" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.900382">
+  <runes>
+    <keystone>Press the Attack</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Relentless Hunter, Sudden Impact</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Mosstomper Seedling, Health Potion</starting_items>
+  <core_items>The Collector, Fiendhunter Bolts, Berserker's Greaves</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>66.67%</win_rate>
+  <matches>461</matches>
+</champion>

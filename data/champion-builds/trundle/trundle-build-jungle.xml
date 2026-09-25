@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="trundle" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.899104">
+  <runes>
+    <keystone>Press the Attack</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Approach Velocity</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Scorchclaw Pup, Health Potion</starting_items>
+  <core_items>Trinity Force, Mercury's Treads, Dead Man's Plate</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>51.11%</win_rate>
+  <matches>2,816</matches>
+</champion>

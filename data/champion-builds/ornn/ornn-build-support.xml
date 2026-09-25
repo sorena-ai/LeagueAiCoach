@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="ornn" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.879080">
+  <runes>
+    <keystone>Aftershock</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Overgrowth, Font of Life, Bone Plating</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Coup de Grace, Triumph</secondary_runes>
+    <shards>Ability Haste, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Celestial Opposition, Locket of the Iron Solari, Plated Steelcaps</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>77.78%</win_rate>
+  <matches>186</matches>
+</champion>

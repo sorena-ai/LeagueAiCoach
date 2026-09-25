@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="ryze" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.886376">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Overgrowth, Bone Plating</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Health Potion x2, Tear of the Goddess</starting_items>
+  <core_items>Rod of Ages, Sorcerer's Shoes, Archangel's Staff</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>49.72%</win_rate>
+  <matches>9,133</matches>
+</champion>

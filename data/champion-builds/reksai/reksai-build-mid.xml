@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="reksai" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.883750">
+  <runes>
+    <keystone>Hail of Blades</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Relentless Hunter, Grisly Mementos, Sudden Impact</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Voltaic Cyclosword, Mercury's Treads, Spear of Shojin</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>66.67%</win_rate>
+  <matches>30</matches>
+</champion>

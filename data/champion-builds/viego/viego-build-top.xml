@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="viego" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.904468">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Overgrowth, Bone Plating</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Kraken Slayer, Plated Steelcaps, The Collector</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>73.68%</win_rate>
+  <matches>388</matches>
+</champion>

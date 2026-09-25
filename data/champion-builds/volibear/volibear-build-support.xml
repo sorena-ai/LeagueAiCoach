@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="volibear" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.905946">
+  <runes>
+    <keystone>Aftershock</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Revitalize, Font of Life, Bone Plating</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Approach Velocity</secondary_runes>
+    <shards>Ability Haste, Move Speed, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Celestial Opposition, Heartsteel, Plated Steelcaps</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>66.67%</win_rate>
+  <matches>62</matches>
+</champion>

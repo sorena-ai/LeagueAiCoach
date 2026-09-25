@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="amumu" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.838264">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Haste, Triumph</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Cheap Shot</secondary_runes>
+    <shards>Ability Haste, Move Speed, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Ring, Control Ward</starting_items>
+  <core_items>Liandry's Torment, Mercury's Treads, Abyssal Mask</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>40%</win_rate>
+  <matches>74</matches>
+</champion>

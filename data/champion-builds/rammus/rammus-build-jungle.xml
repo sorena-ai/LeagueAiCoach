@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="rammus" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.882406">
+  <runes>
+    <keystone>Aftershock</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Unflinching, Conditioning, Font of Life</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Legend: Alacrity, Triumph</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Mosstomper Seedling, Health Potion</starting_items>
+  <core_items>Plated Steelcaps, Thornmail, Sunfire Aegis</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>52.92%</win_rate>
+  <matches>6,838</matches>
+</champion>

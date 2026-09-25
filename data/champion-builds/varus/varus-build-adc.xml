@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="varus" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.901597">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Cut Down, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Cash Back, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Statikk Shiv, Gluttonous Greaves, Guinsoo's Rageblade</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>51.94%</win_rate>
+  <matches>8,521</matches>
+</champion>

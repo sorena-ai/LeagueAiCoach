@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="fizz" position="adc" scrapedAt="Thu Nov 27 2025 20:53:38 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST FIZZ BUILDS, RUNES AND ITEMS FOR BOT IN EMERALD + Most Popular If you want to use the most popular Fizz Bot build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Electrocute as your keystone, followed by Sudden Impact, Grisly Mementos and Treasure Hunter in the primary tree, as well as Scorch and Transcendence in the secondary tree. For rune shards, you want Adaptive Force in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Lich Bane as your first item, followed by Ionian Boots of Lucidity and Zhonya's Hourglass. For your last 3 items, you should build Rabadon's Deathcap, Cryptbloom and finish with Shadowflame. For the skill order, you want to stick with E - W - Q. Right now, this build has 49.3% winrate over 67 matches played. Situational Fizz Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Fizz build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Fizz runes page.]]></builds>
+<champion name="fizz" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.850617">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Treasure Hunter, Grisly Mementos, Sudden Impact</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Coup de Grace, Triumph</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Lich Bane, Sorcerer's Shoes, Shadowflame</core_items>
+  <skill_order>E, W, Q</skill_order>
+  <win_rate>56.1%</win_rate>
+  <matches>127</matches>
 </champion>

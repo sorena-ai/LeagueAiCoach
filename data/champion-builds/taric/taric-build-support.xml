@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="taric" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.897919">
+  <runes>
+    <keystone>Glacial Augment</keystone>
+    <primary_tree>Inspiration</primary_tree>
+    <primary_runes>Magical Footwear, Biscuit Delivery, Cosmic Insight</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Legend: Haste</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Dream Maker, Locket of the Iron Solari, Plated Steelcaps</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>56.4%</win_rate>
+  <matches>4,075</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="vladimir" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.905205">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Scorch, Nimbus Cloak</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Ionian Boots of Lucidity, Stormsurge, Rabadon's Deathcap</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>57.03%</win_rate>
+  <matches>4,801</matches>
+</champion>

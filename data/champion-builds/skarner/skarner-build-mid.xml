@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="skarner" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.892925">
+  <runes>
+    <keystone>Hail of Blades</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Cheap Shot, Treasure Hunter, Sixth Sense</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Last Stand, Legend: Haste</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Voltaic Cyclosword, Ionian Boots of Lucidity, Boots of Swiftness</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>23</matches>
+</champion>

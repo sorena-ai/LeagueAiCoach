@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="heimerdinger" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.854335">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Haste, Triumph</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Waterwalking, Absolute Focus</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Smite</summoner_spells>
+  <starting_items>Gustwalker Hatchling, Health Potion</starting_items>
+  <core_items>Rabadon's Deathcap, Blackfire Torch, Ionian Boots of Lucidity</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>65.22%</win_rate>
+  <matches>64</matches>
+</champion>

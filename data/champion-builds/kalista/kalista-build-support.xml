@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="kalista" position="support" scrapedAt="Thu Nov 27 2025 21:12:40 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST KALISTA BUILDS, RUNES AND ITEMS FOR SUPPORT IN EMERALD + Most Popular If you want to use the most popular Kalista Support build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Hail of Blades as your keystone, followed by Sudden Impact, Grisly Mementos and Treasure Hunter in the primary tree, as well as Legend: Alacrity and Triumph in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Bloodsong as your first item, followed by Berserker's Greaves and Umbral Glaive. For your last 3 items, you should build Edge of Night, Serpent's Fang and finish with Mercurial Scimitar. For the skill order, you want to stick with Q - E - W. Right now, this build has 27.8% winrate over 90 matches played. Situational Kalista Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Kalista build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Kalista runes page.]]></builds>
+<champion name="kalista" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.859201">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Treasure Hunter, Sudden Impact</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Statikk Shiv, Gluttonous Greaves, Guinsoo's Rageblade</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>56.84%</win_rate>
+  <matches>210</matches>
 </champion>

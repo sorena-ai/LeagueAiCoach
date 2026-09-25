@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="senna" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.887445">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Manaflow Band, Celerity, Gathering Storm</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Jack Of All Trades</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Bloodsong, Black Cleaver, Boots of Swiftness</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>51.4%</win_rate>
+  <matches>17,179</matches>
+</champion>

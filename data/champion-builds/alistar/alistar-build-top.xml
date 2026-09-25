@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="alistar" position="top" scrapedAt="Thu Nov 27 2025 20:23:19 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST ALISTAR BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Alistar Top build, you should take Flash and Teleport as your Summoner Spells. For runes, you should pick Phase Rush as your keystone, followed by Nimbus Cloak, Celerity and Waterwalking in the primary tree, as well as Cosmic Insight and Hextech Flashtraption in the secondary tree. For rune shards, you want Ability Haste in offense, Health Scaling in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Hextech Rocketbelt as your first item, followed by Ionian Boots of Lucidity and Cosmic Drive. For your last 3 items, you should build Sunfire Aegis, Stormsurge and finish with Abyssal Mask. For the skill order, you want to stick with W - Q - E. Right now, this build has 32.0% winrate over 50 matches played. Situational Alistar Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Alistar build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Alistar runes page.]]></builds>
+<champion name="alistar" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.837561">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Sudden Impact</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Shield, Health Potion</starting_items>
+  <core_items>Imperial Mandate, Ionian Boots of Lucidity, Stormsurge</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>75%</win_rate>
+  <matches>191</matches>
 </champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="sion" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.892143">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Conditioning, Demolish, Overgrowth</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Cash Back, Approach Velocity</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Shield, Health Potion</starting_items>
+  <core_items>Hollow Radiance, Mercury's Treads, Unending Despair</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>50.77%</win_rate>
+  <matches>1,712</matches>
+</champion>

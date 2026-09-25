@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="shen" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.889279">
+  <runes>
+    <keystone>Aftershock</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Unflinching, Shield Bash, Bone Plating</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Move Speed, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Bloodsong, Ionian Boots of Lucidity, Protoplasm Harness</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>55.32%</win_rate>
+  <matches>2,659</matches>
+</champion>

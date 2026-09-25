@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="vladimir" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.905258">
+  <runes>
+    <keystone>Stormraider's Surge</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Gathering Storm, Nimbus Cloak</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Ability Haste, Move Speed, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Stormsurge, Sorcerer's Shoes, Rabadon's Deathcap</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>52.62%</win_rate>
+  <matches>14,543</matches>
+</champion>

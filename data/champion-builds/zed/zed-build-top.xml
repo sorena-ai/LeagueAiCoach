@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="zed" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.910971">
+  <runes>
+    <keystone>First Strike</keystone>
+    <primary_tree>Inspiration</primary_tree>
+    <primary_runes>Triple Tonic, Cash Back, Cosmic Insight</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Cull, Health Potion</starting_items>
+  <core_items>Voltaic Cyclosword, Ionian Boots of Lucidity, Bastionbreaker</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>53.68%</win_rate>
+  <matches>2,494</matches>
+</champion>

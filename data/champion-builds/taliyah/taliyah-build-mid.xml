@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="taliyah" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.896921">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Manaflow Band, Celerity, Scorch</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Ionian Boots of Lucidity, Archangel's Staff, Rylai's Crystal Scepter</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>54.19%</win_rate>
+  <matches>4,483</matches>
+</champion>

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="morgana" position="support" scrapedAt="Thu Nov 27 2025 21:40:23 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[MORGANA TIPS AND TRICKS Morgana is good at setting up picks around objectives thanks to her Q . Place vision around the map and wait for an immobile enemy to walk past before engaging on them. To avoid wasting your Binding Q , look to engage after the enemy has used their dash or escape ability. If they’re holding on to it, walk up to them and bait it out. When you’re against champions who have a strong level 1 like Alistar, Blitzcrank, Leona or Nautilus, start E first instead of Q or W .]]></tips>
-  <builds><![CDATA[THE BEST MORGANA BUILDS, RUNES AND ITEMS FOR SUPPORT IN EMERALD + Most Popular If you want to use the most popular Morgana Support build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Arcane Comet as your keystone, followed by Manaflow Band, Transcendence and Scorch in the primary tree, as well as Cheap Shot and Ultimate Hunter in the secondary tree. For rune shards, you want Adaptive Force in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Zaz'Zak's Realmspike as your first item, followed by Ionian Boots of Lucidity and Liandry's Torment. For your last 3 items, you should build Zhonya's Hourglass, Redemption and finish with Morellonomicon. For the skill order, you want to stick with Q - W - E. Right now, this build has 51.6% winrate over 9 032 matches played. Alternative If you're looking for alternatives, you can use Flash and Ignite as your Summoner Spells, with runes being Arcane Comet as your keystone, Manaflow Band, Transcendence and Scorch in the primary tree, and Cheap Shot with Ultimate Hunter in the secondary tree, as well as Adaptive Force, Adaptive Force, and Health Scaling as your rune shards. The items that this build incorporates are Celestial Opposition as your first item, then Ionian Boots of Lucidity as a second item and Zhonya's Hourglass as a third item. You want to finish the build with Redemption, Morellonomicon and Vigilant Wardstone. As far as ability max order goes, you want to keep it Q - W - E. This build is currently sitting at a 52.0% win rate across 1 027 matches played. Situational Morgana Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Morgana build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Morgana runes page.]]></builds>
+<champion name="morgana" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.872517">
+  <runes>
+    <keystone>Glacial Augment</keystone>
+    <primary_tree>Inspiration</primary_tree>
+    <primary_runes>Cash Back, Biscuit Delivery, Cosmic Insight</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Transcendence, Manaflow Band</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Zaz'Zak's Realmspike, Liandry's Torment, Ionian Boots of Lucidity</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>51.38%</win_rate>
+  <matches>14,037</matches>
 </champion>

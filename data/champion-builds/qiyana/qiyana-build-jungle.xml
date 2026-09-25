@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="qiyana" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.880995">
+  <runes>
+    <keystone>First Strike</keystone>
+    <primary_tree>Inspiration</primary_tree>
+    <primary_runes>Triple Tonic, Cash Back, Cosmic Insight</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Treasure Hunter, Sudden Impact</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Gustwalker Hatchling</starting_items>
+  <core_items>Voltaic Cyclosword, Bastionbreaker, Ionian Boots of Lucidity</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>52.11%</win_rate>
+  <matches>22,271</matches>
+</champion>

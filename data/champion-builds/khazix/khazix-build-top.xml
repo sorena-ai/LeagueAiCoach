@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="khazix" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.861946">
+  <runes>
+    <keystone>Stormraider's Surge</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Manaflow Band, Absolute Focus, Gathering Storm</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Absorb Life, Legend: Haste</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Shield, Health Potion</starting_items>
+  <core_items>Plated Steelcaps, Profane Hydra, Serpent's Fang</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>50%</win_rate>
+  <matches>157</matches>
+</champion>

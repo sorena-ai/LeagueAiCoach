@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="shen" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.889110">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Shield Bash, Second Wind, Revitalize</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Cheap Shot</secondary_runes>
+    <shards>Ability Haste, Health Scaling, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Scorchclaw Pup, Health Potion</starting_items>
+  <core_items>Protoplasm Harness, Plated Steelcaps, Unending Despair</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>57.14%</win_rate>
+  <matches>856</matches>
+</champion>

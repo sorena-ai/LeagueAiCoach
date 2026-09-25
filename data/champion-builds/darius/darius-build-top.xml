@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="darius" position="top" scrapedAt="Thu Nov 27 2025 20:42:57 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[DARIUS TIPS AND TRICKS Make the most of your champions kit by auto-attacking before you activate your W as your W is an auto-attack reset. Darius biggest weakness is that he can get kited easily. If you have to fight in a team fight, look to attack from the side to reduce the chances of being poked down or kited. Try to go for longer trades over short ones as Darius benefits more from extended trades thanks to his Hemorrhage Passive.]]></tips>
-  <builds><![CDATA[THE BEST DARIUS BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Darius Top build, you should take Flash and Ghost as your Summoner Spells. For runes, you should pick Conqueror as your keystone, followed by Triumph, Legend: Alacrity and Last Stand in the primary tree, as well as Axiom Arcanist and Celerity in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Stridebreaker as your first item, followed by Plated Steelcaps and Sterak's Gage. For your last 3 items, you should build Dead Man's Plate, Force of Nature and finish with Death's Dance. For the skill order, you want to stick with Q - E - W. Right now, this build has 53.0% winrate over 14 927 matches played. Alternative If you're looking for alternatives, you can use Flash and Ghost as your Summoner Spells, with runes being Conqueror as your keystone, Triumph, Legend: Alacrity and Last Stand in the primary tree, and Axiom Arcanist with Celerity in the secondary tree, as well as Attack Speed, Adaptive Force, and Health Scaling as your rune shards. The items that this build incorporates are Spear of Shojin as your first item, then Plated Steelcaps as a second item and Sterak's Gage as a third item. You want to finish the build with Dead Man's Plate, Death's Dance and Force of Nature. As far as ability max order goes, you want to keep it Q - E - W. This build is currently sitting at a 53.4% win rate across 1 605 matches played. Situational Darius Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Darius build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Darius runes page.]]></builds>
+<champion name="darius" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.846112">
+  <runes>
+    <keystone>Stormraider's Surge</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Celerity, Gathering Storm, Nimbus Cloak</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Legend: Alacrity, Triumph</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Plated Steelcaps, Youmuu's Ghostblade, Dead Man's Plate</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>50.16%</win_rate>
+  <matches>20,934</matches>
 </champion>

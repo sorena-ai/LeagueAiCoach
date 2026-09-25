@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="pantheon" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.879731">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Treasure Hunter, Sixth Sense, Sudden Impact</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Biscuit Delivery, Cosmic Insight</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Eclipse, Plated Steelcaps, Black Cleaver</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>51.73%</win_rate>
+  <matches>2,473</matches>
+</champion>

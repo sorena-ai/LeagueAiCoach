@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="seraphine" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.887668">
+  <runes>
+    <keystone>Arcane Comet</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Biscuit Delivery, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Helm, Health Potion</starting_items>
+  <core_items>Ionian Boots of Lucidity, Blackfire Torch, Rylai's Crystal Scepter</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>50%</win_rate>
+  <matches>521</matches>
+</champion>

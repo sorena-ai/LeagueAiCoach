@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="quinn" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.881576">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Treasure Hunter, Grisly Mementos, Sudden Impact</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Celerity, Gathering Storm</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Profane Hydra, Gluttonous Greaves, The Collector</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>65.88%</win_rate>
+  <matches>2,827</matches>
+</champion>

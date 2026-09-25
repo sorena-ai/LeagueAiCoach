@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="zyra" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.913753">
+  <runes>
+    <keystone>First Strike</keystone>
+    <primary_tree>Inspiration</primary_tree>
+    <primary_runes>Triple Tonic, Cash Back, Cosmic Insight</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Overgrowth, Bone Plating</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Sorcerer's Shoes, Liandry's Torment, Rylai's Crystal Scepter</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>75%</win_rate>
+  <matches>68</matches>
+</champion>

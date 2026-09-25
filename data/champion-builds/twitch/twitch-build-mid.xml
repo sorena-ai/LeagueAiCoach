@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="twitch" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.900430">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Cut Down, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Axiom Arcanist, Gathering Storm</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Nashor's Tooth, Boots of Swiftness, Rabadon's Deathcap</core_items>
+  <skill_order>E, W, Q</skill_order>
+  <win_rate>59.46%</win_rate>
+  <matches>529</matches>
+</champion>

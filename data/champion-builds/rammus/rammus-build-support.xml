@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="rammus" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.882503">
+  <runes>
+    <keystone>Aftershock</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Unflinching, Conditioning, Font of Life</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Waterwalking, Celerity</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Bloodsong, Thornmail, Plated Steelcaps</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>54.67%</win_rate>
+  <matches>349</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="velkoz" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.903060">
+  <runes>
+    <keystone>Arcane Comet</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Gathering Storm</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Boots of Swiftness, Luden's Echo, Stormsurge</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>78.57%</win_rate>
+  <matches>457</matches>
+</champion>

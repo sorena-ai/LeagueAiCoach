@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="reksai" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.883630">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Second Wind, Demolish, Revitalize</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Biscuit Delivery</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Shield, Health Potion</starting_items>
+  <core_items>Titanic Hydra, Plated Steelcaps, Overlord's Bloodmail</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>85.71%</win_rate>
+  <matches>434</matches>
+</champion>

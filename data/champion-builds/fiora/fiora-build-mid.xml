@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="fiora" position="mid" scrapedAt="Thu Nov 27 2025 20:52:10 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[FIORA TIPS AND TRICKS Fiora doesn’t need to look to team fight. She is a great dueler. Sit in a side lane and siege objectives or duel anyone who tries to stop you. The best time to trade with the enemy is when they waste one of their abilities. Once a core ability is down, you can look to chase them down with your Q . Extended trades work in your favour, so try to go for extended trades whenever possible.]]></tips>
-  <builds><![CDATA[THE BEST FIORA BUILDS, RUNES AND ITEMS FOR MID IN EMERALD + Most Popular If you want to use the most popular Fiora Mid build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Press the Attack as your keystone, followed by Triumph, Legend: Alacrity and Last Stand in the primary tree, as well as Biscuit Delivery and Jack Of All Trades in the secondary tree. For rune shards, you want Adaptive Force in offense, Adaptive Force in flex and Health in defense, though it depends on the matchup. Finally, for your items, you should build Ravenous Hydra as your first item, followed by Plated Steelcaps and Trinity Force. For your last 3 items, you should build Death's Dance, Spear of Shojin and finish with Maw of Malmortius. For the skill order, you want to stick with Q - E - W. Right now, this build has 58.1% winrate over 210 matches played. Alternative If you're looking for alternatives, you can use Flash and Teleport as your Summoner Spells, with runes being Grasp of the Undying as your keystone, Demolish, Second Wind and Unflinching in the primary tree, and Manaflow Band with Scorch in the secondary tree, as well as Attack Speed, Adaptive Force, and Health Scaling as your rune shards. The items that this build incorporates are Ravenous Hydra as your first item, then Plated Steelcaps as a second item and Trinity Force as a third item. You want to finish the build with Death's Dance, Spear of Shojin and Guardian Angel. As far as ability max order goes, you want to keep it Q - E - W. This build is currently sitting at a 46.3% win rate across 54 matches played. Situational Fiora Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Fiora build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Fiora runes page.]]></builds>
+<champion name="fiora" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.850008">
+  <runes>
+    <keystone>Hail of Blades</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Treasure Hunter, Deep Ward, Sudden Impact</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Scorch, Nimbus Cloak</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Ravenous Hydra, Gluttonous Greaves, Eclipse</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>58.06%</win_rate>
+  <matches>307</matches>
 </champion>

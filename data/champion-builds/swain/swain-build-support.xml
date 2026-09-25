@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="swain" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.894482">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Ultimate Hunter, Cheap Shot, Deep Ward</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Jack Of All Trades</secondary_runes>
+    <shards>Adaptive Force, Move Speed, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Zaz'Zak's Realmspike, Rylai's Crystal Scepter, Sorcerer's Shoes</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>54.12%</win_rate>
+  <matches>8,230</matches>
+</champion>

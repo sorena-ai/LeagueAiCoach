@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="orianna" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.877969">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Ionian Boots of Lucidity, Blackfire Torch, Hextech Rocketbelt</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>50.36%</win_rate>
+  <matches>10,982</matches>
+</champion>

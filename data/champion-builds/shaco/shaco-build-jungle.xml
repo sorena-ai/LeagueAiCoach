@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="shaco" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.888616">
+  <runes>
+    <keystone>Arcane Comet</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Axiom Arcanist, Gathering Storm</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Smite, Ignite</summoner_spells>
+  <starting_items>Gustwalker Hatchling</starting_items>
+  <core_items>Blackfire Torch, Ionian Boots of Lucidity, Imperial Mandate</core_items>
+  <skill_order>W, E, Q</skill_order>
+  <win_rate>55.2%</win_rate>
+  <matches>13,954</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="syndra" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.895503">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Ultimate Hunter, Taste of Blood, Grisly Mementos</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Transcendence, Axiom Arcanist</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Control Ward</starting_items>
+  <core_items>Zaz'Zak's Realmspike, Stormsurge, Sorcerer's Shoes</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>87.5%</win_rate>
+  <matches>675</matches>
+</champion>

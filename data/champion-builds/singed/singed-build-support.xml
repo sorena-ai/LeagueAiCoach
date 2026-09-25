@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="singed" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.890154">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Celerity, Scorch, Nimbus Cloak</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Approach Velocity</secondary_runes>
+    <shards>Adaptive Force, Move Speed, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Control Ward</starting_items>
+  <core_items>Celestial Opposition, Boots of Swiftness, Rylai's Crystal Scepter</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>50%</win_rate>
+  <matches>358</matches>
+</champion>

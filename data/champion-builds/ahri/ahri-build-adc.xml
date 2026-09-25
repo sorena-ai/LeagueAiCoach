@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="ahri" position="adc" scrapedAt="Thu Nov 27 2025 20:20:24 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST AHRI BUILDS, RUNES AND ITEMS FOR BOT IN EMERALD + Most Popular If you want to use the most popular Ahri Bot build, you should take Flash and Teleport as your Summoner Spells. For runes, you should pick Electrocute as your keystone, followed by Taste of Blood, Grisly Mementos and Ultimate Hunter in the primary tree, as well as Manaflow Band and Transcendence in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Malignance as your first item, followed by Sorcerer's Shoes and Horizon Focus. For your last 3 items, you should build Rabadon's Deathcap, Shadowflame and finish with Zhonya's Hourglass. For the skill order, you want to stick with Q - W - E. Right now, this build has 49.5% winrate over 111 matches played. Situational Ahri Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Ahri build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Ahri runes page.]]></builds>
+<champion name="ahri" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.836393">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Ultimate Hunter, Taste of Blood, Grisly Mementos</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Biscuit Delivery, Cosmic Insight</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Malignance, Ionian Boots of Lucidity, Lich Bane</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>77.78%</win_rate>
+  <matches>245</matches>
 </champion>

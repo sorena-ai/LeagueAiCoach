@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="sion" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.892204">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Conditioning, Demolish, Overgrowth</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Cash Back, Approach Velocity</secondary_runes>
+    <shards>Attack Speed, Move Speed, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Ghost, Teleport</summoner_spells>
+  <starting_items>Doran's Bow, Control Ward</starting_items>
+  <core_items>Heartsteel, Plated Steelcaps, Titanic Hydra</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>54.55%</win_rate>
+  <matches>159</matches>
+</champion>

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="fiddlesticks" position="mid" scrapedAt="Thu Nov 27 2025 20:51:19 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[FIDDLESTICKS TIPS AND TRICKS Use your other abilities before casting your otherwise, the channel will be cancelled. If you can’t get kills in lane with your Ultimate R , don’t be afraid to move around the map and use it elsewhere. During the laning phase, keep the wave close to your Tower. This will increase your survivability, make it hard for the enemy to fight you and reduce your chances of dying to ganks.]]></tips>
-  <builds><![CDATA[THE BEST FIDDLESTICKS BUILDS, RUNES AND ITEMS FOR MID IN EMERALD + Most Popular If you want to use the most popular Fiddlesticks Mid build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Arcane Comet as your keystone, followed by Axiom Arcanist, Absolute Focus and Scorch in the primary tree, as well as Taste of Blood and Ultimate Hunter in the secondary tree. For rune shards, you want Adaptive Force in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Liandry's Torment as your first item, followed by Sorcerer's Shoes and Zhonya's Hourglass. For your last 3 items, you should build Shadowflame, Rabadon's Deathcap and finish with Banshee's Veil. For the skill order, you want to stick with W - Q - E. Right now, this build has 51.5% winrate over 68 matches played. Alternative If you're looking for alternatives, you can use Flash and Ignite as your Summoner Spells, with runes being Arcane Comet as your keystone, Manaflow Band, Transcendence and Scorch in the primary tree, and Cheap Shot with Ultimate Hunter in the secondary tree, as well as Adaptive Force, Adaptive Force, and Health Scaling as your rune shards. The items that this build incorporates are Malignance as your first item, then Sorcerer's Shoes as a second item and Zhonya's Hourglass as a third item. You want to finish the build with Liandry's Torment, Shadowflame and Morellonomicon. As far as ability max order goes, you want to keep it W - Q - E. This build is currently sitting at a 47.5% win rate across 59 matches played. Situational Fiddlesticks Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Fiddlesticks build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Fiddlesticks runes page.]]></builds>
+<champion name="fiddlesticks" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.849531">
+  <runes>
+    <keystone>Arcane Comet</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Sixth Sense</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Malignance, Sorcerer's Shoes, Zhonya's Hourglass</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>80%</win_rate>
+  <matches>241</matches>
 </champion>

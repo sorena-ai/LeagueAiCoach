@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="xayah" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.906556">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Presence of Mind, Cut Down, Legend: Bloodline</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Cash Back, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Yun Tal Wildarrows, Gluttonous Greaves, Navori Flickerblade</core_items>
+  <skill_order>E, W, Q</skill_order>
+  <win_rate>56.7%</win_rate>
+  <matches>15,903</matches>
+</champion>

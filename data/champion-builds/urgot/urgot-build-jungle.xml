@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="urgot" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.901115">
+  <runes>
+    <keystone>Press the Attack</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Bloodline, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Approach Velocity</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Mosstomper Seedling, Health Potion</starting_items>
+  <core_items>Youmuu's Ghostblade, Boots of Swiftness, Black Cleaver</core_items>
+  <skill_order>W, E, Q</skill_order>
+  <win_rate>88.89%</win_rate>
+  <matches>167</matches>
+</champion>

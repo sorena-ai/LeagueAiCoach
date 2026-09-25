@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="skarner" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.892792">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Shield Bash, Second Wind, Overgrowth</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Approach Velocity</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Helm, Health Potion</starting_items>
+  <core_items>Heartsteel, Plated Steelcaps, Winter's Approach</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>77.27%</win_rate>
+  <matches>591</matches>
+</champion>

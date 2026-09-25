@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="lucian" position="top" scrapedAt="Thu Nov 27 2025 21:28:29 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[LUCIAN TIPS AND TRICKS Get level 2 first which is the first minion wave followed by 1 melee minion on the second wave. Use your level advantage to play aggressive and get an early health advantage. If the enemy has CC or engage tools, think twice before using your E as you’re vulnerable while it’s on cooldown. After using any ability, try to auto-attack before using your next ability. Thanks to your Passive, you will shoot twice which will help you when trading.]]></tips>
-  <builds><![CDATA[THE BEST LUCIAN BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Lucian Top build, you should take Flash and Teleport as your Summoner Spells. For runes, you should pick Press the Attack as your keystone, followed by Presence of Mind, Legend: Bloodline and Coup de Grace in the primary tree, as well as Biscuit Delivery and Magical Footwear in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Essence Reaver as your first item, followed by Plated Steelcaps and Navori Flickerblade. For your last 3 items, you should build Infinity Edge, Lord Dominik's Regards and finish with Guardian Angel. For the skill order, you want to stick with Q - E - W. Right now, this build has 47.3% winrate over 296 matches played. Situational Lucian Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Lucian build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Lucian runes page.]]></builds>
+<champion name="lucian" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.865431">
+  <runes>
+    <keystone>Press the Attack</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Presence of Mind, Cut Down, Legend: Bloodline</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Triple Tonic, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Essence Reaver, Plated Steelcaps, Navori Flickerblade</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>61.54%</win_rate>
+  <matches>645</matches>
 </champion>

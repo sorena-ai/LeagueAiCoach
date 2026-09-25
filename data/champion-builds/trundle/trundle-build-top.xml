@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="trundle" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.899059">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Demolish, Bone Plating</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Ravenous Hydra, Boots of Swiftness, Trinity Force</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>48.28%</win_rate>
+  <matches>5,475</matches>
+</champion>

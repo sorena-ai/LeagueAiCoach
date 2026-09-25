@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="riven" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.885665">
+  <runes>
+    <keystone>Hail of Blades</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Relentless Hunter, Grisly Mementos, Sudden Impact</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Transcendence, Nimbus Cloak</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Health Potion</starting_items>
+  <core_items>Celestial Opposition, Eclipse, Ionian Boots of Lucidity</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>63</matches>
+</champion>

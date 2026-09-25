@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="gragas" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.852390">
+  <runes>
+    <keystone>Stormraider's Surge</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Gathering Storm</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Conditioning, Overgrowth</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Sorcerer's Shoes, Lich Bane, Shadowflame</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>53</matches>
+</champion>

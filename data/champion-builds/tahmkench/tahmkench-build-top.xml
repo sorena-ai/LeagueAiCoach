@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="tahmkench" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.895769">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Unflinching, Shield Bash, Second Wind</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Legend: Alacrity, Triumph</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Shield, Health Potion</starting_items>
+  <core_items>Heartsteel, Plated Steelcaps, Dusk and Dawn</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>50.07%</win_rate>
+  <matches>5,893</matches>
+</champion>

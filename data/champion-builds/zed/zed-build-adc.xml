@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="zed" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.911123">
+  <runes>
+    <keystone>First Strike</keystone>
+    <primary_tree>Inspiration</primary_tree>
+    <primary_runes>Triple Tonic, Jack Of All Trades, Cash Back</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Voltaic Cyclosword, Ionian Boots of Lucidity, Bastionbreaker</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>59.65%</win_rate>
+  <matches>337</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="yorick" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.909084">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Demolish, Overgrowth, Bone Plating</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Legend: Bloodline</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Ghost, Smite</summoner_spells>
+  <starting_items>Scorchclaw Pup, Health Potion</starting_items>
+  <core_items>Black Cleaver, Boots of Swiftness, Spear of Shojin</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>80%</win_rate>
+  <matches>178</matches>
+</champion>

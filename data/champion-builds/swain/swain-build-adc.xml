@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="swain" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.894421">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Presence of Mind, Last Stand, Legend: Haste</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Transcendence, Axiom Arcanist</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Helm, Health Potion</starting_items>
+  <core_items>Malignance, Plated Steelcaps, Rylai's Crystal Scepter</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>54.69%</win_rate>
+  <matches>2,930</matches>
+</champion>

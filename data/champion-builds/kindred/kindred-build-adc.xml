@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="kindred" position="adc" scrapedAt="Thu Nov 27 2025 21:20:48 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST KINDRED BUILDS, RUNES AND ITEMS FOR BOT IN EMERALD + Most Popular If you want to use the most popular Kindred Bot build, you should take Flash and Barrier as your Summoner Spells. For runes, you should pick Press the Attack as your keystone, followed by Triumph, Legend: Alacrity and Last Stand in the primary tree, as well as Biscuit Delivery and Cosmic Insight in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health in defense, though it depends on the matchup. Finally, for your items, you should build Kraken Slayer as your first item, followed by Berserker's Greaves and The Collector. For your last 3 items, you should build Infinity Edge, Lord Dominik's Regards and finish with Guardian Angel. For the skill order, you want to stick with Q - W - E. Right now, this build has 49.5% winrate over 93 matches played. Situational Kindred Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Kindred build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Kindred runes page.]]></builds>
+<champion name="kindred" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.862312">
+  <runes>
+    <keystone>Press the Attack</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Treasure Hunter, Sudden Impact</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Essence Reaver, Berserker's Greaves, The Collector</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>44.44%</win_rate>
+  <matches>130</matches>
 </champion>

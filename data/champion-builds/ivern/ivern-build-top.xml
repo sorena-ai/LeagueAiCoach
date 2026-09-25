@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="ivern" position="top" scrapedAt="Thu Nov 27 2025 21:04:30 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST IVERN BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Ivern Top build, you should take Flash and Teleport as your Summoner Spells. For runes, you should pick Press the Attack as your keystone, followed by Triumph, Legend: Haste and Cut Down in the primary tree, as well as Cheap Shot and Ultimate Hunter in the secondary tree. For rune shards, you want Ability Haste in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Malignance as your first item, followed by Ionian Boots of Lucidity and Rylai's Crystal Scepter. For your last 3 items, you should build Liandry's Torment, Bloodletter's Curse and finish with Rabadon's Deathcap. For the skill order, you want to stick with E - Q - W. Right now, this build has 51.5% winrate over 239 matches played. Situational Ivern Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Ivern build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Ivern runes page.]]></builds>
+<champion name="ivern" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.856156">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Scorch, Nimbus Cloak</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Revitalize, Bone Plating</secondary_runes>
+    <shards>Attack Speed, Move Speed, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Malignance, Ionian Boots of Lucidity, Moonstone Renewer</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>81.25%</win_rate>
+  <matches>316</matches>
 </champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="maokai" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.869278">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Unflinching, Font of Life, Bone Plating</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Biscuit Delivery, Cosmic Insight</secondary_runes>
+    <shards>Adaptive Force, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Helm, Health Potion</starting_items>
+  <core_items>Plated Steelcaps, Sunfire Aegis, Winter's Approach</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>57</matches>
+</champion>

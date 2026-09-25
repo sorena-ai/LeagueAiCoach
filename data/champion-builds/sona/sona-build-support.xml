@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="sona" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.893578">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Gathering Storm</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Conditioning, Revitalize</secondary_runes>
+    <shards>Ability Haste, Move Speed, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Bloodsong, Boots of Swiftness, Echoes of Helia</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>51.05%</win_rate>
+  <matches>7,992</matches>
+</champion>

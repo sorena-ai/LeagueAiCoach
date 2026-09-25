@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="yuumi" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.909543">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Revitalize, Font of Life</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Heal</summoner_spells>
+  <starting_items>Control Ward</starting_items>
+  <core_items>Dream Maker, Ardent Censer, Mikael's Blessing</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>48.48%</win_rate>
+  <matches>19,574</matches>
+</champion>

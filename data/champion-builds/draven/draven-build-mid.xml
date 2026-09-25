@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="draven" position="mid" scrapedAt="Thu Nov 27 2025 20:44:51 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST DRAVEN BUILDS, RUNES AND ITEMS FOR MID IN EMERALD + Most Popular If you want to use the most popular Draven Mid build, you should take Flash and Barrier as your Summoner Spells. For runes, you should pick Lethal Tempo as your keystone, followed by Presence of Mind, Legend: Alacrity and Last Stand in the primary tree, as well as Absolute Focus and Gathering Storm in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health in defense, though it depends on the matchup. Finally, for your items, you should build Bloodthirster as your first item, followed by Berserker's Greaves and The Collector. For your last 3 items, you should build Infinity Edge, Lord Dominik's Regards and finish with Rapid Firecannon. For the skill order, you want to stick with Q - W - E. Right now, this build has 56.9% winrate over 109 matches played. Situational Draven Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Draven build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Draven runes page.]]></builds>
+<champion name="draven" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.847079">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Presence of Mind, Last Stand, Legend: Alacrity</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Unflinching, Demolish</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Cleanse, Flash</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Bloodthirster, Boots of Swiftness, The Collector</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>72.73%</win_rate>
+  <matches>293</matches>
 </champion>

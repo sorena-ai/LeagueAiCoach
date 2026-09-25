@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="darius" position="jungle" scrapedAt="Thu Nov 27 2025 20:42:20 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[DARIUS TIPS AND TRICKS When ganking enemies, try to get as close to them as possible to make landing your E a lot easier. Whenever your Ultimate R is up, you should look to gank your allies and get kills. The extra damage helps tremendously to finish off targets. If you can, try and auto-attack the enemy before activating your W to get extra damage down. This could be a good way of taking 1v1s with the enemy. However, you may wish to W straight away to apply the slow when ganking.]]></tips>
-  <builds><![CDATA[THE BEST DARIUS BUILDS, RUNES AND ITEMS FOR JUNGLE IN EMERALD + Most Popular If you want to use the most popular Darius Jungle build, you should take Flash and Smite as your Summoner Spells. For runes, you should pick Phase Rush as your keystone, followed by Nimbus Cloak, Celerity and Waterwalking in the primary tree, as well as Triumph and Legend: Alacrity in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Youmuu's Ghostblade as your first item, followed by Boots of Swiftness and Dead Man's Plate. For your last 3 items, you should build Force of Nature, Sterak's Gage and finish with Death's Dance. For the skill order, you want to stick with Q - E - W. Right now, this build has 49.3% winrate over 619 matches played. Alternative If you're looking for alternatives, you can use Flash and Smite as your Summoner Spells, with runes being Conqueror as your keystone, Triumph, Legend: Alacrity and Last Stand in the primary tree, and Axiom Arcanist with Celerity in the secondary tree, as well as Attack Speed, Adaptive Force, and Health Scaling as your rune shards. The items that this build incorporates are Stridebreaker as your first item, then Boots of Swiftness as a second item and Dead Man's Plate as a third item. You want to finish the build with Sterak's Gage, Force of Nature and Spear of Shojin. As far as ability max order goes, you want to keep it Q - E - W. This build is currently sitting at a 43.7% win rate across 151 matches played. Situational Darius Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Darius build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Darius runes page.]]></builds>
+<champion name="darius" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.846179">
+  <runes>
+    <keystone>Stormraider's Surge</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Waterwalking, Celerity, Nimbus Cloak</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Legend: Alacrity, Triumph</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Gustwalker Hatchling</starting_items>
+  <core_items>Boots of Swiftness, Youmuu's Ghostblade, Dead Man's Plate</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>52.33%</win_rate>
+  <matches>2,162</matches>
 </champion>

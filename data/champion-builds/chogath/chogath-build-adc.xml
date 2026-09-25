@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="chogath" position="adc" scrapedAt="Thu Nov 27 2025 20:40:40 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST CHO'GATH BUILDS, RUNES AND ITEMS FOR BOT IN EMERALD + Most Popular If you want to use the most popular Cho'Gath Bot build, you should take Flash and Teleport as your Summoner Spells. For runes, you should pick Hail of Blades as your keystone, followed by Cheap Shot, Grisly Mementos and Ultimate Hunter in the primary tree, as well as Axiom Arcanist and Celerity in the secondary tree. For rune shards, you want Adaptive Force in offense, Move Speed in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Hextech Rocketbelt as your first item, followed by Boots of Swiftness and Riftmaker. For your last 3 items, you should build Unending Despair, Thornmail and finish with Kaenic Rookern. For the skill order, you want to stick with E - Q - W. Right now, this build has 40.8% winrate over 103 matches played. Situational Cho'Gath Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Cho'Gath build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Cho'Gath runes page.]]></builds>
+<champion name="chogath" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.845316">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Conditioning, Demolish, Overgrowth</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Approach Velocity</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Shield, Health Potion</starting_items>
+  <core_items>Plated Steelcaps, Hextech Rocketbelt, Riftmaker</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>154</matches>
 </champion>

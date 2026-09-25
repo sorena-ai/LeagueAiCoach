@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="vayne" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.901971">
+  <runes>
+    <keystone>Press the Attack</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Triple Tonic, Cash Back</secondary_runes>
+    <shards>Attack Speed, Move Speed, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Mosstomper Seedling, Health Potion</starting_items>
+  <core_items>Kraken Slayer, Berserker's Greaves, Guinsoo's Rageblade</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>66.67%</win_rate>
+  <matches>228</matches>
+</champion>

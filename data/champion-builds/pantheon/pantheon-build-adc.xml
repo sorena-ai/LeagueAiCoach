@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="pantheon" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.879783">
+  <runes>
+    <keystone>Press the Attack</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Haste, Triumph</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Manaflow Band, Gathering Storm</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Hubris, Boots of Swiftness, Voltaic Cyclosword</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>84.62%</win_rate>
+  <matches>215</matches>
+</champion>

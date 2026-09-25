@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="talon" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.897207">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Haste, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Cash Back, Time Warp Tonic</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Long Sword, Refillable Potion</starting_items>
+  <core_items>Umbral Glaive, Youmuu's Ghostblade, Ionian Boots of Lucidity</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>178</matches>
+</champion>

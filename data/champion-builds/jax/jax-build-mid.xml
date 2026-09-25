@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="jax" position="mid" scrapedAt="Thu Nov 27 2025 21:07:14 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[JAX TIPS AND TRICKS Be prepared to sacrifice some CS for XP in the early game. It’s important that you do not fall behind by trying to pick up farm and die. Try and stack your Passive up on minions before looking to trade to get extra damage out on from your auto-attacks. Wait for the enemy Mid laner to overextend before using your and aggressively to take them down. If they’re overextended, you have more roam to chase them down.]]></tips>
-  <builds><![CDATA[THE BEST JAX BUILDS, RUNES AND ITEMS FOR MID IN EMERALD + Most Popular If you want to use the most popular Jax Mid build, you should take Flash and Teleport as your Summoner Spells. For runes, you should pick Lethal Tempo as your keystone, followed by Triumph, Legend: Alacrity and Last Stand in the primary tree, as well as Bone Plating and Unflinching in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Trinity Force as your first item, followed by Plated Steelcaps and Sundered Sky. For your last 3 items, you should build Zhonya's Hourglass, Sterak's Gage and finish with Frozen Heart. For the skill order, you want to stick with W - E - Q. Right now, this build has 57.2% winrate over 236 matches played. Optional Your second option for Jax Mid build would be to take Flash and Teleport as your Summoner Spells. The runes that this build takes advantage of are Grasp of the Undying as your keystone, Demolish, Second Wind and Unflinching in the primary tree, and Biscuit Delivery with Cosmic Insight in the secondary tree. The shards used in this build are Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense. The items for the build are Trinity Force, which you should build first, followed by Plated Steelcaps as your second item and Sundered Sky as your third item. The rest of the items in order are Zhonya's Hourglass, Sterak's Gage and Frozen Heart. The skill order for this build is W - E - Q. In the current patch, this build has a 55.3% win rate over 208 matches. Situational Jax Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Jax build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Jax runes page.]]></builds>
+<champion name="jax" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.857297">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Unflinching, Bone Plating</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Helm, Health Potion</starting_items>
+  <core_items>Trinity Force, Plated Steelcaps, Blade of The Ruined King</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>53.85%</win_rate>
+  <matches>298</matches>
 </champion>

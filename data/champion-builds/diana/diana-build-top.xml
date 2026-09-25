@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="diana" position="top" scrapedAt="Thu Nov 27 2025 20:43:22 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[DIANA TIPS AND TRICKS Limit your E use unless the enemy is afflicted with Moonlight so you can get the reset on your E and escape or commit to the trade. When using your Q on the minion wave to push, try to aim it so it will go through the enemy champion and hit the wave too. This will result in you pushing the lane and poking the enemy at the same time. Your W is a low-cost ability that provides a shield. Use it to protect yourself against high amounts of incoming damage.]]></tips>
-  <builds><![CDATA[THE BEST DIANA BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Diana Top build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Electrocute as your keystone, followed by Sudden Impact, Grisly Mementos and Treasure Hunter in the primary tree, as well as Manaflow Band and Scorch in the secondary tree. For rune shards, you want Adaptive Force in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Stormsurge as your first item, followed by Sorcerer's Shoes and Shadowflame. For your last 3 items, you should build Zhonya's Hourglass, Rabadon's Deathcap and finish with Void Staff. For the skill order, you want to stick with Q - W - E. Right now, this build has 55.6% winrate over 196 matches played. Optional Your second option for Diana Top build would be to take Flash and Teleport as your Summoner Spells. The runes that this build takes advantage of are Conqueror as your keystone, Triumph, Legend: Alacrity and Coup de Grace in the primary tree, and Sudden Impact with Treasure Hunter in the secondary tree. The shards used in this build are Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense. The items for the build are Liandry's Torment, which you should build first, followed by Sorcerer's Shoes as your second item and Riftmaker as your third item. The rest of the items in order are Zhonya's Hourglass, Unending Despair and Morellonomicon. The skill order for this build is Q - W - E. In the current patch, this build has a 34.5% win rate over 58 matches. Situational Diana Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Diana build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Diana runes page.]]></builds>
+<champion name="diana" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.846505">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Shield Bash, Second Wind, Overgrowth</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Transcendence, Manaflow Band</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Stormsurge, Mercury's Treads, Shadowflame</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>61.11%</win_rate>
+  <matches>381</matches>
 </champion>

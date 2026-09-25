@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="monkeyking" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.871458">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Overgrowth, Bone Plating</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Trinity Force, Plated Steelcaps, Black Cleaver</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>60.29%</win_rate>
+  <matches>3,587</matches>
+</champion>

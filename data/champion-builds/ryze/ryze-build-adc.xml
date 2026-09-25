@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="ryze" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.886424">
+  <runes>
+    <keystone>Stormraider's Surge</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Gathering Storm</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Overgrowth, Bone Plating</secondary_runes>
+    <shards>Attack Speed, Move Speed, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Health Potion x2, Tear of the Goddess</starting_items>
+  <core_items>Rod of Ages, Boots of Swiftness, Archangel's Staff</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>60%</win_rate>
+  <matches>137</matches>
+</champion>

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="elise" position="mid" scrapedAt="Thu Nov 27 2025 20:48:11 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST ELISE BUILDS, RUNES AND ITEMS FOR MID IN EMERALD + Most Popular If you want to use the most popular Elise Mid build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Electrocute as your keystone, followed by Cheap Shot, Grisly Mementos and Relentless Hunter in the primary tree, as well as Nimbus Cloak and Waterwalking in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Stormsurge as your first item, followed by Sorcerer's Shoes and Shadowflame. For your last 3 items, you should build Rabadon's Deathcap, Zhonya's Hourglass and finish with Morellonomicon. For the skill order, you want to stick with Q - W - E. Right now, this build has 58.1% winrate over 86 matches played. Situational Elise Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Elise build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Elise runes page.]]></builds>
+<champion name="elise" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.848294">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Relentless Hunter, Grisly Mementos, Sudden Impact</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Coup de Grace</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Lich Bane, Sorcerer's Shoes, Shadowflame</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>128</matches>
 </champion>

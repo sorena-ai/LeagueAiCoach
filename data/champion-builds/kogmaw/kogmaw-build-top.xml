@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="kogmaw" position="top" scrapedAt="Thu Nov 27 2025 21:22:27 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST KOG'MAW BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Kog'Maw Top build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Lethal Tempo as your keystone, followed by Presence of Mind, Legend: Alacrity and Last Stand in the primary tree, as well as Approach Velocity and Biscuit Delivery in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Guinsoo's Rageblade as your first item, followed by Berserker's Greaves and Blade of The Ruined King. For your last 3 items, you should build Terminus, Runaan's Hurricane and finish with Wit's End. For the skill order, you want to stick with W - Q - E. Right now, this build has 53.8% winrate over 52 matches played. Situational Kog'Maw Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Kog'Maw build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Kog'Maw runes page.]]></builds>
+<champion name="kogmaw" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.863000">
+  <runes>
+    <keystone>Stormraider's Surge</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Manaflow Band, Absolute Focus, Gathering Storm</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Cut Down</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Boots of Swiftness, Dusk and Dawn, Shadowflame</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>52.66%</win_rate>
+  <matches>681</matches>
 </champion>

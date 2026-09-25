@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="warwick" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.906259">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Waterwalking, Celerity</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Gustwalker Hatchling, Health Potion</starting_items>
+  <core_items>Plated Steelcaps, Stridebreaker, Blade of The Ruined King</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>50.89%</win_rate>
+  <matches>9,560</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="vex" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.903626">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Ultimate Hunter, Cheap Shot, Grisly Mementos</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Cut Down</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Sorcerer's Shoes, Luden's Echo, Stormsurge</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>70%</win_rate>
+  <matches>143</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="twistedfate" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.899956">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Cut Down, Absorb Life, Legend: Alacrity</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Cash Back, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Move Speed, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Kraken Slayer, Gluttonous Greaves, Yun Tal Wildarrows</core_items>
+  <skill_order>E, W, Q</skill_order>
+  <win_rate>68.75%</win_rate>
+  <matches>1,042</matches>
+</champion>

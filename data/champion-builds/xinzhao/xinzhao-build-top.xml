@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="xinzhao" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.907261">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Overgrowth, Bone Plating</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Statikk Shiv, Plated Steelcaps, Manamune</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>66.67%</win_rate>
+  <matches>693</matches>
+</champion>

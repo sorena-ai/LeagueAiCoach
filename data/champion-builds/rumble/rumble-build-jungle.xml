@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="rumble" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.885922">
+  <runes>
+    <keystone>First Strike</keystone>
+    <primary_tree>Inspiration</primary_tree>
+    <primary_runes>Magical Footwear, Triple Tonic, Cosmic Insight</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Cheap Shot</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Scorchclaw Pup</starting_items>
+  <core_items>Liandry's Torment, Sorcerer's Shoes, Bloodletter's Curse</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>61.11%</win_rate>
+  <matches>773</matches>
+</champion>

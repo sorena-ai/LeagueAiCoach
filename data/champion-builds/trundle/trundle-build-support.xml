@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="trundle" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.899198">
+  <runes>
+    <keystone>Glacial Augment</keystone>
+    <primary_tree>Inspiration</primary_tree>
+    <primary_runes>Magical Footwear, Jack Of All Trades, Biscuit Delivery</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Transcendence, Manaflow Band</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Health Potion</starting_items>
+  <core_items>Bloodsong, Plated Steelcaps, Bandlepipes</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>77.78%</win_rate>
+  <matches>337</matches>
+</champion>

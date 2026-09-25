@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="monkeyking" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.871521">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Scorchclaw Pup, Health Potion</starting_items>
+  <core_items>Trinity Force, Black Cleaver, Mercury's Treads</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>52.69%</win_rate>
+  <matches>19,911</matches>
+</champion>

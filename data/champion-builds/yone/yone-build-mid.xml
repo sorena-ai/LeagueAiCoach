@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="yone" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.908685">
+  <runes>
+    <keystone>Fleet Footwork</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Absorb Life, Legend: Alacrity</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Second Wind, Overgrowth</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Berserker's Greaves, Immortal Shieldbow, Infinity Edge</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>50.81%</win_rate>
+  <matches>26,309</matches>
+</champion>

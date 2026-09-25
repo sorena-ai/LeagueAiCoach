@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="zoe" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.913185">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Relentless Hunter, Taste of Blood, Grisly Mementos</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Scorch, Nimbus Cloak</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Luden's Echo, Sorcerer's Shoes, Lich Bane</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>52.29%</win_rate>
+  <matches>9,684</matches>
+</champion>

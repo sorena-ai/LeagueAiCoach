@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="hwei" position="top" scrapedAt="Thu Nov 27 2025 21:01:59 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST HWEI BUILDS, RUNES AND ITEMS FOR TOP IN EMERALD + Most Popular If you want to use the most popular Hwei Top build, you should take Flash and Teleport as your Summoner Spells. For runes, you should pick Arcane Comet as your keystone, followed by Manaflow Band, Transcendence and Scorch in the primary tree, as well as Cut Down and Legend: Haste in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Blackfire Torch as your first item, followed by Sorcerer's Shoes and Liandry's Torment. For your last 3 items, you should build Shadowflame, Zhonya's Hourglass and finish with Morellonomicon. For the skill order, you want to stick with Q - E - W. Right now, this build has 50.2% winrate over 215 matches played. Situational Hwei Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Hwei build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Hwei runes page.]]></builds>
+<champion name="hwei" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.854840">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Ultimate Hunter, Cheap Shot, Grisly Mementos</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Manaflow Band, Scorch</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Luden's Echo, Sorcerer's Shoes, Shadowflame</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>69.57%</win_rate>
+  <matches>440</matches>
 </champion>

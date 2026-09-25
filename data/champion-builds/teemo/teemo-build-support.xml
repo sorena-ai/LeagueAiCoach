@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="teemo" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.898454">
+  <runes>
+    <keystone>Arcane Comet</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Manaflow Band, Celerity, Scorch</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Cheap Shot</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Zaz'Zak's Realmspike, Sorcerer's Shoes, Malignance</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>91.67%</win_rate>
+  <matches>1,542</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="volibear" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.905822">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Haste, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Jack Of All Trades</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Gustwalker Hatchling</starting_items>
+  <core_items>Dusk and Dawn, Navori Flickerblade, Mercury's Treads</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>50.41%</win_rate>
+  <matches>4,295</matches>
+</champion>

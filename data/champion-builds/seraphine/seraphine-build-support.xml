@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="seraphine" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.887788">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Biscuit Delivery, Cosmic Insight</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Dream Maker, Echoes of Helia, Ionian Boots of Lucidity</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>51.96%</win_rate>
+  <matches>22,521</matches>
+</champion>

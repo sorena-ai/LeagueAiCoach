@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="jarvaniv" position="mid" scrapedAt="Thu Nov 27 2025 21:06:11 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[No tips available]]></tips>
-  <builds><![CDATA[THE BEST JARVAN IV BUILDS, RUNES AND ITEMS FOR MID IN EMERALD + Most Popular If you want to use the most popular Jarvan IV Mid build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Conqueror as your keystone, followed by Triumph, Legend: Alacrity and Coup de Grace in the primary tree, as well as Relentless Hunter and Sudden Impact in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Eclipse as your first item, followed by Mercury's Treads and Sundered Sky. For your last 3 items, you should build Profane Hydra, Serpent's Fang and finish with Frozen Heart. For the skill order, you want to stick with Q - E - W. Right now, this build has 54.7% winrate over 64 matches played. Optional Your second option for Jarvan IV Mid build would be to take Flash and Ignite as your Summoner Spells. The runes that this build takes advantage of are Electrocute as your keystone, Sudden Impact, Sixth Sense and Treasure Hunter in the primary tree, and Triumph with Coup de Grace in the secondary tree. The shards used in this build are Adaptive Force in offense, Adaptive Force in flex and Health in defense. The items for the build are Eclipse, which you should build first, followed by Mercury's Treads as your second item and Profane Hydra as your third item. The rest of the items in order are The Collector, Edge of Night and Zhonya's Hourglass. The skill order for this build is Q - E - W. In the current patch, this build has a 50.9% win rate over 57 matches. Situational Jarvan IV Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Jarvan IV build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Jarvan IV runes page.]]></builds>
+<champion name="jarvaniv" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.856904">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Treasure Hunter, Grisly Mementos, Sudden Impact</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Coup de Grace, Triumph</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Long Sword, Refillable Potion</starting_items>
+  <core_items>Eclipse, Mercury's Treads, Profane Hydra</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>85.71%</win_rate>
+  <matches>219</matches>
 </champion>

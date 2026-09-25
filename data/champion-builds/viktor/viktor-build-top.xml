@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="viktor" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.904826">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Manaflow Band, Celerity, Scorch</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Cut Down, Legend: Haste</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Blackfire Torch, Sorcerer's Shoes, Lich Bane</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>52.42%</win_rate>
+  <matches>1,290</matches>
+</champion>

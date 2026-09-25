@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="cassiopeia" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.844877">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Coup de Grace</secondary_runes>
+    <shards>Ability Haste, Move Speed, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Celestial Opposition, Rylai's Crystal Scepter, Ionian Boots of Lucidity</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>42.86%</win_rate>
+  <matches>42</matches>
+</champion>

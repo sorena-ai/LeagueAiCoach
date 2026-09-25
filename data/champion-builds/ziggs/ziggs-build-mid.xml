@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="ziggs" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.911734">
+  <runes>
+    <keystone>Arcane Comet</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Biscuit Delivery</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Luden's Echo, Sorcerer's Shoes, Liandry's Torment</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>53.87%</win_rate>
+  <matches>2,256</matches>
+</champion>

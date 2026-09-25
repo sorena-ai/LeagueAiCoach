@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="zac" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.910255">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Second Wind, Demolish, Revitalize</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Last Stand, Legend: Haste</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Helm, Health Potion</starting_items>
+  <core_items>Sunfire Aegis, Plated Steelcaps, Spirit Visage</core_items>
+  <skill_order>W, E, Q</skill_order>
+  <win_rate>51.84%</win_rate>
+  <matches>1,634</matches>
+</champion>

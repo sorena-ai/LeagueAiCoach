@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="teemo" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.898405">
+  <runes>
+    <keystone>Dark Harvest</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Ultimate Hunter, Cheap Shot, Grisly Mementos</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Conditioning, Overgrowth</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Dark Seal, Refillable Potion</starting_items>
+  <core_items>Statikk Shiv, Gluttonous Greaves, Malignance</core_items>
+  <skill_order>E, Q, W</skill_order>
+  <win_rate>75%</win_rate>
+  <matches>324</matches>
+</champion>

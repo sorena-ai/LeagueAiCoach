@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="vayne" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.902139">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Conditioning, Overgrowth</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Berserker's Greaves, Blade of The Ruined King, Guinsoo's Rageblade</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>62.22%</win_rate>
+  <matches>108</matches>
+</champion>

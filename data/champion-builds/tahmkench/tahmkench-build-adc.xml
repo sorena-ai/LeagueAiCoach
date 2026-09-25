@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="tahmkench" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.895886">
+  <runes>
+    <keystone>Grasp of the Undying</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Shield Bash, Second Wind, Revitalize</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Biscuit Delivery, Approach Velocity</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Ignite</summoner_spells>
+  <starting_items>Doran's Helm, Health Potion</starting_items>
+  <core_items>Heartsteel, Boots of Swiftness, Dusk and Dawn</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>59.52%</win_rate>
+  <matches>502</matches>
+</champion>

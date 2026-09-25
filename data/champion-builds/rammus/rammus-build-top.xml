@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="rammus" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.882350">
+  <runes>
+    <keystone>Aftershock</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Unflinching, Conditioning, Demolish</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Triple Tonic</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Cloth Armor, Refillable Potion</starting_items>
+  <core_items>Thornmail, Plated Steelcaps, Sunfire Aegis</core_items>
+  <skill_order>W, Q, E</skill_order>
+  <win_rate>54.55%</win_rate>
+  <matches>369</matches>
+</champion>

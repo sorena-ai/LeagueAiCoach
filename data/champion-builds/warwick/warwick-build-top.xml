@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="warwick" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.906200">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Presence of Mind, Last Stand, Legend: Alacrity</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Second Wind, Revitalize</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Blade of The Ruined King, Stridebreaker, Plated Steelcaps</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>52.19%</win_rate>
+  <matches>4,668</matches>
+</champion>

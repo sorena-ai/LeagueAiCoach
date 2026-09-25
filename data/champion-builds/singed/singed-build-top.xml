@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="singed" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.889903">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Celerity, Scorch, Nimbus Cloak</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Last Stand, Triumph</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Rylai's Crystal Scepter, Boots of Swiftness, Liandry's Torment</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>52.41%</win_rate>
+  <matches>7,542</matches>
+</champion>

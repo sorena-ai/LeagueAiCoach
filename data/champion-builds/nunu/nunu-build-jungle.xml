@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="nunu" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.876614">
+  <runes>
+    <keystone>Electrocute</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Relentless Hunter, Cheap Shot, Grisly Mementos</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Waterwalking, Celerity</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Gustwalker Hatchling</starting_items>
+  <core_items>Liandry's Torment, Mercury's Treads, Frozen Heart</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>54.84%</win_rate>
+  <matches>6,386</matches>
+</champion>

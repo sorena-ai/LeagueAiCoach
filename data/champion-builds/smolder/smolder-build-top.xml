@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="smolder" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.893306">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Celerity, Gathering Storm, Nimbus Cloak</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Second Wind, Overgrowth</secondary_runes>
+    <shards>Adaptive Force, Move Speed, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Ionian Boots of Lucidity, Essence Reaver, Black Cleaver</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>865</matches>
+</champion>

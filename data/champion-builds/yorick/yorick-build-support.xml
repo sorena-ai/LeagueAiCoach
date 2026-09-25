@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="yorick" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.909205">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Bloodline, Triumph</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Demolish, Bone Plating</secondary_runes>
+    <shards>Ability Haste, Move Speed, Health</shards>
+  </runes>
+  <summoner_spells>Exhaust, Ignite</summoner_spells>
+  <starting_items>Health Potion x2, Control Ward</starting_items>
+  <core_items>Zaz'Zak's Realmspike, Boots of Swiftness, Liandry's Torment</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>66.67%</win_rate>
+  <matches>50</matches>
+</champion>

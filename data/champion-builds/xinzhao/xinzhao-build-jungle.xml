@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="xinzhao" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.907320">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Coup de Grace, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Gustwalker Hatchling, Health Potion</starting_items>
+  <core_items>Titanic Hydra, Plated Steelcaps, Black Cleaver</core_items>
+  <skill_order>W, E, Q</skill_order>
+  <win_rate>49.53%</win_rate>
+  <matches>7,248</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="rakan" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.882010">
+  <runes>
+    <keystone>Guardian</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Unflinching, Font of Life, Bone Plating</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Deep Ward</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Solstice Sleigh, Zeke's Convergence, Ionian Boots of Lucidity</core_items>
+  <skill_order>W, E, Q</skill_order>
+  <win_rate>53.34%</win_rate>
+  <matches>12,115</matches>
+</champion>

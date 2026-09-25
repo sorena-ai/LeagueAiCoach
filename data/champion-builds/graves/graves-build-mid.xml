@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<champion name="graves" position="mid" scrapedAt="Thu Nov 27 2025 20:59:04 GMT+0100 (Central European Standard Time)">
-  <tips><![CDATA[GRAVES TIPS AND TRICKS Aim your Q so it pushes the minion wave and hits the enemy at the same time. This will give you the most value for your mana pool. You can cancel auto-attack animations with your E . Never use your E if you have 2 auto attacks available as your E will reset 1 auto. Your E and Ultimate R can be used to chase or escape sticky situations. You can also use both of them to get over walls.]]></tips>
-  <builds><![CDATA[THE BEST GRAVES BUILDS, RUNES AND ITEMS FOR MID IN EMERALD + Most Popular If you want to use the most popular Graves Mid build, you should take Flash and Ignite as your Summoner Spells. For runes, you should pick Fleet Footwork as your keystone, followed by Triumph, Legend: Alacrity and Coup de Grace in the primary tree, as well as Cosmic Insight and Magical Footwear in the secondary tree. For rune shards, you want Attack Speed in offense, Adaptive Force in flex and Health Scaling in defense, though it depends on the matchup. Finally, for your items, you should build Youmuu's Ghostblade as your first item, followed by Mercury's Treads and The Collector. For your last 3 items, you should build Lord Dominik's Regards, Infinity Edge and finish with Immortal Shieldbow. For the skill order, you want to stick with Q - E - W. Right now, this build has 50.2% winrate over 205 matches played. Situational Graves Runes and Items Depending on the context of your game, your matchup, and enemy champions, you might want to consider building some situational items or take specific runes. Carefully examine your team, enemy team, game state , and your matchup to plan your Graves build accordingly! For example, when it comes to rune shards, you might want to take either Armor or Magic Resist, depending on which champion you are about to lane against. Furthermore, if you want a more detailed breakdown, you should also check out Graves runes page.]]></builds>
+<champion name="graves" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.853016">
+  <runes>
+    <keystone>Dark Harvest</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Treasure Hunter, Grisly Mementos, Sudden Impact</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Legend: Alacrity, Triumph</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Cull, Health Potion</starting_items>
+  <core_items>Hubris, Gluttonous Greaves, The Collector</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>71.43%</win_rate>
+  <matches>188</matches>
 </champion>

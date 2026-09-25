@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="skarner" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.893106">
+  <runes>
+    <keystone>Aftershock</keystone>
+    <primary_tree>Resolve</primary_tree>
+    <primary_runes>Shield Bash, Conditioning, Overgrowth</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Magical Footwear, Cosmic Insight</secondary_runes>
+    <shards>Ability Haste, Health Scaling, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Bloodsong, Boots of Swiftness, Titanic Hydra</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>61.29%</win_rate>
+  <matches>762</matches>
+</champion>

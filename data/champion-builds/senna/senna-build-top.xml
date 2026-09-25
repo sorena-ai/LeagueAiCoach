@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="senna" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.887336">
+  <runes>
+    <keystone>Fleet Footwork</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Presence of Mind, Coup de Grace, Legend: Alacrity</primary_runes>
+    <secondary_tree>Sorcery</secondary_tree>
+    <secondary_runes>Manaflow Band, Celerity</secondary_runes>
+    <shards>Attack Speed, Move Speed, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Blade, Health Potion</starting_items>
+  <core_items>Boots of Swiftness, Statikk Shiv, Black Cleaver</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>83.33%</win_rate>
+  <matches>128</matches>
+</champion>

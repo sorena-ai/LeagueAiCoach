@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="tryndamere" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.899610">
+  <runes>
+    <keystone>Hail of Blades</keystone>
+    <primary_tree>Domination</primary_tree>
+    <primary_runes>Ultimate Hunter, Grisly Mementos, Sudden Impact</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Last Stand, Legend: Alacrity</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Ghost</summoner_spells>
+  <starting_items>Doran's Bow, Health Potion x2</starting_items>
+  <core_items>Profane Hydra, Berserker's Greaves, The Collector</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>56.92%</win_rate>
+  <matches>1,366</matches>
+</champion>

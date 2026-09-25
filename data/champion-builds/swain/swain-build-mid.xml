@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="swain" position="mid" patch="26.18" scrapedAt="2026-09-25T15:37:15.894364">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Legend: Haste</secondary_runes>
+    <shards>Attack Speed, Move Speed, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Exhaust, Flash</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Blackfire Torch, Mercury's Treads, Rylai's Crystal Scepter</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>71.05%</win_rate>
+  <matches>1,974</matches>
+</champion>

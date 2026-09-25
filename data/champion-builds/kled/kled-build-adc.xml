@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="kled" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.862654">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Cut Down, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Sudden Impact</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Helm, Health Potion</starting_items>
+  <core_items>Hubris, Gluttonous Greaves, Titanic Hydra</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>75%</win_rate>
+  <matches>53</matches>
+</champion>

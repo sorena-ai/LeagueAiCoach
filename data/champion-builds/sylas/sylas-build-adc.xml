@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="sylas" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.895029">
+  <runes>
+    <keystone>Conqueror</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Presence of Mind, Last Stand, Legend: Haste</primary_runes>
+    <secondary_tree>Resolve</secondary_tree>
+    <secondary_runes>Unflinching, Bone Plating</secondary_runes>
+    <shards>Adaptive Force, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Hextech Rocketbelt, Sorcerer's Shoes, Shadowflame</core_items>
+  <skill_order>W, E, Q</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>237</matches>
+</champion>

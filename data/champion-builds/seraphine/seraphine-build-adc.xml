@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="seraphine" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.887727">
+  <runes>
+    <keystone>Arcane Comet</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Gathering Storm</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Legend: Haste</secondary_runes>
+    <shards>Ability Haste, Adaptive Force, Health</shards>
+  </runes>
+  <summoner_spells>Flash, Barrier</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Blackfire Torch, Ionian Boots of Lucidity, Archangel's Staff</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>55.38%</win_rate>
+  <matches>2,498</matches>
+</champion>

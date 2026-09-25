@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="nocturne" position="top" patch="26.18" scrapedAt="2026-09-25T15:37:15.876260">
+  <runes>
+    <keystone>Lethal Tempo</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Last Stand, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Domination</secondary_tree>
+    <secondary_runes>Ultimate Hunter, Grisly Mementos</secondary_runes>
+    <shards>Attack Speed, Adaptive Force, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Ignite</summoner_spells>
+  <starting_items>Long Sword, Refillable Potion</starting_items>
+  <core_items>Plated Steelcaps, Stridebreaker, Blade of The Ruined King</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>70%</win_rate>
+  <matches>273</matches>
+</champion>

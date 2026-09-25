@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="zyra" position="adc" patch="26.18" scrapedAt="2026-09-25T15:37:15.913916">
+  <runes>
+    <keystone>Deathfire Touch</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Scorch</primary_runes>
+    <secondary_tree>Precision</secondary_tree>
+    <secondary_runes>Presence of Mind, Cut Down</secondary_runes>
+    <shards>Ability Haste, Move Speed, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Teleport</summoner_spells>
+  <starting_items>Doran's Ring, Health Potion x2</starting_items>
+  <core_items>Blackfire Torch, Sorcerer's Shoes, Liandry's Torment</core_items>
+  <skill_order>Q, W, E</skill_order>
+  <win_rate>61.33%</win_rate>
+  <matches>381</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="yone" position="jungle" patch="26.18" scrapedAt="2026-09-25T15:37:15.908627">
+  <runes>
+    <keystone>Press the Attack</keystone>
+    <primary_tree>Precision</primary_tree>
+    <primary_runes>Cut Down, Legend: Alacrity, Triumph</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Cash Back, Cosmic Insight</secondary_runes>
+    <shards>Attack Speed, Health Scaling, Tenacity and Slow Resist</shards>
+  </runes>
+  <summoner_spells>Flash, Smite</summoner_spells>
+  <starting_items>Scorchclaw Pup</starting_items>
+  <core_items>Berserker's Greaves, Yun Tal Wildarrows, Infinity Edge</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>100%</win_rate>
+  <matches>276</matches>
+</champion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<champion name="zilean" position="support" patch="26.18" scrapedAt="2026-09-25T15:37:15.912892">
+  <runes>
+    <keystone>Summon Aery</keystone>
+    <primary_tree>Sorcery</primary_tree>
+    <primary_runes>Transcendence, Manaflow Band, Waterwalking</primary_runes>
+    <secondary_tree>Inspiration</secondary_tree>
+    <secondary_runes>Triple Tonic, Cosmic Insight</secondary_runes>
+    <shards>Ability Haste, Move Speed, Health Scaling</shards>
+  </runes>
+  <summoner_spells>Flash, Heal</summoner_spells>
+  <starting_items>Health Potion x2</starting_items>
+  <core_items>Solstice Sleigh, Ionian Boots of Lucidity, Shurelya's Battlesong</core_items>
+  <skill_order>Q, E, W</skill_order>
+  <win_rate>52.04%</win_rate>
+  <matches>9,871</matches>
+</champion>
