@@ -19,11 +19,26 @@ FastAPI service that ingests an in-game screenshot plus a voice question, runs t
 - `app/assistant`: Coach logic, prompts, draft agent, TTS
 - `app/lib`: Shared LangChain clients (`langchain.py`)
 - `app/config.py`: Settings loaded from `.env`
-- `data/`: Champion XML inputs
+- `data/`: Champion data (not tracked in this repo — see below)
+
+## Champion data
+
+This project uses the open-source champion data from
+**[awesome-league-of-legends](https://github.com/sorena-ai/awesome-league-of-legends)**.
+The data is **not included in this repository**; to run the app you must clone it
+into `data/` yourself:
+
+```bash
+git clone https://github.com/sorena-ai/awesome-league-of-legends.git data
+```
+
+`data/` is git-ignored, so your local copy is never committed.
 
 ## Setup
 ```bash
+git clone git@github.com:sorena-ai/LeagueAiCoach.git
 cd sensii
+git clone https://github.com/sorena-ai/awesome-league-of-legends.git data
 cp .env.example .env   # fill in API keys
 ```
 

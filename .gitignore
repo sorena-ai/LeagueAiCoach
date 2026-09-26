@@ -137,3 +137,6 @@ downloads/
 *.wav
 *.mp3
 *.mp4
+
+# Champion data (cloned from sorena-ai/awesome-league-of-legends)
+/data/

@@ -20,4 +20,6 @@ jobs:
             set -e
             cd ~/workspace/infra
             git submodule update --remote LeagueAiCoach
+            rm -rf LeagueAiCoach/data
+            git clone --depth 1 https://github.com/sorena-ai/awesome-league-of-legends.git LeagueAiCoach/data
             docker compose up -d --build sensei-api
