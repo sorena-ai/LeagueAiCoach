@@ -115,16 +115,24 @@ Voice-Specific Rules:
 - ALWAYS end with a brief reminder to open League of Legends for better, real-time coaching"""
 
 
-def _build_conflict_resolution_section() -> str:
-    """Build the conflict resolution section."""
-    return """## CONFLICT RESOLUTION & PRIORITY
+def _build_tools_section() -> str:
+    """Build the tool usage instructions for champion data lookups."""
+    return """## Tools (Use Them for Champion Data)
 
-1. **User Question Specificity**: If the user asks about a specific champion (e.g., "Lux"), item, or interaction, that is your PRIMARY focus.
-2. **Reference Material vs. Internal Knowledge**:
-   - The "General Strategy Reference" below contains broad role guides (Top, Jungle, etc.).
-   - It does NOT contain specific guides for most champions.
-   - **CRITICAL**: If the user asks about a champion that is NOT explicitly detailed in the reference text, **IGNORE the reference text** and use your internal training data.
-   - **EXAMPLE**: If user asks "How to play Lux?", and the reference text talks about "Top Lane Bruisers", **IGNORE** the reference text. Lux is a Mage/Support. Answer based on Lux.
+You have tools to look up real champion and role data. ALWAYS use them when the
+user asks about a specific champion's abilities, combos, builds, or playstyle,
+or about a role's strategy:
+
+- `get_champion_combos(champion)` - combo sequences and ability rotations
+- `get_champion_guide(champion, role)` - strengths, weaknesses, game plan, power spikes
+- `get_champion_build(champion, role)` - items and runes
+- `get_role_playbook(role)` - role macro strategy (laning, early/mid/late game)
+
+Rules:
+- Call the relevant tool FIRST, before answering. Prefer tool data over your
+  internal training data for champion specifics.
+- If no role is given, leave `role` empty to get every role, or infer it from context.
+- If a tool returns "No ... available", fall back to your internal knowledge.
 """
 
 
@@ -157,7 +165,7 @@ def build_knowledge_prompt() -> str:
     brevity = _build_knowledge_brevity_section()
     input_structure = _build_knowledge_input_section()
     response_format = _build_knowledge_response_format_section()
-    conflict_resolution = _build_conflict_resolution_section()
+    tools_section = _build_tools_section()
     knowledge_base = _build_knowledge_base_section()
 
     # Assemble prompt
@@ -177,7 +185,7 @@ def build_knowledge_prompt() -> str:
 
 {response_format}
 
-{conflict_resolution}
+{tools_section}
 
 ---
 {knowledge_base}

@@ -18,6 +18,7 @@ from google.api_core.exceptions import ResourceExhausted
 from app.config import settings
 from app.assistant import prompts
 from app.assistant.prompts import build_gaming_guidance_section, build_game_state_report
+from app.assistant.tools import CHAMPION_TOOLS
 from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat, usage_fields
 from app.utils.game_stats import GameStateProcessor
 from app.utils.log_context import bind_log_context, elapsed_ms
@@ -58,10 +59,11 @@ def create_coach_agent(champion: str, role: str) -> AgentExecutor:
     # Construct complete system prompt (order: base + gaming guidance)
     system_prompt = f"{base_prompt}\n\n{gaming_guidance}"
 
-    # Create agent without tools for text-based coaching
+    # Create agent with tools so it can look up champion/role data on demand
+    # (e.g. matchups, counters, or details missing from the baked-in context).
     agent = create_agent(
         model=llm,
-        tools=[],
+        tools=CHAMPION_TOOLS,
         system_prompt=system_prompt,
     )
 
@@ -127,16 +129,11 @@ def get_coach_advice(
         game_stats_report = build_game_state_report(match_state)
         logger.info("Generated game stats report (%d characters)", len(game_stats_report))
 
-        # Build messages array starting with history (text-only)
+        # Build messages array starting with history (bounded window + summary)
         messages = []
 
-        # Add historical messages (text-only, no game stats)
-        historical_messages = session.message_history.get_all_messages()
-        for msg in historical_messages:
-            messages.append({
-                "role": msg["role"],
-                "content": msg["content"]
-            })
+        # Add historical context (bounded window + rolling summary, no game stats)
+        messages.extend(session.message_history.get_context_messages())
 
         # Add current message with game time, transcribed question + game stats report
         current_message_text = f"[{match_state.formatted_time}] {user_question}\n\n{game_stats_report}\n\n[Respond in {language.capitalize()}]"
@@ -148,7 +145,7 @@ def get_coach_advice(
         messages.append(current_message)
 
         logger.info("Invoking agent with %d total messages (%d historical + 1 current)",
-                   len(messages), len(historical_messages))
+                   len(messages), len(messages) - 1)
 
         # Invoke agent with messages format
         invoke_started = time.perf_counter()

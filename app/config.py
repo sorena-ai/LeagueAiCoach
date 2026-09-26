@@ -79,6 +79,12 @@ class Settings(BaseSettings):
     request_timeout_seconds: int = 30
     cors_allowed_origins: str = ""
 
+    # Conversation history bounds
+    max_history_messages: int = 12  # Max raw messages kept in the sliding window
+    max_history_chars: int = 12000  # Approximate char budget for the raw window
+    summarize_history: bool = True  # Fold evicted messages into a running summary
+    summarize_batch_size: int = 6  # Min evicted messages before a summarize call
+
     # MongoDB
     mongodb_uri: str = "mongodb://mongodb:27017/sensii"
     mongodb_db_name: str = "sensii"

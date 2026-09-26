@@ -17,7 +17,8 @@ from typing import Dict, Optional, Tuple, Union
 from langchain_classic.agents import AgentExecutor
 
 from app.assistant.agent import create_coach_agent
-from app.assistant.messages import MessageHistory
+from app.assistant.messages import MessageHistory, default_summarize
+from app.config import settings
 from app.models.game_stats import GameStats
 
 logger = logging.getLogger(__name__)
@@ -69,7 +70,12 @@ class BaseSession(ABC):
             ttl_hours: Session time-to-live in hours (default: 2)
         """
         self.agent = agent
-        self.message_history = MessageHistory()
+        self.message_history = MessageHistory(
+            max_messages=settings.max_history_messages,
+            max_chars=settings.max_history_chars,
+            summarize=default_summarize if settings.summarize_history else None,
+            summarize_batch_size=settings.summarize_batch_size,
+        )
         self.created_at = datetime.now()
         self.expires_at = self.created_at + timedelta(hours=ttl_hours)
 

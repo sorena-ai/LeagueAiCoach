@@ -79,6 +79,21 @@ def _build_safety_section() -> str:
 2. **Data Integrity:** Verify ability keys (Q/W/E/R) against the provided XML context. Never assign the wrong effect to a key (e.g., do not claim 'E' is a shield if the XML says 'W')."""
 
 
+def _build_tools_section() -> str:
+    """Build instructions for the champion data lookup tools."""
+    return """## Tools
+
+You have tools to look up champion data that isn't already in your context:
+- `get_champion_combos(champion)` - combo sequences and ability rotations
+- `get_champion_guide(champion, role)` - strengths, weaknesses, game plan, power spikes
+- `get_champion_build(champion, role)` - items and runes
+- `get_role_playbook(role)` - role macro strategy
+
+Use them when the user asks about a champion other than the one you're coaching
+(e.g. matchups, counters) or when a detail is missing from your context. If a
+tool returns "No ... available", fall back to general principles."""
+
+
 def _build_response_rules_section() -> str:
     """Build the consolidated response rules section."""
     return """## Response Rules
@@ -104,8 +119,8 @@ Exceptions (you can elaborate):
 - Game state shows player is dead (grey screen = time to listen)
 
 **Uncertainty:**
-- If specific champion data is missing from the XML context, do NOT guess.
-- Rely on general high-elo principles, but do not invent specific ability effects.
+- If specific champion data is missing from your context, look it up with a tool first.
+- If the tool has no data, rely on general high-elo principles; do not invent specific ability effects.
 
 This is voice output:
 - No bullet points, no markdown, no lists
@@ -229,6 +244,7 @@ def build_coach_prompt() -> str:
     scope = _build_scope_section()
     safety = _build_safety_section()
     response_rules = _build_response_rules_section()
+    tools = _build_tools_section()
 
     # Assemble base prompt
     return f"""{identity}
@@ -241,4 +257,6 @@ def build_coach_prompt() -> str:
 
 {safety}
 
-{response_rules}"""
+{response_rules}
+
+{tools}"""

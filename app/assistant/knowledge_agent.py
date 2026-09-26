@@ -16,6 +16,7 @@ from google.api_core.exceptions import ResourceExhausted
 
 from app.config import settings
 from app.assistant.knowledge_prompts import build_knowledge_prompt
+from app.assistant.tools import CHAMPION_TOOLS
 from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat, usage_fields
 from app.utils.log_context import bind_log_context, elapsed_ms
 
@@ -34,7 +35,9 @@ def create_knowledge_agent() -> AgentExecutor:
     Create a new knowledge agent for out-of-game assistance.
 
     Unlike the coach agent, this agent doesn't have champion-specific context
-    or game state. It answers general League of Legends questions.
+    or game state baked into the system prompt. Instead it is given tools to
+    look up champion data (combos, builds, guides) and role strategy on
+    demand, so it can answer about whatever champion the user asks.
 
     Language instruction is passed dynamically with each user message.
 
@@ -46,10 +49,10 @@ def create_knowledge_agent() -> AgentExecutor:
     # Build knowledge mode system prompt (no gaming guidance section)
     system_prompt = build_knowledge_prompt()
 
-    # Create agent without tools for text-based knowledge assistance
+    # Create agent with tools that fetch champion/role data on demand.
     agent = create_agent(
         model=llm,
-        tools=[],
+        tools=CHAMPION_TOOLS,
         system_prompt=system_prompt,
     )
 
@@ -93,16 +96,11 @@ def get_knowledge_advice(
         logger.info("Running knowledge agent with provider: %s (model: %s)",
                    settings.coach_provider, settings.coach_model)
 
-        # Build messages array starting with history (text-only)
+        # Build messages array starting with history (bounded window + summary)
         messages = []
 
-        # Add historical messages (text-only)
-        historical_messages = session.message_history.get_all_messages()
-        for msg in historical_messages:
-            messages.append({
-                "role": msg["role"],
-                "content": msg["content"]
-            })
+        # Add historical context (bounded window + rolling summary, text-only)
+        messages.extend(session.message_history.get_context_messages())
 
         # Add current message with user question (no game stats in knowledge mode)
         current_message_text = f"Answer in {language.upper()}.\n\nUser Question: {user_question}\n\nAnswer this question about League of Legends accurately. If the question is about a specific champion, answer about that champion. If the provided context does not contain info about this champion, use your own knowledge."
@@ -114,7 +112,7 @@ def get_knowledge_advice(
         messages.append(current_message)
 
         logger.info("Invoking knowledge agent with %d total messages (%d historical + 1 current)",
-                   len(messages), len(historical_messages))
+                   len(messages), len(messages) - 1)
 
         # Invoke agent with messages format
         invoke_started = time.perf_counter()
