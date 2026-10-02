@@ -17,6 +17,6 @@ httpx>=0.28.0
 datadog-api-client>=2.32.0
 motor>=3.7.0
 python-jose[cryptography]>=3.3.0
-posthog>=3.7.0
+posthog==7.62.*
 pytest>=8.3.4
 pytest-asyncio>=0.23.0

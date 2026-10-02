@@ -87,6 +87,7 @@ def render_login_success_page(transaction_id: Optional[str]) -> str:
     gads_id = settings.gads_id
     label = settings.gads_activation_label
 
-    conversion = _conversion_snippet(transaction_id, gads_id, label)
+    safe_id = valid_transaction_id(transaction_id)
+    conversion = _conversion_snippet(safe_id, gads_id, label)
 
     return _PAGE_TEMPLATE.replace("__GADS_ID__", gads_id).replace("__CONVERSION__", conversion)

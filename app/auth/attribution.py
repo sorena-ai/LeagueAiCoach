@@ -16,6 +16,7 @@ _ATTRIBUTION_KEYS = (
     "gclid",
     "landing_path",
     "ts",
+    "ph_id",
 )
 _MAX_VALUE_LENGTH = 200
 

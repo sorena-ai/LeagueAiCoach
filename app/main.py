@@ -7,6 +7,7 @@ from fastapi.responses import JSONResponse
 
 from app.assistant.data import ensure_all_champion_data_exists
 from app.auth import routes as auth_routes
+from app.analytics.posthog import shutdown as shutdown_posthog
 from app.config import settings
 from app.core.mongodb import close_mongo_client, get_mongo_client
 from app.routes import assistant
@@ -105,6 +106,7 @@ async def lifespan(app: FastAPI):
     close_mongo_client()
     # Drain anything still queued before the process goes away.
     shutdown_datadog_handler(datadog_handler)
+    shutdown_posthog()
 
 
 # Create FastAPI application

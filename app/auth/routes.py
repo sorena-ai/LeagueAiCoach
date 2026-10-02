@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import logging
+
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from fastapi.responses import HTMLResponse, RedirectResponse, Response
 
@@ -15,6 +17,8 @@ from app.auth.schemas import SessionCreateResponse, SessionStatusResponse, Refre
 from app.auth.session_store import SessionStatus, session_store
 from app.analytics.posthog import record_user_activated
 from app.users import repository as user_repository
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/v1/auth", tags=["auth"])
 public_router = APIRouter(prefix="/auth", tags=["auth-public"])
@@ -63,6 +67,11 @@ async def auth_callback(
     response = RedirectResponse(service.get_success_page_url())
     if is_first_login:
         user_id = session.user_id or ""
+        if not user_id:
+            logger.warning(
+                "First login completed with no user id; skipping activation side effects"
+            )
+            return response
 
         # One-time marker consumed by the login-success page to fire the
         # "Activated" conversion exactly once per account's first login.
@@ -76,13 +85,21 @@ async def auth_callback(
             secure=True,
         )
 
-        # Persist first-touch attribution (never overwrite an existing value).
-        acquisition = parse_attribution_cookie(request.cookies.get("sensii_attr"))
-        if acquisition:
-            await user_repository.set_acquisition(user_id, acquisition)
+        # Attribution and PostHog are best-effort: never fail the login redirect.
+        try:
+            acquisition = parse_attribution_cookie(request.cookies.get("sensii_attr"))
+            if acquisition:
+                await user_repository.set_acquisition(user_id, acquisition)
 
-        if request.cookies.get("sensii_consent") == "granted":
-            record_user_activated(user_id, build_activation_properties(acquisition))
+            if request.cookies.get("sensii_consent") == "granted":
+                ph_id = acquisition.get("ph_id") if acquisition else None
+                record_user_activated(
+                    user_id,
+                    build_activation_properties(acquisition),
+                    ph_id=ph_id,
+                )
+        except Exception:
+            logger.exception("Attribution tracking failed during first login")
 
     return response
 
