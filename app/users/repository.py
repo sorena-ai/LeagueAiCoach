@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from typing import Optional
 
 from motor.motor_asyncio import AsyncIOMotorCollection
+from pymongo import ReturnDocument
 
 from app.core.mongodb import get_database
 from app.users.models import User, UserProfile
