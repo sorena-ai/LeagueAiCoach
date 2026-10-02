@@ -15,6 +15,8 @@ class User(BaseModel):
     updated_at: datetime = Field(alias="updatedAt")
     last_login_at: Optional[datetime] = Field(default=None, alias="lastLoginAt")
     auth0_refresh_token: Optional[str] = Field(default=None, alias="auth0RefreshToken")
+    acquisition: Optional[dict] = None
+    acquired_at: Optional[datetime] = Field(default=None, alias="acquiredAt")
 
     model_config = ConfigDict(
         populate_by_name=True,

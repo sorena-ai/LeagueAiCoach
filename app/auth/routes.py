@@ -4,10 +4,17 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from fastapi.responses import HTMLResponse, RedirectResponse, Response
 
 from app.auth import service
+from app.auth.attribution import build_activation_properties, parse_attribution_cookie
 from app.auth.dependencies import get_session_token, get_current_user
-from app.auth.login_success import render_login_success_page
+from app.auth.login_success import (
+    activation_transaction_id,
+    render_login_success_page,
+    valid_transaction_id,
+)
 from app.auth.schemas import SessionCreateResponse, SessionStatusResponse, RefreshTokenRequest, RefreshTokenResponse
 from app.auth.session_store import SessionStatus, session_store
+from app.analytics.posthog import record_user_activated
+from app.users import repository as user_repository
 
 router = APIRouter(prefix="/api/v1/auth", tags=["auth"])
 public_router = APIRouter(prefix="/auth", tags=["auth-public"])
@@ -35,6 +42,7 @@ async def get_session_status(session_id: str) -> SessionStatusResponse:
 
 @router.get("/callback")
 async def auth_callback(
+    request: Request,
     code: str | None = Query(default=None),
     state: str | None = Query(default=None),
     error: str | None = Query(default=None),
@@ -54,16 +62,28 @@ async def auth_callback(
     session, is_first_login = await service.complete_auth_flow(code, state)
     response = RedirectResponse(service.get_success_page_url())
     if is_first_login:
+        user_id = session.user_id or ""
+
         # One-time marker consumed by the login-success page to fire the
         # "Activated" conversion exactly once per account's first login.
+        # The value is a per-account transaction id so Google Ads dedupes it.
         response.set_cookie(
             key="sensii_activation",
-            value="1",
+            value=activation_transaction_id(user_id),
             max_age=600,
             httponly=True,
             samesite="lax",
             secure=True,
         )
+
+        # Persist first-touch attribution (never overwrite an existing value).
+        acquisition = parse_attribution_cookie(request.cookies.get("sensii_attr"))
+        if acquisition:
+            await user_repository.set_acquisition(user_id, acquisition)
+
+        if request.cookies.get("sensii_consent") == "granted":
+            record_user_activated(user_id, build_activation_properties(acquisition))
+
     return response
 
 
@@ -96,8 +116,8 @@ async def login_entry(session_id: str = Query(..., alias="session_id")) -> Redir
 
 @public_router.get("/login-success", response_class=HTMLResponse)
 async def login_success(request: Request) -> HTMLResponse:
-    fire_conversion = request.cookies.get("sensii_activation") == "1"
-    response = HTMLResponse(content=render_login_success_page(fire_conversion))
-    if fire_conversion:
+    transaction_id = valid_transaction_id(request.cookies.get("sensii_activation"))
+    response = HTMLResponse(content=render_login_success_page(transaction_id))
+    if transaction_id:
         response.delete_cookie("sensii_activation")
     return response

@@ -60,3 +60,20 @@ async def update_auth0_refresh_token(user_id: str, auth0_refresh_token: str) -> 
         return None
     return User(**document)
 
+
+async def set_acquisition(user_id: str, acquisition: dict) -> Optional[User]:
+    """Store first-touch acquisition data, never overwriting an existing value."""
+    collection = _get_collection()
+    document = await collection.find_one_and_update(
+        {"_id": user_id, "acquisition": {"$exists": False}},
+        {
+            "$set": {
+                "acquisition": acquisition,
+                "acquiredAt": datetime.now(timezone.utc),
+            }
+        },
+        return_document=ReturnDocument.AFTER,
+    )
+    if not document:
+        return None
+    return User(**document)

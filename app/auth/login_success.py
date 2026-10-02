@@ -1,6 +1,38 @@
 from __future__ import annotations
 
+import hashlib
+import re
+from typing import Optional
+
 from app.config import settings
+
+_TRANSACTION_ID_RE = re.compile(r"^[a-f0-9]{16}$")
+
+_CONVERSION_SNIPPET = (
+    "  gtag('event', 'conversion', {{send_to: '{send_to}', transaction_id: '{transaction_id}'}});"
+)
+
+
+def activation_transaction_id(user_id: str) -> str:
+    """Stable, per-account id for deduplicating the activation conversion."""
+    digest = hashlib.sha256(f"{user_id}:activation".encode("utf-8")).hexdigest()
+    return digest[:16]
+
+
+def valid_transaction_id(value: Optional[str]) -> Optional[str]:
+    """Return the id only if it is a safe 16-char hex string, else None."""
+    if value is None:
+        return None
+    if not _TRANSACTION_ID_RE.match(value):
+        return None
+    return value
+
+
+def _conversion_snippet(transaction_id: Optional[str], gads_id: str, label: str) -> str:
+    if not transaction_id or not gads_id or not label:
+        return ""
+    return _CONVERSION_SNIPPET.format(send_to=f"{gads_id}/{label}", transaction_id=transaction_id)
+
 
 _PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
@@ -51,12 +83,10 @@ __CONVERSION__
 """
 
 
-def render_login_success_page(fire_conversion: bool) -> str:
+def render_login_success_page(transaction_id: Optional[str]) -> str:
     gads_id = settings.gads_id
     label = settings.gads_activation_label
 
-    conversion = ""
-    if fire_conversion and gads_id and label:
-        conversion = f"  gtag('event', 'conversion', {{send_to: '{gads_id}/{label}'}});"
+    conversion = _conversion_snippet(transaction_id, gads_id, label)
 
     return _PAGE_TEMPLATE.replace("__GADS_ID__", gads_id).replace("__CONVERSION__", conversion)

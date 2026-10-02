@@ -102,6 +102,10 @@ class Settings(BaseSettings):
     gads_id: str = ""
     gads_activation_label: str = ""
 
+    # PostHog (server-side activation events)
+    posthog_key: Optional[str] = None
+    posthog_host: Optional[str] = None
+
     # Session tokens
     session_token_secret: str = "replace-me"
     session_token_issuer: str = "sensii-api"
