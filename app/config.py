@@ -98,6 +98,10 @@ class Settings(BaseSettings):
     login_base_url: str = ""
     login_success_url: str = ""
 
+    # Google Ads conversion tracking (served on the login-success page)
+    gads_id: str = ""
+    gads_activation_label: str = ""
+
     # Session tokens
     session_token_secret: str = "replace-me"
     session_token_issuer: str = "sensii-api"

@@ -84,7 +84,11 @@ async def build_authorize_url(session_id: str) -> str:
     return authorize_url
 
 
-async def complete_auth_flow(code: str, state: str) -> SessionData:
+async def complete_auth_flow(code: str, state: str) -> tuple[SessionData, bool]:
+    """Exchange the auth code, upsert the user, and complete the session.
+
+    Returns the session and whether this was the user's first login.
+    """
     session = await session_store.get_by_state(state)
     if session is None:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Unknown session state")
@@ -98,7 +102,7 @@ async def complete_auth_flow(code: str, state: str) -> SessionData:
         raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail="Auth0 token exchange failed")
 
     profile = await _fetch_user_profile(access_token)
-    user = await user_repository.upsert_user(profile)
+    user, is_first_login = await user_repository.upsert_user(profile)
 
     # Store Auth0 refresh token for later verification
     auth0_refresh_token = tokens.get("refresh_token")
@@ -109,7 +113,7 @@ async def complete_auth_flow(code: str, state: str) -> SessionData:
     session_token = create_session_token(user.id, session.session_id)
     refresh_token = create_refresh_token(user.id)
     await session_store.mark_complete(session.session_id, session_token, refresh_token, user.id)
-    return session
+    return session, is_first_login
 
 
 async def mark_session_failed_by_state(state: str, message: str) -> Optional[SessionData]:

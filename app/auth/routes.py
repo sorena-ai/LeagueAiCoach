@@ -1,10 +1,11 @@
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, HTTPException, Query, status
-from fastapi.responses import RedirectResponse, Response
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
+from fastapi.responses import HTMLResponse, RedirectResponse, Response
 
 from app.auth import service
 from app.auth.dependencies import get_session_token, get_current_user
+from app.auth.login_success import render_login_success_page
 from app.auth.schemas import SessionCreateResponse, SessionStatusResponse, RefreshTokenRequest, RefreshTokenResponse
 from app.auth.session_store import SessionStatus, session_store
 
@@ -50,8 +51,20 @@ async def auth_callback(
     if not code:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Missing authorization code")
 
-    session = await service.complete_auth_flow(code, state)
-    return RedirectResponse(service.get_success_page_url())
+    session, is_first_login = await service.complete_auth_flow(code, state)
+    response = RedirectResponse(service.get_success_page_url())
+    if is_first_login:
+        # One-time marker consumed by the login-success page to fire the
+        # "Activated" conversion exactly once per account's first login.
+        response.set_cookie(
+            key="sensii_activation",
+            value="1",
+            max_age=600,
+            httponly=True,
+            samesite="lax",
+            secure=True,
+        )
+    return response
 
 
 @router.post("/logout", status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
@@ -79,3 +92,12 @@ async def login_entry(session_id: str = Query(..., alias="session_id")) -> Redir
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Missing session identifier")
     authorize_url = await service.build_authorize_url(session_id)
     return RedirectResponse(authorize_url)
+
+
+@public_router.get("/login-success", response_class=HTMLResponse)
+async def login_success(request: Request) -> HTMLResponse:
+    fire_conversion = request.cookies.get("sensii_activation") == "1"
+    response = HTMLResponse(content=render_login_success_page(fire_conversion))
+    if fire_conversion:
+        response.delete_cookie("sensii_activation")
+    return response

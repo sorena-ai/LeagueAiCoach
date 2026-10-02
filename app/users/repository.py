@@ -4,7 +4,6 @@ from datetime import datetime, timezone
 from typing import Optional
 
 from motor.motor_asyncio import AsyncIOMotorCollection
-from pymongo import ReturnDocument
 
 from app.core.mongodb import get_database
 from app.users.models import User, UserProfile
@@ -15,28 +14,29 @@ def _get_collection() -> AsyncIOMotorCollection:
     return db["users"]
 
 
-async def upsert_user(profile: UserProfile) -> User:
+async def upsert_user(profile: UserProfile) -> tuple[User, bool]:
+    """Create or update a user. Returns the user and whether it was newly created."""
     now = datetime.now(timezone.utc)
     collection = _get_collection()
-    update = {
-        "$set": {
-            "email": profile.email,
-            "displayName": profile.name or profile.nickname,
-            "pictureUrl": profile.picture,
-            "updatedAt": now,
-            "lastLoginAt": now,
-        },
-        "$setOnInsert": {
-            "createdAt": now,
-        },
-    }
-    document = await collection.find_one_and_update(
+    result = await collection.update_one(
         {"_id": profile.sub},
-        update,
+        {
+            "$set": {
+                "email": profile.email,
+                "displayName": profile.name or profile.nickname,
+                "pictureUrl": profile.picture,
+                "updatedAt": now,
+                "lastLoginAt": now,
+            },
+            "$setOnInsert": {
+                "createdAt": now,
+            },
+        },
         upsert=True,
-        return_document=ReturnDocument.AFTER,
     )
-    return User(**document)
+    is_new = result.upserted_id is not None
+    document = await collection.find_one({"_id": profile.sub})
+    return User(**document), is_new
 
 
 async def get_user_by_id(user_id: str) -> Optional[User]:
