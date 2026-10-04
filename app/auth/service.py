@@ -84,10 +84,12 @@ async def build_authorize_url(session_id: str) -> str:
     return authorize_url
 
 
-async def complete_auth_flow(code: str, state: str) -> tuple[SessionData, bool]:
+async def complete_auth_flow(code: str, state: str) -> tuple[SessionData, bool, Optional[str]]:
     """Exchange the auth code, upsert the user, and complete the session.
 
-    Returns the session and whether the account was newly created (a sign-up).
+    Returns the session, whether the account was newly created (a sign-up), and the
+    email stored by that same write. Callers use the email for the sign-up conversion
+    instead of reading the user back.
     """
     session = await session_store.get_by_state(state)
     if session is None:
@@ -113,7 +115,7 @@ async def complete_auth_flow(code: str, state: str) -> tuple[SessionData, bool]:
     session_token = create_session_token(user.id, session.session_id)
     refresh_token = create_refresh_token(user.id)
     await session_store.mark_complete(session.session_id, session_token, refresh_token, user.id)
-    return session, is_first_login
+    return session, is_first_login, user.email
 
 
 async def mark_session_failed_by_state(state: str, message: str) -> Optional[SessionData]:

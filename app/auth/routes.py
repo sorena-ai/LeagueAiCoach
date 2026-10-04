@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 
-from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Query, Request, status
 from fastapi.responses import HTMLResponse, RedirectResponse, Response
 
 from app.auth import service
@@ -49,38 +49,15 @@ async def get_session_status(session_id: str) -> SessionStatusResponse:
 SIGNUP_COOKIE = "sensii_signup"
 
 
-async def _record_signup(request: Request, response: Response, user_id: str) -> None:
-    """Side effects of a brand-new account (sign-up), run on the Auth0 callback.
+def _arm_signup_cookie(response: Response, user_id: str, email: str | None) -> None:
+    """Attach the one-time Google Ads marker. Uses the email already loaded at signup.
 
-    Three independent best-effort steps. A failure in one must never skip another or
-    break the login redirect:
-      1. arm the Google Ads sign-up conversion for the login-success page
-      2. persist first-touch attribution on the user
-      3. send the PostHog `user_signed_up` event
+    No I/O: the cookie has to ride on the redirect, and nothing here waits on Mongo.
     """
-    if not user_id:
-        logger.warning("New account created with no user id; skipping sign-up tracking")
-        return
-
-    acquisition = None
     try:
-        acquisition = parse_attribution_cookie(request.cookies.get("sensii_attr"))
-    except Exception:
-        logger.exception("Could not parse attribution cookie")
-
-    # 1. Google Ads: one-time marker consumed by the login-success page. The transaction
-    # id is per account, so Google Ads dedupes it. The hashed email enables enhanced
-    # conversions (matching the sign-up when the cookie-based click id is missing).
-    try:
-        email_hash = None
-        try:
-            user = await user_repository.get_user_by_id(user_id)
-            email_hash = hash_email_for_gads(user.email if user else None)
-        except Exception:
-            logger.exception("Could not load email for enhanced conversions")
         response.set_cookie(
             key=SIGNUP_COOKIE,
-            value=build_signup_cookie_value(signup_transaction_id(user_id), email_hash),
+            value=build_signup_cookie_value(signup_transaction_id(user_id), hash_email_for_gads(email)),
             max_age=600,
             httponly=True,
             samesite="lax",
@@ -89,14 +66,27 @@ async def _record_signup(request: Request, response: Response, user_id: str) -> 
     except Exception:
         logger.exception("Could not set sign-up conversion cookie")
 
-    # 2. First-touch attribution on the user record.
+
+def _read_acquisition(request: Request) -> dict | None:
     try:
-        if acquisition:
-            await user_repository.set_acquisition(user_id, acquisition)
+        return parse_attribution_cookie(request.cookies.get("sensii_attr"))
+    except Exception:
+        logger.exception("Could not parse attribution cookie")
+        return None
+
+
+async def _store_signup_acquisition(user_id: str, acquisition: dict) -> None:
+    """Persist first-touch attribution after the redirect has already been sent."""
+    try:
+        await user_repository.set_acquisition(user_id, acquisition)
     except Exception:
         logger.exception("Could not store acquisition data")
 
-    # 3. PostHog (fire-and-forget).
+
+def _track_signup(background_tasks: BackgroundTasks, user_id: str, acquisition: dict | None) -> None:
+    """Schedule attribution storage and PostHog. Neither runs before the response is sent."""
+    if acquisition:
+        background_tasks.add_task(_store_signup_acquisition, user_id, acquisition)
     try:
         ph_id = acquisition.get("ph_id") if acquisition else None
         record_user_signed_up(user_id, build_signup_properties(acquisition), ph_id=ph_id)
@@ -107,6 +97,7 @@ async def _record_signup(request: Request, response: Response, user_id: str) -> 
 @router.get("/callback")
 async def auth_callback(
     request: Request,
+    background_tasks: BackgroundTasks,
     code: str | None = Query(default=None),
     state: str | None = Query(default=None),
     error: str | None = Query(default=None),
@@ -123,10 +114,17 @@ async def auth_callback(
     if not code:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Missing authorization code")
 
-    session, is_new_user = await service.complete_auth_flow(code, state)
+    session, is_new_user, email = await service.complete_auth_flow(code, state)
     response = RedirectResponse(service.get_success_page_url())
     if is_new_user:
-        await _record_signup(request, response, session.user_id or "")
+        user_id = session.user_id or ""
+        if not user_id:
+            logger.warning("New account created with no user id; skipping sign-up tracking")
+        else:
+            # Cookie first, from data already in memory. Attribution and PostHog run
+            # after this response is sent, so a slow Mongo write cannot hold the redirect.
+            _arm_signup_cookie(response, user_id, email)
+            _track_signup(background_tasks, user_id, _read_acquisition(request))
 
     return response
 
