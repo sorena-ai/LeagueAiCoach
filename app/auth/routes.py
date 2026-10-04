@@ -84,7 +84,10 @@ async def _store_signup_acquisition(user_id: str, acquisition: dict) -> None:
 
 
 def _track_signup(background_tasks: BackgroundTasks, user_id: str, acquisition: dict | None) -> None:
-    """Schedule attribution storage and PostHog. Neither runs before the response is sent."""
+    """Queue the attribution write for after the response.
+
+    PostHog is handed to a thread here and does not block.
+    """
     if acquisition:
         background_tasks.add_task(_store_signup_acquisition, user_id, acquisition)
     try:
@@ -159,7 +162,10 @@ async def login_entry(session_id: str = Query(..., alias="session_id")) -> Redir
 @public_router.get("/login-success", response_class=HTMLResponse)
 async def login_success(request: Request) -> HTMLResponse:
     transaction_id, email_hash = parse_signup_cookie(request.cookies.get(SIGNUP_COOKIE))
-    response = HTMLResponse(content=render_login_success_page(transaction_id, email_hash))
+    response = HTMLResponse(
+        content=render_login_success_page(transaction_id, email_hash),
+        headers={"Cache-Control": "no-store"},
+    )
     if transaction_id:
         response.delete_cookie(SIGNUP_COOKIE)
     return response

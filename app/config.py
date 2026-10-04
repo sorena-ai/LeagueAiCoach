@@ -99,7 +99,8 @@ class Settings(BaseSettings):
     login_success_url: str = ""
 
     # Google Ads conversion tracking (served on the login-success page).
-    # gads_activation_label is the label of the "Sign-up" conversion action (name kept so the env var is unchanged).
+    # gads_activation_label is the "Sign-up" conversion label.
+    # The field name stays so the env var GADS_ACTIVATION_LABEL is unchanged.
     gads_id: str = ""
     gads_activation_label: str = ""
 
