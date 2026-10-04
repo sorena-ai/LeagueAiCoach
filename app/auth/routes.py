@@ -6,16 +6,18 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from fastapi.responses import HTMLResponse, RedirectResponse, Response
 
 from app.auth import service
-from app.auth.attribution import build_activation_properties, parse_attribution_cookie
+from app.auth.attribution import build_signup_properties, parse_attribution_cookie
 from app.auth.dependencies import get_session_token, get_current_user
 from app.auth.login_success import (
-    activation_transaction_id,
+    build_signup_cookie_value,
+    hash_email_for_gads,
+    parse_signup_cookie,
     render_login_success_page,
-    valid_transaction_id,
+    signup_transaction_id,
 )
 from app.auth.schemas import SessionCreateResponse, SessionStatusResponse, RefreshTokenRequest, RefreshTokenResponse
 from app.auth.session_store import SessionStatus, session_store
-from app.analytics.posthog import record_user_activated
+from app.analytics.posthog import record_user_signed_up
 from app.users import repository as user_repository
 
 logger = logging.getLogger(__name__)
@@ -44,6 +46,64 @@ async def get_session_status(session_id: str) -> SessionStatusResponse:
     )
 
 
+SIGNUP_COOKIE = "sensii_signup"
+
+
+async def _record_signup(request: Request, response: Response, user_id: str) -> None:
+    """Side effects of a brand-new account (sign-up), run on the Auth0 callback.
+
+    Three independent best-effort steps. A failure in one must never skip another or
+    break the login redirect:
+      1. arm the Google Ads sign-up conversion for the login-success page
+      2. persist first-touch attribution on the user
+      3. send the PostHog `user_signed_up` event
+    """
+    if not user_id:
+        logger.warning("New account created with no user id; skipping sign-up tracking")
+        return
+
+    acquisition = None
+    try:
+        acquisition = parse_attribution_cookie(request.cookies.get("sensii_attr"))
+    except Exception:
+        logger.exception("Could not parse attribution cookie")
+
+    # 1. Google Ads: one-time marker consumed by the login-success page. The transaction
+    # id is per account, so Google Ads dedupes it. The hashed email enables enhanced
+    # conversions (matching the sign-up when the cookie-based click id is missing).
+    try:
+        email_hash = None
+        try:
+            user = await user_repository.get_user_by_id(user_id)
+            email_hash = hash_email_for_gads(user.email if user else None)
+        except Exception:
+            logger.exception("Could not load email for enhanced conversions")
+        response.set_cookie(
+            key=SIGNUP_COOKIE,
+            value=build_signup_cookie_value(signup_transaction_id(user_id), email_hash),
+            max_age=600,
+            httponly=True,
+            samesite="lax",
+            secure=True,
+        )
+    except Exception:
+        logger.exception("Could not set sign-up conversion cookie")
+
+    # 2. First-touch attribution on the user record.
+    try:
+        if acquisition:
+            await user_repository.set_acquisition(user_id, acquisition)
+    except Exception:
+        logger.exception("Could not store acquisition data")
+
+    # 3. PostHog (fire-and-forget).
+    try:
+        ph_id = acquisition.get("ph_id") if acquisition else None
+        record_user_signed_up(user_id, build_signup_properties(acquisition), ph_id=ph_id)
+    except Exception:
+        logger.exception("Could not send PostHog sign-up event")
+
+
 @router.get("/callback")
 async def auth_callback(
     request: Request,
@@ -63,42 +123,10 @@ async def auth_callback(
     if not code:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Missing authorization code")
 
-    session, is_first_login = await service.complete_auth_flow(code, state)
+    session, is_new_user = await service.complete_auth_flow(code, state)
     response = RedirectResponse(service.get_success_page_url())
-    if is_first_login:
-        user_id = session.user_id or ""
-        if not user_id:
-            logger.warning(
-                "First login completed with no user id; skipping activation side effects"
-            )
-            return response
-
-        # One-time marker consumed by the login-success page to fire the
-        # "Activated" conversion exactly once per account's first login.
-        # The value is a per-account transaction id so Google Ads dedupes it.
-        response.set_cookie(
-            key="sensii_activation",
-            value=activation_transaction_id(user_id),
-            max_age=600,
-            httponly=True,
-            samesite="lax",
-            secure=True,
-        )
-
-        # Attribution and PostHog are best-effort: never fail the login redirect.
-        try:
-            acquisition = parse_attribution_cookie(request.cookies.get("sensii_attr"))
-            if acquisition:
-                await user_repository.set_acquisition(user_id, acquisition)
-
-            ph_id = acquisition.get("ph_id") if acquisition else None
-            record_user_activated(
-                user_id,
-                build_activation_properties(acquisition),
-                ph_id=ph_id,
-            )
-        except Exception:
-            logger.exception("Attribution tracking failed during first login")
+    if is_new_user:
+        await _record_signup(request, response, session.user_id or "")
 
     return response
 
@@ -132,8 +160,8 @@ async def login_entry(session_id: str = Query(..., alias="session_id")) -> Redir
 
 @public_router.get("/login-success", response_class=HTMLResponse)
 async def login_success(request: Request) -> HTMLResponse:
-    transaction_id = valid_transaction_id(request.cookies.get("sensii_activation"))
-    response = HTMLResponse(content=render_login_success_page(transaction_id))
+    transaction_id, email_hash = parse_signup_cookie(request.cookies.get(SIGNUP_COOKIE))
+    response = HTMLResponse(content=render_login_success_page(transaction_id, email_hash))
     if transaction_id:
-        response.delete_cookie("sensii_activation")
+        response.delete_cookie(SIGNUP_COOKIE)
     return response

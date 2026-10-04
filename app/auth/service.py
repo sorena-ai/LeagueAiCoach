@@ -87,7 +87,7 @@ async def build_authorize_url(session_id: str) -> str:
 async def complete_auth_flow(code: str, state: str) -> tuple[SessionData, bool]:
     """Exchange the auth code, upsert the user, and complete the session.
 
-    Returns the session and whether this was the user's first login.
+    Returns the session and whether the account was newly created (a sign-up).
     """
     session = await session_store.get_by_state(state)
     if session is None:

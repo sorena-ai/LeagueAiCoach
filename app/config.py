@@ -98,11 +98,12 @@ class Settings(BaseSettings):
     login_base_url: str = ""
     login_success_url: str = ""
 
-    # Google Ads conversion tracking (served on the login-success page)
+    # Google Ads conversion tracking (served on the login-success page).
+    # gads_activation_label is the label of the "Sign-up" conversion action (name kept so the env var is unchanged).
     gads_id: str = ""
     gads_activation_label: str = ""
 
-    # PostHog (server-side activation events)
+    # PostHog (server-side sign-up events)
     posthog_key: Optional[str] = None
     posthog_host: Optional[str] = None
 

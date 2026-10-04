@@ -1,6 +1,6 @@
 from urllib.parse import quote
 
-from app.auth.attribution import build_activation_properties, parse_attribution_cookie
+from app.auth.attribution import build_signup_properties, parse_attribution_cookie
 
 
 def test_parse_valid_json():
@@ -47,7 +47,7 @@ def test_parse_values_capped_at_200():
     assert len(result["utm_source"]) == 200
 
 
-def test_build_activation_properties_excludes_ph_id_and_ts():
+def test_build_signup_properties_excludes_ph_id_and_ts():
     acquisition = {
         "utm_source": "google",
         "gclid": "test",
@@ -55,7 +55,7 @@ def test_build_activation_properties_excludes_ph_id_and_ts():
         "ph_id": "ph-123",
         "ts": "x",
     }
-    props = build_activation_properties(acquisition)
+    props = build_signup_properties(acquisition)
     assert props["utm_source"] == "google"
     assert props["gclid"] is True
     assert props["landing_path"] == "/"

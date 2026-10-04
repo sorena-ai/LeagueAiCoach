@@ -56,8 +56,8 @@ def parse_attribution_cookie(raw: Optional[str]) -> Optional[dict[str, str]]:
     return result or None
 
 
-def build_activation_properties(acquisition: Optional[dict[str, str]]) -> dict[str, Any]:
-    """Shape acquisition data for the PostHog `user_activated` event."""
+def build_signup_properties(acquisition: Optional[dict[str, str]]) -> dict[str, Any]:
+    """Shape acquisition data for the PostHog `user_signed_up` event."""
     if not acquisition:
         acquisition = {}
     properties: dict[str, Any] = {}
