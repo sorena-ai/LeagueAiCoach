@@ -52,3 +52,19 @@ def test_render_no_conversion_for_none_or_invalid(monkeypatch):
         html = render_login_success_page(value)
         assert "transaction_id" not in html
         assert "conversion" not in html
+
+
+def test_render_consent_defaults_match_landing(monkeypatch):
+    from app.config import settings
+
+    monkeypatch.setattr(settings, "gads_id", "AW-123", raising=False)
+    monkeypatch.setattr(settings, "gads_activation_label", "label", raising=False)
+
+    html = render_login_success_page("a" * 16)
+    regional = html.index("region: EEA")
+    global_default = html.index("gtag('consent', 'default', granted)")
+    update = html.index("gtag('consent', 'update', choice)")
+    config = html.index("gtag('config'")
+    assert regional < global_default < update < config
+    assert '"DE"' in html and '"GB"' in html and '"CH"' in html
+    assert "__EEA_REGIONS__" not in html

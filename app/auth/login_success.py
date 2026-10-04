@@ -1,10 +1,18 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 from typing import Optional
 
 from app.config import settings
+
+# Must match the EEA list in landings/sensii/app/layout.tsx.
+_EEA_REGIONS = [
+    "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
+    "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO",
+    "GB", "CH",
+]
 
 _TRANSACTION_ID_RE = re.compile(r"^[a-f0-9]{16}$")
 
@@ -49,13 +57,20 @@ _PAGE_TEMPLATE = """<!DOCTYPE html>
     (document.cookie || '').split('; ').forEach(function (c) {
       var i = c.indexOf('=');
       if (i !== -1 && c.slice(0, i) === 'sensii_consent') {
-        consent = decodeURIComponent(c.slice(i + 1));
+        try { consent = decodeURIComponent(c.slice(i + 1)); } catch (e) {}
       }
     });
-    var value = consent === 'granted' ? 'granted' : 'denied';
-    var fields = {ad_storage: value, ad_user_data: value, ad_personalization: value, analytics_storage: value};
-    if (value !== 'granted') { fields.wait_for_update = 500; }
-    gtag('consent', 'default', fields);
+    // Keep in sync with landings/sensii/app/layout.tsx: denied by default in
+    // the EEA/UK/CH, granted elsewhere, then the visitor's explicit choice wins.
+    var EEA = __EEA_REGIONS__;
+    var denied = {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied'};
+    var granted = {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'};
+    gtag('consent', 'default', Object.assign({region: EEA, wait_for_update: 500}, denied));
+    gtag('consent', 'default', granted);
+    if (consent === 'granted' || consent === 'denied') {
+      var choice = consent === 'granted' ? granted : denied;
+      gtag('consent', 'update', choice);
+    }
   })();
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=__GADS_ID__"></script>
@@ -90,4 +105,8 @@ def render_login_success_page(transaction_id: Optional[str]) -> str:
     safe_id = valid_transaction_id(transaction_id)
     conversion = _conversion_snippet(safe_id, gads_id, label)
 
-    return _PAGE_TEMPLATE.replace("__GADS_ID__", gads_id).replace("__CONVERSION__", conversion)
+    return (
+        _PAGE_TEMPLATE.replace("__EEA_REGIONS__", json.dumps(_EEA_REGIONS))
+        .replace("__GADS_ID__", gads_id)
+        .replace("__CONVERSION__", conversion)
+    )
