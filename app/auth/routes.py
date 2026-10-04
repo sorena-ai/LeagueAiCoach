@@ -91,13 +91,12 @@ async def auth_callback(
             if acquisition:
                 await user_repository.set_acquisition(user_id, acquisition)
 
-            if request.cookies.get("sensii_consent") == "granted":
-                ph_id = acquisition.get("ph_id") if acquisition else None
-                record_user_activated(
-                    user_id,
-                    build_activation_properties(acquisition),
-                    ph_id=ph_id,
-                )
+            ph_id = acquisition.get("ph_id") if acquisition else None
+            record_user_activated(
+                user_id,
+                build_activation_properties(acquisition),
+                ph_id=ph_id,
+            )
         except Exception:
             logger.exception("Attribution tracking failed during first login")
 

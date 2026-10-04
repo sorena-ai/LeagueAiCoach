@@ -64,7 +64,7 @@ async def test_first_login_sets_cookie_and_stores_acquisition(monkeypatch):
     captured = _patch_repo(monkeypatch)
     posthog_calls = _patch_posthog(monkeypatch)
 
-    req = _make_request(f"sensii_attr={quote(ATTR_RAW)}; sensii_consent=granted")
+    req = _make_request(f"sensii_attr={quote(ATTR_RAW)}")
     resp = await routes.auth_callback(req, code="c", state="s", error=None, error_description=None)
 
     assert "sensii_activation=" in (resp.headers.get("set-cookie") or "")
@@ -92,25 +92,12 @@ async def test_repository_exception_still_returns_redirect(monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_consent_not_granted_does_not_call_posthog(monkeypatch):
-    _patch_service(monkeypatch, "u-123", True)
-    captured = _patch_repo(monkeypatch)
-    posthog_calls = _patch_posthog(monkeypatch)
-
-    req = _make_request(f"sensii_attr={quote(ATTR_RAW)}")
-    await routes.auth_callback(req, code="c", state="s", error=None, error_description=None)
-
-    assert len(captured) == 1
-    assert posthog_calls == []
-
-
-@pytest.mark.asyncio
 async def test_empty_user_id_skips_everything(monkeypatch):
     _patch_service(monkeypatch, None, True)
     captured = _patch_repo(monkeypatch)
     posthog_calls = _patch_posthog(monkeypatch)
 
-    req = _make_request(f"sensii_attr={quote(ATTR_RAW)}; sensii_consent=granted")
+    req = _make_request(f"sensii_attr={quote(ATTR_RAW)}")
     resp = await routes.auth_callback(req, code="c", state="s", error=None, error_description=None)
 
     assert "sensii_activation=" not in (resp.headers.get("set-cookie") or "")
