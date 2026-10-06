@@ -16,13 +16,13 @@ continuity in a compact form.
 """
 
 import logging
-from typing import Callable, Dict, List, Optional
+from typing import Awaitable, Callable, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
 # A summarizer folds newly-evicted messages into the running summary and
-# returns the updated summary string.
-SummaryFn = Callable[[str, List[Dict[str, str]]], str]
+# returns the updated summary string. It is async because it calls the coach LLM.
+SummaryFn = Callable[[str, List[Dict[str, str]]], Awaitable[str]]
 
 _llm = None
 
@@ -36,7 +36,7 @@ def _get_summary_llm():
     return _llm
 
 
-def default_summarize(existing: str, new_messages: List[Dict[str, str]]) -> str:
+async def default_summarize(existing: str, new_messages: List[Dict[str, str]]) -> str:
     """Fold evicted messages into a compact running summary using the coach LLM."""
     transcript = "\n".join(f"{m['role']}: {m['content']}" for m in new_messages)
     prompt = (
@@ -50,7 +50,7 @@ def default_summarize(existing: str, new_messages: List[Dict[str, str]]) -> str:
 
     from app.lib.langchain import extract_message_text
 
-    response = _get_summary_llm().invoke(prompt)
+    response = await _get_summary_llm().ainvoke(prompt)
     return extract_message_text(response).strip()
 
 
@@ -82,19 +82,19 @@ class MessageHistory:
         self.summarize_batch_size = summarize_batch_size
         self._summarize = summarize
 
-    def add_user_message(self, content: str) -> None:
+    async def add_user_message(self, content: str) -> None:
         """Add a user message to history."""
-        self._append("user", content)
+        await self._append("user", content)
 
-    def add_assistant_message(self, content: str) -> None:
+    async def add_assistant_message(self, content: str) -> None:
         """Add an assistant message to history."""
-        self._append("assistant", content)
+        await self._append("assistant", content)
 
-    def _append(self, role: str, content: str) -> None:
+    async def _append(self, role: str, content: str) -> None:
         self._messages.append({"role": role, "content": content})
-        self._trim()
+        await self._trim()
 
-    def _trim(self) -> None:
+    async def _trim(self) -> None:
         """Evict oldest messages past the count/char budgets into pending."""
         while len(self._messages) > self.max_messages:
             self._pending.append(self._messages.pop(0))
@@ -106,9 +106,9 @@ class MessageHistory:
             self._pending.append(self._messages.pop(0))
 
         if len(self._pending) >= self.summarize_batch_size:
-            self._fold_pending()
+            await self._fold_pending()
 
-    def _fold_pending(self) -> None:
+    async def _fold_pending(self) -> None:
         """Fold accumulated evicted messages into the running summary."""
         if not self._pending:
             return
@@ -117,7 +117,7 @@ class MessageHistory:
         if self._summarize is None:
             return
         try:
-            self._summary = self._summarize(self._summary, batch)
+            self._summary = await self._summarize(self._summary, batch)
         except Exception:
             logger.exception(
                 "Failed to summarize %d evicted messages; dropping them", len(batch)

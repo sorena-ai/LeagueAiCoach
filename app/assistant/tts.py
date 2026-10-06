@@ -1,9 +1,8 @@
 
 from typing import AsyncGenerator
 
-from openai import AsyncOpenAI
-
 from app.config import settings
+from app.lib.openai import get_openai_client
 
 
 async def text_to_speech_stream(text: str) -> AsyncGenerator[bytes, None]:
@@ -19,10 +18,8 @@ async def text_to_speech_stream(text: str) -> AsyncGenerator[bytes, None]:
     Yields:
         Audio chunks as bytes
     """
-    client = AsyncOpenAI(api_key=settings.openai_api_key)
-
     # Use with_streaming_response for direct HTTP response streaming
-    async with client.audio.speech.with_streaming_response.create(
+    async with get_openai_client().audio.speech.with_streaming_response.create(
         model=settings.openai_tts_model,
         voice=settings.openai_tts_voice,
         input=text,

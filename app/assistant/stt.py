@@ -9,15 +9,13 @@ import io
 import logging
 from typing import Optional
 
-from openai import OpenAI
-
-from app.config import settings
+from app.lib.openai import get_openai_client
 from app.models.language import get_language_code
 
 logger = logging.getLogger(__name__)
 
 
-def transcribe_audio(
+async def transcribe_audio(
         audio_bytes: bytes,
         language: Optional[str] = "english",
 ) -> str:
@@ -49,16 +47,13 @@ def transcribe_audio(
     )
 
     try:
-        # Initialize OpenAI client
-        client = OpenAI(api_key=settings.openai_api_key)
-
         # Create file-like object from bytes (always WAV format)
         audio_file = io.BytesIO(audio_bytes)
         audio_file.name = "audio.wav"
 
-        # Call OpenAI API
+        # Call OpenAI API. response_format="text" returns the transcript string.
         logger.debug("Calling OpenAI Audio API...")
-        transcript = client.audio.transcriptions.create(
+        transcript = await get_openai_client().audio.transcriptions.create(
             file=audio_file,
             model="gpt-4o-transcribe",
             response_format="text",

@@ -10,6 +10,7 @@ from app.auth import routes as auth_routes
 from app.analytics.posthog import shutdown as shutdown_posthog
 from app.config import settings
 from app.core.mongodb import close_mongo_client, get_mongo_client
+from app.lib.openai import close_openai_client
 from app.routes import assistant
 from app.users import routes as user_routes
 from app.utils.datadog_logging import LOG_FORMAT, build_datadog_handler, shutdown_datadog_handler
@@ -107,6 +108,7 @@ async def lifespan(app: FastAPI):
     # Drain anything still queued before the process goes away.
     shutdown_datadog_handler(datadog_handler)
     shutdown_posthog()
+    await close_openai_client()
 
 
 # Create FastAPI application

@@ -59,7 +59,7 @@ def create_knowledge_agent() -> AgentExecutor:
     return agent
 
 
-def get_knowledge_advice(
+async def get_knowledge_advice(
     session,
     user_question: str,
     language: str = "english",
@@ -116,7 +116,7 @@ def get_knowledge_advice(
 
         # Invoke agent with messages format
         invoke_started = time.perf_counter()
-        agent_result = session.agent.invoke({"messages": messages})
+        agent_result = await session.agent.ainvoke({"messages": messages})
         invoke_ms = elapsed_ms(invoke_started)
 
         # Extract text response from agent result
@@ -135,8 +135,8 @@ def get_knowledge_advice(
         logger.info("Knowledge agent response: %s", advice[:200])
 
         # Add user question and assistant response to message history
-        session.message_history.add_user_message(user_question)
-        session.message_history.add_assistant_message(advice)
+        await session.message_history.add_user_message(user_question)
+        await session.message_history.add_assistant_message(advice)
 
         logger.info("Added messages to history. New count: %d messages",
                    session.message_history.get_message_count())

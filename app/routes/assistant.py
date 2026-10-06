@@ -195,7 +195,7 @@ async def in_game_coaching(
 
         # Transcribe audio using OpenAI Whisper
         stt_started = time.perf_counter()
-        user_question = transcribe_audio(
+        user_question = await transcribe_audio(
             audio_bytes=audio_bytes,
             language=language,
         )
@@ -222,7 +222,7 @@ async def in_game_coaching(
             )
 
             # Get knowledge advice with transcribed question
-            coach_response: str = get_knowledge_advice(
+            coach_response: str = await get_knowledge_advice(
                 session=session,
                 user_question=user_question,
                 language=language.value,
@@ -272,7 +272,7 @@ async def in_game_coaching(
             )
 
             # Get coaching advice using transcribed question
-            coach_response: str = get_coach_advice(
+            coach_response: str = await get_coach_advice(
                 session=session,
                 user_question=user_question,
                 game_stats_json=game_stats_json,

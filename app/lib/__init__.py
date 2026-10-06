@@ -1,1 +1,1 @@
-# Shared language model helpers live in this package.
+# Shared clients: LangChain chat models and the async OpenAI client.

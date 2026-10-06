@@ -70,7 +70,7 @@ def create_coach_agent(champion: str, role: str) -> AgentExecutor:
     return agent
 
 
-def get_coach_advice(
+async def get_coach_advice(
     session,
     user_question: str,
     game_stats_json: str,
@@ -149,7 +149,7 @@ def get_coach_advice(
 
         # Invoke agent with messages format
         invoke_started = time.perf_counter()
-        agent_result = session.agent.invoke({"messages": messages})
+        agent_result = await session.agent.ainvoke({"messages": messages})
         invoke_ms = elapsed_ms(invoke_started)
 
         # Extract text response from agent result
@@ -172,8 +172,10 @@ def get_coach_advice(
         logger.info("Agent response: %s", advice[:200])
 
         # Add user question and assistant response to message history
-        session.message_history.add_user_message(f"[{match_state.formatted_time}] {user_question}")
-        session.message_history.add_assistant_message(advice)
+        await session.message_history.add_user_message(
+            f"[{match_state.formatted_time}] {user_question}"
+        )
+        await session.message_history.add_assistant_message(advice)
 
         logger.info("Added messages to history. New count: %d messages",
                    session.message_history.get_message_count())

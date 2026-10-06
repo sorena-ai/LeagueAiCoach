@@ -40,7 +40,7 @@ async def test_coach_advice_smoke_streaming():
 
     # STT transcription
     stt_start = time.perf_counter()
-    user_question = transcribe_audio(
+    user_question = await transcribe_audio(
         audio_bytes=audio_bytes,
         language=language,
     )
@@ -55,7 +55,7 @@ async def test_coach_advice_smoke_streaming():
     # Agent has champion guide in system prompt
     # Game stats and language instruction are passed fresh with each request in the user message
     # Message history is managed automatically by get_coach_advice
-    response = get_coach_advice(
+    response = await get_coach_advice(
         session=session,
         user_question=user_question,
         game_stats_json=game_stats_json_text,
@@ -137,7 +137,7 @@ async def test_coach_advice_with_build_tool_call(audio_file, language):
 
     # STT transcription
     stt_start = time.perf_counter()
-    user_question = transcribe_audio(
+    user_question = await transcribe_audio(
         audio_bytes=audio_bytes,
         language=language,
     )
@@ -152,7 +152,7 @@ async def test_coach_advice_with_build_tool_call(audio_file, language):
     # Agent has champion guide in system prompt
     # Game stats and language instruction are passed fresh with each request in the user message
     # Message history is managed automatically by get_coach_advice
-    response = get_coach_advice(
+    response = await get_coach_advice(
         session=session,
         user_question=user_question,
         game_stats_json=game_stats_json_text,
@@ -243,7 +243,7 @@ async def test_knowledge_mode_out_of_game(audio_file, language):
     # STT transcription
     stt_start = time.perf_counter()
     language_code = get_language_code(language)
-    user_question = transcribe_audio(
+    user_question = await transcribe_audio(
         audio_bytes=audio_bytes,
         language=language,
     )
@@ -258,7 +258,7 @@ async def test_knowledge_mode_out_of_game(audio_file, language):
 
     print(f"Session created: {session}")
 
-    response = get_knowledge_advice(
+    response = await get_knowledge_advice(
         session=session,
         user_question=user_question,
         language=language,
