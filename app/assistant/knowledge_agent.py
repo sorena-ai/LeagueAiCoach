@@ -30,7 +30,7 @@ warnings.filterwarnings(
 )
 
 
-def create_knowledge_agent() -> AgentExecutor:
+def create_knowledge_agent(end_with_launch_reminder: bool = True) -> AgentExecutor:
     """
     Create a new knowledge agent for out-of-game assistance.
 
@@ -47,7 +47,7 @@ def create_knowledge_agent() -> AgentExecutor:
     llm = get_llm_chat()
 
     # Build knowledge mode system prompt (no gaming guidance section)
-    system_prompt = build_knowledge_prompt()
+    system_prompt = build_knowledge_prompt(end_with_launch_reminder)
 
     # Create agent with tools that fetch champion/role data on demand.
     agent = create_agent(

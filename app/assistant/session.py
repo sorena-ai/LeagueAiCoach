@@ -404,6 +404,8 @@ class SessionManager:
     def get_or_create_knowledge_session(
         self,
         user_id: str,
+        *,
+        end_with_launch_reminder: bool = True,
     ) -> KnowledgeSession:
         """
         Get existing knowledge session or create new one if not found.
@@ -413,6 +415,8 @@ class SessionManager:
 
         Args:
             user_id: User's unique identifier from auth system
+            end_with_launch_reminder: Ask the model to close by telling them to open League.
+                The Windows app leaves this on. The landing chat turns it off.
 
         Returns:
             Existing or newly created KnowledgeSession
@@ -430,7 +434,7 @@ class SessionManager:
         # Create new knowledge session
         session = self.create_knowledge_session(
             user_id=user_id,
-            agent=create_knowledge_agent(),
+            agent=create_knowledge_agent(end_with_launch_reminder),
         )
 
         return session
