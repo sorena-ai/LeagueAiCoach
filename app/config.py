@@ -97,6 +97,7 @@ class Settings(BaseSettings):
     auth0_callback_url: str = ""
     login_base_url: str = ""
     login_success_url: str = ""
+    landing_page_domain: str = ""
 
     # Google Ads conversion tracking (served on the login-success page).
     # gads_activation_label is the "Sign-up" conversion label.
@@ -168,6 +169,12 @@ class Settings(BaseSettings):
         origins: list[str] = []
         if self.login_base_url:
             origins.append(self.login_base_url.rstrip("/"))
+        domain = self.landing_page_domain.strip().rstrip("/")
+        if domain:
+            if domain.startswith("http://") or domain.startswith("https://"):
+                origins.append(domain)
+            else:
+                origins.append(f"https://{domain}")
         if self.login_success_url:
             base = self.login_success_url
             if "?" in base:

@@ -1,8 +1,6 @@
 """Temporary local server for the Sensii landing knowledge chat.
 
-This is a dev-only stand-in. It is not mounted in the production app.
-It imports the real knowledge agent and OpenAI speech, then exposes the two
-routes the landing hero calls:
+Dev-only. It loads local keys, then mounts the same landing router the API uses:
 
     POST /api/v1/assistant/ask     { question, session_id? } -> { reply, session_id }
     POST /api/v1/assistant/speak   { text } -> audio/wav
@@ -18,23 +16,15 @@ from __future__ import annotations
 
 import os
 import sys
-import time
-import uuid
-from collections import defaultdict, deque
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
-from pydantic import BaseModel, Field
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_ENV = ROOT.parent / "service-catalog-mcp" / ".env"
 HOST = "127.0.0.1"
 PORT = 8010
-MAX_QUESTION_CHARS = 500
-MAX_SPEAK_CHARS = 2000
-ASKS_PER_HOUR = 8
 
 PLACEHOLDER_PREFIXES = ("your_", "replace-me", "changeme")
 
@@ -125,9 +115,8 @@ def bootstrap_env() -> None:
 
 bootstrap_env()
 
-from app.assistant.knowledge_agent import get_knowledge_advice  # noqa: E402
 from app.assistant.session import session_manager  # noqa: E402
-from app.assistant.tts import text_to_speech_stream  # noqa: E402
+from app.routes.landing_ask import router as landing_ask_router  # noqa: E402
 
 app = FastAPI(title="Sensii landing ask (local)", docs_url=None, redoc_url=None)
 app.add_middleware(
@@ -139,43 +128,7 @@ app.add_middleware(
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
-
-_hits: dict[str, deque[float]] = defaultdict(deque)
-
-
-class AskBody(BaseModel):
-    question: str = Field(min_length=1, max_length=MAX_QUESTION_CHARS)
-    session_id: str | None = None
-
-
-class SpeakBody(BaseModel):
-    text: str = Field(min_length=1, max_length=MAX_SPEAK_CHARS)
-
-
-def _client_ip(request: Request) -> str:
-    return request.client.host if request.client else "unknown"
-
-
-def _limit(bucket: str, ip: str) -> None:
-    now = time.monotonic()
-    window = _hits[f"{bucket}:{ip}"]
-    while window and now - window[0] > 3600:
-        window.popleft()
-    if len(window) >= ASKS_PER_HOUR:
-        raise HTTPException(
-            status_code=429,
-            detail="You've used the free questions for this hour. Try again later.",
-        )
-    window.append(now)
-
-
-def _session_id(raw: str | None) -> str:
-    if raw:
-        try:
-            return str(uuid.UUID(raw))
-        except ValueError:
-            raise HTTPException(status_code=400, detail="session_id must be a UUID")
-    return str(uuid.uuid4())
+app.include_router(landing_ask_router)
 
 
 @app.on_event("startup")
@@ -186,41 +139,6 @@ async def _startup() -> None:
 @app.get("/health")
 async def health() -> dict[str, str]:
     return {"status": "ok", "service": "landing-ask-dev"}
-
-
-@app.post("/api/v1/assistant/ask")
-async def ask(body: AskBody, request: Request) -> dict[str, str]:
-    question = body.question.strip()
-    if not question:
-        raise HTTPException(status_code=400, detail="Question is empty")
-    if len(question) > MAX_QUESTION_CHARS:
-        raise HTTPException(status_code=400, detail="Question is too long")
-
-    _limit("ask", _client_ip(request))
-    session_id = _session_id(body.session_id)
-    session = session_manager.get_or_create_knowledge_session(user_id=session_id)
-    reply = await get_knowledge_advice(
-        session=session,
-        user_question=question,
-        language="english",
-    )
-    if not reply.strip():
-        raise HTTPException(status_code=502, detail="The coach returned an empty response")
-    return {"reply": reply, "session_id": session_id}
-
-
-@app.post("/api/v1/assistant/speak")
-async def speak(body: SpeakBody, request: Request) -> StreamingResponse:
-    text = body.text.strip()
-    if not text:
-        raise HTTPException(status_code=400, detail="Nothing to speak")
-    _limit("speak", _client_ip(request))
-
-    async def chunks():
-        async for chunk in text_to_speech_stream(text):
-            yield chunk
-
-    return StreamingResponse(chunks(), media_type="audio/wav")
 
 
 if __name__ == "__main__":

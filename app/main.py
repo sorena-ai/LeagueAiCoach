@@ -11,7 +11,7 @@ from app.analytics.posthog import shutdown as shutdown_posthog
 from app.config import settings
 from app.core.mongodb import close_mongo_client, get_mongo_client
 from app.lib.openai import close_openai_client
-from app.routes import assistant
+from app.routes import assistant, landing_ask
 from app.users import routes as user_routes
 from app.utils.datadog_logging import LOG_FORMAT, build_datadog_handler, shutdown_datadog_handler
 from app.utils.log_context import ContextFormatter, LogContextFilter
@@ -141,6 +141,7 @@ app.include_router(auth_routes.public_router)
 app.include_router(auth_routes.router)
 app.include_router(user_routes.router)
 app.include_router(assistant.router)
+app.include_router(landing_ask.router)
 
 
 @app.get("/")
