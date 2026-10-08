@@ -23,6 +23,7 @@ from app.utils.log_context import bind_log_context, elapsed_ms
 ensure_llm_config()
 
 logger = logging.getLogger(__name__)
+
 # Silence pydantic v1-style __fields__ deprecation warnings from upstream libs
 warnings.filterwarnings(
     "ignore",
@@ -30,7 +31,7 @@ warnings.filterwarnings(
 )
 
 
-def create_knowledge_agent(end_with_launch_reminder: bool = True) -> AgentExecutor:
+def create_knowledge_agent() -> AgentExecutor:
     """
     Create a new knowledge agent for out-of-game assistance.
 
@@ -47,7 +48,7 @@ def create_knowledge_agent(end_with_launch_reminder: bool = True) -> AgentExecut
     llm = get_llm_chat()
 
     # Build knowledge mode system prompt (no gaming guidance section)
-    system_prompt = build_knowledge_prompt(end_with_launch_reminder)
+    system_prompt = build_knowledge_prompt()
 
     # Create agent with tools that fetch champion/role data on demand.
     agent = create_agent(
