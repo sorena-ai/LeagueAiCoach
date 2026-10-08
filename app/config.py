@@ -29,6 +29,16 @@ class Settings(BaseSettings):
     openai_tts_voice: str = "onyx"
     openai_tts_speed: float = 1.2
 
+    # Realtime speech-to-speech (gpt-realtime-2.1). Separate from the legacy coach route.
+    openai_realtime_model: str = "gpt-realtime-2.1"
+    openai_realtime_voice: str = "marin"
+    realtime_reasoning_effort: Literal["minimal", "low", "medium", "high", "xhigh"] = "low"
+    realtime_transcription_model: str = "gpt-realtime-whisper"
+    realtime_knowledge_idle_minutes: int = 5
+    realtime_rotate_minutes: int = 55
+    realtime_knowledge_context_tokens: int = 4000
+    realtime_coach_context_tokens: int = 16000
+
     # Coach LLM Configuration
     coach_provider: Literal["gemini", "grok", "openai"] = "gemini"  # Which LLM provider to use for coaching
     coach_model: str = "gemini-flash-lite-latest"  # Model name for the selected provider
