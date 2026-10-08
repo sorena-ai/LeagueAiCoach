@@ -5,6 +5,7 @@ POST /api/v1/assistant/ask
 No login. Eight questions per IP per hour. Kept out of the coach routes.
 """
 
+import logging
 import time
 import uuid
 from collections import defaultdict, deque
@@ -14,6 +15,9 @@ from pydantic import BaseModel, Field
 
 from app.assistant.knowledge_agent import get_knowledge_advice
 from app.assistant.session import session_manager
+from app.utils.log_context import bind_log_context, get_log_context
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/v1", tags=["landing"])
 
@@ -43,6 +47,8 @@ def _limit(ip: str) -> None:
     while window and now - window[0] > 3600:
         window.popleft()
     if len(window) >= _PER_HOUR:
+        bind_log_context(outcome="rate_limited")
+        logger.info("Landing ask rate limited")
         raise HTTPException(
             status_code=429,
             detail="You've used the free questions for this hour. Try again later.",
@@ -56,17 +62,26 @@ def _session_id(raw: str | None) -> str:
     try:
         return str(uuid.UUID(raw))
     except ValueError:
+        bind_log_context(outcome="invalid")
         raise HTTPException(status_code=400, detail="session_id must be a UUID")
 
 
 @router.post("/assistant/ask")
 async def ask(body: AskBody, request: Request) -> dict[str, str]:
     question = body.question.strip()
+    bind_log_context(
+        source="landing",
+        mode="landing",
+        session_new=not body.session_id,
+        question_chars=len(question),
+    )
     if not question:
+        bind_log_context(outcome="empty")
         raise HTTPException(status_code=400, detail="Question is empty")
 
     _limit(_client_ip(request))
     session_id = _session_id(body.session_id)
+    bind_log_context(session_id=session_id)
     session = session_manager.get_or_create_knowledge_session(user_id=session_id)
     reply = await get_knowledge_advice(
         session=session,
@@ -74,5 +89,8 @@ async def ask(body: AskBody, request: Request) -> dict[str, str]:
         language="english",
     )
     if not reply.strip():
+        bind_log_context(outcome="empty")
         raise HTTPException(status_code=502, detail="The coach returned an empty response")
+    if get_log_context().get("outcome") == "quota":
+        logger.info("Landing ask hit the model quota")
     return {"reply": reply, "session_id": session_id}

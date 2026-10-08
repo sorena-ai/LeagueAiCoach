@@ -1,4 +1,5 @@
 import logging
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -81,6 +82,12 @@ async def lifespan(app: FastAPI):
     # Startup
     logger.info("Starting Sensei League of Legends Coach API...")
     logger.info(f"Environment: {settings.environment}")
+    tracing_on = os.getenv("LANGSMITH_TRACING", "").lower() == "true"
+    logger.info(
+        "LangSmith tracing %s (project=%s)",
+        "enabled" if tracing_on else "disabled",
+        os.getenv("LANGSMITH_PROJECT") or "default",
+    )
 
     # Verify champion data directories exist before serving requests
     try:

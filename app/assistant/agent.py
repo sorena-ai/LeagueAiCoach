@@ -20,6 +20,7 @@ from app.assistant import prompts
 from app.assistant.prompts import build_gaming_guidance_section, build_game_state_report
 from app.assistant.tools import CHAMPION_TOOLS
 from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat, usage_fields
+from app.lib.langsmith_tracing import langsmith_tracing, trace_config
 from app.utils.game_stats import GameStateProcessor
 from app.utils.log_context import bind_log_context, elapsed_ms
 
@@ -147,9 +148,22 @@ async def get_coach_advice(
         logger.info("Invoking agent with %d total messages (%d historical + 1 current)",
                    len(messages), len(messages) - 1)
 
-        # Invoke agent with messages format
+        # Invoke agent with messages format. Tags land on the LangSmith run
+        # so coach traces can be filtered apart from knowledge traces.
         invoke_started = time.perf_counter()
-        agent_result = await session.agent.ainvoke({"messages": messages})
+        with langsmith_tracing():
+            agent_result = await session.agent.ainvoke(
+                {"messages": messages},
+                config=trace_config(
+                    "coach",
+                    tags=[session.champion, session.role],
+                    champion=session.champion,
+                    role=session.role,
+                    match_id=session.match_id,
+                    provider=settings.coach_provider,
+                    model=settings.coach_model,
+                ),
+            )
         invoke_ms = elapsed_ms(invoke_started)
 
         # Extract text response from agent result
@@ -162,7 +176,12 @@ async def get_coach_advice(
         last_message = response_messages[-1]
         advice = extract_message_text(last_message)
 
-        bind_log_context(llm_ms=invoke_ms, advice_chars=len(advice), **usage_fields(last_message))
+        bind_log_context(
+            outcome="answered",
+            llm_ms=invoke_ms,
+            advice_chars=len(advice),
+            **usage_fields(last_message),
+        )
         logger.info(
             "Agent responded in %.0f ms (%d chars, %d new messages)",
             invoke_ms,
@@ -183,6 +202,7 @@ async def get_coach_advice(
         return advice
 
     except ResourceExhausted as e:
+        bind_log_context(outcome="quota")
         logger.error("Coach LLM API quota exceeded (%s): %s", settings.coach_provider, str(e))
         return "I'm sorry, but I've reached my usage limit. Please try again in a few minutes."
 

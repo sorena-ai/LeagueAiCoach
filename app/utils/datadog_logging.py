@@ -15,7 +15,7 @@ from datadog_api_client.v2.model.http_log import HTTPLog
 from datadog_api_client.v2.model.http_log_item import HTTPLogItem
 
 from app.config import Settings
-from app.utils.log_context import USER_KEYS
+from app.utils.log_context import DATADOG_SOURCES, USER_KEYS
 
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
@@ -96,11 +96,16 @@ class DatadogLogHandler(logging.Handler):
 
     def emit(self, record: logging.LogRecord) -> None:
         try:
+            context = getattr(record, "log_context", None) or {}
+            source = _datadog_source(context.get("source") if isinstance(context, dict) else None)
+            tags = f"{self._ddtags},logger:{record.name}"
+            if source != "python":
+                tags = f"{tags},source:{source}"
             payload = HTTPLog(
                 [
                     HTTPLogItem(
-                        ddsource="python",
-                        ddtags=f"{self._ddtags},logger:{record.name}",
+                        ddsource=source,
+                        ddtags=tags,
                         hostname=self._hostname,
                         message=self._build_message(record),
                         service=self._service,
@@ -141,6 +146,13 @@ class ContextQueueHandler(QueueHandler):
             prepared.error_stack = stack
             prepared.error_kind = kind
         return prepared
+
+
+def _datadog_source(value: Any) -> str:
+    """Map a request's source onto the Datadog source facet. Other logs stay python."""
+    if isinstance(value, str) and value in DATADOG_SOURCES:
+        return value
+    return "python"
 
 
 def build_datadog_handler(settings: Settings) -> Optional[logging.Handler]:

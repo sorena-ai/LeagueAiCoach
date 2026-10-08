@@ -49,8 +49,13 @@ async def default_summarize(existing: str, new_messages: List[Dict[str, str]]) -
     )
 
     from app.lib.langchain import extract_message_text
+    from app.lib.langsmith_tracing import langsmith_tracing, trace_config
 
-    response = await _get_summary_llm().ainvoke(prompt)
+    with langsmith_tracing():
+        response = await _get_summary_llm().ainvoke(
+            prompt,
+            config=trace_config("summary"),
+        )
     return extract_message_text(response).strip()
 
 

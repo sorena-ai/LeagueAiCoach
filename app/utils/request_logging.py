@@ -106,8 +106,13 @@ def _client_ip(scope) -> str | None:
     """Prefer the forwarded client over the proxy's own address."""
     for name, value in scope.get("headers", ()):
         if name == b"x-forwarded-for":
-            forwarded = value.decode("latin-1", "ignore").split(",")[0].strip()
-            if forwarded:
-                return forwarded
+            # Traefik appends the real peer last. The first hop is client-supplied.
+            parts = [
+                part.strip()
+                for part in value.decode("latin-1", "ignore").split(",")
+                if part.strip()
+            ]
+            if parts:
+                return parts[-1]
     client = scope.get("client")
     return client[0] if client else None

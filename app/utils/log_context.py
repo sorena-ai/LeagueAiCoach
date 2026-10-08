@@ -26,8 +26,13 @@ _log_context: contextvars.ContextVar[Optional[Dict[str, Any]]] = contextvars.Con
 
 # Keys rendered onto the console line, in this order. Everything bound is still
 # shipped to Datadog in full; this list only keeps stdout readable.
+# Datadog log source. Anything else stays source=python.
+DATADOG_SOURCES = frozenset({"coach", "knowledge", "landing"})
+
 CONSOLE_KEYS = (
     "request_id",
+    "source",
+    "outcome",
     "user_email",
     "mode",
     "champion",

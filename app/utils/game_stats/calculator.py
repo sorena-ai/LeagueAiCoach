@@ -187,6 +187,10 @@ class GameCalculator:
                 return f"{champion_name} ({player.team_id})"
             return champion_name
 
+        # Unresolved names that still look like Riot IDs must not reach the
+        # report. Champion names never contain a tag.
+        if "#" in player_name:
+            return "Unknown"
         return player_name if player_name else "Minion/Monster"
 
     def _process_event_history(self):

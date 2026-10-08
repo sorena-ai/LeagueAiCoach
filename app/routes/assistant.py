@@ -72,6 +72,7 @@ async def _stream_coach_audio(text: str, request_started: float) -> AsyncGenerat
             audio_bytes += len(chunk)
             yield chunk
     except Exception:
+        bind_log_context(outcome="tts_failed", audio_out_bytes=audio_bytes)
         logger.exception(
             "TTS streaming failed after %d bytes (%.0f ms into synthesis)",
             audio_bytes,
@@ -172,6 +173,7 @@ async def in_game_coaching(
     request_started = time.perf_counter()
     in_game = bool(game_stats and game_stats.strip())
     bind_log_context(
+        source="coach" if in_game else "knowledge",
         mode="in_game" if in_game else "knowledge",
         language=language.value,
         upload_filename=audio.filename,
@@ -292,6 +294,7 @@ async def in_game_coaching(
         if not coach_response.strip():
             # TTS rejects empty input, and the resulting 400 is opaque. Fail
             # here instead, where the cause is obvious.
+            bind_log_context(outcome="empty")
             logger.error("Coach produced an empty response; refusing to synthesize")
             raise HTTPException(
                 status_code=502,
@@ -315,6 +318,7 @@ async def in_game_coaching(
     except Exception as e:
         # exc_info carries the traceback to both stdout and Datadog error
         # tracking; the request context says who it happened to and how far in.
+        bind_log_context(outcome="error")
         logger.exception(
             "Coach advice failed after %.0f ms: %s", elapsed_ms(request_started), e
         )

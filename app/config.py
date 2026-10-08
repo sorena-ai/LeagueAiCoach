@@ -1,9 +1,15 @@
 from pathlib import Path
 from typing import Literal, Optional
 
+from dotenv import load_dotenv
 from pydantic import AliasChoices, Field
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+# LangSmith reads LANGSMITH_* from the process environment at each model call.
+# pydantic-settings loads .env into Settings only, so export it here too.
+# Existing variables win (override=False), which keeps the Docker env_file values.
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 
 class Settings(BaseSettings):

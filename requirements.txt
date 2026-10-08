@@ -8,6 +8,7 @@ langchain-openai>=1.0.0
 langchain-google-genai>=3.2.0
 langchain-xai>=1.0.0
 langgraph>=1.0.0
+langsmith>=0.3.0
 google-api-core>=2.0.0
 pydantic>=2.10.0
 pydantic-settings>=2.7.0

@@ -18,6 +18,7 @@ from app.config import settings
 from app.assistant.knowledge_prompts import build_knowledge_prompt
 from app.assistant.tools import CHAMPION_TOOLS
 from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat, usage_fields
+from app.lib.langsmith_tracing import langsmith_tracing, trace_config
 from app.utils.log_context import bind_log_context, elapsed_ms
 
 ensure_llm_config()
@@ -115,9 +116,17 @@ async def get_knowledge_advice(
         logger.info("Invoking knowledge agent with %d total messages (%d historical + 1 current)",
                    len(messages), len(messages) - 1)
 
-        # Invoke agent with messages format
+        # Invoke agent with messages format.
         invoke_started = time.perf_counter()
-        agent_result = await session.agent.ainvoke({"messages": messages})
+        with langsmith_tracing():
+            agent_result = await session.agent.ainvoke(
+                {"messages": messages},
+                config=trace_config(
+                    "knowledge",
+                    provider=settings.coach_provider,
+                    model=settings.coach_model,
+                ),
+            )
         invoke_ms = elapsed_ms(invoke_started)
 
         # Extract text response from agent result
@@ -129,7 +138,12 @@ async def get_knowledge_advice(
         last_message = response_messages[-1]
         advice = extract_message_text(last_message)
 
-        bind_log_context(llm_ms=invoke_ms, advice_chars=len(advice), **usage_fields(last_message))
+        bind_log_context(
+            outcome="answered",
+            llm_ms=invoke_ms,
+            advice_chars=len(advice),
+            **usage_fields(last_message),
+        )
         logger.info(
             "Knowledge agent responded in %.0f ms (%d chars)", invoke_ms, len(advice)
         )
@@ -145,6 +159,7 @@ async def get_knowledge_advice(
         return advice
 
     except ResourceExhausted as e:
+        bind_log_context(outcome="quota")
         logger.error("Knowledge LLM API quota exceeded (%s): %s", settings.coach_provider, str(e))
         return "I'm sorry, but I've reached my usage limit. Please try again in a few minutes."
 

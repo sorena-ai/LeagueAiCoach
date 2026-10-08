@@ -64,12 +64,11 @@ class ReportGenerator:
                 f"   Spells: {' '.join(p.spells)} | Rune: {p.keystone}\n"
             )
 
-        # Active Player Block
+        # Active Player Block. The Riot ID stays out of the report; the
+        # champion name below is enough for the coach.
         ap = s.active_player
         ap_text = "N/A"
-        ap_name = "Unknown"
         if ap:
-            ap_name = ap.summoner_name
             ap_status = "ALIVE"
             if ap.is_dead:
                 ap_status = f"DEAD (Respawn {int(ap.respawn_timer)}s)"
@@ -102,7 +101,7 @@ class ReportGenerator:
         return f"""=== GAME STATE REPORT ===
 SCORE: {s.allies.team_id} {s.allies.total_kills} - {s.enemies.total_kills} {s.enemies.team_id}
 
-=== ACTIVE PLAYER STATUS ({ap_name}) ===
+=== ACTIVE PLAYER STATUS ===
 {ap_text}
 
 === OBJECTIVE CONTROL ===
