@@ -3,7 +3,6 @@
 Dev-only. It loads local keys, then mounts the same landing router the API uses:
 
     POST /api/v1/assistant/ask     { question, session_id? } -> { reply, session_id }
-    POST /api/v1/assistant/speak   { text } -> audio/wav
 
 Run from the LeagueAiCoach repo:
 
