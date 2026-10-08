@@ -26,6 +26,20 @@ logger = logging.getLogger(__name__)
 QUIET_PATHS = frozenset({"/api/v1/health", "/api/v1/ready"})
 
 
+class SuppressQuietAccessLogFilter(logging.Filter):
+    """
+    Drop uvicorn's own access line for the probed paths.
+
+    uvicorn writes to ``uvicorn.access`` with handlers of its own, so the
+    middleware's ``quiet`` check never reaches it. Attached to that logger, this
+    drops the record before any handler - console or Datadog - sees it.
+    """
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        message = record.getMessage()
+        return not any(path in message for path in QUIET_PATHS)
+
+
 class RequestContextMiddleware:
     """Bind per-request logging context and log request completion."""
 

@@ -16,7 +16,7 @@ from app.routes import assistant, landing
 from app.users import routes as user_routes
 from app.utils.datadog_logging import LOG_FORMAT, build_datadog_handler, shutdown_datadog_handler
 from app.utils.log_context import ContextFormatter, LogContextFilter
-from app.utils.request_logging import RequestContextMiddleware
+from app.utils.request_logging import RequestContextMiddleware, SuppressQuietAccessLogFilter
 
 # Configure logging
 logging.basicConfig(
@@ -68,6 +68,10 @@ if settings.datadog_logs_enabled:
             )
     except Exception:
         root_logger.exception("Failed to initialize Datadog logging handler")
+
+# uvicorn's access logger uses its own handlers, so the middleware's quiet-path
+# check does not apply to it. Filter the probe lines here, before any handler.
+logging.getLogger("uvicorn.access").addFilter(SuppressQuietAccessLogFilter())
 
 logging.getLogger("pymongo").setLevel(logging.INFO)
 logging.getLogger("motor").setLevel(logging.INFO)
