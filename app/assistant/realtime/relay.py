@@ -97,6 +97,7 @@ class LiveRelay:
         self._usage: Any = None
         self._tool_names: list[str] = []
         self._game_report: Optional[str] = None
+        self._session_key: Optional[tuple] = None
         self._closed = False
 
     async def run(self) -> None:
@@ -271,10 +272,7 @@ class LiveRelay:
             {
                 "type": "response.create",
                 "response": {
-                    "instructions": turn_instructions(
-                        language=self.language,
-                        game_report=self._game_report,
-                    ),
+                    "instructions": self._reply_instructions(),
                 },
             }
         )
@@ -296,6 +294,22 @@ class LiveRelay:
         self._turn_open = False
         self._commit_at = None
 
+    def _reply_instructions(self) -> str:
+        text = turn_instructions(
+            language=self.language,
+            game_report=self._game_report,
+            in_game=self._mode == "in_game",
+            champion=self._champion,
+            role=self._role,
+        )
+        logger.info(
+            "Realtime reply prompt: %s characters (mode=%s champion=%s)",
+            len(text),
+            self._mode,
+            self._champion,
+        )
+        return text
+
     async def _ensure_openai(self, in_game: bool) -> None:
         rotate_s = settings.realtime_rotate_minutes * 60
         expired = (
@@ -304,8 +318,10 @@ class LiveRelay:
             and self._opened_at
             and (time.monotonic() - self._opened_at) >= rotate_s
         )
-        if self._conn is not None and not expired:
+        session_key = (in_game, self._champion, self._role)
+        if self._conn is not None and not expired and session_key == self._session_key:
             return
+        self._session_key = session_key
         await self._close_openai()
         instructions = session_instructions(
             in_game=in_game,
@@ -520,10 +536,7 @@ class LiveRelay:
                 {
                     "type": "response.create",
                     "response": {
-                        "instructions": turn_instructions(
-                            language=self.language,
-                            game_report=self._game_report,
-                        ),
+                        "instructions": self._reply_instructions(),
                     },
                 }
             )
