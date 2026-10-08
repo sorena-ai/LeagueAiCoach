@@ -115,7 +115,7 @@ def bootstrap_env() -> None:
 bootstrap_env()
 
 from app.assistant.session import session_manager  # noqa: E402
-from app.routes.landing_ask import router as landing_ask_router  # noqa: E402
+from app.routes.landing import router as landing_router  # noqa: E402
 
 app = FastAPI(title="Sensii landing ask (local)", docs_url=None, redoc_url=None)
 app.add_middleware(
@@ -127,7 +127,7 @@ app.add_middleware(
     allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
-app.include_router(landing_ask_router)
+app.include_router(landing_router)
 
 
 @app.on_event("startup")
