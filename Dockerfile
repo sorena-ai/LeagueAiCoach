@@ -4,7 +4,7 @@
 # ============================================================================
 # Stage 1: Builder - Install dependencies
 # ============================================================================
-FROM python:3.11-slim AS builder
+FROM python:3.14-slim AS builder
 
 # Set working directory
 WORKDIR /app
@@ -31,7 +31,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # ============================================================================
 # Stage 2: Runtime - Create minimal production image (also capable of running tests)
 # ============================================================================
-FROM python:3.11-slim AS runtime
+FROM python:3.14-slim AS runtime
 
 # Set working directory
 WORKDIR /app
