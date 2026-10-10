@@ -15,7 +15,7 @@ FastAPI service that ingests an in-game screenshot plus a voice question, runs t
 **Visit us at [sensii.gg](https://sensii.gg)**
 
 ## Project layout
-- `app/routes`: FastAPI endpoints (`assistant.py`)
+- `app/routes`: FastAPI endpoints (`health.py`, `catalog.py`, `coach.py`, `knowledge.py`, `live.py`)
 - `app/assistant`: Coach logic, prompts, draft agent, TTS
 - `app/lib`: Shared LangChain clients (`langchain.py`)
 - `app/config.py`: Settings loaded from `.env`

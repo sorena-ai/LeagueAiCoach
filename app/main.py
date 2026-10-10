@@ -7,12 +7,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from app.assistant.data import ensure_all_champion_data_exists
+from app.assistant.session import session_manager
 from app.auth import routes as auth_routes
 from app.analytics.posthog import shutdown as shutdown_posthog
 from app.config import settings
 from app.core.mongodb import close_mongo_client, get_mongo_client
 from app.lib.openai import close_openai_client
-from app.routes import assistant, coach, health, knowledge, landing, live
+from app.routes import catalog, coach, health, knowledge, landing, live
 from app.users import routes as user_routes
 from app.utils.datadog_logging import LOG_FORMAT, build_datadog_handler, shutdown_datadog_handler
 from app.utils.log_context import ContextFormatter, LogContextFilter
@@ -109,12 +110,14 @@ async def lifespan(app: FastAPI):
         logger.exception("Unable to connect to MongoDB")
         raise
 
+    session_manager.start_cleanup_task()
     logger.info("Application startup complete")
 
     yield
 
     # Shutdown
     logger.info("Shutting down Sensei League of Legends Coach API...")
+    session_manager.stop_cleanup_task()
     close_mongo_client()
     # Drain anything still queued before the process goes away.
     shutdown_datadog_handler(datadog_handler)
@@ -151,8 +154,8 @@ app.add_middleware(RequestContextMiddleware)
 app.include_router(auth_routes.public_router)
 app.include_router(auth_routes.router)
 app.include_router(user_routes.router)
-app.include_router(assistant.router)
 app.include_router(health.router)
+app.include_router(catalog.router)
 app.include_router(coach.router)
 app.include_router(knowledge.router)
 app.include_router(live.router)
