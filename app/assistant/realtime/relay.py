@@ -1,6 +1,9 @@
 """
 One Windows client connection relayed to one OpenAI Realtime session.
 
+The client socket stays up for the match. Each question is a turn on that
+socket, not a new handshake. The OpenAI session is opened once per match.
+
 The client speaks a small JSON/binary protocol. OpenAI events stay on this
 server. Transcripts are written to the process log (Datadog when enabled).
 """
@@ -92,7 +95,6 @@ class LiveRelay:
         self._champion: Optional[str] = None
         self._role: Optional[str] = None
         self._riot_id: Optional[str] = None
-        self._opened_at: float = 0.0
         self._turn_open = False
         self._bytes_in = 0
         self._commit_at: Optional[float] = None
@@ -103,7 +105,7 @@ class LiveRelay:
         self._usage: Any = None
         self._tool_names: list[str] = []
         self._game_report: Optional[str] = None
-        self._session_key: Optional[tuple] = None
+        self._session_match: Optional[str] = None
         self._context_item_id: Optional[str] = None
         self._closed = False
 
@@ -317,21 +319,14 @@ class LiveRelay:
         )
 
     async def _ensure_openai(self) -> None:
-        rotate_s = settings.realtime_rotate_minutes * 60
-        expired = (
-            self._conn is not None
-            and self._opened_at
-            and (time.monotonic() - self._opened_at) >= rotate_s
-        )
-        session_key = (self._champion, self._role)
-        if self._conn is not None and not expired and session_key == self._session_key:
+        """Reuse the OpenAI session for this match. Open a new one when the match changes or the session has dropped."""
+        if self._conn is not None and self._session_match == self._match_id:
             return
-        self._session_key = session_key
+        self._session_match = self._match_id
         await self._close_openai()
         instructions = session_instructions(champion=self._champion, role=self._role)
         self._openai_cm = _connect_realtime(settings.openai_realtime_model)
         self._conn = await self._openai_cm.__aenter__()
-        self._opened_at = time.monotonic()
         await self._openai_send(
             {
                 "type": "session.update",
@@ -456,6 +451,7 @@ class LiveRelay:
             return
         except Exception:
             logger.exception("OpenAI realtime reader stopped")
+            self._conn = None
             await self._send_json({"type": "error", "code": "openai_disconnected"})
 
     async def _on_openai(self, event: dict) -> None:

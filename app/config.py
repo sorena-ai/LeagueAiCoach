@@ -34,7 +34,6 @@ class Settings(BaseSettings):
     openai_realtime_voice: str = "marin"
     realtime_reasoning_effort: Literal["minimal", "low", "medium", "high", "xhigh"] = "low"
     realtime_transcription_model: str = "gpt-realtime-whisper"
-    realtime_rotate_minutes: int = 55
     realtime_coach_context_tokens: int = 16000
 
     # Coach LLM Configuration
