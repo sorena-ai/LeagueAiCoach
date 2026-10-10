@@ -1,8 +1,9 @@
 """
-WebSocket route for gpt-realtime-2.1.
+WebSocket route for the in-game realtime coach.
 
-POST /assistant/coach is unchanged. Clients that speak this protocol use
-/api/v1/assistant/live.
+Clients use /api/v1/assistant/live only while a match is running.
+turn.start must include a valid game_stats object. Out-of-game questions
+use POST /api/v1/assistant/knowledge.
 """
 
 from __future__ import annotations

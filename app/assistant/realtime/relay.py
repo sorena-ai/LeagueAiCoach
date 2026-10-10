@@ -12,16 +12,16 @@ import base64
 import json
 import logging
 import time
+import uuid
 from typing import Any, Optional
 
 from fastapi import WebSocket
-from pydantic import ValidationError
 from starlette.websockets import WebSocketDisconnect
 
 from app.assistant.messages import MessageHistory
-from app.assistant.prompts import build_game_state_report
+from app.assistant.coach.prompts import build_game_state_report
 from app.assistant.realtime.game import match_identity
-from app.assistant.realtime.instructions import session_instructions, turn_instructions
+from app.assistant.realtime.instructions import session_instructions, turn_context
 from app.assistant.realtime.tools import realtime_tool_definitions, run_tool
 from app.config import settings
 from app.lib.openai import get_openai_client
@@ -32,6 +32,14 @@ from app.utils.game_stats import GameStateProcessor
 from app.utils.log_context import bind_log_context, elapsed_ms
 
 logger = logging.getLogger(__name__)
+
+
+class MatchRejected(Exception):
+    """A realtime turn arrived without a usable live match."""
+
+    def __init__(self, code: str) -> None:
+        self.code = code
+        super().__init__(code)
 
 _active: dict[str, "LiveRelay"] = {}
 _active_lock = asyncio.Lock()
@@ -78,7 +86,6 @@ class LiveRelay:
         self._openai_cm: Any = None
         self._conn: Any = None
         self._reader: Optional[asyncio.Task] = None
-        self._idle: Optional[asyncio.Task] = None
         self._send_lock = asyncio.Lock()
         self._mode: Optional[str] = None
         self._match_id: Optional[str] = None
@@ -86,7 +93,6 @@ class LiveRelay:
         self._role: Optional[str] = None
         self._riot_id: Optional[str] = None
         self._opened_at: float = 0.0
-        self._last_activity = time.monotonic()
         self._turn_open = False
         self._bytes_in = 0
         self._commit_at: Optional[float] = None
@@ -98,6 +104,7 @@ class LiveRelay:
         self._tool_names: list[str] = []
         self._game_report: Optional[str] = None
         self._session_key: Optional[tuple] = None
+        self._context_item_id: Optional[str] = None
         self._closed = False
 
     async def run(self) -> None:
@@ -115,7 +122,6 @@ class LiveRelay:
             user_name=self.user.display_name,
             language=self.language,
         )
-        self._idle = asyncio.create_task(self._watch_idle())
         try:
             await self._send_json({"type": "ready"})
             while not self._closed:
@@ -123,7 +129,6 @@ class LiveRelay:
                 kind = message.get("type")
                 if kind == "websocket.disconnect":
                     break
-                self._last_activity = time.monotonic()
                 if message.get("bytes"):
                     await self._on_audio(message["bytes"])
                 elif message.get("text"):
@@ -145,22 +150,7 @@ class LiveRelay:
 
     async def _shutdown(self) -> None:
         self._closed = True
-        if self._idle is not None:
-            self._idle.cancel()
         await self._close_openai()
-
-    async def _watch_idle(self) -> None:
-        idle_s = settings.realtime_knowledge_idle_minutes * 60
-        try:
-            while not self._closed:
-                await asyncio.sleep(30)
-                if self._turn_open or self._conn is None or self._mode != "knowledge":
-                    continue
-                if time.monotonic() - self._last_activity >= idle_s:
-                    logger.info("Closing idle knowledge realtime session")
-                    await self._close_openai()
-        except asyncio.CancelledError:
-            return
 
     async def _on_text(self, raw: str) -> None:
         try:
@@ -191,42 +181,24 @@ class LiveRelay:
         if self._turn_open:
             await self._cancel_turn(event.get("played_ms"))
 
-        game_stats = event.get("game_stats")
-        identity: Optional[dict[str, str]] = None
-        report: Optional[str] = None
-        if isinstance(game_stats, dict) and game_stats:
-            try:
-                validated = GameStats(data=game_stats)
-                stats_json = validated.to_json_string()
-                identity = match_identity(game_stats)
-                state = GameStateProcessor.process_to_state(stats_json)
-                report = build_game_state_report(state)
-            except (ValidationError, ValueError, json.JSONDecodeError) as exc:
-                logger.warning("Ignoring game stats for this turn: %s", exc)
-                identity = None
-                report = None
-
-        in_game = identity is not None
-        mode = "in_game" if in_game else "knowledge"
-        match_id = identity["match_id"] if identity else None
-        if mode != self._mode or match_id != self._match_id:
+        try:
+            identity, report = self._require_match(event.get("game_stats"))
+        except MatchRejected as exc:
+            await self._send_json({"type": "error", "code": exc.code})
+            return
+        match_id = identity["match_id"]
+        if self._mode != "in_game" or match_id != self._match_id:
             self.history.clear()
-        self._mode = mode
+        self._mode = "in_game"
         self._game_report = report
-        if identity:
-            self._match_id = identity["match_id"]
-            self._champion = identity["champion"]
-            self._role = identity["role"]
-            self._riot_id = identity["riot_id"]
-        else:
-            self._match_id = None
-            self._champion = None
-            self._role = None
-            self._riot_id = None
+        self._match_id = match_id
+        self._champion = identity["champion"]
+        self._role = identity["role"]
+        self._riot_id = identity["riot_id"]
 
         bind_log_context(
             source="realtime",
-            mode="in_game" if in_game else "knowledge",
+            mode="in_game",
             champion=self._champion,
             role=self._role,
             match_id=self._match_id,
@@ -234,7 +206,7 @@ class LiveRelay:
             language=self.language,
         )
 
-        await self._ensure_openai(in_game)
+        await self._ensure_openai()
         await self._openai_send({"type": "input_audio_buffer.clear"})
 
         self._turn_open = True
@@ -246,6 +218,25 @@ class LiveRelay:
         self._usage = None
         self._tool_names = []
         self._assistant_item_id = None
+
+    def _require_match(self, game_stats: Any) -> tuple[dict[str, str], str]:
+        """Return the match identity and report, or reject the turn."""
+        if not isinstance(game_stats, dict) or not game_stats:
+            logger.info("Realtime turn rejected: no game stats")
+            raise MatchRejected("not_in_game")
+        try:
+            validated = GameStats(data=game_stats)
+            stats_json = validated.to_json_string()
+            identity = match_identity(game_stats)
+            state = GameStateProcessor.process_to_state(stats_json)
+            report = build_game_state_report(state)
+        except Exception as exc:
+            logger.warning("Realtime turn rejected: %s", exc)
+            raise MatchRejected("bad_game_stats") from exc
+        if not report:
+            logger.warning("Realtime turn rejected: empty game report")
+            raise MatchRejected("bad_game_stats")
+        return identity, report
 
     async def _on_audio(self, pcm: bytes) -> None:
         if not self._turn_open or self._conn is None or self._commit_at is not None:
@@ -267,15 +258,17 @@ class LiveRelay:
             await self._send_json({"type": "error", "code": "empty_audio"})
             return
         self._commit_at = time.perf_counter()
+        # Context goes in before the committed audio so the spoken question
+        # is the last user turn. response.create has no instructions field:
+        # setting one would replace the session prompt for this reply.
+        try:
+            await self._publish_turn_context()
+        except MatchRejected as exc:
+            self._turn_open = False
+            await self._send_json({"type": "error", "code": exc.code})
+            return
         await self._openai_send({"type": "input_audio_buffer.commit"})
-        await self._openai_send(
-            {
-                "type": "response.create",
-                "response": {
-                    "instructions": self._reply_instructions(),
-                },
-            }
-        )
+        await self._openai_send({"type": "response.create"})
 
     async def _cancel_turn(self, played_ms: Any) -> None:
         if self._conn is not None:
@@ -294,46 +287,48 @@ class LiveRelay:
         self._turn_open = False
         self._commit_at = None
 
-    def _reply_instructions(self) -> str:
-        text = turn_instructions(
-            language=self.language,
-            game_report=self._game_report,
-            in_game=self._mode == "in_game",
-            champion=self._champion,
-            role=self._role,
-        )
+    async def _publish_turn_context(self) -> None:
+        """Replace the previous game-state note so reports do not stack."""
+        previous = self._context_item_id
+        if previous:
+            await self._openai_send({"type": "conversation.item.delete", "item_id": previous})
+            self._context_item_id = None
+        if not self._game_report:
+            raise MatchRejected("not_in_game")
+        text = turn_context(language=self.language, game_report=self._game_report)
+        item_id = f"ctx_{uuid.uuid4().hex}"
+        self._context_item_id = item_id
         logger.info(
-            "Realtime reply prompt: %s characters (mode=%s champion=%s)",
+            "Realtime turn context: %s characters (mode=%s champion=%s)",
             len(text),
             self._mode,
             self._champion,
         )
-        return text
+        await self._openai_send(
+            {
+                "type": "conversation.item.create",
+                "item": {
+                    "id": item_id,
+                    "type": "message",
+                    "role": "user",
+                    "content": [{"type": "input_text", "text": text}],
+                },
+            }
+        )
 
-    async def _ensure_openai(self, in_game: bool) -> None:
+    async def _ensure_openai(self) -> None:
         rotate_s = settings.realtime_rotate_minutes * 60
         expired = (
             self._conn is not None
-            and in_game
             and self._opened_at
             and (time.monotonic() - self._opened_at) >= rotate_s
         )
-        session_key = (in_game, self._champion, self._role)
+        session_key = (self._champion, self._role)
         if self._conn is not None and not expired and session_key == self._session_key:
             return
         self._session_key = session_key
         await self._close_openai()
-        instructions = session_instructions(
-            in_game=in_game,
-            champion=self._champion,
-            role=self._role,
-        )
-        token_limit = (
-            settings.realtime_coach_context_tokens
-            if in_game
-            else settings.realtime_knowledge_context_tokens
-        )
-        retention = 0.8 if in_game else 0.5
+        instructions = session_instructions(champion=self._champion, role=self._role)
         self._openai_cm = _connect_realtime(settings.openai_realtime_model)
         self._conn = await self._openai_cm.__aenter__()
         self._opened_at = time.monotonic()
@@ -345,13 +340,14 @@ class LiveRelay:
                     "model": settings.openai_realtime_model,
                     "output_modalities": ["audio"],
                     "instructions": instructions,
+                    "max_output_tokens": 200,
                     "tools": realtime_tool_definitions(),
                     "tool_choice": "auto",
                     "reasoning": {"effort": settings.realtime_reasoning_effort},
                     "truncation": {
                         "type": "retention_ratio",
-                        "retention_ratio": retention,
-                        "token_limits": {"post_instructions": token_limit},
+                        "retention_ratio": 0.8,
+                        "token_limits": {"post_instructions": settings.realtime_coach_context_tokens},
                     },
                     "audio": {
                         "input": {
@@ -414,6 +410,7 @@ class LiveRelay:
         cm = self._openai_cm
         self._conn = None
         self._openai_cm = None
+        self._context_item_id = None
         if reader is not None:
             reader.cancel()
             try:
@@ -532,14 +529,7 @@ class LiveRelay:
                         },
                     }
                 )
-            await self._openai_send(
-                {
-                    "type": "response.create",
-                    "response": {
-                        "instructions": self._reply_instructions(),
-                    },
-                }
-            )
+            await self._openai_send({"type": "response.create"})
             return
 
         status = response.get("status") or "completed"
@@ -564,7 +554,7 @@ class LiveRelay:
         bind_log_context(
             source="realtime",
             outcome="partial" if partial else status,
-            mode="in_game" if self._mode == "in_game" else "knowledge",
+            mode="in_game",
             language=self.language,
             champion=self._champion,
             role=self._role,

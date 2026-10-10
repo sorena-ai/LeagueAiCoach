@@ -5,11 +5,11 @@ from pathlib import Path
 
 import pytest
 
-from app.assistant.agent import get_coach_advice
-from app.assistant.knowledge_agent import get_knowledge_advice
+from app.assistant.coach.agent import get_coach_advice
+from app.assistant.knowledge.agent import get_knowledge_advice
 from app.assistant.session import session_manager
-from app.assistant.stt import transcribe_audio
-from app.assistant.tts import text_to_speech_stream
+from app.lib.stt import transcribe_audio
+from app.lib.tts import text_to_speech_stream
 from app.config import settings
 from app.models.language import get_language_code
 

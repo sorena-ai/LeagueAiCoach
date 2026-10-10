@@ -88,7 +88,9 @@ uvicorn app.main:app --reload
 ## Useful endpoints
 - Health: `GET /api/v1/health`
 - Ready: `GET /api/v1/ready`
-- Coach: `POST /api/v1/assistant/coach` (audio file, image file, game_stats JSON, optional language)
+- Knowledge: `POST /api/v1/assistant/knowledge` (audio file, optional language)
+- Coach: `POST /api/v1/assistant/coach` (audio file, required game_stats JSON, optional language)
+- Live: `WS /api/v1/assistant/live` (in-game realtime; turn.start requires game_stats)
 
 ## Contributing
 

@@ -1,17 +1,14 @@
 """
 Knowledge Mode Prompts Module
 
-System prompts for out-of-game knowledge assistant mode.
-Reuses common sections from prompts.py where applicable.
+System prompts for the out-of-game knowledge agent.
+Personality and safety come from the shared assistant prompts.
 """
 
 import logging
 
 from app.assistant.data import get_all_playbook_content
-from app.assistant.prompts import (
-    _build_personality_section,
-    _build_safety_section,
-)
+from app.assistant.prompts import build_personality_section, build_safety_section
 
 logger = logging.getLogger(__name__)
 
@@ -148,9 +145,9 @@ def build_knowledge_prompt() -> str:
         Complete knowledge mode system prompt
     """
     identity = _build_knowledge_identity_section()
-    personality = _build_personality_section()
+    personality = build_personality_section()
     scope = _build_knowledge_scope_section()
-    safety = _build_safety_section()
+    safety = build_safety_section()
     brevity = _build_knowledge_brevity_section()
     input_structure = _build_knowledge_input_section()
     response_format = _build_knowledge_response_format_section()

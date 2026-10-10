@@ -15,7 +15,7 @@ from langchain_classic.agents import AgentExecutor
 from google.api_core.exceptions import ResourceExhausted
 
 from app.config import settings
-from app.assistant.knowledge_prompts import build_knowledge_prompt
+from app.assistant.knowledge.prompts import build_knowledge_prompt
 from app.assistant.tools import CHAMPION_TOOLS
 from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat, usage_fields
 from app.lib.langsmith_tracing import langsmith_tracing, trace_config

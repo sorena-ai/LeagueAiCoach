@@ -16,7 +16,7 @@ from typing import Dict, Optional, Tuple, Union
 
 from langchain_classic.agents import AgentExecutor
 
-from app.assistant.agent import create_coach_agent
+from app.assistant.coach.agent import create_coach_agent
 from app.assistant.messages import MessageHistory, default_summarize
 from app.config import settings
 from app.models.game_stats import GameStats
@@ -418,7 +418,7 @@ class SessionManager:
             Existing or newly created KnowledgeSession
         """
         # Import here to avoid circular imports
-        from app.assistant.knowledge_agent import create_knowledge_agent
+        from app.assistant.knowledge.agent import create_knowledge_agent
 
         # Check if knowledge session exists
         session = self.get_session(user_id, "knowledge")

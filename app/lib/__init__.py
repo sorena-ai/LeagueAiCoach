@@ -1,1 +1,1 @@
-# Shared clients: LangChain chat models and the async OpenAI client.
+# Shared clients and speech wrappers: LangChain, OpenAI, speech-to-text, and text-to-speech.

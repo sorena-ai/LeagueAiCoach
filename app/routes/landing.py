@@ -13,7 +13,7 @@ from collections import defaultdict, deque
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, Field
 
-from app.assistant.knowledge_agent import get_knowledge_advice
+from app.assistant.knowledge.agent import get_knowledge_advice
 from app.assistant.session import session_manager
 from app.utils.log_context import bind_log_context, get_log_context
 
