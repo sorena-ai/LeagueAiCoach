@@ -1,20 +1,14 @@
 """
-Shared assistant routes: health, readiness, languages, and suggestions.
+Catalog routes: supported languages and example questions.
 
 The spoken agents live in routes/coach.py and routes/knowledge.py.
+Health probes live in routes/health.py.
 """
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from fastapi.responses import JSONResponse
 
-from app.assistant.data import (
-    CHAMPION_BUILDS,
-    CHAMPION_COMBOS,
-    CHAMPION_GUIDES,
-    PLAYBOOK,
-)
 from app.assistant.session import session_manager
-from app.config import settings
 from app.models.language import get_all_supported_languages
 
 router = APIRouter(prefix="/api/v1", tags=["assistant"])
@@ -30,105 +24,6 @@ async def startup_event():
 async def shutdown_event():
     """Stop background tasks on application shutdown."""
     session_manager.stop_cleanup_task()
-
-
-@router.get("/health")
-async def health_check() -> JSONResponse:
-    """
-    Health check endpoint for monitoring and load balancers.
-
-    Returns a simple health status indicating the service is running.
-    This endpoint always returns 200 OK if the service is operational.
-
-    ## Response Format
-    ```json
-    {
-        "status": "healthy",
-        "service": "sensei-lol-coach"
-    }
-    ```
-
-    ## Use Cases
-    - Load balancer health checks
-    - Kubernetes liveness probes
-    - Basic service availability monitoring
-
-    ## Response Codes
-    - **200 OK**: Service is running and healthy
-    """
-    return JSONResponse(
-        status_code=200,
-        content={
-            "status": "healthy",
-            "service": "sensei-lol-coach",
-        },
-    )
-
-
-@router.get("/ready")
-async def readiness_check() -> JSONResponse:
-    """
-    Readiness check endpoint for monitoring and orchestration.
-
-    Verifies that the service has all required resources loaded and is ready
-    to serve requests. Checks for the presence of champion data files.
-
-    ## Response Format
-    ```json
-    {
-        "status": "ready",
-        "service": "sensei-lol-coach",
-        "champions_loaded": 172
-    }
-    ```
-
-    ## Checks Performed
-    1. Champion guide, combo, build, and playbook directories exist
-    2. In-memory champion data was loaded
-
-    ## Response Codes
-    - **200 OK**: Service is ready to serve requests
-    - **503 Service Unavailable**: Missing required resources
-
-    ## Use Cases
-    - Kubernetes readiness probes
-    - Pre-deployment verification
-    - Service dependency monitoring
-
-    ## Error Responses
-    - **503**: Required champion data directory not found
-    - **503**: No champion guide data loaded
-    """
-    required_dirs = {
-        "combos": settings.champion_combos_dir,
-        "builds": settings.champion_builds_dir,
-        "guides": settings.champion_guide_dir,
-        "playbook": settings.playbook_dir,
-    }
-    for label, directory in required_dirs.items():
-        if not directory.exists():
-            raise HTTPException(
-                status_code=503,
-                detail=f"Champion {label} data directory not found",
-            )
-
-    if not CHAMPION_GUIDES:
-        raise HTTPException(
-            status_code=503,
-            detail="No champion guide data loaded",
-        )
-
-    return JSONResponse(
-        status_code=200,
-        content={
-            "status": "ready",
-            "service": "sensei-lol-coach",
-            "champions_loaded": len(CHAMPION_GUIDES),
-            "combos_loaded": len(CHAMPION_COMBOS),
-            "builds_loaded": len(CHAMPION_BUILDS),
-            "playbook_files": len(PLAYBOOK),
-        },
-    )
 
 
 @router.get("/languages")
