@@ -11,17 +11,24 @@ import warnings
 from datetime import datetime
 
 from langchain.agents import create_agent
+from anthropic import RateLimitError as AnthropicRateLimitError
 from langchain_classic.agents import AgentExecutor
 from google.api_core.exceptions import ResourceExhausted
 
-from app.config import settings
 from app.assistant.knowledge.prompts import build_knowledge_prompt
 from app.assistant.tools import CHAMPION_TOOLS
-from app.lib.langchain import ensure_llm_config, extract_message_text, get_llm_chat, usage_fields
+from app.lib.langchain import (
+    ensure_llm_config,
+    extract_message_text,
+    get_knowledge_agent_llm_settings,
+    get_llm_chat,
+    usage_fields,
+)
 from app.lib.langsmith_tracing import langsmith_tracing, trace_config
 from app.utils.log_context import bind_log_context, elapsed_ms
 
-ensure_llm_config()
+KNOWLEDGE_PROVIDER, KNOWLEDGE_MODEL = get_knowledge_agent_llm_settings()
+ensure_llm_config(KNOWLEDGE_PROVIDER)
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +53,7 @@ def create_knowledge_agent() -> AgentExecutor:
     Returns:
         AgentExecutor instance configured for knowledge mode.
     """
-    llm = get_llm_chat()
+    llm = get_llm_chat(KNOWLEDGE_PROVIDER, KNOWLEDGE_MODEL)
 
     # Build knowledge mode system prompt (no gaming guidance section)
     system_prompt = build_knowledge_prompt()
@@ -81,8 +88,8 @@ async def get_knowledge_advice(
         Exception: If API call fails or processing error occurs
     """
     bind_log_context(
-        provider=settings.coach_provider,
-        model=settings.coach_model,
+        provider=KNOWLEDGE_PROVIDER,
+        model=KNOWLEDGE_MODEL,
         history_messages=session.message_history.get_message_count(),
         session_age_s=round((datetime.now() - session.created_at).total_seconds()),
     )
@@ -96,7 +103,7 @@ async def get_knowledge_advice(
 
     try:
         logger.info("Running knowledge agent with provider: %s (model: %s)",
-                   settings.coach_provider, settings.coach_model)
+                   KNOWLEDGE_PROVIDER, KNOWLEDGE_MODEL)
 
         # Build messages array starting with history (bounded window + summary)
         messages = []
@@ -123,8 +130,8 @@ async def get_knowledge_advice(
                 {"messages": messages},
                 config=trace_config(
                     "knowledge",
-                    provider=settings.coach_provider,
-                    model=settings.coach_model,
+                    provider=KNOWLEDGE_PROVIDER,
+                    model=KNOWLEDGE_MODEL,
                 ),
             )
         invoke_ms = elapsed_ms(invoke_started)
@@ -136,6 +143,18 @@ async def get_knowledge_advice(
 
         # Get the last message (assistant's response)
         last_message = response_messages[-1]
+
+        # Claude declines with a normal response and stop_reason "refusal";
+        # its content is then empty or partial, so don't speak or store it.
+        if last_message.response_metadata.get("stop_reason") == "refusal":
+            bind_log_context(
+                outcome="refusal",
+                llm_ms=invoke_ms,
+                refusal=last_message.response_metadata.get("stop_details"),
+            )
+            logger.warning("Knowledge agent declined the question")
+            return "Sorry, I can't help with that one. Try asking something else about League."
+
         advice = extract_message_text(last_message)
 
         bind_log_context(
@@ -158,9 +177,9 @@ async def get_knowledge_advice(
 
         return advice
 
-    except ResourceExhausted as e:
+    except (ResourceExhausted, AnthropicRateLimitError) as e:
         bind_log_context(outcome="quota")
-        logger.error("Knowledge LLM API quota exceeded (%s): %s", settings.coach_provider, str(e))
+        logger.error("Knowledge LLM API quota exceeded (%s): %s", KNOWLEDGE_PROVIDER, str(e))
         return "I'm sorry, but I've reached my usage limit. Please try again in a few minutes."
 
     except Exception as e:

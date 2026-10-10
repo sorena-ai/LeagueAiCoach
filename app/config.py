@@ -40,6 +40,15 @@ class Settings(BaseSettings):
     coach_provider: Literal["gemini", "grok", "openai"] = "gemini"  # Which LLM provider to use for coaching
     coach_model: str = "gemini-flash-lite-latest"  # Model name for the selected provider
 
+    # Knowledge Agent LLM Configuration (out-of-game questions). Unset = use coach_provider/coach_model.
+    knowledge_agent_provider: Optional[Literal["gemini", "grok", "openai", "anthropic"]] = None
+    knowledge_agent_model: Optional[str] = None
+    knowledge_agent_effort: Literal["low", "medium", "high", "xhigh", "max"] = "low"  # Anthropic only
+    knowledge_agent_max_tokens: int = 16000  # Anthropic only; covers thinking + reply
+
+    # Anthropic Configuration
+    anthropic_api_key: Optional[str] = None
+
     # Google Gemini Configuration
     google_api_key: str  # Google/Gemini API key
     gemini_model: str = "gemini-flash-lite-latest"  # Gemini Flash Lite model (legacy, use coach_model instead)
