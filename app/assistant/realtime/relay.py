@@ -298,7 +298,9 @@ class LiveRelay:
         if not self._game_report:
             raise MatchRejected("not_in_game")
         text = turn_context(language=self.language, game_report=self._game_report)
-        item_id = f"ctx_{uuid.uuid4().hex}"
+        # Realtime item ids are capped at 32 characters. uuid hex alone is 32,
+        # so the ctx_ prefix has to come out of that budget.
+        item_id = f"ctx_{uuid.uuid4().hex[:28]}"
         self._context_item_id = item_id
         logger.info(
             "Realtime turn context: %s characters (mode=%s champion=%s)",
