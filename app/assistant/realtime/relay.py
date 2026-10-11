@@ -337,7 +337,7 @@ class LiveRelay:
                     "model": settings.openai_realtime_model,
                     "output_modalities": ["audio"],
                     "instructions": instructions,
-                    "max_output_tokens": 200,
+                    "max_output_tokens": settings.realtime_max_output_tokens,
                     "tools": realtime_tool_definitions(),
                     "tool_choice": "auto",
                     "reasoning": {"effort": settings.realtime_reasoning_effort},

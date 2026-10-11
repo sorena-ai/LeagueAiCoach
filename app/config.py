@@ -35,6 +35,8 @@ class Settings(BaseSettings):
     realtime_reasoning_effort: Literal["minimal", "low", "medium", "high", "xhigh"] = "low"
     realtime_transcription_model: str = "gpt-realtime-whisper"
     realtime_coach_context_tokens: int = 16000
+    # Per reply, reasoning included. Assistant audio is ~20 tokens per second.
+    realtime_max_output_tokens: int = 2000
 
     # Coach LLM Configuration
     coach_provider: Literal["gemini", "grok", "openai"] = "gemini"  # Which LLM provider to use for coaching
