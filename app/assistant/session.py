@@ -2,9 +2,10 @@
 Session Management Module
 
 Manages coaching sessions with 2-hour TTL and background cleanup.
-Supports two session types:
+Supports three session types:
 - GameSession: For in-game coaching with game stats
 - KnowledgeSession: For out-of-game knowledge questions
+- LandingSession: For the anonymous sensii.gg chat
 
 Each session is keyed by a (identifier, session_type) combination.
 """
@@ -144,6 +145,31 @@ class GameSession(BaseSession):
         return (
             f"GameSession(username={self.username}, match_id={self.match_id}, "
             f"champion={self.champion}, role={self.role}, "
+            f"expires_at={self.expires_at.isoformat()})"
+        )
+
+
+class LandingSession(BaseSession):
+    """Anonymous chat session for one visit to sensii.gg."""
+
+    def __init__(self, session_id: str, agent: AgentExecutor):
+        """
+        Initialize a landing session.
+
+        Args:
+            session_id: Anonymous UUID from the page, or one the API just minted
+            agent: Shared landing agent
+        """
+        super().__init__(agent, ttl_hours=2)
+        self.session_id = session_id
+
+    def get_session_key(self) -> Tuple[str, str]:
+        """Return the unique key tuple for this landing session."""
+        return (self.session_id, "landing")
+
+    def __repr__(self) -> str:
+        return (
+            f"LandingSession(session_id={self.session_id}, "
             f"expires_at={self.expires_at.isoformat()})"
         )
 
@@ -434,6 +460,55 @@ class SessionManager:
         )
 
         return session
+
+    def create_landing_session(
+        self,
+        session_id: str,
+        agent: AgentExecutor,
+    ) -> LandingSession:
+        """
+        Create a new landing session.
+
+        Args:
+            session_id: Anonymous UUID for this page visit
+            agent: Shared landing agent
+
+        Returns:
+            Newly created LandingSession
+        """
+        key = self._get_key(session_id, "landing")
+        if key in self._sessions:
+            logger.info("Replacing existing landing session %s", session_id)
+
+        session = LandingSession(session_id=session_id, agent=agent)
+        self._sessions[key] = session
+        logger.info("Created new landing session: %s", session)
+        return session
+
+    def get_or_create_landing_session(self, session_id: str) -> LandingSession:
+        """
+        Get the landing session for this page visit, or create one.
+
+        The agent is built once inside ``create_landing_agent`` and shared.
+        Windows knowledge sessions are left alone.
+
+        Args:
+            session_id: Anonymous UUID from the landing page
+
+        Returns:
+            Existing or newly created LandingSession
+        """
+        from app.assistant.landing.agent import create_landing_agent
+
+        session = self.get_session(session_id, "landing")
+        if session and isinstance(session, LandingSession):
+            logger.info("Reusing existing landing session: %s", session)
+            return session
+
+        return self.create_landing_session(
+            session_id=session_id,
+            agent=create_landing_agent(),
+        )
 
     async def _cleanup_expired_sessions(self):
         """Background task to remove expired sessions every 20 minutes."""

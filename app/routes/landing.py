@@ -13,7 +13,8 @@ from collections import defaultdict, deque
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, Field
 
-from app.assistant.knowledge.agent import get_knowledge_advice
+from app.assistant.landing.agent import get_landing_advice
+from app.assistant.landing.sources import SourceLink, contribute_url, source_links
 from app.assistant.session import session_manager
 from app.utils.log_context import bind_log_context, get_log_context
 
@@ -29,6 +30,13 @@ _hits: dict[str, deque[float]] = defaultdict(deque)
 class AskBody(BaseModel):
     question: str = Field(min_length=1, max_length=_QUESTION_CHARS)
     session_id: str | None = None
+
+
+class AskReply(BaseModel):
+    reply: str
+    session_id: str
+    sources: list[SourceLink]
+    contribute_url: str | None = None
 
 
 def _client_ip(request: Request) -> str:
@@ -67,7 +75,7 @@ def _session_id(raw: str | None) -> str:
 
 
 @router.post("/assistant/ask")
-async def ask(body: AskBody, request: Request) -> dict[str, str]:
+async def ask(body: AskBody, request: Request) -> AskReply:
     question = body.question.strip()
     bind_log_context(
         source="landing",
@@ -82,15 +90,16 @@ async def ask(body: AskBody, request: Request) -> dict[str, str]:
     _limit(_client_ip(request))
     session_id = _session_id(body.session_id)
     bind_log_context(session_id=session_id)
-    session = session_manager.get_or_create_knowledge_session(user_id=session_id)
-    reply = await get_knowledge_advice(
-        session=session,
-        user_question=question,
-        language="english",
-    )
-    if not reply.strip():
+    session = session_manager.get_or_create_landing_session(session_id)
+    answer = await get_landing_advice(session=session, question=question)
+    if not answer.reply.strip():
         bind_log_context(outcome="empty")
         raise HTTPException(status_code=502, detail="The coach returned an empty response")
     if get_log_context().get("outcome") == "quota":
         logger.info("Landing ask hit the model quota")
-    return {"reply": reply, "session_id": session_id}
+    return AskReply(
+        reply=answer.reply,
+        session_id=session_id,
+        sources=source_links(answer.source_paths),
+        contribute_url=contribute_url(question, answer.reply, answer.source_paths),
+    )

@@ -16,6 +16,7 @@ from app.assistant.data_models import (
     ChampionCombosData,
     ChampionCountersData,
     ChampionGuidesData,
+    DataFile,
     PlaybookData,
     TomlRecord,
 )
@@ -97,28 +98,34 @@ def _role_from_stem(stem: str) -> Optional[str]:
     return parts[-1]
 
 
-def _load_flat(directory: Path) -> Dict[str, TomlRecord]:
-    records: Dict[str, TomlRecord] = {}
+def _data_file(path: Path, record: TomlRecord) -> DataFile:
+    """Store a path relative to the data directory, POSIX style."""
+    relative = path.relative_to(settings.data_dir).as_posix()
+    return DataFile(path=relative, record=record)
+
+
+def _load_flat(directory: Path) -> Dict[str, DataFile]:
+    records: Dict[str, DataFile] = {}
     for path in directory.glob("*.toml"):
         record = _read_toml(path)
         if record is not None:
-            records[path.stem.lower()] = record
+            records[path.stem.lower()] = _data_file(path, record)
     return records
 
 
-def _load_by_role(directory: Path) -> Dict[str, Dict[str, TomlRecord]]:
-    records: Dict[str, Dict[str, TomlRecord]] = {}
+def _load_by_role(directory: Path) -> Dict[str, Dict[str, DataFile]]:
+    records: Dict[str, Dict[str, DataFile]] = {}
     if not directory.exists():
         return records
     for champion_dir in directory.iterdir():
         if not champion_dir.is_dir():
             continue
-        roles: Dict[str, TomlRecord] = {}
+        roles: Dict[str, DataFile] = {}
         for path in champion_dir.glob("*.toml"):
             role = _role_from_stem(path.stem)
             record = _read_toml(path)
             if role and record is not None:
-                roles[role] = record
+                roles[role] = _data_file(path, record)
         if roles:
             records[champion_dir.name.lower()] = roles
     return records
@@ -175,14 +182,29 @@ logger.info(
 
 def get_champion_combo(champion: str) -> str:
     """XML combos for a champion, or "" if missing."""
-    record = CHAMPION_COMBOS.get(normalize_champion_slug(champion))
-    return combo_to_xml(record) if record else ""
+    entry = CHAMPION_COMBOS.get(normalize_champion_slug(champion))
+    return combo_to_xml(entry.record) if entry else ""
+
+
+def get_combo_sources(champion: str) -> list[str]:
+    """Path of the combo file for a champion. Empty when the file is missing."""
+    entry = CHAMPION_COMBOS.get(normalize_champion_slug(champion))
+    return [entry.path] if entry else []
+
+
+def _files_for_role(records: Dict[str, DataFile], role: str) -> list[DataFile]:
+    """One file when role is set, otherwise every role, in stored order."""
+    role = (role or "").strip().lower()
+    if role:
+        entry = records.get(role)
+        return [entry] if entry else []
+    return list(records.values())
 
 
 def get_champion_builds(champion: str) -> Dict[str, str]:
     """role -> build XML. Empty dict if the champion has no builds."""
     records = CHAMPION_BUILDS.get(normalize_champion_slug(champion), {})
-    return {role: build_to_xml(record) for role, record in records.items()}
+    return {role: build_to_xml(entry.record) for role, entry in records.items()}
 
 
 def get_champion_build(champion: str, role: str) -> str:
@@ -190,10 +212,16 @@ def get_champion_build(champion: str, role: str) -> str:
     return get_champion_builds(champion).get(role.lower(), "")
 
 
+def get_build_sources(champion: str, role: str = "") -> list[str]:
+    """One path per build returned. An empty role returns every role."""
+    records = CHAMPION_BUILDS.get(normalize_champion_slug(champion), {})
+    return [entry.path for entry in _files_for_role(records, role)]
+
+
 def get_champion_guides(champion: str) -> Dict[str, str]:
     """role -> guide XML. Empty dict if the champion has no guides."""
     records = CHAMPION_GUIDES.get(normalize_champion_slug(champion), {})
-    return {role: guide_to_xml(record) for role, record in records.items()}
+    return {role: guide_to_xml(entry.record) for role, entry in records.items()}
 
 
 def get_champion_guide(champion: str, role: str) -> str:
@@ -201,10 +229,16 @@ def get_champion_guide(champion: str, role: str) -> str:
     return get_champion_guides(champion).get(role.lower(), "")
 
 
+def get_guide_sources(champion: str, role: str = "") -> list[str]:
+    """One path per guide returned. An empty role returns every role."""
+    records = CHAMPION_GUIDES.get(normalize_champion_slug(champion), {})
+    return [entry.path for entry in _files_for_role(records, role)]
+
+
 def get_champion_counters(champion: str) -> Dict[str, str]:
     """role -> counters XML. Empty dict if the champion has no counters."""
     records = CHAMPION_COUNTERS.get(normalize_champion_slug(champion), {})
-    return {role: counters_to_xml(record) for role, record in records.items()}
+    return {role: counters_to_xml(entry.record) for role, entry in records.items()}
 
 
 def get_champion_counter(champion: str, role: str) -> str:
@@ -212,9 +246,49 @@ def get_champion_counter(champion: str, role: str) -> str:
     return get_champion_counters(champion).get(role.lower(), "")
 
 
+def get_counter_sources(champion: str, role: str = "") -> list[str]:
+    """One path per counters file returned. An empty role returns every role."""
+    records = CHAMPION_COUNTERS.get(normalize_champion_slug(champion), {})
+    return [entry.path for entry in _files_for_role(records, role)]
+
+
+_ROLE_INDEX = {
+    "top": 0,
+    "jungle": 1,
+    "mid": 2,
+    "adc": 3,
+    "support": 4,
+}
+
+
+def _playbook_ids(role: str) -> list[str]:
+    """Playbook file ids for one role, from general advice through late game.
+
+    Empty when the role is unknown. Content and sources both read this list.
+    """
+    role_lower = role.lower()
+    role_index = _ROLE_INDEX.get(role_lower)
+    if role_index is None:
+        return []
+
+    if role_lower == "jungle":
+        special_file = f"2.{role_index}.0-{role_lower}-early-clear"
+    else:
+        special_file = f"2.{role_index}.0-{role_lower}-laning"
+
+    ids = [
+        "0.0-general",
+        f"1.{role_index}-{role_lower}",
+        special_file,
+    ]
+    for phase_name, phase_index in (("early", 1), ("mid", 2), ("late", 3)):
+        ids.append(f"2.{role_index}.{phase_index}-{role_lower}-{phase_name}-game")
+    return ids
+
+
 def _playbook_xml(playbook_id: str) -> str:
-    record = PLAYBOOK.get(playbook_id)
-    return playbook_to_xml(record) if record else ""
+    entry = PLAYBOOK.get(playbook_id)
+    return playbook_to_xml(entry.record) if entry else ""
 
 
 def get_playbook_content(role: str) -> str:
@@ -224,43 +298,30 @@ def get_playbook_content(role: str) -> str:
     Includes general advice, the role overview, the lane or early-clear file,
     and early, mid, and late game.
     """
-    role_lower = role.lower()
-    role_index_map = {
-        "top": 0,
-        "jungle": 1,
-        "mid": 2,
-        "adc": 3,
-        "support": 4,
-    }
-    role_index = role_index_map.get(role_lower)
-    if role_index is None:
+    ids = _playbook_ids(role)
+    if not ids:
         logger.warning("Unknown role: %s. Cannot load playbook.", role)
         return ""
 
-    if role_lower == "jungle":
-        special_file = f"2.{role_index}.0-{role_lower}-early-clear"
-    else:
-        special_file = f"2.{role_index}.0-{role_lower}-laning"
-
-    files_to_include = [
-        "0.0-general",
-        f"1.{role_index}-{role_lower}",
-        special_file,
-    ]
-    for phase_name, phase_index in (("early", 1), ("mid", 2), ("late", 3)):
-        files_to_include.append(
-            f"2.{role_index}.{phase_index}-{role_lower}-{phase_name}-game"
-        )
-
     content_parts = []
-    for filename in files_to_include:
-        file_content = _playbook_xml(filename)
+    for playbook_id in ids:
+        file_content = _playbook_xml(playbook_id)
         if file_content:
             content_parts.append(file_content)
         else:
-            logger.warning("Playbook file not found: %s", filename)
+            logger.warning("Playbook file not found: %s", playbook_id)
 
     return "\n".join(content_parts)
+
+
+def get_playbook_sources(role: str) -> list[str]:
+    """Paths for the same playbook files ``get_playbook_content`` includes."""
+    paths = []
+    for playbook_id in _playbook_ids(role):
+        entry = PLAYBOOK.get(playbook_id)
+        if entry:
+            paths.append(entry.path)
+    return paths
 
 
 def get_all_playbook_content() -> str:

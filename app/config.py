@@ -139,6 +139,11 @@ class Settings(BaseSettings):
     refresh_token_expires_days: int = 30
     auth_session_ttl_seconds: int = 600
 
+    # Public repo the landing page links to when an answer used champion data.
+    # Defaults match the deploy clone, so no env change is required.
+    data_repo_url: str = "https://github.com/sorena-ai/awesome-league-of-legends"
+    data_repo_branch: str = "main"
+
     # Paths
     @property
     def data_dir(self) -> Path:

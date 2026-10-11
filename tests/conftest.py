@@ -4,3 +4,4 @@ import os
 os.environ.setdefault("OPENAI_API_KEY", "test")
 os.environ.setdefault("GOOGLE_API_KEY", "test")
 os.environ.setdefault("GROK_API_KEY", "test")
+os.environ.setdefault("ANTHROPIC_API_KEY", "test")

@@ -1,9 +1,9 @@
-"""LangSmith tracing for the coach and knowledge agents.
+"""LangSmith tracing for the coach, knowledge, and landing agents.
 
 LangChain sends a trace automatically when LANGSMITH_TRACING=true. This module
 does two extra things the env vars cannot:
 
-- names each run (coach, knowledge, or summary) and attaches filterable tags
+- names each run (coach, knowledge, landing, or summary) and attaches filterable tags
 - redacts Riot IDs (Name#TAG) from the payload before it is uploaded
 """
 

@@ -1,14 +1,23 @@
+from pathlib import Path
 from xml.etree import ElementTree as ET
 
 from app.assistant.champion_ids import normalize_champion_slug
 from app.assistant.coach.prompts import build_coach_prompt, build_gaming_guidance_section
 from app.assistant.data import (
+    CHAMPION_BUILDS,
+    CHAMPION_COMBOS,
+    CHAMPION_COUNTERS,
+    CHAMPION_GUIDES,
+    PLAYBOOK,
+    get_build_sources,
     get_champion_build,
     get_champion_combo,
     get_champion_counter,
     get_champion_guide,
     get_playbook_content,
+    get_playbook_sources,
 )
+from app.config import settings
 from app.assistant.knowledge.prompts import build_knowledge_prompt
 from app.assistant.toml_xml import combo_to_xml
 
@@ -94,6 +103,35 @@ def test_combo_xml_escapes_text():
     )
     parsed = ET.fromstring(xml)
     assert parsed.findtext("combos/combo/description") == "Q & W <flash>"
+
+
+def test_every_stored_data_file_exists():
+    entries = [*CHAMPION_COMBOS.values(), *PLAYBOOK.values()]
+    for by_role in (CHAMPION_BUILDS, CHAMPION_GUIDES, CHAMPION_COUNTERS):
+        for roles in by_role.values():
+            entries.extend(roles.values())
+
+    assert entries
+    for entry in entries:
+        assert "\\" not in entry.path
+        assert (settings.data_dir / entry.path).is_file()
+
+
+def test_build_sources_for_aatrox_top():
+    assert get_build_sources("Aatrox", "top") == [
+        "champion-builds/aatrox/aatrox-build-top.toml"
+    ]
+
+
+def test_playbook_sources_match_content_ids():
+    content = get_playbook_content("top")
+    ids = [
+        node.get("id")
+        for node in ET.fromstring(f"<root>{content}</root>").findall("playbook")
+    ]
+    sources = get_playbook_sources("top")
+    assert [Path(path).stem for path in sources] == ids
+    assert "0.0-general" in ids
 
 
 def test_xml_is_the_last_block_of_both_prompts():
