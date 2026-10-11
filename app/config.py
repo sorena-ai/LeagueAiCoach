@@ -139,10 +139,11 @@ class Settings(BaseSettings):
     refresh_token_expires_days: int = 30
     auth_session_ttl_seconds: int = 600
 
-    # Public repo the landing page links to when an answer used champion data.
-    # Defaults match the deploy clone, so no env change is required.
+    # Open source repos the landing page links when an answer used champion data.
+    # Defaults match the public repos, so no env change is required.
     data_repo_url: str = "https://github.com/sorena-ai/awesome-league-of-legends"
     data_repo_branch: str = "main"
+    agent_repo_url: str = "https://github.com/sorena-ai/LeagueAiCoach"
 
     # Paths
     @property

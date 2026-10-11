@@ -31,10 +31,10 @@ Pass role (top, jungle, mid, adc, or support) when the visitor names or implies 
 
 When a tool says "No ... data available", answer from general knowledge."""
 
-    sources = """## Sources
+    repos = """## Open source
 
 Do not write file names, paths, links, or "according to my data".
-The page shows sources under the answer."""
+The page links the open source repos under the answer."""
 
     incoming = """## Input
 
@@ -61,7 +61,7 @@ Typed chat. One to four short sentences. Plain text. No markdown."""
 
 {tools}
 
-{sources}
+{repos}
 
 {incoming}
 

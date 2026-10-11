@@ -1,6 +1,5 @@
-"""Turn tool-call file paths into GitHub links for the landing response."""
+"""Turn tool-call file paths into links in the open source repos."""
 
-from typing import Literal
 from urllib.parse import quote, urlencode
 
 from langchain_core.messages import ToolMessage
@@ -8,21 +7,23 @@ from pydantic import BaseModel
 
 from app.config import settings
 
-# U.GG files are regenerated every patch. A hand edit there is overwritten,
-# so those files get an issue link and no edit link.
-_UGG_PREFIXES = ("champion-builds/", "champion-counters/")
-
 # Stay under 8 KB so the prefilled issue URL survives browsers and GitHub.
 _MAX_URL_CHARS = 8192
 
 
-class SourceLink(BaseModel):
-    """One file an answer used, as the landing page should render it."""
+class FileLink(BaseModel):
+    """One data file the answer read, on awesome-league-of-legends."""
 
     path: str
     url: str
-    origin: Literal["ugg", "curated"]
-    edit_url: str | None = None
+    edit_url: str
+
+
+class RepoLink(BaseModel):
+    """One of the two public Sensii repos."""
+
+    name: str
+    url: str
 
 
 def collect_source_paths(messages: list) -> list[str]:
@@ -53,24 +54,33 @@ def _file_url(kind: str, path: str) -> str:
     return f"{base}/{kind}/{branch}/{relative}"
 
 
-def source_links(paths: list[str]) -> list[SourceLink]:
-    """Blob links for every path. Curated files also get an edit link."""
-    links: list[SourceLink] = []
-    for path in paths:
-        curated = not path.startswith(_UGG_PREFIXES)
-        links.append(
-            SourceLink(
-                path=path,
-                url=_file_url("blob", path),
-                origin="curated" if curated else "ugg",
-                edit_url=_file_url("edit", path) if curated else None,
-            )
+def file_links(paths: list[str]) -> list[FileLink]:
+    """Blob and edit links for every file, all in the data repo."""
+    return [
+        FileLink(
+            path=path,
+            url=_file_url("blob", path),
+            edit_url=_file_url("edit", path),
         )
-    return links
+        for path in paths
+    ]
+
+
+def repo_links(paths: list[str]) -> list[RepoLink]:
+    """The two public repos. Empty when the answer used no data files."""
+    if not paths:
+        return []
+    return [
+        RepoLink(
+            name="awesome-league-of-legends",
+            url=settings.data_repo_url.rstrip("/"),
+        ),
+        RepoLink(name="LeagueAiCoach", url=settings.agent_repo_url.rstrip("/")),
+    ]
 
 
 def contribute_url(question: str, reply: str, paths: list[str]) -> str | None:
-    """Prefilled new-issue link. None when the answer used no repo files.
+    """Prefilled new-issue link on the data repo. None when no files were read.
 
     The answer is shortened until the whole URL is under 8 KB.
     """

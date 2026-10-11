@@ -14,7 +14,13 @@ from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, Field
 
 from app.assistant.landing.agent import get_landing_advice
-from app.assistant.landing.sources import SourceLink, contribute_url, source_links
+from app.assistant.landing.sources import (
+    FileLink,
+    RepoLink,
+    contribute_url,
+    file_links,
+    repo_links,
+)
 from app.assistant.session import session_manager
 from app.utils.log_context import bind_log_context, get_log_context
 
@@ -35,7 +41,8 @@ class AskBody(BaseModel):
 class AskReply(BaseModel):
     reply: str
     session_id: str
-    sources: list[SourceLink]
+    files: list[FileLink]
+    repos: list[RepoLink]
     contribute_url: str | None = None
 
 
@@ -100,6 +107,7 @@ async def ask(body: AskBody, request: Request) -> AskReply:
     return AskReply(
         reply=answer.reply,
         session_id=session_id,
-        sources=source_links(answer.source_paths),
+        files=file_links(answer.source_paths),
+        repos=repo_links(answer.source_paths),
         contribute_url=contribute_url(question, answer.reply, answer.source_paths),
     )
