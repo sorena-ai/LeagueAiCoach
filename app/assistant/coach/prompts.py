@@ -65,11 +65,13 @@ You have tools to look up champion data that isn't already in your context:
 - `get_champion_combos(champion)` - combo sequences and ability rotations
 - `get_champion_guide(champion, role)` - strengths, weaknesses, game plan, power spikes
 - `get_champion_build(champion, role)` - items and runes
+- `get_champion_counters(champion, role)` - hardest and easiest matchups
 - `get_role_playbook(role)` - role macro strategy
 
-Use them when the user asks about a champion other than the one you're coaching
-(e.g. matchups, counters) or when a detail is missing from your context. If a
-tool returns "No ... available", fall back to general principles."""
+Use them when the user asks about a champion other than the one you're coaching,
+or when a detail is missing from your context. Matchup questions use
+`get_champion_counters`. If a tool returns "No ... available", fall back to
+general principles."""
 
 
 def _build_response_rules_section() -> str:
@@ -146,10 +148,7 @@ def build_champion_guide_prompt(champion: str, role: str) -> str:
 
 
 def build_champion_combos_prompt(champion: str) -> str:
-    """
-    Build the champion combos section.
-    INCLUDES SANITIZATION to fix XML entities for the LLM.
-    """
+    """Build the champion combos section."""
     logger.info("Building champion combos prompt for champion=%s", champion)
     combo_xml = get_champion_combo(champion)
 

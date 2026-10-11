@@ -146,28 +146,28 @@ class Settings(BaseSettings):
         return Path(__file__).parent.parent / "data"
 
     @property
-    def champions_dir(self) -> Path:
-        """Get the champions directory path containing individual champion XML files."""
-        return self.data_dir / "champions"
-
-    @property
     def champion_combos_dir(self) -> Path:
-        """Get the champion combos directory path containing champion combo XML files."""
+        """Champion combo TOML files, one per champion."""
         return self.data_dir / "champion-combos"
 
     @property
     def champion_builds_dir(self) -> Path:
-        """Get the champion builds directory path containing champion build directories."""
+        """Champion build TOML, one folder per champion."""
         return self.data_dir / "champion-builds"
 
     @property
     def champion_guide_dir(self) -> Path:
-        """Get the champion guide directory path containing champion guide directories."""
+        """Champion guide TOML, one folder per champion."""
         return self.data_dir / "champion-guide"
 
     @property
+    def champion_counters_dir(self) -> Path:
+        """Champion counter TOML, one folder per champion."""
+        return self.data_dir / "champion-counters"
+
+    @property
     def playbook_dir(self) -> Path:
-        """Get the playbook directory path containing strategic playbook files."""
+        """Role playbook TOML files."""
         return self.data_dir / "playbook"
 
     @property

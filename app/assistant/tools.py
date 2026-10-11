@@ -6,9 +6,8 @@ and role strategy on demand. They power knowledge mode, where there is no live
 game stats so the agent must look up whatever champion the user asks about
 instead of relying on data baked into the system prompt.
 
-The wrappers keep the raw data getters in ``app.assistant.data`` untouched and
-only add model-friendly behaviour: name slugging, optional role handling, and
-clear "not found" messages instead of silent empty strings.
+The getters in ``app.assistant.data`` already return XML. These wrappers add
+name slugging, optional role handling, and a clear message when nothing matches.
 """
 
 import logging
@@ -55,7 +54,7 @@ def get_champion_guide(champion: str, role: str = "") -> str:
     guides = data.get_champion_guides(champion)
     if not guides:
         return _not_found("guide", champion)
-    return "\n\n".join(f"### {r}\n{content}" for r, content in guides.items())
+    return "\n".join(guides.values())
 
 
 @tool
@@ -76,7 +75,28 @@ def get_champion_build(champion: str, role: str = "") -> str:
     builds = data.get_champion_builds(champion)
     if not builds:
         return _not_found("build", champion)
-    return "\n\n".join(f"### {r}\n{content}" for r, content in builds.items())
+    return "\n".join(builds.values())
+
+
+@tool
+def get_champion_counters(champion: str, role: str = "") -> str:
+    """Look up the hardest and easiest matchups for a champion.
+
+    Args:
+        champion: Champion name (e.g. "Aatrox").
+        role: Optional role filter: top, jungle, mid, adc or support. Leave empty to get every role.
+    """
+    role = (role or "").strip().lower()
+    if role:
+        counters = data.get_champion_counter(champion, role)
+        if not counters:
+            return _not_found(f"counters for role '{role}'", champion)
+        return counters
+
+    counters_by_role = data.get_champion_counters(champion)
+    if not counters_by_role:
+        return _not_found("counters", champion)
+    return "\n".join(counters_by_role.values())
 
 
 @tool
@@ -97,5 +117,6 @@ CHAMPION_TOOLS = [
     get_champion_combos,
     get_champion_guide,
     get_champion_build,
+    get_champion_counters,
     get_role_playbook,
 ]

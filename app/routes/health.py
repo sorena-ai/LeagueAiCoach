@@ -6,6 +6,7 @@ from fastapi.responses import JSONResponse
 from app.assistant.data import (
     CHAMPION_BUILDS,
     CHAMPION_COMBOS,
+    CHAMPION_COUNTERS,
     CHAMPION_GUIDES,
     PLAYBOOK,
 )
@@ -43,6 +44,7 @@ async def readiness_check() -> JSONResponse:
         "combos": settings.champion_combos_dir,
         "builds": settings.champion_builds_dir,
         "guides": settings.champion_guide_dir,
+        "counters": settings.champion_counters_dir,
         "playbook": settings.playbook_dir,
     }
     for label, directory in required_dirs.items():
@@ -66,6 +68,7 @@ async def readiness_check() -> JSONResponse:
             "champions_loaded": len(CHAMPION_GUIDES),
             "combos_loaded": len(CHAMPION_COMBOS),
             "builds_loaded": len(CHAMPION_BUILDS),
+            "counters_loaded": len(CHAMPION_COUNTERS),
             "playbook_files": len(PLAYBOOK),
         },
     )

@@ -116,6 +116,7 @@ or about a role's strategy:
 - `get_champion_combos(champion)` - combo sequences and ability rotations
 - `get_champion_guide(champion, role)` - strengths, weaknesses, game plan, power spikes
 - `get_champion_build(champion, role)` - items and runes
+- `get_champion_counters(champion, role)` - hardest and easiest matchups
 - `get_role_playbook(role)` - role macro strategy (laning, early/mid/late game)
 
 Rules:
@@ -127,11 +128,10 @@ Rules:
 
 
 def _build_knowledge_base_section() -> str:
-    """Build the knowledge base section with all playbook content."""
+    """Playbook XML. This is the last block of the knowledge prompt."""
     playbook_content = get_all_playbook_content()
-    return f"""## General Strategy Reference (Background Context)
+    return f"""## General Strategy Reference
 
-The following text provides general context about roles and macro strategy.
 Only use this if it is relevant to the user's specific question.
 
 {playbook_content}"""
@@ -152,11 +152,11 @@ def build_knowledge_prompt() -> str:
     input_structure = _build_knowledge_input_section()
     response_format = _build_knowledge_response_format_section()
     tools_section = _build_tools_section()
-    knowledge_base = _build_knowledge_base_section()
     closing = (
         "Remember: You're a knowledgeable League assistant. Be helpful, be accurate, "
         "and stop when the question is answered."
     )
+    knowledge_base = _build_knowledge_base_section()
 
     return f"""# KNOWLEDGE MODE
 
@@ -176,9 +176,6 @@ def build_knowledge_prompt() -> str:
 
 {tools_section}
 
----
-{knowledge_base}
+{closing}
 
----
-
-{closing}"""
+{knowledge_base}"""

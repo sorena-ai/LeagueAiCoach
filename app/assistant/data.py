@@ -1,363 +1,230 @@
 """
 Champion data management module.
 
-This module handles validation, loading, and retrieval of champion data from
-the data directories (champion-combos, champion-builds, champion-guide).
-
-All data is loaded into memory at import time to avoid disk I/O during requests.
+Loads TOML from the data directories into memory at import time.
+Getters convert one record to XML at the moment something asks for it.
 """
 
 import logging
+import tomllib
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Optional
 
-from app.config import settings
 from app.assistant.champion_ids import normalize_champion_slug
 from app.assistant.data_models import (
     ChampionBuildsData,
     ChampionCombosData,
+    ChampionCountersData,
     ChampionGuidesData,
     PlaybookData,
+    TomlRecord,
 )
+from app.assistant.toml_xml import (
+    build_to_xml,
+    combo_to_xml,
+    counters_to_xml,
+    guide_to_xml,
+    playbook_to_xml,
+)
+from app.config import settings
 
 logger = logging.getLogger(__name__)
 
 
-# ============================================================================
-# Validation Functions
-# ============================================================================
-
-
 def ensure_champion_combos_exist() -> None:
-    """
-    Validate that the champion combos directory exists.
-
-    Raises:
-        FileNotFoundError: If the directory is missing
-    """
+    """Raise FileNotFoundError if the champion combos directory is missing."""
     directory = settings.champion_combos_dir
-
     if not directory.exists():
-        raise FileNotFoundError(
-            f"Champion combos directory not found: {directory}"
-        )
+        raise FileNotFoundError(f"Champion combos directory not found: {directory}")
 
 
 def ensure_champion_builds_exist() -> None:
-    """
-    Validate that the champion builds directory exists.
-
-    Raises:
-        FileNotFoundError: If the directory is missing
-    """
+    """Raise FileNotFoundError if the champion builds directory is missing."""
     directory = settings.champion_builds_dir
-
     if not directory.exists():
-        raise FileNotFoundError(
-            f"Champion builds directory not found: {directory}"
-        )
+        raise FileNotFoundError(f"Champion builds directory not found: {directory}")
 
 
 def ensure_champion_guides_exist() -> None:
-    """
-    Validate that the champion guide directory exists.
-
-    Raises:
-        FileNotFoundError: If the directory is missing
-    """
+    """Raise FileNotFoundError if the champion guide directory is missing."""
     directory = settings.champion_guide_dir
-
     if not directory.exists():
-        raise FileNotFoundError(
-            f"Champion guide directory not found: {directory}"
-        )
+        raise FileNotFoundError(f"Champion guide directory not found: {directory}")
+
+
+def ensure_champion_counters_exist() -> None:
+    """Raise FileNotFoundError if the champion counters directory is missing."""
+    directory = settings.champion_counters_dir
+    if not directory.exists():
+        raise FileNotFoundError(f"Champion counters directory not found: {directory}")
 
 
 def ensure_playbook_exists() -> None:
-    """
-    Validate that playbook directory exists and contains required .txt files.
-
-    Raises:
-        FileNotFoundError: If directory is missing
-    """
+    """Raise FileNotFoundError if the playbook directory is missing."""
     directory = settings.playbook_dir
-
     if not directory.exists():
-        raise FileNotFoundError(
-            f"Playbook directory not found: {directory}"
-        )
+        raise FileNotFoundError(f"Playbook directory not found: {directory}")
 
 
 def ensure_all_champion_data_exists() -> None:
-    """
-    Validate that all champion data directories exist with the correct structure.
-
-    This function should be called during application startup to ensure all
-    required champion data is present before the application starts serving requests.
-
-    Raises:
-        FileNotFoundError: If any validation check fails
-    """
+    """Validate that every champion data directory exists. Called at startup."""
     logger.info("Validating champion data directories...")
     ensure_champion_combos_exist()
     ensure_champion_builds_exist()
     ensure_champion_guides_exist()
+    ensure_champion_counters_exist()
     ensure_playbook_exists()
     logger.info("All champion data directories validated successfully")
 
 
-# ============================================================================
-# Loading Functions
-# ============================================================================
+def _read_toml(path: Path) -> Optional[TomlRecord]:
+    try:
+        loaded = tomllib.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        logger.error("Failed to load %s: %s", path, exc)
+        return None
+    if not isinstance(loaded, dict):
+        logger.error("Expected a TOML table in %s", path)
+        return None
+    return loaded
+
+
+def _role_from_stem(stem: str) -> Optional[str]:
+    """aatrox-build-jungle -> jungle. Needs at least champion-kind-role."""
+    parts = stem.split("-")
+    if len(parts) < 3:
+        return None
+    return parts[-1]
+
+
+def _load_flat(directory: Path) -> Dict[str, TomlRecord]:
+    records: Dict[str, TomlRecord] = {}
+    for path in directory.glob("*.toml"):
+        record = _read_toml(path)
+        if record is not None:
+            records[path.stem.lower()] = record
+    return records
+
+
+def _load_by_role(directory: Path) -> Dict[str, Dict[str, TomlRecord]]:
+    records: Dict[str, Dict[str, TomlRecord]] = {}
+    if not directory.exists():
+        return records
+    for champion_dir in directory.iterdir():
+        if not champion_dir.is_dir():
+            continue
+        roles: Dict[str, TomlRecord] = {}
+        for path in champion_dir.glob("*.toml"):
+            role = _role_from_stem(path.stem)
+            record = _read_toml(path)
+            if role and record is not None:
+                roles[role] = record
+        if roles:
+            records[champion_dir.name.lower()] = roles
+    return records
 
 
 def _load_champion_combos(directory: Path) -> ChampionCombosData:
-    """
-    Load all champion combo XML files into memory.
-
-    Args:
-        directory: Path to the champion-combos directory
-
-    Returns:
-        Dictionary mapping champion name (lowercase) to XML content
-    """
-    combos: ChampionCombosData = {}
-
-    for combo_file in directory.glob("*.xml"):
-        try:
-            combos[combo_file.stem.lower()] = combo_file.read_text(
-                encoding="utf-8"
-            )
-        except Exception as exc:
-            logger.error("Failed to load combo file %s: %s", combo_file, exc)
-
+    combos = _load_flat(directory)
     logger.info("Loaded %d champion combo files into memory", len(combos))
     return combos
 
 
 def _load_champion_builds(directory: Path) -> ChampionBuildsData:
-    """
-    Load all champion build XML files into memory.
-
-    Args:
-        directory: Path to the champion-builds directory
-
-    Returns:
-        Nested dictionary mapping champion name -> role -> XML content
-        Example: {"aatrox": {"jungle": "<xml>...</xml>", ...}}
-    """
-    builds: ChampionBuildsData = {}
-
-    for champion_dir in directory.iterdir():
-        if not champion_dir.is_dir():
-            continue
-
-        champion_name = champion_dir.name.lower()
-        builds[champion_name] = {}
-
-        for build_file in champion_dir.glob("*.xml"):
-            try:
-                # Extract role from filename (e.g., "aatrox-build-jungle.xml" -> "jungle")
-                filename = build_file.stem  # e.g., "aatrox-build-jungle"
-                parts = filename.split("-")
-                if len(parts) >= 3:  # champion-build-role
-                    role = parts[-1]  # Get the last part (role)
-                    builds[champion_name][role] = build_file.read_text(
-                        encoding="utf-8"
-                    )
-            except Exception as exc:
-                logger.error("Failed to load build file %s: %s", build_file, exc)
-
-    logger.info(
-        "Loaded champion builds for %d champions into memory", len(builds)
-    )
+    builds = _load_by_role(directory)
+    logger.info("Loaded champion builds for %d champions into memory", len(builds))
     return builds
 
 
 def _load_champion_guides(directory: Path) -> ChampionGuidesData:
-    """
-    Load all champion guide XML files into memory.
-
-    Args:
-        directory: Path to the champion-guide directory
-
-    Returns:
-        Nested dictionary mapping champion name -> role -> XML content
-        Example: {"aatrox": {"jungle": "<xml>...</xml>", ...}}
-    """
-    guides: ChampionGuidesData = {}
-
-    for champion_dir in directory.iterdir():
-        if not champion_dir.is_dir():
-            continue
-
-        champion_name = champion_dir.name.lower()
-        guides[champion_name] = {}
-
-        for guide_file in champion_dir.glob("*.xml"):
-            try:
-                # Extract role from filename (e.g., "aatrox-guide-jungle.xml" -> "jungle")
-                filename = guide_file.stem  # e.g., "aatrox-guide-jungle"
-                parts = filename.split("-")
-                if len(parts) >= 3:  # champion-guide-role
-                    role = parts[-1]  # Get the last part (role)
-                    guides[champion_name][role] = guide_file.read_text(
-                        encoding="utf-8"
-                    )
-            except Exception as exc:
-                logger.error("Failed to load guide file %s: %s", guide_file, exc)
-
-    logger.info(
-        "Loaded champion guides for %d champions into memory", len(guides)
-    )
+    guides = _load_by_role(directory)
+    logger.info("Loaded champion guides for %d champions into memory", len(guides))
     return guides
 
 
+def _load_champion_counters(directory: Path) -> ChampionCountersData:
+    counters = _load_by_role(directory)
+    logger.info("Loaded champion counters for %d champions into memory", len(counters))
+    return counters
+
+
 def _load_playbook(directory: Path) -> PlaybookData:
-    """
-    Load all playbook .txt files into memory.
-
-    Args:
-        directory: Path to the playbook directory
-
-    Returns:
-        Dictionary mapping filename (without extension) to text content
-        Example: {"0.0-general": "...", "1.1-jungle": "..."}
-    """
-    playbook: PlaybookData = {}
-
-    for playbook_file in directory.glob("*.txt"):
-        try:
-            # Use filename without extension as key
-            playbook[playbook_file.stem] = playbook_file.read_text(
-                encoding="utf-8"
-            )
-        except Exception as exc:
-            logger.error("Failed to load playbook file %s: %s", playbook_file, exc)
-
+    playbook = _load_flat(directory)
     logger.info("Loaded %d playbook files into memory", len(playbook))
     return playbook
 
 
-# ============================================================================
-# Module-level data storage (loaded once at import)
-# ============================================================================
-
-CHAMPION_COMBOS: ChampionCombosData = _load_champion_combos(
-    settings.champion_combos_dir
+CHAMPION_COMBOS: ChampionCombosData = _load_champion_combos(settings.champion_combos_dir)
+CHAMPION_BUILDS: ChampionBuildsData = _load_champion_builds(settings.champion_builds_dir)
+CHAMPION_GUIDES: ChampionGuidesData = _load_champion_guides(settings.champion_guide_dir)
+CHAMPION_COUNTERS: ChampionCountersData = _load_champion_counters(
+    settings.champion_counters_dir
 )
-CHAMPION_BUILDS: ChampionBuildsData = _load_champion_builds(
-    settings.champion_builds_dir
-)
-CHAMPION_GUIDES: ChampionGuidesData = _load_champion_guides(
-    settings.champion_guide_dir
-)
-PLAYBOOK: PlaybookData = _load_playbook(
-    settings.playbook_dir
-)
+PLAYBOOK: PlaybookData = _load_playbook(settings.playbook_dir)
 
 logger.info(
-    "Champion data coverage: %d combos, %d build folders, %d guide folders, %d playbook files",
+    "Champion data coverage: %d combos, %d build folders, %d guide folders, "
+    "%d counter folders, %d playbook files",
     len(CHAMPION_COMBOS),
     len(CHAMPION_BUILDS),
     len(CHAMPION_GUIDES),
+    len(CHAMPION_COUNTERS),
     len(PLAYBOOK),
 )
 
 
-# ============================================================================
-# Getter Functions
-# ============================================================================
-
-
 def get_champion_combo(champion: str) -> str:
-    """
-    Get champion combo data for a specific champion.
-
-    Args:
-        champion: Champion name (display name or slug, case-insensitive)
-
-    Returns:
-        XML content string, or empty string if not found
-    """
-    return CHAMPION_COMBOS.get(normalize_champion_slug(champion), "")
+    """XML combos for a champion, or "" if missing."""
+    record = CHAMPION_COMBOS.get(normalize_champion_slug(champion))
+    return combo_to_xml(record) if record else ""
 
 
 def get_champion_builds(champion: str) -> Dict[str, str]:
-    """
-    Get all build data for a specific champion.
-
-    Args:
-        champion: Champion name (display name or slug, case-insensitive)
-
-    Returns:
-        Dictionary mapping role -> XML content, or empty dict if not found
-    """
-    return CHAMPION_BUILDS.get(normalize_champion_slug(champion), {})
+    """role -> build XML. Empty dict if the champion has no builds."""
+    records = CHAMPION_BUILDS.get(normalize_champion_slug(champion), {})
+    return {role: build_to_xml(record) for role, record in records.items()}
 
 
 def get_champion_build(champion: str, role: str) -> str:
-    """
-    Get build data for a specific champion and role.
-
-    Args:
-        champion: Champion name (case-insensitive)
-        role: Role name (e.g., "jungle", "mid", "top")
-
-    Returns:
-        XML content string, or empty string if not found
-    """
-    builds = get_champion_builds(champion)
-    return builds.get(role.lower(), "")
+    """Build XML for one champion and role, or "" if missing."""
+    return get_champion_builds(champion).get(role.lower(), "")
 
 
 def get_champion_guides(champion: str) -> Dict[str, str]:
-    """
-    Get all guide data for a specific champion.
-
-    Args:
-        champion: Champion name (display name or slug, case-insensitive)
-
-    Returns:
-        Dictionary mapping role -> XML content, or empty dict if not found
-    """
-    return CHAMPION_GUIDES.get(normalize_champion_slug(champion), {})
+    """role -> guide XML. Empty dict if the champion has no guides."""
+    records = CHAMPION_GUIDES.get(normalize_champion_slug(champion), {})
+    return {role: guide_to_xml(record) for role, record in records.items()}
 
 
 def get_champion_guide(champion: str, role: str) -> str:
-    """
-    Get guide data for a specific champion and role.
+    """Guide XML for one champion and role, or "" if missing."""
+    return get_champion_guides(champion).get(role.lower(), "")
 
-    Args:
-        champion: Champion name (case-insensitive)
-        role: Role name (e.g., "jungle", "mid", "top")
 
-    Returns:
-        XML content string, or empty string if not found
-    """
-    guides = get_champion_guides(champion)
-    return guides.get(role.lower(), "")
+def get_champion_counters(champion: str) -> Dict[str, str]:
+    """role -> counters XML. Empty dict if the champion has no counters."""
+    records = CHAMPION_COUNTERS.get(normalize_champion_slug(champion), {})
+    return {role: counters_to_xml(record) for role, record in records.items()}
+
+
+def get_champion_counter(champion: str, role: str) -> str:
+    """Counters XML for one champion and role, or "" if missing."""
+    return get_champion_counters(champion).get(role.lower(), "")
+
+
+def _playbook_xml(playbook_id: str) -> str:
+    record = PLAYBOOK.get(playbook_id)
+    return playbook_to_xml(record) if record else ""
 
 
 def get_playbook_content(role: str) -> str:
     """
-    Get playbook content for a specific role including all game phases.
+    Playbook XML for one role, all phases.
 
-    Combines multiple playbook files based on role, including:
-    - General advice (always included)
-    - Role-specific advice
-    - Special phase files (laning for lanes, early-clear for jungle)
-    - All phase-specific advice (early/mid/late game)
-
-    Args:
-        role: Role name (e.g., "top", "jungle", "mid", "adc", "support")
-
-    Returns:
-        Combined playbook content string with all phases
+    Includes general advice, the role overview, the lane or early-clear file,
+    and early, mid, and late game.
     """
     role_lower = role.lower()
-
-    # Map role to index
     role_index_map = {
         "top": 0,
         "jungle": 1,
@@ -365,79 +232,42 @@ def get_playbook_content(role: str) -> str:
         "adc": 3,
         "support": 4,
     }
-
     role_index = role_index_map.get(role_lower)
     if role_index is None:
         logger.warning("Unknown role: %s. Cannot load playbook.", role)
         return ""
 
-    logger.info("Loading playbook for role=%s (all phases)", role_lower)
-
-    # Build list of filenames to include
-    files_to_include = []
-
-    # 1. General advice (always)
-    files_to_include.append("0.0-general")
-
-    # 2. Role-specific advice
-    files_to_include.append(f"1.{role_index}-{role_lower}")
-
-    # 3. Special phase files (laning for lanes, early-clear for jungle)
     if role_lower == "jungle":
         special_file = f"2.{role_index}.0-{role_lower}-early-clear"
     else:
         special_file = f"2.{role_index}.0-{role_lower}-laning"
-    files_to_include.append(special_file)
 
-    # 4. All phase-specific advice (early/mid/late)
-    phases = [
-        ("early", 1),
-        ("mid", 2),
-        ("late", 3)
+    files_to_include = [
+        "0.0-general",
+        f"1.{role_index}-{role_lower}",
+        special_file,
     ]
-    for phase_name, phase_index in phases:
-        phase_file = f"2.{role_index}.{phase_index}-{role_lower}-{phase_name}-game"
-        files_to_include.append(phase_file)
+    for phase_name, phase_index in (("early", 1), ("mid", 2), ("late", 3)):
+        files_to_include.append(
+            f"2.{role_index}.{phase_index}-{role_lower}-{phase_name}-game"
+        )
 
-    # Concatenate content
     content_parts = []
     for filename in files_to_include:
-        file_content = PLAYBOOK.get(filename)
+        file_content = _playbook_xml(filename)
         if file_content:
             content_parts.append(file_content)
         else:
             logger.warning("Playbook file not found: %s", filename)
 
-    # Join with double newlines for readability
-    combined_content = "\n\n".join(content_parts)
-
-    logger.info("Loaded %d playbook files for role=%s (all phases)",
-                len(content_parts), role_lower)
-
-    return combined_content
+    return "\n".join(content_parts)
 
 
 def get_all_playbook_content() -> str:
-    """
-    Get all playbook content combined for knowledge mode.
-
-    Returns all playbook files concatenated together in alphabetical order,
-    providing comprehensive League of Legends strategic knowledge.
-    New files added to the playbook directory will automatically be included.
-
-    Returns:
-        Combined content of all playbook files
-    """
-    # Get all filenames and sort alphabetically
-    ordered_files = sorted(PLAYBOOK.keys())
-
-    content_parts = []
-    for filename in ordered_files:
-        file_content = PLAYBOOK.get(filename)
+    """Every playbook file as XML, in filename order."""
+    parts = []
+    for filename in sorted(PLAYBOOK):
+        file_content = _playbook_xml(filename)
         if file_content:
-            content_parts.append(f"### {filename}\n{file_content}")
-
-    combined_content = "\n\n".join(content_parts)
-    logger.info("Loaded all %d playbook files for knowledge mode", len(content_parts))
-
-    return combined_content
+            parts.append(file_content)
+    return "\n".join(parts)

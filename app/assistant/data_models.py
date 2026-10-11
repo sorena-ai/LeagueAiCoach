@@ -1,24 +1,21 @@
 """
 Data models for champion data management.
 
-This module defines constants and type aliases for champion data structures.
+Loaders keep the parsed TOML. XML is built later, when a prompt or tool
+hands the record to a model.
 """
 
-from typing import Dict
+from typing import Any, Dict
 
-# Type aliases for champion data structures
+TomlRecord = Dict[str, Any]
 
-# Champion combos: flat dictionary mapping champion name to XML content
-ChampionCombosData = Dict[str, str]
+# champion slug -> parsed combo file
+ChampionCombosData = Dict[str, TomlRecord]
 
-# Champion builds: nested dictionary mapping champion name -> role -> XML content
-# Example: {"aatrox": {"jungle": "<xml>...</xml>", "mid": "<xml>...</xml>", ...}}
-ChampionBuildsData = Dict[str, Dict[str, str]]
+# champion slug -> role -> parsed file
+ChampionBuildsData = Dict[str, Dict[str, TomlRecord]]
+ChampionGuidesData = Dict[str, Dict[str, TomlRecord]]
+ChampionCountersData = Dict[str, Dict[str, TomlRecord]]
 
-# Champion guides: nested dictionary mapping champion name -> role -> XML content
-# Example: {"aatrox": {"jungle": "<xml>...</xml>", "mid": "<xml>...</xml>", ...}}
-ChampionGuidesData = Dict[str, Dict[str, str]]
-
-# Playbook: flat dictionary mapping filename (without extension) to text content
-# Example: {"0.0-general": "...", "1.1-jungle": "...", "2.1.1-jungle-early-game": "..."}
-PlaybookData = Dict[str, str]
+# playbook id (filename without extension) -> parsed file
+PlaybookData = Dict[str, TomlRecord]
