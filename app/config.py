@@ -32,7 +32,8 @@ class Settings(BaseSettings):
     # Realtime speech-to-speech (gpt-realtime-2.1). Separate from the legacy coach route.
     openai_realtime_model: str = "gpt-realtime-2.1"
     openai_realtime_voice: str = "marin"
-    realtime_reasoning_effort: Literal["minimal", "low", "medium", "high", "xhigh"] = "low"
+    # minimal: the live coach was speaking its thinking ("let me think this through").
+    realtime_reasoning_effort: Literal["minimal", "low", "medium", "high", "xhigh"] = "minimal"
     realtime_transcription_model: str = "gpt-realtime-whisper"
     realtime_coach_context_tokens: int = 16000
     # Per reply, reasoning included. Assistant audio is ~20 tokens per second.

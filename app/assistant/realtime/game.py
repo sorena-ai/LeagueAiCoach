@@ -13,7 +13,9 @@ def match_identity(game_stats: dict) -> dict[str, str]:
     """
     Pull the fields the coach session is keyed on.
 
-    Returns riot_id, match_id, champion, role. Missing data becomes "unknown".
+    Returns riot_id, match_id, champion, role, keystone.
+    Champion and riot id fall back to "unknown". Role and keystone are empty
+    when the client has no position or no keystone.
     """
     active_player = game_stats.get("activePlayer") or {}
     riot_id = active_player.get("riotId") or "unknown"
@@ -27,10 +29,14 @@ def match_identity(game_stats: dict) -> dict[str, str]:
 
     champion = "unknown"
     raw_position = "UNKNOWN"
+    keystone = ""
     for player in game_stats.get("allPlayers") or []:
         if player.get("riotId") == riot_id:
             champion = player.get("championName") or "unknown"
             raw_position = player.get("position") or "UNKNOWN"
+            keystone = (
+                ((player.get("runes") or {}).get("keystone") or {}).get("displayName") or ""
+            )
             break
 
     role = _normalize_position_to_role(raw_position)
@@ -39,4 +45,5 @@ def match_identity(game_stats: dict) -> dict[str, str]:
         "match_id": f"game_{game_start}",
         "champion": champion,
         "role": role,
+        "keystone": str(keystone).strip(),
     }

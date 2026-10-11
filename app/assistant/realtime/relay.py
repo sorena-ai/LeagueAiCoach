@@ -25,7 +25,8 @@ from app.assistant.messages import MessageHistory
 from app.assistant.coach.prompts import build_game_state_report
 from app.assistant.realtime.game import match_identity
 from app.assistant.realtime.instructions import session_instructions, turn_context
-from app.assistant.realtime.tools import realtime_tool_definitions, run_tool
+from app.assistant.realtime.player_facts import PlayerFacts, apply_player_facts, fact_sheet, known
+from app.assistant.realtime.tools import REMEMBER_PLAYER, realtime_tool_definitions, run_tool
 from app.config import settings
 from app.lib.openai import get_openai_client
 from app.models.game_stats import GameStats
@@ -94,6 +95,9 @@ class LiveRelay:
         self._match_id: Optional[str] = None
         self._champion: Optional[str] = None
         self._role: Optional[str] = None
+        self._keystone = ""
+        self._said = PlayerFacts()
+        self._guidance_key: Optional[tuple[str, str]] = None
         self._riot_id: Optional[str] = None
         self._turn_open = False
         self._bytes_in = 0
@@ -191,11 +195,13 @@ class LiveRelay:
         match_id = identity["match_id"]
         if self._mode != "in_game" or match_id != self._match_id:
             self.history.clear()
+            self._said = PlayerFacts()
         self._mode = "in_game"
         self._game_report = report
         self._match_id = match_id
         self._champion = identity["champion"]
         self._role = identity["role"]
+        self._keystone = identity.get("keystone") or ""
         self._riot_id = identity["riot_id"]
 
         bind_log_context(
@@ -297,7 +303,16 @@ class LiveRelay:
             self._context_item_id = None
         if not self._game_report:
             raise MatchRejected("not_in_game")
-        text = turn_context(language=self.language, game_report=self._game_report)
+        text = turn_context(
+            language=self.language,
+            game_report=self._game_report,
+            facts=fact_sheet(
+                champion=self._champion or "",
+                lane=self._role or "",
+                keystone=self._keystone,
+                said=self._said,
+            ),
+        )
         # Realtime item ids are capped at 32 characters. uuid hex alone is 32,
         # so the ctx_ prefix has to come out of that budget.
         item_id = f"ctx_{uuid.uuid4().hex[:28]}"
@@ -320,13 +335,61 @@ class LiveRelay:
             }
         )
 
+    def _coaching_identity(self) -> tuple[str, str]:
+        """Champion and lane to bake in: what the player said, otherwise the client."""
+        champion = self._said.champion or known(self._champion or "")
+        role = self._said.lane or known(self._role or "")
+        return champion, role
+
+    def _remember_player(self, arguments: str | dict) -> str:
+        if isinstance(arguments, str):
+            try:
+                args = json.loads(arguments) if arguments else {}
+            except json.JSONDecodeError:
+                return "Nothing saved. Ask again in a few words."
+        else:
+            args = arguments
+        if not isinstance(args, dict):
+            return "Nothing saved. Ask again in a few words."
+        updated, message = apply_player_facts(self._said, args)
+        if updated != self._said:
+            self._said = updated
+            logger.info(
+                "Realtime player facts champion=%s lane=%s keystone=%s",
+                self._said.champion or "-",
+                self._said.lane or "-",
+                self._said.keystone or "-",
+            )
+        return message
+
+    async def _sync_guidance(self) -> None:
+        """Bake champion data once the player has filled in a missing champion or lane."""
+        if self._conn is None:
+            return
+        champion, role = self._coaching_identity()
+        key = (champion, role)
+        if key == self._guidance_key:
+            return
+        self._guidance_key = key
+        await self._openai_send(
+            {
+                "type": "session.update",
+                "session": {
+                    "type": "realtime",
+                    "instructions": session_instructions(champion=champion, role=role),
+                },
+            }
+        )
+
     async def _ensure_openai(self) -> None:
         """Reuse the OpenAI session for this match. Open a new one when the match changes or the session has dropped."""
         if self._conn is not None and self._session_match == self._match_id:
             return
         self._session_match = self._match_id
         await self._close_openai()
-        instructions = session_instructions(champion=self._champion, role=self._role)
+        champion, role = self._coaching_identity()
+        self._guidance_key = (champion, role)
+        instructions = session_instructions(champion=champion, role=role)
         self._openai_cm = _connect_realtime(settings.openai_realtime_model)
         self._conn = await self._openai_cm.__aenter__()
         await self._openai_send(
@@ -513,10 +576,16 @@ class LiveRelay:
             if isinstance(item, dict) and item.get("type") == "function_call"
         ]
         if calls:
+            remembered = False
             for call in calls:
                 name = str(call.get("name") or "")
                 self._tool_names.append(name)
-                result = await run_tool(name, call.get("arguments") or "{}")
+                arguments = call.get("arguments") or "{}"
+                if name == REMEMBER_PLAYER:
+                    result = self._remember_player(arguments)
+                    remembered = True
+                else:
+                    result = await run_tool(name, arguments)
                 await self._openai_send(
                     {
                         "type": "conversation.item.create",
@@ -527,6 +596,8 @@ class LiveRelay:
                         },
                     }
                 )
+            if remembered:
+                await self._sync_guidance()
             await self._openai_send({"type": "response.create"})
             return
 

@@ -13,6 +13,34 @@ logger = logging.getLogger(__name__)
 
 _BY_NAME = {tool.name: tool for tool in CHAMPION_TOOLS}
 
+REMEMBER_PLAYER = "remember_player"
+
+_REMEMBER_PLAYER_TOOL = {
+    "type": "function",
+    "name": REMEMBER_PLAYER,
+    "description": (
+        "Store the player's own champion, lane, or keystone after they say it. "
+        "Pass only facts they just told you, then answer their question using them."
+    ),
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "champion": {
+                "type": "string",
+                "description": "Their champion, only if they just named it.",
+            },
+            "lane": {
+                "type": "string",
+                "description": "Their lane: top, jungle, mid, adc, or support.",
+            },
+            "keystone": {
+                "type": "string",
+                "description": "Their keystone rune, only if they just named it.",
+            },
+        },
+    },
+}
+
 
 def realtime_tool_definitions() -> list[dict[str, Any]]:
     """JSON tool list for session.update."""
@@ -31,6 +59,7 @@ def realtime_tool_definitions() -> list[dict[str, Any]]:
                 },
             }
         )
+    definitions.append(_REMEMBER_PLAYER_TOOL)
     return definitions
 
 
