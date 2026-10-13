@@ -11,7 +11,8 @@ from langchain_core.messages import AIMessage, ToolMessage
 from app.assistant.landing.agent import LandingAnswer, build_landing_turn
 from app.assistant.landing.prompts import build_landing_prompt
 from app.assistant.landing.sources import collect_source_paths, contribute_url, file_links, repo_links
-from app.routes.landing import _hits, router
+from app.assistant.waitlist import WaitlistUnavailable
+from app.routes.landing import _hits, _waitlist_hits, router
 
 
 def test_collect_source_paths_keeps_first_seen_order():
@@ -116,9 +117,11 @@ def client():
     app = FastAPI()
     app.include_router(router)
     _hits.clear()
+    _waitlist_hits.clear()
     with TestClient(app) as test_client:
         yield test_client
     _hits.clear()
+    _waitlist_hits.clear()
 
 
 @pytest.fixture
@@ -188,5 +191,77 @@ def test_ask_rate_limits_the_ninth_call(client, patched_advice):
     blocked = client.post(
         "/api/v1/assistant/ask",
         json={"question": "Aatrox runes"},
+    )
+    assert blocked.status_code == 429
+
+
+def test_waitlist_appends_a_row(client, monkeypatch):
+    rows = []
+
+    def fake(row):
+        rows.append(row)
+
+    monkeypatch.setattr("app.routes.landing.append_waitlist_row", fake)
+    monkeypatch.setattr("app.routes.landing._submitted_at", lambda: "2026-10-13T00:00:00+00:00")
+    response = client.post(
+        "/api/v1/assistant/waitlist",
+        json={
+            "email": "  player@example.com ",
+            "platform": "MacOS",
+            "source": "hero",
+            "utm_source": "reddit",
+            "gclid": "abc",
+        },
+    )
+    assert response.status_code == 200
+    assert response.json() == {"ok": True}
+    assert rows == [[
+        "player@example.com",
+        "2026-10-13T00:00:00+00:00",
+        "MacOS",
+        "hero",
+        "reddit",
+        "",
+        "",
+        "",
+        "",
+        "abc",
+    ]]
+
+
+def test_waitlist_rejects_a_bad_email(client, monkeypatch):
+    called = []
+    monkeypatch.setattr("app.routes.landing.append_waitlist_row", lambda row: called.append(row))
+    response = client.post(
+        "/api/v1/assistant/waitlist",
+        json={"email": "not-an-email"},
+    )
+    assert response.status_code == 422
+    assert called == []
+
+
+def test_waitlist_returns_503_when_the_sheet_is_down(client, monkeypatch):
+    def fail(row):
+        raise WaitlistUnavailable("down")
+
+    monkeypatch.setattr("app.routes.landing.append_waitlist_row", fail)
+    response = client.post(
+        "/api/v1/assistant/waitlist",
+        json={"email": "player@example.com"},
+    )
+    assert response.status_code == 503
+
+
+def test_waitlist_rate_limits_the_sixth_call(client, monkeypatch):
+    monkeypatch.setattr("app.routes.landing.append_waitlist_row", lambda row: None)
+    for _ in range(5):
+        response = client.post(
+            "/api/v1/assistant/waitlist",
+            json={"email": "player@example.com"},
+        )
+        assert response.status_code == 200, response.text
+    blocked = client.post(
+        "/api/v1/assistant/waitlist",
+        json={"email": "player@example.com"},
     )
     assert blocked.status_code == 429

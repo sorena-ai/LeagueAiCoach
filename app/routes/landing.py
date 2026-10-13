@@ -1,17 +1,21 @@
-"""Anonymous knowledge chat for the Sensii landing.
+"""Anonymous endpoints for the Sensii landing.
 
 POST /api/v1/assistant/ask
+POST /api/v1/assistant/waitlist
 
-No login. Eight questions per IP per hour. Kept out of the coach routes.
+No login. Kept out of the coach routes.
 """
 
+import asyncio
 import logging
+import re
 import time
 import uuid
 from collections import defaultdict, deque
+from datetime import datetime, timezone
 
 from fastapi import APIRouter, HTTPException, Request
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 from app.assistant.landing.agent import get_landing_advice
 from app.assistant.landing.sources import (
@@ -22,6 +26,7 @@ from app.assistant.landing.sources import (
     repo_links,
 )
 from app.assistant.session import session_manager
+from app.assistant.waitlist import WaitlistUnavailable, append_waitlist_row
 from app.utils.log_context import bind_log_context, get_log_context
 
 logger = logging.getLogger(__name__)
@@ -29,8 +34,11 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/v1", tags=["landing"])
 
 _PER_HOUR = 8
+_WAITLIST_PER_HOUR = 5
 _QUESTION_CHARS = 500
+_EMAIL = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 _hits: dict[str, deque[float]] = defaultdict(deque)
+_waitlist_hits: dict[str, deque[float]] = defaultdict(deque)
 
 
 class AskBody(BaseModel):
@@ -57,18 +65,39 @@ def _client_ip(request: Request) -> str:
 
 
 def _limit(ip: str) -> None:
+    _limit_window(
+        _hits,
+        ip,
+        _PER_HOUR,
+        "You've used the free questions for this hour. Try again later.",
+        "Landing ask rate limited",
+    )
+
+
+def _limit_waitlist(ip: str) -> None:
+    _limit_window(
+        _waitlist_hits,
+        ip,
+        _WAITLIST_PER_HOUR,
+        "Too many signups from this network. Try again later.",
+        "Waitlist rate limited",
+    )
+
+
+def _limit_window(hits: dict[str, deque[float]], ip: str, cap: int, detail: str, log_line: str) -> None:
     now = time.monotonic()
-    window = _hits[ip]
+    window = hits[ip]
     while window and now - window[0] > 3600:
         window.popleft()
-    if len(window) >= _PER_HOUR:
+    if len(window) >= cap:
         bind_log_context(outcome="rate_limited")
-        logger.info("Landing ask rate limited")
-        raise HTTPException(
-            status_code=429,
-            detail="You've used the free questions for this hour. Try again later.",
-        )
+        logger.info(log_line)
+        raise HTTPException(status_code=429, detail=detail)
     window.append(now)
+
+
+def _submitted_at() -> str:
+    return datetime.now(timezone.utc).isoformat()
 
 
 def _session_id(raw: str | None) -> str:
@@ -111,3 +140,71 @@ async def ask(body: AskBody, request: Request) -> AskReply:
         repos=repo_links(answer.source_paths),
         contribute_url=contribute_url(question, answer.reply, answer.source_paths),
     )
+
+
+class WaitlistBody(BaseModel):
+    email: str = Field(min_length=3, max_length=320)
+    platform: str = Field(default="", max_length=32)
+    source: str = Field(default="", max_length=64)
+    utm_source: str = Field(default="", max_length=200)
+    utm_medium: str = Field(default="", max_length=200)
+    utm_campaign: str = Field(default="", max_length=200)
+    utm_content: str = Field(default="", max_length=200)
+    utm_term: str = Field(default="", max_length=200)
+    gclid: str = Field(default="", max_length=200)
+
+    @field_validator("email")
+    @classmethod
+    def _valid_email(cls, value: str) -> str:
+        cleaned = value.strip()
+        if not _EMAIL.fullmatch(cleaned):
+            raise ValueError("invalid email")
+        return cleaned
+
+    @field_validator(
+        "platform",
+        "source",
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_content",
+        "utm_term",
+        "gclid",
+    )
+    @classmethod
+    def _strip(cls, value: str) -> str:
+        return value.strip()
+
+
+class WaitlistReply(BaseModel):
+    ok: bool = True
+
+
+@router.post("/assistant/waitlist")
+async def waitlist(body: WaitlistBody, request: Request) -> WaitlistReply:
+    """Append one Mac or mobile signup to the waitlist sheet."""
+    bind_log_context(source="landing", mode="waitlist", platform=body.platform or None)
+    _limit_waitlist(_client_ip(request))
+    row = [
+        body.email,
+        _submitted_at(),
+        body.platform,
+        body.source,
+        body.utm_source,
+        body.utm_medium,
+        body.utm_campaign,
+        body.utm_content,
+        body.utm_term,
+        body.gclid,
+    ]
+    try:
+        await asyncio.to_thread(append_waitlist_row, row)
+    except WaitlistUnavailable as exc:
+        bind_log_context(outcome="unavailable")
+        logger.warning("Waitlist unavailable: %s", exc)
+        raise HTTPException(
+            status_code=503,
+            detail="Could not save your email. Please try again.",
+        )
+    logger.info("Waitlist submission saved")
+    return WaitlistReply()

@@ -124,6 +124,12 @@ class Settings(BaseSettings):
     login_success_url: str = ""
     landing_page_domain: str = ""
 
+    # Mac/mobile waitlist. Appends a row on api.sensii.gg.
+    # Credentials are a one-line service-account JSON string. Never commit it.
+    waitlist_spreadsheet_id: str = ""
+    waitlist_sheet_tab: str = "Sheet1"
+    waitlist_google_credentials: str = ""
+
     # Google Ads conversion tracking (served on the login-success page).
     # gads_activation_label is the "Sign-up" conversion label.
     # The field name stays so the env var GADS_ACTIVATION_LABEL is unchanged.
